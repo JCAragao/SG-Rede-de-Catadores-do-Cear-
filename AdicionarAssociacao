@@ -1,0 +1,768 @@
+using Org.BouncyCastle.Asn1.IsisMtt.X509;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    partial class Associacao
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Associacao));
+            this.label5 = new System.Windows.Forms.Label();
+            this.txt_emailCadastroAssociacao = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt_RazaoSocialAssociacao = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_DatadeCadastroCadastroAssociacao = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txt_CEPCadastroAssociacao = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txt_TelefoneCadastroAssociacao = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cbb_RegimedeTributacaoCadastroAssociacao = new System.Windows.Forms.ComboBox();
+            this.txt_CNPJCadastroAssociacao = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txt_RuaCadastroAssociacao = new System.Windows.Forms.TextBox();
+            this.txt_BairroCadastroAssociacao = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btn_CancelarCadastrarAssociacao = new System.Windows.Forms.Button();
+            this.btn_AdicionarAssociacao = new System.Windows.Forms.Button();
+            this.cbb_CidadeCadastroAssociacao = new System.Windows.Forms.ComboBox();
+            this.lbl_Cidade = new System.Windows.Forms.Label();
+            this.txt_NomeFantasiaCadastrarAssociacao = new System.Windows.Forms.TextBox();
+            this.lbl_NomeCompletoCadastrarCatador = new System.Windows.Forms.Label();
+            this.lbl_NomedoServidor = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txt_ImagemPerfil = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(146, 129);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(31, 13);
+            this.label5.TabIndex = 125;
+            this.label5.Text = "email";
+            // 
+            // txt_emailCadastroAssociacao
+            // 
+            this.txt_emailCadastroAssociacao.Location = new System.Drawing.Point(146, 146);
+            this.txt_emailCadastroAssociacao.MaxLength = 50;
+            this.txt_emailCadastroAssociacao.Name = "txt_emailCadastroAssociacao";
+            this.txt_emailCadastroAssociacao.Size = new System.Drawing.Size(133, 20);
+            this.txt_emailCadastroAssociacao.TabIndex = 5;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(149, 55);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(68, 13);
+            this.label4.TabIndex = 124;
+            this.label4.Text = "Razão social";
+            // 
+            // txt_RazaoSocialAssociacao
+            // 
+            this.txt_RazaoSocialAssociacao.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txt_RazaoSocialAssociacao.Location = new System.Drawing.Point(152, 72);
+            this.txt_RazaoSocialAssociacao.MaxLength = 50;
+            this.txt_RazaoSocialAssociacao.Name = "txt_RazaoSocialAssociacao";
+            this.txt_RazaoSocialAssociacao.Size = new System.Drawing.Size(190, 20);
+            this.txt_RazaoSocialAssociacao.TabIndex = 3;
+            this.txt_RazaoSocialAssociacao.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_RazaoSocialAssociacao_KeyPress);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(292, 175);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(90, 13);
+            this.label3.TabIndex = 123;
+            this.label3.Text = "Data de Cadastro";
+            // 
+            // txt_DatadeCadastroCadastroAssociacao
+            // 
+            this.txt_DatadeCadastroCadastroAssociacao.Location = new System.Drawing.Point(292, 192);
+            this.txt_DatadeCadastroCadastroAssociacao.MaxLength = 10;
+            this.txt_DatadeCadastroCadastroAssociacao.Name = "txt_DatadeCadastroCadastroAssociacao";
+            this.txt_DatadeCadastroCadastroAssociacao.Size = new System.Drawing.Size(73, 20);
+            this.txt_DatadeCadastroCadastroAssociacao.TabIndex = 104;
+            this.txt_DatadeCadastroCadastroAssociacao.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_DatadeCadastroCadastroAssociacao_KeyPress);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(12, 219);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(70, 13);
+            this.label12.TabIndex = 122;
+            this.label12.Text = "Rua, Número";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(12, 129);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(93, 13);
+            this.label11.TabIndex = 121;
+            this.label11.Text = "(XX)XXXXX-XXXX";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(12, 258);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(117, 13);
+            this.label10.TabIndex = 120;
+            this.label10.Text = "CEP(somente números)";
+            // 
+            // txt_CEPCadastroAssociacao
+            // 
+            this.txt_CEPCadastroAssociacao.Location = new System.Drawing.Point(11, 274);
+            this.txt_CEPCadastroAssociacao.MaxLength = 8;
+            this.txt_CEPCadastroAssociacao.Name = "txt_CEPCadastroAssociacao";
+            this.txt_CEPCadastroAssociacao.Size = new System.Drawing.Size(51, 20);
+            this.txt_CEPCadastroAssociacao.TabIndex = 10;
+            this.txt_CEPCadastroAssociacao.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_CEPCadastroAssociacao_KeyPress);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(12, 116);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(49, 13);
+            this.label9.TabIndex = 119;
+            this.label9.Text = "Telefone";
+            // 
+            // txt_TelefoneCadastroAssociacao
+            // 
+            this.txt_TelefoneCadastroAssociacao.Location = new System.Drawing.Point(15, 145);
+            this.txt_TelefoneCadastroAssociacao.MaxLength = 15;
+            this.txt_TelefoneCadastroAssociacao.Name = "txt_TelefoneCadastroAssociacao";
+            this.txt_TelefoneCadastroAssociacao.Size = new System.Drawing.Size(89, 20);
+            this.txt_TelefoneCadastroAssociacao.TabIndex = 4;
+            this.txt_TelefoneCadastroAssociacao.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_TelefoneCadastroAssociacao_KeyPress);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(16, 55);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(112, 13);
+            this.label8.TabIndex = 118;
+            this.label8.Text = "Regime de Tributação";
+            // 
+            // cbb_RegimedeTributacaoCadastroAssociacao
+            // 
+            this.cbb_RegimedeTributacaoCadastroAssociacao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_RegimedeTributacaoCadastroAssociacao.FormattingEnabled = true;
+            this.cbb_RegimedeTributacaoCadastroAssociacao.Items.AddRange(new object[] {
+            "MEI",
+            "Simples Nacional",
+            "Lucro Real",
+            "Lucro Presumido"});
+            this.cbb_RegimedeTributacaoCadastroAssociacao.Location = new System.Drawing.Point(15, 71);
+            this.cbb_RegimedeTributacaoCadastroAssociacao.Name = "cbb_RegimedeTributacaoCadastroAssociacao";
+            this.cbb_RegimedeTributacaoCadastroAssociacao.Size = new System.Drawing.Size(89, 21);
+            this.cbb_RegimedeTributacaoCadastroAssociacao.TabIndex = 2;
+            // 
+            // txt_CNPJCadastroAssociacao
+            // 
+            this.txt_CNPJCadastroAssociacao.Location = new System.Drawing.Point(292, 144);
+            this.txt_CNPJCadastroAssociacao.MaxLength = 12;
+            this.txt_CNPJCadastroAssociacao.Name = "txt_CNPJCadastroAssociacao";
+            this.txt_CNPJCadastroAssociacao.Size = new System.Drawing.Size(89, 20);
+            this.txt_CNPJCadastroAssociacao.TabIndex = 6;
+            this.txt_CNPJCadastroAssociacao.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_CNPJCadastroAssociacao_KeyPress);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(289, 129);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(123, 13);
+            this.label6.TabIndex = 117;
+            this.label6.Text = "CNPJ(somente números)";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 203);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.TabIndex = 116;
+            this.label2.Text = "Endereço";
+            // 
+            // txt_RuaCadastroAssociacao
+            // 
+            this.txt_RuaCadastroAssociacao.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txt_RuaCadastroAssociacao.Location = new System.Drawing.Point(11, 235);
+            this.txt_RuaCadastroAssociacao.MaxLength = 50;
+            this.txt_RuaCadastroAssociacao.Name = "txt_RuaCadastroAssociacao";
+            this.txt_RuaCadastroAssociacao.Size = new System.Drawing.Size(194, 20);
+            this.txt_RuaCadastroAssociacao.TabIndex = 7;
+            this.txt_RuaCadastroAssociacao.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_RuaCadastroAssociacao_KeyPress);
+            // 
+            // txt_BairroCadastroAssociacao
+            // 
+            this.txt_BairroCadastroAssociacao.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txt_BairroCadastroAssociacao.Location = new System.Drawing.Point(381, 235);
+            this.txt_BairroCadastroAssociacao.MaxLength = 50;
+            this.txt_BairroCadastroAssociacao.Name = "txt_BairroCadastroAssociacao";
+            this.txt_BairroCadastroAssociacao.Size = new System.Drawing.Size(90, 20);
+            this.txt_BairroCadastroAssociacao.TabIndex = 9;
+            this.txt_BairroCadastroAssociacao.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_BairroCadastroAssociacao_KeyPress);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(378, 219);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.TabIndex = 115;
+            this.label1.Text = "Bairro";
+            // 
+            // btn_CancelarCadastrarAssociacao
+            // 
+            this.btn_CancelarCadastrarAssociacao.Location = new System.Drawing.Point(315, 296);
+            this.btn_CancelarCadastrarAssociacao.Name = "btn_CancelarCadastrarAssociacao";
+            this.btn_CancelarCadastrarAssociacao.Size = new System.Drawing.Size(75, 34);
+            this.btn_CancelarCadastrarAssociacao.TabIndex = 111;
+            this.btn_CancelarCadastrarAssociacao.Text = "Cancelar";
+            this.btn_CancelarCadastrarAssociacao.UseVisualStyleBackColor = true;
+            this.btn_CancelarCadastrarAssociacao.Click += new System.EventHandler(this.btn_CancelarCadastrarAssociacao_Click);
+            // 
+            // btn_AdicionarAssociacao
+            // 
+            this.btn_AdicionarAssociacao.Location = new System.Drawing.Point(396, 296);
+            this.btn_AdicionarAssociacao.Name = "btn_AdicionarAssociacao";
+            this.btn_AdicionarAssociacao.Size = new System.Drawing.Size(75, 34);
+            this.btn_AdicionarAssociacao.TabIndex = 112;
+            this.btn_AdicionarAssociacao.Text = "Adicionar Associação";
+            this.btn_AdicionarAssociacao.UseVisualStyleBackColor = true;
+            this.btn_AdicionarAssociacao.Click += new System.EventHandler(this.btn_AdicionarAssociacao_Click);
+            // 
+            // cbb_CidadeCadastroAssociacao
+            // 
+            this.cbb_CidadeCadastroAssociacao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_CidadeCadastroAssociacao.FormattingEnabled = true;
+            this.cbb_CidadeCadastroAssociacao.Location = new System.Drawing.Point(210, 235);
+            this.cbb_CidadeCadastroAssociacao.Name = "cbb_CidadeCadastroAssociacao";
+            this.cbb_CidadeCadastroAssociacao.Size = new System.Drawing.Size(161, 21);
+            this.cbb_CidadeCadastroAssociacao.TabIndex = 8;
+            // 
+            // lbl_Cidade
+            // 
+            this.lbl_Cidade.AutoSize = true;
+            this.lbl_Cidade.Location = new System.Drawing.Point(211, 219);
+            this.lbl_Cidade.Name = "lbl_Cidade";
+            this.lbl_Cidade.Size = new System.Drawing.Size(40, 13);
+            this.lbl_Cidade.TabIndex = 114;
+            this.lbl_Cidade.Text = "Cidade";
+            // 
+            // txt_NomeFantasiaCadastrarAssociacao
+            // 
+            this.txt_NomeFantasiaCadastrarAssociacao.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txt_NomeFantasiaCadastrarAssociacao.Location = new System.Drawing.Point(15, 26);
+            this.txt_NomeFantasiaCadastrarAssociacao.MaxLength = 50;
+            this.txt_NomeFantasiaCadastrarAssociacao.Name = "txt_NomeFantasiaCadastrarAssociacao";
+            this.txt_NomeFantasiaCadastrarAssociacao.Size = new System.Drawing.Size(327, 20);
+            this.txt_NomeFantasiaCadastrarAssociacao.TabIndex = 1;
+            this.txt_NomeFantasiaCadastrarAssociacao.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_NomeFantasiaCadastrarAssociacao_KeyPress);
+            // 
+            // lbl_NomeCompletoCadastrarCatador
+            // 
+            this.lbl_NomeCompletoCadastrarCatador.AutoSize = true;
+            this.lbl_NomeCompletoCadastrarCatador.Location = new System.Drawing.Point(12, 9);
+            this.lbl_NomeCompletoCadastrarCatador.Name = "lbl_NomeCompletoCadastrarCatador";
+            this.lbl_NomeCompletoCadastrarCatador.Size = new System.Drawing.Size(78, 13);
+            this.lbl_NomeCompletoCadastrarCatador.TabIndex = 113;
+            this.lbl_NomeCompletoCadastrarCatador.Text = "Nome Fantasia";
+            // 
+            // lbl_NomedoServidor
+            // 
+            this.lbl_NomedoServidor.AutoSize = true;
+            this.lbl_NomedoServidor.Location = new System.Drawing.Point(306, 116);
+            this.lbl_NomedoServidor.Name = "lbl_NomedoServidor";
+            this.lbl_NomedoServidor.Size = new System.Drawing.Size(86, 13);
+            this.lbl_NomedoServidor.TabIndex = 126;
+            this.lbl_NomedoServidor.Text = "NomedoServidor";
+            this.lbl_NomedoServidor.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(371, 26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(55, 71);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 127;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            // 
+            // txt_ImagemPerfil
+            // 
+            this.txt_ImagemPerfil.Location = new System.Drawing.Point(253, 172);
+            this.txt_ImagemPerfil.Name = "txt_ImagemPerfil";
+            this.txt_ImagemPerfil.Size = new System.Drawing.Size(100, 20);
+            this.txt_ImagemPerfil.TabIndex = 128;
+            this.txt_ImagemPerfil.Visible = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(368, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(60, 13);
+            this.label7.TabIndex = 129;
+            this.label7.Text = "Logomarca";
+            // 
+            // Associacao
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(478, 345);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txt_ImagemPerfil);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.lbl_NomedoServidor);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txt_emailCadastroAssociacao);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txt_RazaoSocialAssociacao);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txt_DatadeCadastroCadastroAssociacao);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.txt_CEPCadastroAssociacao);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.txt_TelefoneCadastroAssociacao);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.cbb_RegimedeTributacaoCadastroAssociacao);
+            this.Controls.Add(this.txt_CNPJCadastroAssociacao);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txt_RuaCadastroAssociacao);
+            this.Controls.Add(this.txt_BairroCadastroAssociacao);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btn_CancelarCadastrarAssociacao);
+            this.Controls.Add(this.btn_AdicionarAssociacao);
+            this.Controls.Add(this.cbb_CidadeCadastroAssociacao);
+            this.Controls.Add(this.lbl_Cidade);
+            this.Controls.Add(this.txt_NomeFantasiaCadastrarAssociacao);
+            this.Controls.Add(this.lbl_NomeCompletoCadastrarCatador);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(494, 384);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(494, 384);
+            this.Name = "Associacao";
+            this.Text = "Adicionar Associacao";
+            this.Load += new System.EventHandler(this.Associacao_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txt_emailCadastroAssociacao;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txt_RazaoSocialAssociacao;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txt_DatadeCadastroCadastroAssociacao;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txt_CEPCadastroAssociacao;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txt_TelefoneCadastroAssociacao;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox cbb_RegimedeTributacaoCadastroAssociacao;
+        private System.Windows.Forms.TextBox txt_CNPJCadastroAssociacao;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txt_RuaCadastroAssociacao;
+        private System.Windows.Forms.TextBox txt_BairroCadastroAssociacao;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_CancelarCadastrarAssociacao;
+        private System.Windows.Forms.Button btn_AdicionarAssociacao;
+        private System.Windows.Forms.ComboBox cbb_CidadeCadastroAssociacao;
+        private System.Windows.Forms.Label lbl_Cidade;
+        public System.Windows.Forms.TextBox txt_NomeFantasiaCadastrarAssociacao;
+        private System.Windows.Forms.Label lbl_NomeCompletoCadastrarCatador;
+        public System.Windows.Forms.Label lbl_NomedoServidor;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txt_ImagemPerfil;
+        private System.Windows.Forms.Label label7;
+    }
+}
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    public partial class Associacao : Form
+    {
+        public Associacao()
+        {
+            InitializeComponent();
+        }
+
+        private void Associacao_Load(object sender, EventArgs e)
+        {
+            string Nomedoservidor = lbl_NomedoServidor.Text;
+            string vqueryCidade = @"SELECT * FROM CIDADES ORDER BY ID_Cidade ASC ;";
+            cbb_CidadeCadastroAssociacao.Items.Clear();
+            cbb_CidadeCadastroAssociacao.DataSource = ConexaoBancodeDados.dql(vqueryCidade, Nomedoservidor);
+            cbb_CidadeCadastroAssociacao.DisplayMember = "Cidade";
+            cbb_CidadeCadastroAssociacao.ValueMember = "ID_Cidade";
+        }
+
+        private void txt_CNPJCadastroAssociacao_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsNumber(e.KeyChar)) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+
+            }
+        }
+
+        private void txt_CEPCadastroAssociacao_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsNumber(e.KeyChar)) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+
+            }
+        }
+
+        private void txt_NomeFantasiaCadastrarAssociacao_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsLetter(e.KeyChar)) && !char.IsControl(e.KeyChar) && Convert.ToInt32(e.KeyChar) != 8 && Convert.ToInt32(e.KeyChar) != 32)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_RazaoSocialAssociacao_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsLetter(e.KeyChar)) && !char.IsControl(e.KeyChar) && Convert.ToInt32(e.KeyChar) != 8 && Convert.ToInt32(e.KeyChar) != 32)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_BairroCadastroAssociacao_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsLetter(e.KeyChar)) && !char.IsControl(e.KeyChar) && Convert.ToInt32(e.KeyChar) != 8 && Convert.ToInt32(e.KeyChar) != 32)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_RuaCadastroAssociacao_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsNumber(e.KeyChar)) && (!char.IsLetter(e.KeyChar)) && !char.IsControl(e.KeyChar) && Convert.ToInt32(e.KeyChar) != 8 && Convert.ToInt32(e.KeyChar) != 32)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_DatadeCadastroCadastroAssociacao_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsNumber(e.KeyChar)) && !char.IsControl(e.KeyChar) && e.KeyChar != '/')
+            {
+                e.Handled = true;
+
+            }
+
+        }
+
+        private void txt_TelefoneCadastroAssociacao_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsNumber(e.KeyChar)) && !char.IsControl(e.KeyChar) && e.KeyChar != '(' && e.KeyChar != ')' && e.KeyChar != '-')
+            {
+                e.Handled = true;
+
+            }
+
+        }
+
+        private void btn_CancelarCadastrarAssociacao_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btn_AdicionarAssociacao_Click(object sender, EventArgs e)
+        {
+            string format = "dd/MM/yyyy";
+            string DatadeCadastro = txt_DatadeCadastroCadastroAssociacao.Text;
+            DateTime dateTime;
+            if (DateTime.TryParseExact(DatadeCadastro, format, CultureInfo.InvariantCulture, DateTimeStyles.AllowWhiteSpaces, out dateTime))
+            {
+
+                if (txt_NomeFantasiaCadastrarAssociacao.Text != "")
+                {
+                    if (txt_DatadeCadastroCadastroAssociacao.Text != "")
+                    {
+
+                        if (cbb_RegimedeTributacaoCadastroAssociacao.SelectedIndex != -1)
+                        {
+                            if (txt_CNPJCadastroAssociacao.Text != "")
+                            {
+                                if (txt_CEPCadastroAssociacao.Text != "")
+                                {
+                                    if (cbb_CidadeCadastroAssociacao.SelectedIndex != -1)
+                                    {
+                                        if (txt_TelefoneCadastroAssociacao.Text != "")
+                                        {
+                                            if (txt_BairroCadastroAssociacao.Text != "")
+                                            {
+                                                if (txt_RuaCadastroAssociacao.Text != "")
+                                                {
+                                                    if (txt_emailCadastroAssociacao.Text != "")
+                                                    {
+                                                        if (txt_RazaoSocialAssociacao.Text != "")
+                                                        {
+                                                            if (txt_ImagemPerfil.Text.Contains(".jpeg") || txt_ImagemPerfil.Text.Contains(".png") || txt_ImagemPerfil.Text.Contains(".jpg"))
+                                                            {
+                                                                Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
+                                                                string NomeAssociacaoCrip = txt_NomeFantasiaCadastrarAssociacao.Text;
+                                                                string CidadeAssociacaoCrip = cryptography.Encriptar(cbb_CidadeCadastroAssociacao.Text);
+                                                                string BairroAssociacaoCrip = cryptography.Encriptar(txt_BairroCadastroAssociacao.Text);
+                                                                string RuaAssociacaoCrip = cryptography.Encriptar(txt_RuaCadastroAssociacao.Text);
+                                                                string DatadeCadastroCrip = cryptography.Encriptar(txt_DatadeCadastroCadastroAssociacao.Text);
+                                                                string CNPJCrip = cryptography.Encriptar(txt_CNPJCadastroAssociacao.Text);
+                                                                string RegimeTributacaoCrip = cbb_RegimedeTributacaoCadastroAssociacao.Text;
+                                                                string TelefoneCrip = cryptography.Encriptar(txt_TelefoneCadastroAssociacao.Text);
+                                                                string CEPCrip = cryptography.Encriptar(txt_CEPCadastroAssociacao.Text);
+                                                                string RazaoSocialCrip = txt_RazaoSocialAssociacao.Text;
+                                                                string emailCrip = cryptography.Encriptar(txt_emailCadastroAssociacao.Text);
+
+                                                                AdicionarAssociacaoClasse AddAssociacao = new AdicionarAssociacaoClasse();
+                                                                AddAssociacao.NomeFantasiaAdicionarAssociacao = NomeAssociacaoCrip;
+                                                                AddAssociacao.CidadeAdicionarAssociacao = CidadeAssociacaoCrip;
+                                                                AddAssociacao.BairroAdicionarAssociacao = BairroAssociacaoCrip;
+                                                                AddAssociacao.RuaAdicionarAssociacao = RuaAssociacaoCrip;
+                                                                AddAssociacao.DatadeCadastroAdicionarAssociacao = DatadeCadastroCrip;
+                                                                AddAssociacao.CNPJAdicionarAssociacao = CNPJCrip;
+                                                                AddAssociacao.RegimedeTributacaoAdicionarAssociacao = RegimeTributacaoCrip;
+                                                                AddAssociacao.TelefoneAdicionarAssociacao = TelefoneCrip;
+                                                                AddAssociacao.CEPAdicionarAssociacao = CEPCrip;
+                                                                AddAssociacao.RazaoSocialAdicionarAssociacao = RazaoSocialCrip;
+                                                                AddAssociacao.emailAdicionarAssociacao = emailCrip;
+                                                                AddAssociacao.NomedoServidor = lbl_NomedoServidor.Text;
+                                                                AddAssociacao.ImagemAdicionarAssociacao = txt_ImagemPerfil.Text;
+                                                                ConexaoBancodeDados.NewAssociacao(AddAssociacao);
+                                                                this.Close();
+
+
+                                                                string NomedoServidor = lbl_NomedoServidor.Text;
+                                                                SqlConnection Conectar2 = new SqlConnection("Data Source=DESKTOP-" + NomedoServidor + "\\SQLEXPRESS;Initial Catalog=SGRRC1;Integrated Security=True");
+                                                                Conectar2.Open();
+
+                                                                SqlCommand cmd0 = new SqlCommand(@"select count(*) as tables from ASSOCIACAO ", Conectar2);
+                                                                string NumerodeTabelas0 = cmd0.ExecuteScalar().ToString();
+
+                                                                if (NumerodeTabelas0 == "0")
+                                                                {
+                                                                    Associacao associacao = new Associacao();
+                                                                    associacao.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
+                                                                    associacao.ShowDialog();
+                                                                }
+
+
+                                                                SqlCommand cmd1 = new SqlCommand(@"select count(*) as tables from ADMINISTRADORES ", Conectar2);
+                                                                string NumerodeTabelas = cmd1.ExecuteScalar().ToString();
+
+                                                                if (NumerodeTabelas == "0")
+                                                                {
+                                                                    NovoAdministrador NovoAdministrador = new NovoAdministrador();
+                                                                    NovoAdministrador.lbl_Unidade.Text = txt_NomeFantasiaCadastrarAssociacao.Text;
+                                                                    NovoAdministrador.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
+                                                                    NovoAdministrador.ShowDialog();
+                                                                }
+                                                                Conectar2.Close();
+                                                            }
+                                                            else
+                                                            {
+                                                                MessageBox.Show("Selecione um formato de imagem válido (.png, .jpeg, .jpg)).");
+                                                                return;
+
+                                                            }
+                                                        
+
+                                                        }
+                                                        else
+                                                        {
+                                                            MessageBox.Show("Digite uma razão social.");
+                                                            return;
+
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+                                                        MessageBox.Show("Digite um email.");
+                                                        return;
+
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    MessageBox.Show("Digite uma rua e um número");
+                                                    return;
+                                                }
+                                            }
+                                            else
+                                            {
+
+                                                MessageBox.Show("Digite um bairro.");
+                                                return;
+                                            }
+                                        }
+                                        else
+                                        {
+                                            MessageBox.Show("Digite um telefone.");
+                                            return;
+
+                                        }
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Escolha uma cidade.");
+                                        return;
+
+                                    }
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Digite um CEP.");
+                                    return;
+
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Digite um CNPJ");
+                                return;
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Escolha um regime de tributação.");
+                            return;
+
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Digite uma data de cadastro.");
+                        return;
+
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Digite um nome fantasia.");
+                    return;
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Digite um valor de data válido");
+                return;
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            var fileContent = string.Empty;
+            var filePath = string.Empty;
+
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.InitialDirectory = "c:\\";
+                openFileDialog.Filter = @"JPEG (*.jpg; *.jpeg; *.jpe; *.jfif)|*.jpg; *.jpeg; *.jpe; *.jfif|PNG (*.png)|*.png*";
+                openFileDialog.FilterIndex = 2;
+                openFileDialog.RestoreDirectory = true;
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    //Get the path of specified file
+                    filePath = openFileDialog.FileName;
+                    try
+                    {
+                        pictureBox1.ImageLocation = filePath.ToString();
+                        pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
+                        txt_ImagemPerfil.Text = filePath.ToString();
+                       
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Selecione um arquivo de imagem válido.");
+                        return;
+
+                    }
+                        //Read the contents of the file into a stream
+                    var fileStream = openFileDialog.OpenFile();
+
+                    using (StreamReader reader = new StreamReader(fileStream))
+                    {
+                        fileContent = reader.ReadToEnd();
+                    }
+                }
+
+
+            }
+        }
+    }
+}
