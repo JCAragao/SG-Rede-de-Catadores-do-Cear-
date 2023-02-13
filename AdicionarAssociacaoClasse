@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+     class AdicionarAssociacaoClasse
+    {
+        public string NomedoServidor;
+        public string CidadeAdicionarAssociacao;
+        public string BairroAdicionarAssociacao;
+        public string RuaAdicionarAssociacao;
+        public string DatadeCadastroAdicionarAssociacao;
+        public string CNPJAdicionarAssociacao;
+        public string RegimedeTributacaoAdicionarAssociacao;
+        public string TelefoneAdicionarAssociacao;
+        public string CEPAdicionarAssociacao;
+        public string NomeFantasiaAdicionarAssociacao;
+        public string RazaoSocialAdicionarAssociacao;
+        public string emailAdicionarAssociacao;
+        public string ImagemAdicionarAssociacao;
+
+    }
+}
