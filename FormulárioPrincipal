@@ -1,0 +1,611 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data.SqlClient;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Net.Http.Headers;
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    public partial class Principal : Form
+    {
+
+        public Principal()
+        { 
+
+            InitializeComponent();
+
+
+            Login Log = new Login(this);
+            Log.ShowDialog();
+        }
+
+          
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            if (lbl_LeveldeAcessoForm1.Text == "-")
+            {
+                MessageBox.Show("Usuário não logado. Encerrando sessão.");
+                Application.Exit();
+            }
+
+         
+            if(lbl_AssociacaoForm1.Text == "Unidade")
+            {
+                lbl_AssociacaoForm1.Text = cbb_AssociacaoGestaoCliente.Text;
+
+            }
+
+            Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
+
+            textBox1.Text = cryptography.Encriptar(lbl_AssociacaoForm1.Text);
+
+        }
+
+        private void novaColetaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Globais.logado == true)
+            {
+
+                AdicionarColeta Novac = new AdicionarColeta();
+                Novac.lbl_UsuarioColeta.Text = lbl_NomeUsuario.Text;
+                Novac.lbl_UnidadeUsuarioColeta.Text = lbl_AssociacaoForm1.Text;
+                Novac.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
+                Novac.ShowDialog();
+            }
+
+            else
+            {
+                MessageBox.Show("Usuário não logado");
+                return;
+            }
+            
+        }
+
+        private void encerrarSessãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void novoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Globais.logado == true)
+            {
+
+       
+
+            }
+
+            else
+            {
+                MessageBox.Show("Usuário não logado! Encerrando sessão.");
+                Application.Exit();
+            }
+
+        }
+
+        private void gerenciamentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Globais.logado == true)
+            {
+
+            }
+
+            else
+            {
+                MessageBox.Show("Usuário não logado! Encerrando sessão.");
+                Application.Exit();
+            }
+
+        }
+
+        private void estatísticasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Globais.logado == true)
+            {
+
+               
+            }
+
+            else
+            {
+
+                MessageBox.Show("Usuário não logado! Encerrando sessão.");
+                Application.Exit();
+            }
+
+        }
+
+        private void novoCatadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void novoAdministradorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            if(Globais.nivel <= 1)
+            {
+                NovoAdministrador NovoAdministrador = new NovoAdministrador();
+                NovoAdministrador.lbl_Unidade.Text = lbl_AssociacaoForm1.Text;
+                NovoAdministrador.lbl_Usuario.Text = lbl_NomeUsuario.Text;
+                NovoAdministrador.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
+                NovoAdministrador.ShowDialog();
+            }
+            
+            else
+            {
+                MessageBox.Show("Usuário não possui permissão para acessar este formulário.");
+
+            }
+        }
+
+        private void catadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Globais.nivel == 0)
+            {
+                GestaoAdministradores Administrador = new GestaoAdministradores();
+                Administrador.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text ; 
+                Administrador.ShowDialog();
+
+            }
+            else
+            {
+                MessageBox.Show("Usuário não possui acesso ao formulário.");
+                return;
+            }
+        }
+
+        private void Form1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if(Globais.logado == true)
+            {
+                
+
+            }
+
+            else
+            {
+                MessageBox.Show("Usuário não logado");
+                Application.Exit();
+            }
+        }
+
+        private void coletasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ColetasGestao GerenciarColeta = new ColetasGestao();
+            GerenciarColeta.lbl_Unidade.Text = lbl_AssociacaoForm1.Text;
+            GerenciarColeta.lbl_Usuario.Text = lbl_NomeUsuario.Text;
+            GerenciarColeta.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
+            GerenciarColeta.ShowDialog();
+
+        }
+
+        private void CatadorToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+
+            if (lbl_LeveldeAcessoForm1.Text == "2")
+            {
+                MessageBox.Show("Usuário não possui permissão para acessar o formulário.");
+            }
+            else
+            {
+                CatadorGestao GerirCatador = new CatadorGestao();
+                GerirCatador.lbl_Unidade.Text = lbl_AssociacaoForm1.Text;
+                GerirCatador.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
+                GerirCatador.ShowDialog();
+            }
+        }
+
+        private void novoClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Globais.nivel == 0)
+            {
+                Cadastro_Cliente ClienteCadastro = new Cadastro_Cliente();
+                ClienteCadastro.lbl_Unidade.Text = lbl_AssociacaoForm1.Text;
+                ClienteCadastro.lbl_Usuario.Text = lbl_NomeUsuario.Text;
+                ClienteCadastro.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
+                ClienteCadastro.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Usuário não possui permissão para acessar o formulário.");
+                return;
+
+            }
+
+
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Globais.nivel == 0)
+            {
+                GestaoCliente ClienteGestao = new GestaoCliente();
+                ClienteGestao.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
+                ClienteGestao.lbl_Unidade.Text = lbl_AssociacaoForm1.Text;
+                ClienteGestao.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Usuário não possui acesso ao formulário.");
+                return;
+
+            }
+        }
+
+        private void vendasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Globais.nivel == 0)
+            {
+                GestaodeVendas VendasGestao = new GestaodeVendas();
+                VendasGestao.lbl_AssociacaoGestaoVendas.Text = lbl_AssociacaoForm1.Text;
+                VendasGestao.lbl_Usuario.Text = lbl_NomeUsuario.Text;
+                VendasGestao.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
+                VendasGestao.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Usuário não possui acesso ao formulário.");
+                return;
+
+            }
+        }
+
+        private void CaixaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Globais.nivel == 0 || Globais.nivel == 1)
+            {
+                Caixa caixa = new Caixa();
+                caixa.lbl_AssociacaoCaixa.Text = lbl_AssociacaoForm1.Text;
+                caixa.lbl_Usuario.Text = lbl_NomeUsuario.Text;
+                caixa.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
+
+                Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
+                string UnidadeCrip = cryptography.Encriptar(lbl_AssociacaoForm1.Text);
+                string UsuarioCrip = cryptography.Encriptar(lbl_NomeUsuario.Text);
+
+
+                string Nomedoservidor = lbl_NomedoServidor.Text;
+                caixa.ShowDialog();
+                string vqueryLimparCaixa = @"DELETE FROM CaixaTemporario WHERE [Unidade] = '" + UnidadeCrip + "' AND [Usuario] = '" + UsuarioCrip + "'";
+                ConexaoBancodeDados.dql(vqueryLimparCaixa, Nomedoservidor);
+            }
+            else
+            {
+                MessageBox.Show("Usuário não possui acesso ao formulário.");
+                return;
+
+            }
+        }
+
+        private void EncerrartoolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+          
+
+        }
+
+        private void novaAssociaçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Globais.nivel == 0 || Globais.nivel == 1)
+            {
+                Associacao associacao = new Associacao();
+                associacao.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
+                associacao.ShowDialog();
+
+               
+
+            }
+            else
+            {
+                MessageBox.Show("Usuário não possui acesso ao formulário.");
+                return;
+            }
+
+           
+        }
+
+        private void Form1_MouseEnter(object sender, EventArgs e)
+        {
+            Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
+            string UnidadeCrip = cryptography.Encriptar(lbl_AssociacaoForm1.Text);
+            string UsuarioCrip = cryptography.Encriptar(lbl_NomeUsuario.Text);
+            string Nomedoservidor = lbl_NomedoServidor.Text;
+
+            string vqueryLimparCaixa = @"DELETE FROM CaixaTemporario WHERE [Unidade] = '" + UnidadeCrip + "' AND [Usuario] = '" + UsuarioCrip + "'";
+            ConexaoBancodeDados.dql(vqueryLimparCaixa, Nomedoservidor);
+
+            
+        }
+
+        private void lbl_AssociacaoForm1_Click(object sender, EventArgs e)
+        {
+            if(Globais.nivel == 0)
+            {
+                string NomedoServidor = lbl_NomedoServidor.Text;
+                SqlConnection Conectar = new SqlConnection("Data Source=DESKTOP-" + NomedoServidor + "\\SQLEXPRESS;Initial Catalog=SGRRC1;Integrated Security=True");
+                Conectar.Open();
+                string Unidade = lbl_AssociacaoForm1.Text;
+                SqlCommand cmd = new SqlCommand("select [ID_Associacao] from ASSOCIACAO WHERE [Nome Fantasia] = '" + Unidade + "'", Conectar);
+                var NomeFantasia = cmd.ExecuteScalar();
+
+                AssociacaoEditar EditarAss = new AssociacaoEditar();
+                EditarAss.label7.Text = NomeFantasia.ToString();
+                Conectar.Close();
+
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+           
+        }
+
+        private void panel1_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void novoAssociadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+                CadastroCatador NovoCat = new CadastroCatador();
+                NovoCat.lbl_UsuariodoCadastroCatador.Text = lbl_NomeUsuario.Text;
+                NovoCat.lbl_UnidadeAdministradorCatador.Text = lbl_AssociacaoForm1.Text;
+                NovoCat.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
+                NovoCat.ShowDialog();
+         
+        }
+
+        private void panel1_DoubleClick(object sender, EventArgs e)
+        {
+        }
+
+        private void cbb_AssociacaoGestaoCliente_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lbl_AssociacaoForm1.Text = cbb_AssociacaoGestaoCliente.Text;
+            cbb_AssociacaoGestaoCliente.Visible = false;
+            lbl_AssociacaoForm1.Visible = true;
+            label2.Text = lbl_AssociacaoForm1.Text;
+        }
+
+        private void panel2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+           
+        }
+
+        private void panel3_DoubleClick(object sender, EventArgs e)
+        {
+        }
+
+        private void panel3_Click(object sender, EventArgs e)
+        {
+            label2.Text = lbl_NomedoServidor.Text;
+
+        }
+
+        private void encerrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Globais.logado = false;
+            lbl_NomeUsuario.Text = "-";
+            lbl_LeveldeAcessoForm1.Text = "-";
+            Application.Exit();
+        }
+
+        private void trocarAssociaçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Globais.nivel == 1 || Globais.nivel == 0)
+            {
+                string Nomedoservidor = lbl_NomedoServidor.Text;
+                string vqueryCliente = @"select [Nome Fantasia] from [ASSOCIACAO] order by [Nome Fantasia] ASC";
+
+                cbb_AssociacaoGestaoCliente.DataSource = ConexaoBancodeDados.dql(vqueryCliente, Nomedoservidor);
+                cbb_AssociacaoGestaoCliente.DisplayMember = "Nome Fantasia";
+
+                cbb_AssociacaoGestaoCliente.Visible = true;
+                lbl_AssociacaoForm1.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("Usuário não possui acesso ao formulário");
+                return;
+            }
+        }
+
+        private void editarPerfilToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
+            EditarAdministrador administradoreditado = new EditarAdministrador();
+            string NomedoServidor = lbl_NomedoServidor.Text;
+
+
+            SqlConnection Conectar = new SqlConnection("Data Source=DESKTOP-" + NomedoServidor + "\\SQLEXPRESS;Initial Catalog=SGRRC1;Integrated Security=True");
+
+            Conectar.Open();
+            string Unidade = cryptography.Encriptar(lbl_NomeUsuario.Text);
+
+            SqlCommand cmd = new SqlCommand("select [txt_Bairro] from [ADMINISTRADORES] WHERE [txt_AdministradorLogin] = '" + Unidade + "'", Conectar);
+            var Bairro = cmd.ExecuteScalar();
+            SqlCommand cmd2 = new SqlCommand("select [txt_CEP] from [ADMINISTRADORES] WHERE [txt_AdministradorLogin] = '" + Unidade + "'", Conectar);
+            var CEP = cmd2.ExecuteScalar();
+            SqlCommand cmd3 = new SqlCommand("select [cbb_Cidade] from [ADMINISTRADORES] WHERE [txt_AdministradorLogin] = '" + Unidade + "'", Conectar);
+            var Cidade = cmd3.ExecuteScalar();
+            SqlCommand cmd4 = new SqlCommand("Select [txt_CPF] from [ADMINISTRADORES] WHERE [txt_AdministradorLogin] = '" + Unidade + "'", Conectar);
+            var CPF = cmd4.ExecuteScalar();
+            SqlCommand cmd5 = new SqlCommand("Select [txt_DatadeMatricula] from [ADMINISTRADORES] WHERE [txt_AdministradorLogin] = '" + Unidade + "'", Conectar);
+            var DatadeMatricula = cmd5.ExecuteScalar();
+            SqlCommand cmd6 = new SqlCommand("Select [txt_DatadeNascimento] from [ADMINISTRADORES] WHERE [txt_AdministradorLogin] = '" + Unidade + "'", Conectar);
+            var DatadeNascimento = cmd6.ExecuteScalar();
+            SqlCommand cmd7 = new SqlCommand("Select [txt_[e-mail]]] from [ADMINISTRADORES] WHERE [txt_AdministradorLogin] = '" + Unidade + "'", Conectar);
+            var email = cmd7.ExecuteScalar();
+            SqlCommand cmd8 = new SqlCommand("Select [txt_Endereco] from [ADMINISTRADORES] WHERE [txt_AdministradorLogin] = '" + Unidade + "'", Conectar);
+            var Rua = cmd8.ExecuteScalar();
+            SqlCommand cmd9 = new SqlCommand("Select [cbb_Genero] from [ADMINISTRADORES] WHERE [txt_AdministradorLogin] = '" + Unidade + "'", Conectar);
+            var Genero = cmd9.ExecuteScalar();
+            SqlCommand cmd10 = new SqlCommand("Select [txt_AdministradorLogin] from [ADMINISTRADORES] WHERE [txt_AdministradorLogin] = '" + Unidade + "'", Conectar);
+            var Login = cmd10.ExecuteScalar();
+            SqlCommand cmd11 = new SqlCommand("Select [txt_NIS] from [ADMINISTRADORES] WHERE [txt_AdministradorLogin] = '" + Unidade + "'", Conectar);
+            var NIS = cmd11.ExecuteScalar();
+            SqlCommand cmd12 = new SqlCommand("Select [txt_RG] from [ADMINISTRADORES] WHERE [txt_AdministradorLogin] = '" + Unidade + "'", Conectar);
+            var RG = cmd12.ExecuteScalar();
+            SqlCommand cmd13 = new SqlCommand("Select [txt_Telefone] from [ADMINISTRADORES] WHERE [txt_AdministradorLogin] = '" + Unidade + "'", Conectar);
+            var Telefone = cmd13.ExecuteScalar();
+            SqlCommand cmd14 = new SqlCommand("Select [txt_SenhaLogin] from [ADMINISTRADORES] WHERE [txt_AdministradorLogin] = '" + Unidade + "'", Conectar);
+            var Senha = cmd14.ExecuteScalar();
+            SqlCommand cmd15 = new SqlCommand("Select [txt_NomeAdministrador] from [ADMINISTRADORES] WHERE [txt_AdministradorLogin] = '" + Unidade + "'", Conectar);
+            var Nome = cmd15.ExecuteScalar();
+            SqlCommand cmd16 = new SqlCommand("Select [ID_doAdministrador] from [ADMINISTRADORES] WHERE [txt_AdministradorLogin] = '" + Unidade + "'", Conectar);
+            var Matricula = cmd16.ExecuteScalar();
+            Conectar.Close();
+
+
+
+            string BairroCrip = cryptography.Decriptar(Bairro.ToString());
+            string CEPCrip = cryptography.Decriptar(CEP.ToString());
+            string CidadeCrip = cryptography.Decriptar(Cidade.ToString());
+            string CPFCrip = cryptography.Decriptar(CPF.ToString());
+            string DatadeMatriculaCrip = cryptography.Decriptar(DatadeMatricula.ToString());
+            string DatadeNascimentoCrip = cryptography.Decriptar(DatadeNascimento.ToString());
+            string emailCrip = cryptography.Decriptar(email.ToString());
+            string RuaCrip = cryptography.Decriptar(Rua.ToString());
+            string GeneroCrip = cryptography.Decriptar(Genero.ToString());
+            string LoginCrip = cryptography.Decriptar(Login.ToString());
+            string NISCrip = cryptography.Decriptar(NIS.ToString());
+            string RGCrip = cryptography.Decriptar(RG.ToString());
+            string TelefoneCrip = cryptography.Decriptar(Telefone.ToString());
+            string SenhaCrip = cryptography.Decriptar(Senha.ToString());
+
+            administradoreditado.txt_MatriculaAdministradorEditar.Text = Matricula.ToString();
+            administradoreditado.txt_NomeCompletoEditarAdministrador.Text = Nome.ToString();
+            administradoreditado.txt_NomedeUsuarioEditarAdministrador.Text = LoginCrip;
+            administradoreditado.txt_SenhaEditarAdministrador.Text = SenhaCrip;
+            administradoreditado.txt_ConfirmarsenhaEditarAdministrador.Text = SenhaCrip;
+            administradoreditado.txt_DatadeNascimentoEditarAdministrador.Text = DatadeNascimentoCrip;
+            administradoreditado.txt_DatadeMatriculaEditarAdministrador.Text = DatadeMatriculaCrip;
+            administradoreditado.txt_RGEditarAdministrador.Text = RGCrip;
+            administradoreditado.txt_CPFEditarAdministrador.Text = CPFCrip;
+            administradoreditado.txt_NISEditarAdministrador.Text = NISCrip;
+            administradoreditado.cbb_GeneroEditarAdministrador.Text = GeneroCrip;
+            administradoreditado.txt_TelefoneEditarAdministrador.Text = TelefoneCrip;
+            administradoreditado.txt_emailEditarAdministrador.Text = emailCrip;
+            administradoreditado.cbb_CidadeEditarAdministrador.Text = CidadeCrip;
+            administradoreditado.txt_BairroEditarAdministrador.Text = BairroCrip;
+            administradoreditado.txt_RuaEditarAdministrador.Text = RuaCrip;
+            administradoreditado.txt_CEPEditarAdministrador.Text = CEPCrip;
+            administradoreditado.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
+            administradoreditado.ShowDialog();
+        }
+
+        private void editarPerfilAssociaçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string Unidade = lbl_AssociacaoForm1.Text;
+
+            if (Globais.nivel == 0 && label2.Text != "System.Data.DataRowView")
+            {
+               
+                    string NomedoServidor = lbl_NomedoServidor.Text;
+                    SqlConnection Conectar = new SqlConnection("Data Source=DESKTOP-" + NomedoServidor + "\\SQLEXPRESS;Initial Catalog=SGRRC1;Integrated Security=True");
+                    Conectar.Open();
+                    SqlCommand cmd = new SqlCommand("select [ID_Associacao] from ASSOCIACAO WHERE [Nome Fantasia] = '" + Unidade + "'", Conectar);
+                    var Matricula = cmd.ExecuteScalar();
+                    SqlCommand cmd2 = new SqlCommand("select [Nome Fantasia] from ASSOCIACAO WHERE [Nome Fantasia] = '" + Unidade + "'", Conectar);
+                    var NomeFantasiaVar = cmd2.ExecuteScalar();
+                    SqlCommand cmd3 = new SqlCommand("select [CNPJ] from ASSOCIACAO WHERE [Nome Fantasia] = '" + Unidade + "'", Conectar);
+                    var CNPJ = cmd3.ExecuteScalar();
+                    SqlCommand cmd4 = new SqlCommand("Select [RegimedeTributacao] from ASSOCIACAO WHERE [Nome Fantasia] = '" + Unidade + "'", Conectar);
+                    var RegimedeTributacao = cmd4.ExecuteScalar();
+                    SqlCommand cmd5 = new SqlCommand("Select [Razaosocial] from ASSOCIACAO WHERE [Nome Fantasia] = '" + Unidade + "'", Conectar);
+                    var RazaoSocial = cmd5.ExecuteScalar();
+                    SqlCommand cmd6 = new SqlCommand("Select [DatadeCadastro] from ASSOCIACAO WHERE [Nome Fantasia] = '" + Unidade + "'", Conectar);
+                    var DatadeCadastro = cmd6.ExecuteScalar();
+                    SqlCommand cmd7 = new SqlCommand("Select [Telefone] from ASSOCIACAO WHERE [Nome Fantasia] = '" + Unidade + "'", Conectar);
+                    var Telefone = cmd7.ExecuteScalar();
+                    SqlCommand cmd8 = new SqlCommand("Select [email] from ASSOCIACAO WHERE [Nome Fantasia] = '" + Unidade + "'", Conectar);
+                    var email = cmd8.ExecuteScalar();
+                    SqlCommand cmd9 = new SqlCommand("Select [Rua] from ASSOCIACAO WHERE [Nome Fantasia] = '" + Unidade + "'", Conectar);
+                    var Rua = cmd9.ExecuteScalar();
+                    SqlCommand cmd10 = new SqlCommand("Select [Cidade] from ASSOCIACAO WHERE [Nome Fantasia] = '" + Unidade + "'", Conectar);
+                    var Cidade = cmd10.ExecuteScalar();
+                    SqlCommand cmd11 = new SqlCommand("Select [Bairro] from ASSOCIACAO WHERE [Nome Fantasia] = '" + Unidade + "'", Conectar);
+                    var Bairro = cmd11.ExecuteScalar();
+                    SqlCommand cmd12 = new SqlCommand("Select [CEP] from ASSOCIACAO WHERE [Nome Fantasia] = '" + Unidade + "'", Conectar);
+                    var CEP = cmd12.ExecuteScalar();
+                    SqlCommand cmd13 = new SqlCommand("Select [EnderecoImagem] from ASSOCIACAO WHERE [Nome Fantasia] = '"+Unidade+"'", Conectar);
+                    var Imagem = cmd13.ExecuteScalar();
+                    Conectar.Close();
+
+
+                    Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
+                    string CidadeAssociacaoCrip = cryptography.Decriptar(Cidade.ToString());
+                    string BairroAssociacaoCrip = cryptography.Decriptar(Bairro.ToString());
+                    string RuaAssociacaoCrip = cryptography.Decriptar(Rua.ToString());
+                    string DatadeCadastroCrip = cryptography.Decriptar(DatadeCadastro.ToString());
+                    string CNPJCrip = cryptography.Decriptar(CNPJ.ToString());
+                    string TelefoneCrip = cryptography.Decriptar(Telefone.ToString());
+                    string CEPCrip = cryptography.Decriptar(CEP.ToString());
+                    string emailCrip = cryptography.Decriptar(email.ToString());
+
+
+                    AssociacaoEditar EditarAss = new AssociacaoEditar();
+                    EditarAss.label7.Text = Matricula.ToString();
+                    EditarAss.txt_NomeFantasiaCadastrarAssociacao.Text = NomeFantasiaVar.ToString();
+                    EditarAss.txt_CNPJCadastroAssociacao.Text = CNPJCrip;
+                    EditarAss.cbb_RegimedeTributacaoCadastroAssociacao.Text = RegimedeTributacao.ToString();
+                    EditarAss.txt_RazaoSocialAssociacao.Text = RazaoSocial.ToString();
+                    EditarAss.txt_DatadeCadastroCadastroAssociacao.Text = DatadeCadastroCrip;
+                    EditarAss.pictureBox1.ImageLocation = Imagem.ToString();
+                    EditarAss.txt_ImagemPerfil.Text = Imagem.ToString();
+                    EditarAss.txt_TelefoneCadastroAssociacao.Text = TelefoneCrip;
+                    EditarAss.txt_emailCadastroAssociacao.Text = emailCrip;
+                    EditarAss.txt_RuaCadastroAssociacao.Text = RuaAssociacaoCrip;
+                    EditarAss.cbb_CidadeCadastroAssociacao.Text = CidadeAssociacaoCrip;
+                    EditarAss.txt_BairroCadastroAssociacao.Text = BairroAssociacaoCrip;
+                    EditarAss.txt_CEPCadastroAssociacao.Text = CEPCrip;
+                    EditarAss.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
+                    EditarAss.lbl_NomeOriginal.Text = lbl_AssociacaoForm1.Text;
+                    EditarAss.ShowDialog();
+
+                
+               
+            }
+
+            else
+            {
+
+                if (label2.Text == "System.Data.DataRowView")
+                {
+                    MessageBox.Show("Verifique se a associação foi escolhida.");
+                    return;
+
+                }
+                else
+                {
+                    MessageBox.Show("Usuário não possui permissão para acessar o formulário.");
+                    return;
+                }
+            }
+        }
+
+      
+    }
+    
+}
+    
+    
+
