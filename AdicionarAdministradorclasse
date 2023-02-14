@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    internal class Administradorclasse
+    {
+        public int ID_AdministradorAdicionarAdministrador;
+        public string NomeAdministradorAdicionarAdministrador;
+        public string LoginAdicionarAdministrador;
+        public string SenhaAdicionarAdministrador;
+        public string DatadeNascimentoAdicionarAdministrador;
+        public string RGAdicionarAdministrador;
+        public string CPFAdicionarAdministrador;
+        public string NISAdicionarAdministrador;
+        public string DatadeMatriculaAdicionarAdministrador;
+        public string GeneroAdicionarAdministrador;
+        public string TelefoneAdicionarAdministrador;
+        public string emailAdicionarAdministrador;
+        public string EnderecoAdicionarAdministrador;
+        public string CidadeAdicionarAdministrador;
+        public string BairroAdicionarAdministrador;
+        public string CEPAdicionarAdministrador;
+        public int NivelAdicionarAdministrador;
+        public string UnidadeAdicionarAdministrador;
+        public string UsuarioAdicionarAdministrado;
+        public string Nomedoservidor;
+    }
+}
