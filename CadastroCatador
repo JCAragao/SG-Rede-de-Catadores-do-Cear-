@@ -15,6 +15,553 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
 {
+    partial class CadastroCatador
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroCatador));
+            this.lbl_NomeCompletoCadastrarCatador = new System.Windows.Forms.Label();
+            this.txt_NomeCompletoCadastrarCatador = new System.Windows.Forms.TextBox();
+            this.lbl_Cidade = new System.Windows.Forms.Label();
+            this.cbb_CidadeCadastroCatador = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btn_CancelarCadastrarCatador = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_BairroCadastroCatador = new System.Windows.Forms.TextBox();
+            this.txt_RuaCadastroCatador = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txt_DatadeNascimentoCadastroCatador = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt_DatadeMatriculaCadastroCatador = new System.Windows.Forms.TextBox();
+            this.txt_RGCadastroCatador = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_CPFCadastroCatador = new System.Windows.Forms.TextBox();
+            this.txt_NISCadastroCatador = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cbb_GeneroCadastroCatador = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txt_TelefoneCadastroCatador = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txt_CEPCadastroCatador = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.chb_RecebeAuxílioCatadorCadastroCatador = new System.Windows.Forms.CheckBox();
+            this.txt_RecebeAuxilioCatadorCadastroCatador = new System.Windows.Forms.TextBox();
+            this.lbl_UsuariodoCadastroCatador = new System.Windows.Forms.Label();
+            this.lbl_UnidadeAdministradorCatador = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.cbb_AssociacaoCadastroCatador = new System.Windows.Forms.ComboBox();
+            this.cbb_Funcao = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_Funcao = new System.Windows.Forms.TextBox();
+            this.lbl_NomedoServidor = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // lbl_NomeCompletoCadastrarCatador
+            // 
+            this.lbl_NomeCompletoCadastrarCatador.AutoSize = true;
+            this.lbl_NomeCompletoCadastrarCatador.Location = new System.Drawing.Point(13, 13);
+            this.lbl_NomeCompletoCadastrarCatador.Name = "lbl_NomeCompletoCadastrarCatador";
+            this.lbl_NomeCompletoCadastrarCatador.Size = new System.Drawing.Size(82, 13);
+            this.lbl_NomeCompletoCadastrarCatador.TabIndex = 0;
+            this.lbl_NomeCompletoCadastrarCatador.Text = "Nome Completo";
+            // 
+            // txt_NomeCompletoCadastrarCatador
+            // 
+            this.txt_NomeCompletoCadastrarCatador.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txt_NomeCompletoCadastrarCatador.Location = new System.Drawing.Point(16, 30);
+            this.txt_NomeCompletoCadastrarCatador.MaxLength = 50;
+            this.txt_NomeCompletoCadastrarCatador.Name = "txt_NomeCompletoCadastrarCatador";
+            this.txt_NomeCompletoCadastrarCatador.Size = new System.Drawing.Size(327, 20);
+            this.txt_NomeCompletoCadastrarCatador.TabIndex = 1;
+            this.txt_NomeCompletoCadastrarCatador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_NomeCompletoCadastrarCatador_KeyPress);
+            // 
+            // lbl_Cidade
+            // 
+            this.lbl_Cidade.AutoSize = true;
+            this.lbl_Cidade.Location = new System.Drawing.Point(212, 240);
+            this.lbl_Cidade.Name = "lbl_Cidade";
+            this.lbl_Cidade.Size = new System.Drawing.Size(40, 13);
+            this.lbl_Cidade.TabIndex = 6;
+            this.lbl_Cidade.Text = "Cidade";
+            // 
+            // cbb_CidadeCadastroCatador
+            // 
+            this.cbb_CidadeCadastroCatador.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_CidadeCadastroCatador.FormattingEnabled = true;
+            this.cbb_CidadeCadastroCatador.Location = new System.Drawing.Point(211, 256);
+            this.cbb_CidadeCadastroCatador.Name = "cbb_CidadeCadastroCatador";
+            this.cbb_CidadeCadastroCatador.Size = new System.Drawing.Size(161, 21);
+            this.cbb_CidadeCadastroCatador.TabIndex = 12;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(397, 300);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 34);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Adicionar Catador";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btn_CancelarCadastrarCatador
+            // 
+            this.btn_CancelarCadastrarCatador.Location = new System.Drawing.Point(316, 300);
+            this.btn_CancelarCadastrarCatador.Name = "btn_CancelarCadastrarCatador";
+            this.btn_CancelarCadastrarCatador.Size = new System.Drawing.Size(75, 34);
+            this.btn_CancelarCadastrarCatador.TabIndex = 15;
+            this.btn_CancelarCadastrarCatador.Text = "Cancelar";
+            this.btn_CancelarCadastrarCatador.UseVisualStyleBackColor = true;
+            this.btn_CancelarCadastrarCatador.Click += new System.EventHandler(this.btn_CancelarCadastrarCatador_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(379, 240);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.TabIndex = 36;
+            this.label1.Text = "Bairro";
+            // 
+            // txt_BairroCadastroCatador
+            // 
+            this.txt_BairroCadastroCatador.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txt_BairroCadastroCatador.Location = new System.Drawing.Point(382, 256);
+            this.txt_BairroCadastroCatador.MaxLength = 50;
+            this.txt_BairroCadastroCatador.Name = "txt_BairroCadastroCatador";
+            this.txt_BairroCadastroCatador.Size = new System.Drawing.Size(90, 20);
+            this.txt_BairroCadastroCatador.TabIndex = 13;
+            this.txt_BairroCadastroCatador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_BairroCadastroCatador_KeyPress);
+            // 
+            // txt_RuaCadastroCatador
+            // 
+            this.txt_RuaCadastroCatador.Location = new System.Drawing.Point(12, 256);
+            this.txt_RuaCadastroCatador.MaxLength = 50;
+            this.txt_RuaCadastroCatador.Name = "txt_RuaCadastroCatador";
+            this.txt_RuaCadastroCatador.Size = new System.Drawing.Size(194, 20);
+            this.txt_RuaCadastroCatador.TabIndex = 11;
+            this.txt_RuaCadastroCatador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_RuaCadastroCatador_KeyPress);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(13, 224);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.TabIndex = 39;
+            this.label2.Text = "Endereço";
+            // 
+            // txt_DatadeNascimentoCadastroCatador
+            // 
+            this.txt_DatadeNascimentoCadastroCatador.Location = new System.Drawing.Point(379, 30);
+            this.txt_DatadeNascimentoCadastroCatador.MaxLength = 10;
+            this.txt_DatadeNascimentoCadastroCatador.Name = "txt_DatadeNascimentoCadastroCatador";
+            this.txt_DatadeNascimentoCadastroCatador.Size = new System.Drawing.Size(73, 20);
+            this.txt_DatadeNascimentoCadastroCatador.TabIndex = 2;
+            this.txt_DatadeNascimentoCadastroCatador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_DatadeNascimentoCadastroCatador_KeyPress);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(379, 13);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(104, 13);
+            this.label3.TabIndex = 41;
+            this.label3.Text = "Data de Nascimento";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(379, 67);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(93, 13);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "Data de Matrícula";
+            // 
+            // txt_DatadeMatriculaCadastroCatador
+            // 
+            this.txt_DatadeMatriculaCadastroCatador.Location = new System.Drawing.Point(379, 83);
+            this.txt_DatadeMatriculaCadastroCatador.MaxLength = 10;
+            this.txt_DatadeMatriculaCadastroCatador.Name = "txt_DatadeMatriculaCadastroCatador";
+            this.txt_DatadeMatriculaCadastroCatador.Size = new System.Drawing.Size(73, 20);
+            this.txt_DatadeMatriculaCadastroCatador.TabIndex = 7;
+            this.txt_DatadeMatriculaCadastroCatador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_DatadeMatriculaCadastroCatador_KeyPress);
+            // 
+            // txt_RGCadastroCatador
+            // 
+            this.txt_RGCadastroCatador.Location = new System.Drawing.Point(16, 83);
+            this.txt_RGCadastroCatador.MaxLength = 11;
+            this.txt_RGCadastroCatador.Name = "txt_RGCadastroCatador";
+            this.txt_RGCadastroCatador.Size = new System.Drawing.Size(89, 20);
+            this.txt_RGCadastroCatador.TabIndex = 3;
+            this.txt_RGCadastroCatador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_RGCadastroCatador_KeyPress_1);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(17, 67);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(115, 13);
+            this.label5.TabIndex = 45;
+            this.label5.Text = "RG (somente números)";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(136, 67);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(116, 13);
+            this.label6.TabIndex = 46;
+            this.label6.Text = "CPF(somente números)";
+            // 
+            // txt_CPFCadastroCatador
+            // 
+            this.txt_CPFCadastroCatador.Location = new System.Drawing.Point(139, 82);
+            this.txt_CPFCadastroCatador.MaxLength = 11;
+            this.txt_CPFCadastroCatador.Name = "txt_CPFCadastroCatador";
+            this.txt_CPFCadastroCatador.Size = new System.Drawing.Size(89, 20);
+            this.txt_CPFCadastroCatador.TabIndex = 4;
+            this.txt_CPFCadastroCatador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_CPFCadastroCatador_KeyPress_1);
+            // 
+            // txt_NISCadastroCatador
+            // 
+            this.txt_NISCadastroCatador.Location = new System.Drawing.Point(254, 82);
+            this.txt_NISCadastroCatador.MaxLength = 11;
+            this.txt_NISCadastroCatador.Name = "txt_NISCadastroCatador";
+            this.txt_NISCadastroCatador.Size = new System.Drawing.Size(89, 20);
+            this.txt_NISCadastroCatador.TabIndex = 5;
+            this.txt_NISCadastroCatador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_NISCadastroCatador_KeyPress_1);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(258, 67);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(114, 13);
+            this.label7.TabIndex = 49;
+            this.label7.Text = "NIS(somente números)";
+            // 
+            // cbb_GeneroCadastroCatador
+            // 
+            this.cbb_GeneroCadastroCatador.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_GeneroCadastroCatador.FormattingEnabled = true;
+            this.cbb_GeneroCadastroCatador.Items.AddRange(new object[] {
+            "Masculino",
+            "Feminino"});
+            this.cbb_GeneroCadastroCatador.Location = new System.Drawing.Point(16, 145);
+            this.cbb_GeneroCadastroCatador.Name = "cbb_GeneroCadastroCatador";
+            this.cbb_GeneroCadastroCatador.Size = new System.Drawing.Size(89, 21);
+            this.cbb_GeneroCadastroCatador.TabIndex = 8;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(17, 129);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(42, 13);
+            this.label8.TabIndex = 51;
+            this.label8.Text = "Gênero";
+            // 
+            // txt_TelefoneCadastroCatador
+            // 
+            this.txt_TelefoneCadastroCatador.Location = new System.Drawing.Point(128, 145);
+            this.txt_TelefoneCadastroCatador.MaxLength = 15;
+            this.txt_TelefoneCadastroCatador.Name = "txt_TelefoneCadastroCatador";
+            this.txt_TelefoneCadastroCatador.Size = new System.Drawing.Size(89, 20);
+            this.txt_TelefoneCadastroCatador.TabIndex = 9;
+            this.txt_TelefoneCadastroCatador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_TelefoneCadastroCatador_KeyPress);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(124, 120);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(49, 13);
+            this.label9.TabIndex = 53;
+            this.label9.Text = "Telefone";
+            // 
+            // txt_CEPCadastroCatador
+            // 
+            this.txt_CEPCadastroCatador.Location = new System.Drawing.Point(12, 295);
+            this.txt_CEPCadastroCatador.MaxLength = 8;
+            this.txt_CEPCadastroCatador.Name = "txt_CEPCadastroCatador";
+            this.txt_CEPCadastroCatador.Size = new System.Drawing.Size(51, 20);
+            this.txt_CEPCadastroCatador.TabIndex = 14;
+            this.txt_CEPCadastroCatador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_CEPCadastroCatador_KeyPress_1);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(13, 279);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(117, 13);
+            this.label10.TabIndex = 55;
+            this.label10.Text = "CEP(somente números)";
+            // 
+            // chb_RecebeAuxílioCatadorCadastroCatador
+            // 
+            this.chb_RecebeAuxílioCatadorCadastroCatador.AutoSize = true;
+            this.chb_RecebeAuxílioCatadorCadastroCatador.Location = new System.Drawing.Point(254, 108);
+            this.chb_RecebeAuxílioCatadorCadastroCatador.Name = "chb_RecebeAuxílioCatadorCadastroCatador";
+            this.chb_RecebeAuxílioCatadorCadastroCatador.Size = new System.Drawing.Size(139, 17);
+            this.chb_RecebeAuxílioCatadorCadastroCatador.TabIndex = 6;
+            this.chb_RecebeAuxílioCatadorCadastroCatador.Text = "Recebe Auxílio Catador";
+            this.chb_RecebeAuxílioCatadorCadastroCatador.UseVisualStyleBackColor = true;
+            this.chb_RecebeAuxílioCatadorCadastroCatador.CheckedChanged += new System.EventHandler(this.chb_RecebeAuxílioCatadorCadastroCatador_CheckedChanged);
+            // 
+            // txt_RecebeAuxilioCatadorCadastroCatador
+            // 
+            this.txt_RecebeAuxilioCatadorCadastroCatador.Location = new System.Drawing.Point(254, 139);
+            this.txt_RecebeAuxilioCatadorCadastroCatador.MaxLength = 10;
+            this.txt_RecebeAuxilioCatadorCadastroCatador.Name = "txt_RecebeAuxilioCatadorCadastroCatador";
+            this.txt_RecebeAuxilioCatadorCadastroCatador.Size = new System.Drawing.Size(51, 20);
+            this.txt_RecebeAuxilioCatadorCadastroCatador.TabIndex = 57;
+            this.txt_RecebeAuxilioCatadorCadastroCatador.Text = "Não Recebe";
+            this.txt_RecebeAuxilioCatadorCadastroCatador.Visible = false;
+            // 
+            // lbl_UsuariodoCadastroCatador
+            // 
+            this.lbl_UsuariodoCadastroCatador.AutoSize = true;
+            this.lbl_UsuariodoCadastroCatador.Location = new System.Drawing.Point(208, 173);
+            this.lbl_UsuariodoCadastroCatador.Name = "lbl_UsuariodoCadastroCatador";
+            this.lbl_UsuariodoCadastroCatador.Size = new System.Drawing.Size(134, 13);
+            this.lbl_UsuariodoCadastroCatador.TabIndex = 58;
+            this.lbl_UsuariodoCadastroCatador.Text = "Usuario que fez o cadastro";
+            this.lbl_UsuariodoCadastroCatador.Visible = false;
+            // 
+            // lbl_UnidadeAdministradorCatador
+            // 
+            this.lbl_UnidadeAdministradorCatador.AutoSize = true;
+            this.lbl_UnidadeAdministradorCatador.Location = new System.Drawing.Point(251, 186);
+            this.lbl_UnidadeAdministradorCatador.Name = "lbl_UnidadeAdministradorCatador";
+            this.lbl_UnidadeAdministradorCatador.Size = new System.Drawing.Size(47, 13);
+            this.lbl_UnidadeAdministradorCatador.TabIndex = 59;
+            this.lbl_UnidadeAdministradorCatador.Text = "Unidade";
+            this.lbl_UnidadeAdministradorCatador.Visible = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(124, 133);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(93, 13);
+            this.label11.TabIndex = 60;
+            this.label11.Text = "(XX)XXXXX-XXXX";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(13, 240);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(70, 13);
+            this.label12.TabIndex = 61;
+            this.label12.Text = "Rua, Número";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(251, 129);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(62, 13);
+            this.label14.TabIndex = 64;
+            this.label14.Text = "Associação";
+            this.label14.Visible = false;
+            // 
+            // cbb_AssociacaoCadastroCatador
+            // 
+            this.cbb_AssociacaoCadastroCatador.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_AssociacaoCadastroCatador.FormattingEnabled = true;
+            this.cbb_AssociacaoCadastroCatador.Items.AddRange(new object[] {
+            "Associação 1",
+            "Associação 2",
+            "Associação 3"});
+            this.cbb_AssociacaoCadastroCatador.Location = new System.Drawing.Point(254, 144);
+            this.cbb_AssociacaoCadastroCatador.Name = "cbb_AssociacaoCadastroCatador";
+            this.cbb_AssociacaoCadastroCatador.Size = new System.Drawing.Size(118, 21);
+            this.cbb_AssociacaoCadastroCatador.TabIndex = 10;
+            this.cbb_AssociacaoCadastroCatador.Visible = false;
+            this.cbb_AssociacaoCadastroCatador.SelectedIndexChanged += new System.EventHandler(this.cbb_AssociacaoCadastroCatador_SelectedIndexChanged);
+            // 
+            // cbb_Funcao
+            // 
+            this.cbb_Funcao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_Funcao.FormattingEnabled = true;
+            this.cbb_Funcao.Location = new System.Drawing.Point(16, 188);
+            this.cbb_Funcao.Name = "cbb_Funcao";
+            this.cbb_Funcao.Size = new System.Drawing.Size(118, 21);
+            this.cbb_Funcao.TabIndex = 65;
+            this.cbb_Funcao.SelectedIndexChanged += new System.EventHandler(this.cbb_Funcao_SelectedIndexChanged);
+            this.cbb_Funcao.Click += new System.EventHandler(this.cbb_Funcao_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(13, 173);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(43, 13);
+            this.label13.TabIndex = 67;
+            this.label13.Text = "Função";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(16, 183);
+            this.textBox1.MaxLength = 10;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(51, 20);
+            this.textBox1.TabIndex = 66;
+            this.textBox1.Text = "Não Recebe";
+            this.textBox1.Visible = false;
+            // 
+            // txt_Funcao
+            // 
+            this.txt_Funcao.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txt_Funcao.Location = new System.Drawing.Point(362, 202);
+            this.txt_Funcao.Name = "txt_Funcao";
+            this.txt_Funcao.Size = new System.Drawing.Size(90, 20);
+            this.txt_Funcao.TabIndex = 68;
+            this.txt_Funcao.Visible = false;
+            // 
+            // lbl_NomedoServidor
+            // 
+            this.lbl_NomedoServidor.AutoSize = true;
+            this.lbl_NomedoServidor.Location = new System.Drawing.Point(164, 301);
+            this.lbl_NomedoServidor.Name = "lbl_NomedoServidor";
+            this.lbl_NomedoServidor.Size = new System.Drawing.Size(86, 13);
+            this.lbl_NomedoServidor.TabIndex = 69;
+            this.lbl_NomedoServidor.Text = "NomedoServidor";
+            this.lbl_NomedoServidor.Visible = false;
+            // 
+            // CadastroCatador
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(484, 339);
+            this.Controls.Add(this.lbl_NomedoServidor);
+            this.Controls.Add(this.txt_Funcao);
+            this.Controls.Add(this.cbb_Funcao);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cbb_AssociacaoCadastroCatador);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.lbl_UnidadeAdministradorCatador);
+            this.Controls.Add(this.lbl_UsuariodoCadastroCatador);
+            this.Controls.Add(this.txt_RecebeAuxilioCatadorCadastroCatador);
+            this.Controls.Add(this.chb_RecebeAuxílioCatadorCadastroCatador);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.txt_CEPCadastroCatador);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.txt_TelefoneCadastroCatador);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.cbb_GeneroCadastroCatador);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txt_NISCadastroCatador);
+            this.Controls.Add(this.txt_CPFCadastroCatador);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txt_RGCadastroCatador);
+            this.Controls.Add(this.txt_DatadeMatriculaCadastroCatador);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txt_DatadeNascimentoCadastroCatador);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txt_RuaCadastroCatador);
+            this.Controls.Add(this.txt_BairroCadastroCatador);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btn_CancelarCadastrarCatador);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cbb_CidadeCadastroCatador);
+            this.Controls.Add(this.lbl_Cidade);
+            this.Controls.Add(this.txt_NomeCompletoCadastrarCatador);
+            this.Controls.Add(this.lbl_NomeCompletoCadastrarCatador);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(500, 378);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(500, 378);
+            this.Name = "CadastroCatador";
+            this.Text = " Cadastro Associado";
+            this.Load += new System.EventHandler(this.CadastroCatador_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label lbl_NomeCompletoCadastrarCatador;
+        private System.Windows.Forms.Label lbl_Cidade;
+        private System.Windows.Forms.ComboBox cbb_CidadeCadastroCatador;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_CancelarCadastrarCatador;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txt_BairroCadastroCatador;
+        private System.Windows.Forms.TextBox txt_RuaCadastroCatador;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txt_DatadeNascimentoCadastroCatador;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txt_DatadeMatriculaCadastroCatador;
+        private System.Windows.Forms.TextBox txt_RGCadastroCatador;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txt_CPFCadastroCatador;
+        private System.Windows.Forms.TextBox txt_NISCadastroCatador;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cbb_GeneroCadastroCatador;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txt_TelefoneCadastroCatador;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txt_CEPCadastroCatador;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.CheckBox chb_RecebeAuxílioCatadorCadastroCatador;
+        private System.Windows.Forms.TextBox txt_RecebeAuxilioCatadorCadastroCatador;
+        public System.Windows.Forms.TextBox txt_NomeCompletoCadastrarCatador;
+        public System.Windows.Forms.Label lbl_UsuariodoCadastroCatador;
+        public System.Windows.Forms.Label lbl_UnidadeAdministradorCatador;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.ComboBox cbb_AssociacaoCadastroCatador;
+        private System.Windows.Forms.ComboBox cbb_Funcao;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_Funcao;
+        public System.Windows.Forms.Label lbl_NomedoServidor;
+    }
+}
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
     public partial class CadastroCatador : Form
     {
         public CadastroCatador()
