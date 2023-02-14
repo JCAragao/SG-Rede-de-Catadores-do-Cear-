@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+     class EditarColetaClasse
+    {
+        public string NomedoServidor;
+        public string CatadorEditarColeta;
+        public DateTime DatadaColetaEditarColeta;
+        public string MassaEditarColeta;
+        public decimal MassaINTEditarColeta;
+        public string TipodeResiduoEditarColeta;
+        public string TipodeMaterialEditarColeta;
+        public string ID_ColetaEditarColeta;
+        public string UnidadeEditarColeta;
+        public string UsuarioEditarColeta;
+        
+     
+    }
+}
