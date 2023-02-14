@@ -1,0 +1,96 @@
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+     class InformacoesAssociacaoSaoCatadoresImprimir : PdfPageEventHelper
+    {
+
+        string servidor = null;
+        string associacao = null;
+        public InformacoesAssociacaoSaoCatadoresImprimir(string servnome, string nomeassociacao)
+        {
+            this.associacao = nomeassociacao;
+            this.servidor = servnome;
+        }
+        public override void OnEndPage(PdfWriter writer, Document document)
+        {
+            PdfPTable Cabeçalho = new PdfPTable(1);
+            Cabeçalho.TotalWidth = document.PageSize.Width - document.LeftMargin - document.RightMargin;
+            Cabeçalho.DefaultCell.Border = 0;
+            Cabeçalho.AddCell(new Paragraph());
+
+            PdfPCell Celula = new PdfPCell((new Paragraph("Rede dos Catadores de Resíduos Sólidos Recicláveis do Estado do Ceará")));
+            Celula.HorizontalAlignment = Element.ALIGN_CENTER;
+            Celula.Border = 0;
+            Cabeçalho.AddCell(Celula);
+            Cabeçalho.AddCell(new Paragraph());
+            Cabeçalho.WriteSelectedRows(0, -1, document.LeftMargin, writer.PageSize.GetTop(document.TopMargin) + 120, writer.DirectContent);
+
+
+            iTextSharp.text.Image Logotipo = iTextSharp.text.Image.GetInstance(Globais.caminho + @"\RededeCatadoresdoCeará.png");
+            Logotipo.ScaleToFit(140f, 120f);
+            Logotipo.SetAbsolutePosition(100f, 475f);
+            document.Add(Logotipo);
+
+            try
+            {
+                string NomedoServidor = servidor;
+                SqlConnection Conectar = new SqlConnection("Data Source=DESKTOP-" + NomedoServidor + "\\SQLEXPRESS;Initial Catalog=SGRRC1;Integrated Security=True");
+                Conectar.Open();
+                SqlCommand cmd2 = new SqlCommand("select [EnderecoImagem] from [ASSOCIACAO] WHERE [Nome Fantasia] = '" + associacao + "'", Conectar);
+                var EnderecoImagem = cmd2.ExecuteScalar();
+                string Endereco = EnderecoImagem.ToString();
+
+                iTextSharp.text.Image LogotipoAssociacao = iTextSharp.text.Image.GetInstance(Endereco);
+                LogotipoAssociacao.ScaleToFit(140f, 120f);
+                LogotipoAssociacao.SetAbsolutePosition(650f, 475);
+                document.Add(LogotipoAssociacao);
+                Conectar.Close();
+            }
+            catch
+            {
+                iTextSharp.text.Image LogotipoAssociacao = iTextSharp.text.Image.GetInstance(Globais.caminho + @"\BRANCO.png");
+                LogotipoAssociacao.ScaleToFit(140f, 120f);
+                LogotipoAssociacao.SetAbsolutePosition(650f, 480);
+                document.Add(LogotipoAssociacao);
+            }
+
+            PdfPTable TextoRelatorioColetasDia = new PdfPTable(1);
+            TextoRelatorioColetasDia.TotalWidth = document.PageSize.Width - document.LeftMargin - document.RightMargin;
+            TextoRelatorioColetasDia.SpacingBefore = 50;
+            TextoRelatorioColetasDia.DefaultCell.Border = 0;
+            TextoRelatorioColetasDia.AddCell(new Paragraph());
+
+            PdfPCell CelulaRelatorioColetaDia = new PdfPCell((new Paragraph("Informações dos catadores da")));
+            CelulaRelatorioColetaDia.HorizontalAlignment = Element.ALIGN_CENTER;
+            CelulaRelatorioColetaDia.Border = 0;
+            TextoRelatorioColetasDia.AddCell(CelulaRelatorioColetaDia);
+            TextoRelatorioColetasDia.AddCell(new Paragraph());
+            TextoRelatorioColetasDia.WriteSelectedRows(0, -1, document.LeftMargin, writer.PageSize.GetTop(document.TopMargin) + 100, writer.DirectContent);
+
+            PdfPTable TextoNomeAssociacao = new PdfPTable(1);
+            TextoNomeAssociacao.TotalWidth = document.PageSize.Width - document.LeftMargin - document.RightMargin;
+            TextoNomeAssociacao.SpacingBefore = 50;
+            TextoNomeAssociacao.DefaultCell.Border = 0;
+            TextoNomeAssociacao.AddCell(new Paragraph());
+
+            PdfPCell CelulaNomeAssociacao = new PdfPCell((new Paragraph(associacao)));
+            CelulaNomeAssociacao.HorizontalAlignment = Element.ALIGN_CENTER;
+            CelulaNomeAssociacao.Border = 0;
+            TextoNomeAssociacao.AddCell(CelulaNomeAssociacao);
+            TextoNomeAssociacao.AddCell(new Paragraph());
+            TextoNomeAssociacao.WriteSelectedRows(0, -1, document.LeftMargin, writer.PageSize.GetTop(document.TopMargin) + 81, writer.DirectContent);
+
+
+        }
+    }
+
+}
+
