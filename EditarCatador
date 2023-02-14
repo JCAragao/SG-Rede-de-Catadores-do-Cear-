@@ -1,0 +1,920 @@
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    partial class EditarCatador
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditarCatador));
+            this.chb_RecebeAuxílioCatadorCadastroCatador = new System.Windows.Forms.CheckBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txt_CEPEditarCatador = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txt_TelefoneEditarCatador = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cbb_GeneroEditarCatador = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txt_NISEditarCatador = new System.Windows.Forms.TextBox();
+            this.txt_CPFEditarCatador = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txt_RGEditarCatador = new System.Windows.Forms.TextBox();
+            this.txt_DatadeMatriculaEditarCatador = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_DatadeNascimentoEditarCatador = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txt_RuaEditarCatador = new System.Windows.Forms.TextBox();
+            this.txt_BairroEditarCatador = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btn_CancelarCadastrarCatador = new System.Windows.Forms.Button();
+            this.btn_SalvarAlteracoesEditarCatador = new System.Windows.Forms.Button();
+            this.cbb_CidadeEditarCatador = new System.Windows.Forms.ComboBox();
+            this.lbl_Cidade = new System.Windows.Forms.Label();
+            this.txt_NomeCompletoEditarCatador = new System.Windows.Forms.TextBox();
+            this.lbl_NomeCompletoCadastrarCatador = new System.Windows.Forms.Label();
+            this.lbl_RegistrodaColetaColetasEditar = new System.Windows.Forms.Label();
+            this.txt_MatriculaCatadorCatadorEditar = new System.Windows.Forms.TextBox();
+            this.txt_RecebeAuxilioEditarCadastroCatador = new System.Windows.Forms.TextBox();
+            this.lbl_Usuario = new System.Windows.Forms.Label();
+            this.lbl_Unidade = new System.Windows.Forms.Label();
+            this.lbl_DataEditada = new System.Windows.Forms.Label();
+            this.lbl_EditadoporUltimo = new System.Windows.Forms.Label();
+            this.lbl_UsuarioEditado = new System.Windows.Forms.Label();
+            this.cbb_Funcao = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_Funcao = new System.Windows.Forms.TextBox();
+            this.lbl_NomedoServidor = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // chb_RecebeAuxílioCatadorCadastroCatador
+            // 
+            this.chb_RecebeAuxílioCatadorCadastroCatador.AutoSize = true;
+            this.chb_RecebeAuxílioCatadorCadastroCatador.Location = new System.Drawing.Point(253, 155);
+            this.chb_RecebeAuxílioCatadorCadastroCatador.Name = "chb_RecebeAuxílioCatadorCadastroCatador";
+            this.chb_RecebeAuxílioCatadorCadastroCatador.Size = new System.Drawing.Size(139, 17);
+            this.chb_RecebeAuxílioCatadorCadastroCatador.TabIndex = 84;
+            this.chb_RecebeAuxílioCatadorCadastroCatador.Text = "Recebe Auxílio Catador";
+            this.chb_RecebeAuxílioCatadorCadastroCatador.UseVisualStyleBackColor = true;
+            this.chb_RecebeAuxílioCatadorCadastroCatador.CheckedChanged += new System.EventHandler(this.chb_RecebeAuxílioCatadorCadastroCatador_CheckedChanged);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(12, 309);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(117, 13);
+            this.label10.TabIndex = 83;
+            this.label10.Text = "CEP(somente números)";
+            // 
+            // txt_CEPEditarCatador
+            // 
+            this.txt_CEPEditarCatador.Location = new System.Drawing.Point(14, 325);
+            this.txt_CEPEditarCatador.MaxLength = 8;
+            this.txt_CEPEditarCatador.Name = "txt_CEPEditarCatador";
+            this.txt_CEPEditarCatador.Size = new System.Drawing.Size(51, 20);
+            this.txt_CEPEditarCatador.TabIndex = 82;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(113, 168);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(49, 13);
+            this.label9.TabIndex = 81;
+            this.label9.Text = "Telefone";
+            // 
+            // txt_TelefoneEditarCatador
+            // 
+            this.txt_TelefoneEditarCatador.Location = new System.Drawing.Point(116, 184);
+            this.txt_TelefoneEditarCatador.MaxLength = 15;
+            this.txt_TelefoneEditarCatador.Name = "txt_TelefoneEditarCatador";
+            this.txt_TelefoneEditarCatador.Size = new System.Drawing.Size(89, 20);
+            this.txt_TelefoneEditarCatador.TabIndex = 80;
+            this.txt_TelefoneEditarCatador.Text = "(XX)XXXXX-XXXX";
+            this.txt_TelefoneEditarCatador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_TelefoneEditarCatador_KeyPress);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(16, 168);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(42, 13);
+            this.label8.TabIndex = 79;
+            this.label8.Text = "Gênero";
+            // 
+            // cbb_GeneroEditarCatador
+            // 
+            this.cbb_GeneroEditarCatador.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_GeneroEditarCatador.FormattingEnabled = true;
+            this.cbb_GeneroEditarCatador.Items.AddRange(new object[] {
+            "Masculino",
+            "Feminino"});
+            this.cbb_GeneroEditarCatador.Location = new System.Drawing.Point(15, 184);
+            this.cbb_GeneroEditarCatador.Name = "cbb_GeneroEditarCatador";
+            this.cbb_GeneroEditarCatador.Size = new System.Drawing.Size(89, 21);
+            this.cbb_GeneroEditarCatador.TabIndex = 78;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(257, 114);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(114, 13);
+            this.label7.TabIndex = 77;
+            this.label7.Text = "NIS(somente números)";
+            // 
+            // txt_NISEditarCatador
+            // 
+            this.txt_NISEditarCatador.Location = new System.Drawing.Point(253, 129);
+            this.txt_NISEditarCatador.MaxLength = 11;
+            this.txt_NISEditarCatador.Name = "txt_NISEditarCatador";
+            this.txt_NISEditarCatador.Size = new System.Drawing.Size(89, 20);
+            this.txt_NISEditarCatador.TabIndex = 76;
+            // 
+            // txt_CPFEditarCatador
+            // 
+            this.txt_CPFEditarCatador.Location = new System.Drawing.Point(138, 129);
+            this.txt_CPFEditarCatador.MaxLength = 11;
+            this.txt_CPFEditarCatador.Name = "txt_CPFEditarCatador";
+            this.txt_CPFEditarCatador.Size = new System.Drawing.Size(89, 20);
+            this.txt_CPFEditarCatador.TabIndex = 75;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(135, 114);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(116, 13);
+            this.label6.TabIndex = 74;
+            this.label6.Text = "CPF(somente números)";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(16, 114);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(115, 13);
+            this.label5.TabIndex = 73;
+            this.label5.Text = "RG (somente números)";
+            // 
+            // txt_RGEditarCatador
+            // 
+            this.txt_RGEditarCatador.Location = new System.Drawing.Point(15, 130);
+            this.txt_RGEditarCatador.MaxLength = 11;
+            this.txt_RGEditarCatador.Name = "txt_RGEditarCatador";
+            this.txt_RGEditarCatador.Size = new System.Drawing.Size(89, 20);
+            this.txt_RGEditarCatador.TabIndex = 72;
+            // 
+            // txt_DatadeMatriculaEditarCatador
+            // 
+            this.txt_DatadeMatriculaEditarCatador.Location = new System.Drawing.Point(378, 130);
+            this.txt_DatadeMatriculaEditarCatador.MaxLength = 10;
+            this.txt_DatadeMatriculaEditarCatador.Name = "txt_DatadeMatriculaEditarCatador";
+            this.txt_DatadeMatriculaEditarCatador.Size = new System.Drawing.Size(80, 20);
+            this.txt_DatadeMatriculaEditarCatador.TabIndex = 71;
+            this.txt_DatadeMatriculaEditarCatador.Text = "DD/MM/AAAA";
+            this.txt_DatadeMatriculaEditarCatador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_DatadeMatriculaEditarCatador_KeyPress);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(378, 114);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(93, 13);
+            this.label4.TabIndex = 70;
+            this.label4.Text = "Data de Matrícula";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(370, 60);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(104, 13);
+            this.label3.TabIndex = 69;
+            this.label3.Text = "Data de Nascimento";
+            // 
+            // txt_DatadeNascimentoEditarCatador
+            // 
+            this.txt_DatadeNascimentoEditarCatador.Location = new System.Drawing.Point(378, 77);
+            this.txt_DatadeNascimentoEditarCatador.MaxLength = 10;
+            this.txt_DatadeNascimentoEditarCatador.Name = "txt_DatadeNascimentoEditarCatador";
+            this.txt_DatadeNascimentoEditarCatador.Size = new System.Drawing.Size(80, 20);
+            this.txt_DatadeNascimentoEditarCatador.TabIndex = 68;
+            this.txt_DatadeNascimentoEditarCatador.Text = "DD/MM/AAAA";
+            this.txt_DatadeNascimentoEditarCatador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_DatadeNascimentoEditarCatador_KeyPress);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 254);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.TabIndex = 67;
+            this.label2.Text = "Endereço";
+            // 
+            // txt_RuaEditarCatador
+            // 
+            this.txt_RuaEditarCatador.Location = new System.Drawing.Point(11, 271);
+            this.txt_RuaEditarCatador.MaxLength = 50;
+            this.txt_RuaEditarCatador.Name = "txt_RuaEditarCatador";
+            this.txt_RuaEditarCatador.Size = new System.Drawing.Size(194, 20);
+            this.txt_RuaEditarCatador.TabIndex = 66;
+            this.txt_RuaEditarCatador.Text = "Rua, Número";
+            // 
+            // txt_BairroEditarCatador
+            // 
+            this.txt_BairroEditarCatador.Location = new System.Drawing.Point(378, 272);
+            this.txt_BairroEditarCatador.MaxLength = 50;
+            this.txt_BairroEditarCatador.Name = "txt_BairroEditarCatador";
+            this.txt_BairroEditarCatador.Size = new System.Drawing.Size(51, 20);
+            this.txt_BairroEditarCatador.TabIndex = 65;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(375, 254);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.TabIndex = 64;
+            this.label1.Text = "Bairro";
+            // 
+            // btn_CancelarCadastrarCatador
+            // 
+            this.btn_CancelarCadastrarCatador.Location = new System.Drawing.Point(292, 347);
+            this.btn_CancelarCadastrarCatador.Name = "btn_CancelarCadastrarCatador";
+            this.btn_CancelarCadastrarCatador.Size = new System.Drawing.Size(75, 34);
+            this.btn_CancelarCadastrarCatador.TabIndex = 63;
+            this.btn_CancelarCadastrarCatador.Text = "Cancelar";
+            this.btn_CancelarCadastrarCatador.UseVisualStyleBackColor = true;
+            this.btn_CancelarCadastrarCatador.Click += new System.EventHandler(this.btn_CancelarCadastrarCatador_Click);
+            // 
+            // btn_SalvarAlteracoesEditarCatador
+            // 
+            this.btn_SalvarAlteracoesEditarCatador.Location = new System.Drawing.Point(373, 347);
+            this.btn_SalvarAlteracoesEditarCatador.Name = "btn_SalvarAlteracoesEditarCatador";
+            this.btn_SalvarAlteracoesEditarCatador.Size = new System.Drawing.Size(98, 34);
+            this.btn_SalvarAlteracoesEditarCatador.TabIndex = 62;
+            this.btn_SalvarAlteracoesEditarCatador.Text = "Salvar Alterações";
+            this.btn_SalvarAlteracoesEditarCatador.UseVisualStyleBackColor = true;
+            this.btn_SalvarAlteracoesEditarCatador.Click += new System.EventHandler(this.btn_SalvarAlteracoesEditarCatador_Click);
+            // 
+            // cbb_CidadeEditarCatador
+            // 
+            this.cbb_CidadeEditarCatador.FormattingEnabled = true;
+            this.cbb_CidadeEditarCatador.Location = new System.Drawing.Point(211, 272);
+            this.cbb_CidadeEditarCatador.Name = "cbb_CidadeEditarCatador";
+            this.cbb_CidadeEditarCatador.Size = new System.Drawing.Size(161, 21);
+            this.cbb_CidadeEditarCatador.TabIndex = 61;
+            this.cbb_CidadeEditarCatador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cbb_CidadeEditarCatador_KeyPress);
+            // 
+            // lbl_Cidade
+            // 
+            this.lbl_Cidade.AutoSize = true;
+            this.lbl_Cidade.Location = new System.Drawing.Point(208, 255);
+            this.lbl_Cidade.Name = "lbl_Cidade";
+            this.lbl_Cidade.Size = new System.Drawing.Size(40, 13);
+            this.lbl_Cidade.TabIndex = 60;
+            this.lbl_Cidade.Text = "Cidade";
+            // 
+            // txt_NomeCompletoEditarCatador
+            // 
+            this.txt_NomeCompletoEditarCatador.Location = new System.Drawing.Point(15, 77);
+            this.txt_NomeCompletoEditarCatador.MaxLength = 50;
+            this.txt_NomeCompletoEditarCatador.Name = "txt_NomeCompletoEditarCatador";
+            this.txt_NomeCompletoEditarCatador.Size = new System.Drawing.Size(327, 20);
+            this.txt_NomeCompletoEditarCatador.TabIndex = 59;
+            this.txt_NomeCompletoEditarCatador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_NomeCompletoEditarCatador_KeyPress);
+            // 
+            // lbl_NomeCompletoCadastrarCatador
+            // 
+            this.lbl_NomeCompletoCadastrarCatador.AutoSize = true;
+            this.lbl_NomeCompletoCadastrarCatador.Location = new System.Drawing.Point(12, 60);
+            this.lbl_NomeCompletoCadastrarCatador.Name = "lbl_NomeCompletoCadastrarCatador";
+            this.lbl_NomeCompletoCadastrarCatador.Size = new System.Drawing.Size(82, 13);
+            this.lbl_NomeCompletoCadastrarCatador.TabIndex = 58;
+            this.lbl_NomeCompletoCadastrarCatador.Text = "Nome Completo";
+            // 
+            // lbl_RegistrodaColetaColetasEditar
+            // 
+            this.lbl_RegistrodaColetaColetasEditar.AutoSize = true;
+            this.lbl_RegistrodaColetaColetasEditar.Location = new System.Drawing.Point(16, 9);
+            this.lbl_RegistrodaColetaColetasEditar.Name = "lbl_RegistrodaColetaColetasEditar";
+            this.lbl_RegistrodaColetaColetasEditar.Size = new System.Drawing.Size(65, 13);
+            this.lbl_RegistrodaColetaColetasEditar.TabIndex = 87;
+            this.lbl_RegistrodaColetaColetasEditar.Text = "nº Matrícula";
+            // 
+            // txt_MatriculaCatadorCatadorEditar
+            // 
+            this.txt_MatriculaCatadorCatadorEditar.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txt_MatriculaCatadorCatadorEditar.Location = new System.Drawing.Point(15, 25);
+            this.txt_MatriculaCatadorCatadorEditar.MaxLength = 10000;
+            this.txt_MatriculaCatadorCatadorEditar.Name = "txt_MatriculaCatadorCatadorEditar";
+            this.txt_MatriculaCatadorCatadorEditar.ReadOnly = true;
+            this.txt_MatriculaCatadorCatadorEditar.Size = new System.Drawing.Size(100, 20);
+            this.txt_MatriculaCatadorCatadorEditar.TabIndex = 86;
+            // 
+            // txt_RecebeAuxilioEditarCadastroCatador
+            // 
+            this.txt_RecebeAuxilioEditarCadastroCatador.Location = new System.Drawing.Point(253, 178);
+            this.txt_RecebeAuxilioEditarCadastroCatador.MaxLength = 10;
+            this.txt_RecebeAuxilioEditarCadastroCatador.Name = "txt_RecebeAuxilioEditarCadastroCatador";
+            this.txt_RecebeAuxilioEditarCadastroCatador.Size = new System.Drawing.Size(51, 20);
+            this.txt_RecebeAuxilioEditarCadastroCatador.TabIndex = 88;
+            this.txt_RecebeAuxilioEditarCadastroCatador.Text = "Não Recebe";
+            this.txt_RecebeAuxilioEditarCadastroCatador.Visible = false;
+            // 
+            // lbl_Usuario
+            // 
+            this.lbl_Usuario.AutoSize = true;
+            this.lbl_Usuario.Location = new System.Drawing.Point(210, 220);
+            this.lbl_Usuario.Name = "lbl_Usuario";
+            this.lbl_Usuario.Size = new System.Drawing.Size(41, 13);
+            this.lbl_Usuario.TabIndex = 89;
+            this.lbl_Usuario.Text = "usuario";
+            this.lbl_Usuario.Visible = false;
+            // 
+            // lbl_Unidade
+            // 
+            this.lbl_Unidade.AutoSize = true;
+            this.lbl_Unidade.Location = new System.Drawing.Point(289, 220);
+            this.lbl_Unidade.Name = "lbl_Unidade";
+            this.lbl_Unidade.Size = new System.Drawing.Size(45, 13);
+            this.lbl_Unidade.TabIndex = 90;
+            this.lbl_Unidade.Text = "unidade";
+            this.lbl_Unidade.Visible = false;
+            // 
+            // lbl_DataEditada
+            // 
+            this.lbl_DataEditada.AutoSize = true;
+            this.lbl_DataEditada.Location = new System.Drawing.Point(156, 368);
+            this.lbl_DataEditada.Name = "lbl_DataEditada";
+            this.lbl_DataEditada.Size = new System.Drawing.Size(30, 13);
+            this.lbl_DataEditada.TabIndex = 132;
+            this.lbl_DataEditada.Text = "Data";
+            this.lbl_DataEditada.Visible = false;
+            // 
+            // lbl_EditadoporUltimo
+            // 
+            this.lbl_EditadoporUltimo.AutoSize = true;
+            this.lbl_EditadoporUltimo.Location = new System.Drawing.Point(8, 355);
+            this.lbl_EditadoporUltimo.Name = "lbl_EditadoporUltimo";
+            this.lbl_EditadoporUltimo.Size = new System.Drawing.Size(109, 13);
+            this.lbl_EditadoporUltimo.TabIndex = 133;
+            this.lbl_EditadoporUltimo.Text = "Editado por último por";
+            this.lbl_EditadoporUltimo.Visible = false;
+            // 
+            // lbl_UsuarioEditado
+            // 
+            this.lbl_UsuarioEditado.AutoSize = true;
+            this.lbl_UsuarioEditado.Location = new System.Drawing.Point(8, 368);
+            this.lbl_UsuarioEditado.Name = "lbl_UsuarioEditado";
+            this.lbl_UsuarioEditado.Size = new System.Drawing.Size(79, 13);
+            this.lbl_UsuarioEditado.TabIndex = 134;
+            this.lbl_UsuarioEditado.Text = "UsuárioEditado";
+            this.lbl_UsuarioEditado.Visible = false;
+            // 
+            // cbb_Funcao
+            // 
+            this.cbb_Funcao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_Funcao.FormattingEnabled = true;
+            this.cbb_Funcao.Location = new System.Drawing.Point(353, 184);
+            this.cbb_Funcao.Name = "cbb_Funcao";
+            this.cbb_Funcao.Size = new System.Drawing.Size(118, 21);
+            this.cbb_Funcao.TabIndex = 135;
+            this.cbb_Funcao.Visible = false;
+            this.cbb_Funcao.SelectedIndexChanged += new System.EventHandler(this.cbb_Funcao_SelectedIndexChanged);
+            this.cbb_Funcao.Click += new System.EventHandler(this.cbb_Funcao_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(350, 169);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(43, 13);
+            this.label13.TabIndex = 137;
+            this.label13.Text = "Função";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(353, 179);
+            this.textBox1.MaxLength = 10;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(51, 20);
+            this.textBox1.TabIndex = 136;
+            this.textBox1.Text = "Não Recebe";
+            this.textBox1.Visible = false;
+            // 
+            // txt_Funcao
+            // 
+            this.txt_Funcao.Location = new System.Drawing.Point(353, 184);
+            this.txt_Funcao.MaxLength = 50;
+            this.txt_Funcao.Name = "txt_Funcao";
+            this.txt_Funcao.Size = new System.Drawing.Size(96, 20);
+            this.txt_Funcao.TabIndex = 138;
+            this.txt_Funcao.Click += new System.EventHandler(this.txt_Funcao_Click);
+            this.txt_Funcao.DoubleClick += new System.EventHandler(this.txt_Funcao_DoubleClick);
+            // 
+            // lbl_NomedoServidor
+            // 
+            this.lbl_NomedoServidor.AutoSize = true;
+            this.lbl_NomedoServidor.Location = new System.Drawing.Point(213, 59);
+            this.lbl_NomedoServidor.Name = "lbl_NomedoServidor";
+            this.lbl_NomedoServidor.Size = new System.Drawing.Size(86, 13);
+            this.lbl_NomedoServidor.TabIndex = 139;
+            this.lbl_NomedoServidor.Text = "NomedoServidor";
+            this.lbl_NomedoServidor.Visible = false;
+            // 
+            // EditarCatador
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(486, 388);
+            this.Controls.Add(this.lbl_NomedoServidor);
+            this.Controls.Add(this.txt_Funcao);
+            this.Controls.Add(this.cbb_Funcao);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lbl_DataEditada);
+            this.Controls.Add(this.lbl_EditadoporUltimo);
+            this.Controls.Add(this.lbl_UsuarioEditado);
+            this.Controls.Add(this.lbl_Unidade);
+            this.Controls.Add(this.lbl_Usuario);
+            this.Controls.Add(this.txt_RecebeAuxilioEditarCadastroCatador);
+            this.Controls.Add(this.lbl_RegistrodaColetaColetasEditar);
+            this.Controls.Add(this.txt_MatriculaCatadorCatadorEditar);
+            this.Controls.Add(this.chb_RecebeAuxílioCatadorCadastroCatador);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.txt_CEPEditarCatador);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.txt_TelefoneEditarCatador);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.cbb_GeneroEditarCatador);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txt_NISEditarCatador);
+            this.Controls.Add(this.txt_CPFEditarCatador);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txt_RGEditarCatador);
+            this.Controls.Add(this.txt_DatadeMatriculaEditarCatador);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txt_DatadeNascimentoEditarCatador);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txt_RuaEditarCatador);
+            this.Controls.Add(this.txt_BairroEditarCatador);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btn_CancelarCadastrarCatador);
+            this.Controls.Add(this.btn_SalvarAlteracoesEditarCatador);
+            this.Controls.Add(this.cbb_CidadeEditarCatador);
+            this.Controls.Add(this.lbl_Cidade);
+            this.Controls.Add(this.txt_NomeCompletoEditarCatador);
+            this.Controls.Add(this.lbl_NomeCompletoCadastrarCatador);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(502, 427);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(502, 427);
+            this.Name = "EditarCatador";
+            this.Text = "Editar Associado";
+            this.Load += new System.EventHandler(this.EditarCatador_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+        private System.Windows.Forms.CheckBox chb_RecebeAuxílioCatadorCadastroCatador;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_CancelarCadastrarCatador;
+        private System.Windows.Forms.Button btn_SalvarAlteracoesEditarCatador;
+        private System.Windows.Forms.Label lbl_Cidade;
+        private System.Windows.Forms.Label lbl_NomeCompletoCadastrarCatador;
+        private System.Windows.Forms.Label lbl_RegistrodaColetaColetasEditar;
+        public System.Windows.Forms.TextBox txt_MatriculaCatadorCatadorEditar;
+        public System.Windows.Forms.TextBox txt_NomeCompletoEditarCatador;
+        public System.Windows.Forms.ComboBox cbb_CidadeEditarCatador;
+        public System.Windows.Forms.TextBox txt_DatadeNascimentoEditarCatador;
+        public System.Windows.Forms.TextBox txt_DatadeMatriculaEditarCatador;
+        public System.Windows.Forms.ComboBox cbb_GeneroEditarCatador;
+        public System.Windows.Forms.TextBox txt_TelefoneEditarCatador;
+        public System.Windows.Forms.TextBox txt_RGEditarCatador;
+        public System.Windows.Forms.TextBox txt_CPFEditarCatador;
+        public System.Windows.Forms.TextBox txt_NISEditarCatador;
+        public System.Windows.Forms.TextBox txt_BairroEditarCatador;
+        public System.Windows.Forms.TextBox txt_RuaEditarCatador;
+        public System.Windows.Forms.TextBox txt_CEPEditarCatador;
+        public System.Windows.Forms.TextBox txt_RecebeAuxilioEditarCadastroCatador;
+        public System.Windows.Forms.Label lbl_Usuario;
+        public System.Windows.Forms.Label lbl_Unidade;
+        public System.Windows.Forms.Label lbl_DataEditada;
+        private System.Windows.Forms.Label lbl_EditadoporUltimo;
+        public System.Windows.Forms.Label lbl_UsuarioEditado;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox txt_Funcao;
+        public System.Windows.Forms.ComboBox cbb_Funcao;
+        public System.Windows.Forms.Label lbl_NomedoServidor;
+    }
+}
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
+using System.Globalization;
+using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    public partial class EditarCatador : Form
+    {
+        public EditarCatador()
+        {
+            InitializeComponent();
+        }
+
+        private void btn_SalvarAlteracoesEditarCatador_Click(object sender, EventArgs e)
+        {
+            string format = "dd/MM/yyyy";
+            string DatadeNascimento = txt_DatadeNascimentoEditarCatador.Text;
+            DateTime dateTime;
+            if (DateTime.TryParseExact(DatadeNascimento, format, CultureInfo.InvariantCulture, DateTimeStyles.AllowWhiteSpaces, out dateTime))
+            {
+                string DatadeMatricula = txt_DatadeMatriculaEditarCatador.Text;
+                if (DateTime.TryParseExact(DatadeNascimento, format, CultureInfo.InvariantCulture, DateTimeStyles.AllowWhiteSpaces, out dateTime))
+                {
+                    if (txt_NomeCompletoEditarCatador.Text != "")
+                    {
+                        if (txt_DatadeNascimentoEditarCatador.Text != "")
+                        {
+
+                            if (txt_DatadeMatriculaEditarCatador.Text != "")
+                            {
+                                if (cbb_GeneroEditarCatador.SelectedIndex != -1)
+                                {
+                                    if (txt_RGEditarCatador.Text != "")
+                                    {
+                                        if (txt_CPFEditarCatador.Text != "")
+                                        {
+                                            if (txt_CEPEditarCatador.Text != "")
+                                            {
+                                                if (cbb_CidadeEditarCatador.SelectedIndex != -1)
+                                                {
+                                                    if (txt_TelefoneEditarCatador.Text != "")
+                                                    {
+                                                        if (txt_BairroEditarCatador.Text != "")
+                                                        {
+                                                            if (txt_RuaEditarCatador.Text != "")
+                                                            {
+                                                                if (txt_NISEditarCatador.Text != "")
+                                                                {
+
+                                                                    if (txt_Funcao.Text != "")
+                                                                    {
+                                                                        Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
+                                                                        string BairroCrip = cryptography.Encriptar(txt_BairroEditarCatador.Text);
+                                                                        string RuaCrip = cryptography.Encriptar(txt_RuaEditarCatador.Text);
+                                                                        string DatadeNascimentoCrip = cryptography.Encriptar(txt_DatadeNascimentoEditarCatador.Text);
+                                                                        string DatadeMatriculaCrip = cryptography.Encriptar(txt_DatadeMatriculaEditarCatador.Text);
+                                                                        string RGCrip = cryptography.Encriptar(txt_RGEditarCatador.Text);
+                                                                        string CPFCrip = cryptography.Encriptar(txt_CPFEditarCatador.Text);
+                                                                        string NISCrip = cryptography.Encriptar(txt_NISEditarCatador.Text);
+                                                                        string GeneroCrip = cryptography.Encriptar(cbb_GeneroEditarCatador.Text);
+                                                                        string TelefoneCrip = cryptography.Encriptar(txt_TelefoneEditarCatador.Text);
+                                                                        string CEPCrip = cryptography.Encriptar(txt_CEPEditarCatador.Text);
+                                                                        string AdministradorCrip = cryptography.Encriptar(lbl_Usuario.Text);
+                                                                        string FuncaoCrip = (txt_Funcao.Text);
+
+                                                                        EditarCatadorClasse CatadorAlterado = new EditarCatadorClasse();
+                                                                        CatadorAlterado.NomeCompletoCatadorEditar = txt_NomeCompletoEditarCatador.Text;
+                                                                        CatadorAlterado.CidadeCadastroCatadorEditar = cbb_CidadeEditarCatador.Text;
+                                                                        CatadorAlterado.BairroCadastroCatadorEditar = BairroCrip;
+                                                                        CatadorAlterado.RuaCadastroCatadorEditar = RuaCrip;
+                                                                        CatadorAlterado.DatadeNascimentoCatadorEditar = DatadeNascimentoCrip;
+                                                                        CatadorAlterado.DatadeMatriculaoCatadorEditar = DatadeMatriculaCrip;
+                                                                        CatadorAlterado.RGCadastroCatadorEditar = RGCrip;
+                                                                        CatadorAlterado.CPFCadastroCatadorEditar = CPFCrip;
+                                                                        CatadorAlterado.NISCadastroCatadorEditar = NISCrip;
+                                                                        CatadorAlterado.GeneroCadastroCatadorEditar = GeneroCrip;
+                                                                        CatadorAlterado.TelefoneCadastroCatadorEditar = TelefoneCrip;
+                                                                        CatadorAlterado.CEPCadastroCatadorEditar = CEPCrip;
+                                                                        CatadorAlterado.UnidadeCatadorEditar = lbl_Unidade.Text;
+                                                                        CatadorAlterado.UsuarioCatadorEditar = AdministradorCrip;
+                                                                        CatadorAlterado.AuxilioCatadorEditar = txt_RecebeAuxilioEditarCadastroCatador.Text;
+                                                                        CatadorAlterado.DataCatadorEditar = DateTime.Parse(DateTime.Now.ToString());
+                                                                        CatadorAlterado.FuncaoCatadorEditar = FuncaoCrip;
+                                                                        CatadorAlterado.NomedoServidor = lbl_NomedoServidor.Text;
+                                                                        CatadorAlterado.MatriculaCatadorEditar = txt_MatriculaCatadorCatadorEditar.Text;
+                                                                        ConexaoBancodeDados.CatadorEdite(CatadorAlterado);
+                                                                        this.Close();
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        MessageBox.Show("Escolha uma função");
+                                                                        return;
+
+                                                                    }
+                                                                }
+
+                                                                else
+                                                                {
+
+                                                                    txt_NISEditarCatador.Text = "0000000000";
+
+                                                                }
+                                                            }
+                                                            else
+                                                            {
+
+                                                                MessageBox.Show("O campo Rua e Número não foi preenchido", "Campo inválido", MessageBoxButtons.OK);
+                                                                return;
+
+                                                            }
+                                                        }
+                                                        else
+                                                        {
+
+                                                            MessageBox.Show("O campo Bairro não foi preenchido", "Campo inválido", MessageBoxButtons.OK);
+                                                            return;
+
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+
+                                                        MessageBox.Show("O campo Telefone não foi preenchido", "Campo inválido", MessageBoxButtons.OK);
+                                                        return;
+
+                                                    }
+                                                }
+                                                else
+                                                {
+
+                                                    MessageBox.Show("O campo Cidade não foi preenchido", "Campo inválido", MessageBoxButtons.OK);
+                                                    return;
+
+                                                }
+                                            }
+                                            else
+                                            {
+
+                                                MessageBox.Show("O campo CEP não foi preenchido", "Campo inválido", MessageBoxButtons.OK);
+                                                return;
+
+                                            }
+
+
+                                        }
+                                        else
+                                        {
+
+                                            MessageBox.Show("O campo CPF não foi preenchido", "Campo inválido", MessageBoxButtons.OK);
+                                            return;
+
+                                        }
+                                    }
+                                    else
+                                    {
+
+                                        MessageBox.Show("O campo RG não foi preenchido", "Campo inválido", MessageBoxButtons.OK);
+                                        return;
+
+                                    }
+                                }
+
+                                else
+                                {
+
+                                    MessageBox.Show("O campo Gênero não foi preenchido", "Campo inválido", MessageBoxButtons.OK);
+                                    return;
+
+                                }
+                            }
+
+                            else
+                            {
+
+                                MessageBox.Show("O campo Data de Matrícula não foi preenchido", "Campo inválido", MessageBoxButtons.OK);
+                                return;
+
+                            }
+                        }
+                        else
+                        {
+
+                            MessageBox.Show("O campo Data de Nascimento não foi preenchido", "Campo inválido", MessageBoxButtons.OK);
+                            return;
+
+                        }
+                    }
+                    else
+                    {
+
+                        MessageBox.Show("O campo Nome Completo não foi preenchido", "Campo inválido", MessageBoxButtons.OK);
+                        return;
+
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Digite um formato válido de data de matrícula.");
+                    return;
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Digite um formato válido de data de nascimento.");
+                return;
+
+            }
+        }
+    
+
+
+         private void EditarCatador_Load(object sender, EventArgs e)
+         {
+            string NomedoServidor = lbl_NomedoServidor.Text;
+            string vqueryCidade = @"SELECT * FROM CIDADES ORDER BY ID_Cidade ASC ;";
+            cbb_CidadeEditarCatador.Items.Clear();
+            cbb_CidadeEditarCatador.DataSource = ConexaoBancodeDados.dql(vqueryCidade, NomedoServidor);
+            cbb_CidadeEditarCatador.DisplayMember = "Cidade";
+            cbb_CidadeEditarCatador.ValueMember = "ID_Cidade";
+           
+            if(txt_RecebeAuxilioEditarCadastroCatador.Text == "Recebe")
+            {
+                chb_RecebeAuxílioCatadorCadastroCatador.Checked = true;
+
+            }
+
+            SqlConnection Conectar = new SqlConnection("Data Source=DESKTOP-" + NomedoServidor + "\\SQLEXPRESS;Initial Catalog=SGRRC1;Integrated Security=True");
+            Conectar.Open();
+
+
+            string Matricula = txt_MatriculaCatadorCatadorEditar.Text;
+            SqlCommand cmd2 = new SqlCommand("select [UsuarioEditadoCatador] from CATADORES WHERE [Matrícula] = '" + Matricula + "'", Conectar);
+            var Matricula2 = cmd2.ExecuteScalar();
+
+            SqlCommand cmd3 = new SqlCommand("select [DataEditadoCatador] from CATADORES WHERE [Matrícula] = '" + Matricula + "'", Conectar);
+            var DataEditado = cmd3.ExecuteScalar();
+
+            Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
+
+
+            if (Matricula2 != null)
+            {
+
+                string Matricula3 = Matricula2.ToString();
+
+                if (Matricula3 != "")
+                {
+                    lbl_EditadoporUltimo.Visible = true;
+                    label3.Visible = true;
+                    lbl_UsuarioEditado.Visible = true;
+                    string Matricula3Decrip = cryptography.Decriptar(Matricula3);
+                    lbl_UsuarioEditado.Text = Matricula3Decrip;
+                    lbl_DataEditada.Visible = true;
+                    string DataEditado2 = DataEditado.ToString();
+                    lbl_DataEditada.Text = DataEditado2;
+                }
+      
+            }
+
+            Conectar.Close();
+
+
+        }
+
+        private void txt_DatadeNascimentoEditarCatador_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsNumber(e.KeyChar)) && !char.IsControl(e.KeyChar) && e.KeyChar != '/')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_TelefoneEditarCatador_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsNumber(e.KeyChar)) && !char.IsControl(e.KeyChar) && e.KeyChar != '(' && e.KeyChar != ')' && e.KeyChar != '-')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_DatadeMatriculaEditarCatador_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if ((!char.IsNumber(e.KeyChar)) && !char.IsControl(e.KeyChar) && e.KeyChar != '/')
+            {
+                e.Handled = true;
+            }
+
+        }
+
+        private void cbb_CidadeEditarCatador_KeyPress(object sender, KeyPressEventArgs e)
+        {
+           
+        }
+
+        private void chb_RecebeAuxílioCatadorCadastroCatador_CheckedChanged(object sender, EventArgs e)
+        {
+
+
+            if(chb_RecebeAuxílioCatadorCadastroCatador.Checked == false)
+            {
+
+                txt_RecebeAuxilioEditarCadastroCatador.Text = "Não Recebe";
+            }
+            else if(chb_RecebeAuxílioCatadorCadastroCatador.Checked == true)
+            {
+                txt_RecebeAuxilioEditarCadastroCatador.Text = "Recebe";
+
+            }
+
+
+        }
+
+        private void btn_CancelarCadastrarCatador_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void txt_NomeCompletoEditarCatador_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsLetter(e.KeyChar)) && !char.IsControl(e.KeyChar) && Convert.ToInt32(e.KeyChar) != 8 && Convert.ToInt32(e.KeyChar) != 32)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void cbb_Funcao_Click(object sender, EventArgs e)
+        {
+            string NomedoServidor = lbl_NomedoServidor.Text;
+            string vqueryFuncao = @"SELECT * FROM FUNCOES where [Unidade] = '" + lbl_Unidade.Text + "' ORDER BY Funcao ASC ; ";
+            cbb_Funcao.DataSource = ConexaoBancodeDados.dql(vqueryFuncao, NomedoServidor);
+            cbb_Funcao.DisplayMember = "Funcao";
+        }
+
+        private void cbb_Funcao_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txt_Funcao.Text = cbb_Funcao.Text;
+        }
+
+        private void txt_Funcao_DoubleClick(object sender, EventArgs e)
+        {
+            cbb_Funcao.Visible = true;
+            txt_Funcao.Visible = false;
+
+            txt_Funcao.Text = cbb_Funcao.Text;
+        }
+
+        private void txt_Funcao_Click(object sender, EventArgs e)
+        {
+            cbb_Funcao.Visible = true;
+            txt_Funcao.Visible = false;
+
+            txt_Funcao.Text = cbb_Funcao.Text;
+        }
+    }
+}
+
