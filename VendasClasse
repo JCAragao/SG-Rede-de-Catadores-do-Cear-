@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+     class VendasClasse
+    {
+        public string Nomedoservidor;
+        public string NomeFantasia;
+        public string CNPJ;
+        public string  CodigodoProduto;
+        public string NomedoProdutoPrecoQuilo;
+        public string Massa;
+        public string ValordaCompra;
+        public string TipodePagamento;
+        public string ValorRecebido;
+        public string Troco;
+        public string Associacao;
+        public string Usuario;
+        public string DataHora;
+        public string Data;
+        public decimal valorproduto;
+        
+
+    }
+}
