@@ -1,0 +1,1215 @@
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    partial class GestaoCliente
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestaoCliente));
+            this.btn_ImprimirClientesGestao = new System.Windows.Forms.Button();
+            this.btn_PesquisarporCNPJGestaoCliente = new System.Windows.Forms.Button();
+            this.btn_PesquisarPorClienteGestaoCliente = new System.Windows.Forms.Button();
+            this.rdb_porCNPJGestaoCliente = new System.Windows.Forms.RadioButton();
+            this.rdb_PorAssociacaoGestaoCliente = new System.Windows.Forms.RadioButton();
+            this.cbb_AssociacaoGestaoCliente = new System.Windows.Forms.ComboBox();
+            this.btn_PesquisarporClienteeCNPJ = new System.Windows.Forms.Button();
+            this.btn_CancelarEditarColetasGestao = new System.Windows.Forms.Button();
+            this.btn_ExcluirEditarColetasGestao = new System.Windows.Forms.Button();
+            this.txt_CNPJGestaoCliente = new System.Windows.Forms.TextBox();
+            this.dgv_ClienteGestao = new System.Windows.Forms.DataGridView();
+            this.iDClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeFantasiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cNPJDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.regimedeTributacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.razaosocialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datadeCadastroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rua = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bairroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cEPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Unidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cLIENTESBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sGRRC1DataSetALFABindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sGRRC1DataSetALFA = new Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_.SGRRC1DataSetALFA();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btn_EditarColetasGestao = new System.Windows.Forms.Button();
+            this.txt_NomeFantasia = new System.Windows.Forms.TextBox();
+            this.cLIENTESTableAdapter = new Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_.SGRRC1DataSetALFATableAdapters.CLIENTESTableAdapter();
+            this.lbl_NomedoServidor = new System.Windows.Forms.Label();
+            this.lbl_Unidade = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_ClienteGestao)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cLIENTESBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sGRRC1DataSetALFABindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sGRRC1DataSetALFA)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // btn_ImprimirClientesGestao
+            // 
+            this.btn_ImprimirClientesGestao.Location = new System.Drawing.Point(361, 252);
+            this.btn_ImprimirClientesGestao.Name = "btn_ImprimirClientesGestao";
+            this.btn_ImprimirClientesGestao.Size = new System.Drawing.Size(75, 23);
+            this.btn_ImprimirClientesGestao.TabIndex = 39;
+            this.btn_ImprimirClientesGestao.Text = "Imprimir";
+            this.btn_ImprimirClientesGestao.UseVisualStyleBackColor = true;
+            this.btn_ImprimirClientesGestao.Click += new System.EventHandler(this.btn_ImprimirClientesGestao_Click);
+            // 
+            // btn_PesquisarporCNPJGestaoCliente
+            // 
+            this.btn_PesquisarporCNPJGestaoCliente.Location = new System.Drawing.Point(362, 136);
+            this.btn_PesquisarporCNPJGestaoCliente.Name = "btn_PesquisarporCNPJGestaoCliente";
+            this.btn_PesquisarporCNPJGestaoCliente.Size = new System.Drawing.Size(75, 23);
+            this.btn_PesquisarporCNPJGestaoCliente.TabIndex = 37;
+            this.btn_PesquisarporCNPJGestaoCliente.Text = "Pesquisar";
+            this.btn_PesquisarporCNPJGestaoCliente.UseVisualStyleBackColor = true;
+            this.btn_PesquisarporCNPJGestaoCliente.Visible = false;
+            this.btn_PesquisarporCNPJGestaoCliente.Click += new System.EventHandler(this.btn_PesquisarporCNPJGestaoCliente_Click);
+            // 
+            // btn_PesquisarPorClienteGestaoCliente
+            // 
+            this.btn_PesquisarPorClienteGestaoCliente.Location = new System.Drawing.Point(362, 136);
+            this.btn_PesquisarPorClienteGestaoCliente.Name = "btn_PesquisarPorClienteGestaoCliente";
+            this.btn_PesquisarPorClienteGestaoCliente.Size = new System.Drawing.Size(75, 23);
+            this.btn_PesquisarPorClienteGestaoCliente.TabIndex = 36;
+            this.btn_PesquisarPorClienteGestaoCliente.Text = "Pesquisar";
+            this.btn_PesquisarPorClienteGestaoCliente.UseVisualStyleBackColor = true;
+            this.btn_PesquisarPorClienteGestaoCliente.Visible = false;
+            this.btn_PesquisarPorClienteGestaoCliente.Click += new System.EventHandler(this.btn_PesquisarPorClienteGestaoCliente_Click);
+            // 
+            // rdb_porCNPJGestaoCliente
+            // 
+            this.rdb_porCNPJGestaoCliente.AutoSize = true;
+            this.rdb_porCNPJGestaoCliente.Location = new System.Drawing.Point(361, 113);
+            this.rdb_porCNPJGestaoCliente.Name = "rdb_porCNPJGestaoCliente";
+            this.rdb_porCNPJGestaoCliente.Size = new System.Drawing.Size(70, 17);
+            this.rdb_porCNPJGestaoCliente.TabIndex = 35;
+            this.rdb_porCNPJGestaoCliente.TabStop = true;
+            this.rdb_porCNPJGestaoCliente.Text = "por CNPJ";
+            this.rdb_porCNPJGestaoCliente.UseVisualStyleBackColor = true;
+            this.rdb_porCNPJGestaoCliente.CheckedChanged += new System.EventHandler(this.rdb_porCNPJGestaoCliente_CheckedChanged);
+            // 
+            // rdb_PorAssociacaoGestaoCliente
+            // 
+            this.rdb_PorAssociacaoGestaoCliente.AutoSize = true;
+            this.rdb_PorAssociacaoGestaoCliente.Location = new System.Drawing.Point(361, 90);
+            this.rdb_PorAssociacaoGestaoCliente.Name = "rdb_PorAssociacaoGestaoCliente";
+            this.rdb_PorAssociacaoGestaoCliente.Size = new System.Drawing.Size(98, 17);
+            this.rdb_PorAssociacaoGestaoCliente.TabIndex = 34;
+            this.rdb_PorAssociacaoGestaoCliente.TabStop = true;
+            this.rdb_PorAssociacaoGestaoCliente.Text = "por Associação";
+            this.rdb_PorAssociacaoGestaoCliente.UseVisualStyleBackColor = true;
+            this.rdb_PorAssociacaoGestaoCliente.CheckedChanged += new System.EventHandler(this.rdb_PorNomeGestaoCliente_CheckedChanged);
+            // 
+            // cbb_AssociacaoGestaoCliente
+            // 
+            this.cbb_AssociacaoGestaoCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_AssociacaoGestaoCliente.FormattingEnabled = true;
+            this.cbb_AssociacaoGestaoCliente.Location = new System.Drawing.Point(115, 28);
+            this.cbb_AssociacaoGestaoCliente.Name = "cbb_AssociacaoGestaoCliente";
+            this.cbb_AssociacaoGestaoCliente.Size = new System.Drawing.Size(233, 21);
+            this.cbb_AssociacaoGestaoCliente.TabIndex = 33;
+            this.cbb_AssociacaoGestaoCliente.Click += new System.EventHandler(this.cbb_AssociacaoGestaoCliente_Click);
+            // 
+            // btn_PesquisarporClienteeCNPJ
+            // 
+            this.btn_PesquisarporClienteeCNPJ.Location = new System.Drawing.Point(362, 136);
+            this.btn_PesquisarporClienteeCNPJ.Name = "btn_PesquisarporClienteeCNPJ";
+            this.btn_PesquisarporClienteeCNPJ.Size = new System.Drawing.Size(75, 23);
+            this.btn_PesquisarporClienteeCNPJ.TabIndex = 31;
+            this.btn_PesquisarporClienteeCNPJ.Text = "Pesquisar";
+            this.btn_PesquisarporClienteeCNPJ.UseVisualStyleBackColor = true;
+            this.btn_PesquisarporClienteeCNPJ.Click += new System.EventHandler(this.btn_PesquisarporClienteeCNPJ_Click);
+            // 
+            // btn_CancelarEditarColetasGestao
+            // 
+            this.btn_CancelarEditarColetasGestao.Location = new System.Drawing.Point(362, 223);
+            this.btn_CancelarEditarColetasGestao.Name = "btn_CancelarEditarColetasGestao";
+            this.btn_CancelarEditarColetasGestao.Size = new System.Drawing.Size(75, 23);
+            this.btn_CancelarEditarColetasGestao.TabIndex = 29;
+            this.btn_CancelarEditarColetasGestao.Text = "Cancelar";
+            this.btn_CancelarEditarColetasGestao.UseVisualStyleBackColor = true;
+            this.btn_CancelarEditarColetasGestao.Click += new System.EventHandler(this.btn_CancelarEditarColetasGestao_Click);
+            // 
+            // btn_ExcluirEditarColetasGestao
+            // 
+            this.btn_ExcluirEditarColetasGestao.Location = new System.Drawing.Point(362, 194);
+            this.btn_ExcluirEditarColetasGestao.Name = "btn_ExcluirEditarColetasGestao";
+            this.btn_ExcluirEditarColetasGestao.Size = new System.Drawing.Size(75, 23);
+            this.btn_ExcluirEditarColetasGestao.TabIndex = 28;
+            this.btn_ExcluirEditarColetasGestao.Text = "Excluir";
+            this.btn_ExcluirEditarColetasGestao.UseVisualStyleBackColor = true;
+            this.btn_ExcluirEditarColetasGestao.Click += new System.EventHandler(this.btn_ExcluirEditarColetasGestao_Click);
+            // 
+            // txt_CNPJGestaoCliente
+            // 
+            this.txt_CNPJGestaoCliente.Location = new System.Drawing.Point(12, 28);
+            this.txt_CNPJGestaoCliente.MaxLength = 11;
+            this.txt_CNPJGestaoCliente.Name = "txt_CNPJGestaoCliente";
+            this.txt_CNPJGestaoCliente.Size = new System.Drawing.Size(97, 20);
+            this.txt_CNPJGestaoCliente.TabIndex = 26;
+            this.txt_CNPJGestaoCliente.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_CNPJGestaoCliente_KeyDown);
+            this.txt_CNPJGestaoCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_CNPJGestaoCliente_KeyPress);
+            // 
+            // dgv_ClienteGestao
+            // 
+            this.dgv_ClienteGestao.AllowUserToAddRows = false;
+            this.dgv_ClienteGestao.AllowUserToDeleteRows = false;
+            this.dgv_ClienteGestao.AllowUserToResizeColumns = false;
+            this.dgv_ClienteGestao.AllowUserToResizeRows = false;
+            this.dgv_ClienteGestao.AutoGenerateColumns = false;
+            this.dgv_ClienteGestao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_ClienteGestao.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDClienteDataGridViewTextBoxColumn,
+            this.nomeFantasiaDataGridViewTextBoxColumn,
+            this.cNPJDataGridViewTextBoxColumn,
+            this.regimedeTributacaoDataGridViewTextBoxColumn,
+            this.razaosocialDataGridViewTextBoxColumn,
+            this.datadeCadastroDataGridViewTextBoxColumn,
+            this.telefoneDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn,
+            this.Rua,
+            this.cidadeDataGridViewTextBoxColumn,
+            this.bairroDataGridViewTextBoxColumn,
+            this.cEPDataGridViewTextBoxColumn,
+            this.usuarioDataGridViewTextBoxColumn,
+            this.Unidade});
+            this.dgv_ClienteGestao.DataSource = this.cLIENTESBindingSource;
+            this.dgv_ClienteGestao.Location = new System.Drawing.Point(12, 81);
+            this.dgv_ClienteGestao.MultiSelect = false;
+            this.dgv_ClienteGestao.Name = "dgv_ClienteGestao";
+            this.dgv_ClienteGestao.ReadOnly = true;
+            this.dgv_ClienteGestao.RowHeadersVisible = false;
+            this.dgv_ClienteGestao.Size = new System.Drawing.Size(344, 258);
+            this.dgv_ClienteGestao.TabIndex = 25;
+            this.dgv_ClienteGestao.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ClienteGestao_CellContentClick);
+            this.dgv_ClienteGestao.MouseEnter += new System.EventHandler(this.dgv_ClienteGestao_MouseEnter);
+            // 
+            // iDClienteDataGridViewTextBoxColumn
+            // 
+            this.iDClienteDataGridViewTextBoxColumn.DataPropertyName = "ID_Cliente";
+            this.iDClienteDataGridViewTextBoxColumn.HeaderText = "ID_Cliente";
+            this.iDClienteDataGridViewTextBoxColumn.Name = "iDClienteDataGridViewTextBoxColumn";
+            this.iDClienteDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDClienteDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // nomeFantasiaDataGridViewTextBoxColumn
+            // 
+            this.nomeFantasiaDataGridViewTextBoxColumn.DataPropertyName = "Nome Fantasia";
+            this.nomeFantasiaDataGridViewTextBoxColumn.HeaderText = "Nome Fantasia";
+            this.nomeFantasiaDataGridViewTextBoxColumn.Name = "nomeFantasiaDataGridViewTextBoxColumn";
+            this.nomeFantasiaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nomeFantasiaDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // cNPJDataGridViewTextBoxColumn
+            // 
+            this.cNPJDataGridViewTextBoxColumn.DataPropertyName = "CNPJ";
+            this.cNPJDataGridViewTextBoxColumn.HeaderText = "CNPJ";
+            this.cNPJDataGridViewTextBoxColumn.Name = "cNPJDataGridViewTextBoxColumn";
+            this.cNPJDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cNPJDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // regimedeTributacaoDataGridViewTextBoxColumn
+            // 
+            this.regimedeTributacaoDataGridViewTextBoxColumn.DataPropertyName = "RegimedeTributacao";
+            this.regimedeTributacaoDataGridViewTextBoxColumn.HeaderText = "Regime de Tributacao";
+            this.regimedeTributacaoDataGridViewTextBoxColumn.Name = "regimedeTributacaoDataGridViewTextBoxColumn";
+            this.regimedeTributacaoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // razaosocialDataGridViewTextBoxColumn
+            // 
+            this.razaosocialDataGridViewTextBoxColumn.DataPropertyName = "Razaosocial";
+            this.razaosocialDataGridViewTextBoxColumn.HeaderText = "Razaosocial";
+            this.razaosocialDataGridViewTextBoxColumn.Name = "razaosocialDataGridViewTextBoxColumn";
+            this.razaosocialDataGridViewTextBoxColumn.ReadOnly = true;
+            this.razaosocialDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // datadeCadastroDataGridViewTextBoxColumn
+            // 
+            this.datadeCadastroDataGridViewTextBoxColumn.DataPropertyName = "DatadeCadastro";
+            this.datadeCadastroDataGridViewTextBoxColumn.HeaderText = "DatadeCadastro";
+            this.datadeCadastroDataGridViewTextBoxColumn.Name = "datadeCadastroDataGridViewTextBoxColumn";
+            this.datadeCadastroDataGridViewTextBoxColumn.ReadOnly = true;
+            this.datadeCadastroDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // telefoneDataGridViewTextBoxColumn
+            // 
+            this.telefoneDataGridViewTextBoxColumn.DataPropertyName = "Telefone";
+            this.telefoneDataGridViewTextBoxColumn.HeaderText = "Telefone";
+            this.telefoneDataGridViewTextBoxColumn.Name = "telefoneDataGridViewTextBoxColumn";
+            this.telefoneDataGridViewTextBoxColumn.ReadOnly = true;
+            this.telefoneDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.ReadOnly = true;
+            this.emailDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // Rua
+            // 
+            this.Rua.DataPropertyName = "Rua";
+            this.Rua.HeaderText = "Rua";
+            this.Rua.Name = "Rua";
+            this.Rua.ReadOnly = true;
+            this.Rua.Visible = false;
+            // 
+            // cidadeDataGridViewTextBoxColumn
+            // 
+            this.cidadeDataGridViewTextBoxColumn.DataPropertyName = "Cidade";
+            this.cidadeDataGridViewTextBoxColumn.HeaderText = "Cidade";
+            this.cidadeDataGridViewTextBoxColumn.Name = "cidadeDataGridViewTextBoxColumn";
+            this.cidadeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cidadeDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // bairroDataGridViewTextBoxColumn
+            // 
+            this.bairroDataGridViewTextBoxColumn.DataPropertyName = "Bairro";
+            this.bairroDataGridViewTextBoxColumn.HeaderText = "Bairro";
+            this.bairroDataGridViewTextBoxColumn.Name = "bairroDataGridViewTextBoxColumn";
+            this.bairroDataGridViewTextBoxColumn.ReadOnly = true;
+            this.bairroDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // cEPDataGridViewTextBoxColumn
+            // 
+            this.cEPDataGridViewTextBoxColumn.DataPropertyName = "CEP";
+            this.cEPDataGridViewTextBoxColumn.HeaderText = "CEP";
+            this.cEPDataGridViewTextBoxColumn.Name = "cEPDataGridViewTextBoxColumn";
+            this.cEPDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cEPDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // usuarioDataGridViewTextBoxColumn
+            // 
+            this.usuarioDataGridViewTextBoxColumn.DataPropertyName = "Usuario";
+            this.usuarioDataGridViewTextBoxColumn.HeaderText = "Usuario";
+            this.usuarioDataGridViewTextBoxColumn.Name = "usuarioDataGridViewTextBoxColumn";
+            this.usuarioDataGridViewTextBoxColumn.ReadOnly = true;
+            this.usuarioDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // Unidade
+            // 
+            this.Unidade.DataPropertyName = "Unidade";
+            this.Unidade.HeaderText = "Unidade";
+            this.Unidade.Name = "Unidade";
+            this.Unidade.ReadOnly = true;
+            // 
+            // cLIENTESBindingSource
+            // 
+            this.cLIENTESBindingSource.DataMember = "CLIENTES";
+            this.cLIENTESBindingSource.DataSource = this.sGRRC1DataSetALFABindingSource;
+            // 
+            // sGRRC1DataSetALFABindingSource
+            // 
+            this.sGRRC1DataSetALFABindingSource.DataSource = this.sGRRC1DataSetALFA;
+            this.sGRRC1DataSetALFABindingSource.Position = 0;
+            // 
+            // sGRRC1DataSetALFA
+            // 
+            this.sGRRC1DataSetALFA.DataSetName = "SGRRC1DataSetALFA";
+            this.sGRRC1DataSetALFA.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(112, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(62, 13);
+            this.label1.TabIndex = 44;
+            this.label1.Text = "Associação";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(9, 12);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(34, 13);
+            this.label3.TabIndex = 45;
+            this.label3.Text = "CNPJ";
+            // 
+            // btn_EditarColetasGestao
+            // 
+            this.btn_EditarColetasGestao.Location = new System.Drawing.Point(362, 165);
+            this.btn_EditarColetasGestao.Name = "btn_EditarColetasGestao";
+            this.btn_EditarColetasGestao.Size = new System.Drawing.Size(75, 23);
+            this.btn_EditarColetasGestao.TabIndex = 27;
+            this.btn_EditarColetasGestao.Text = "Editar";
+            this.btn_EditarColetasGestao.UseVisualStyleBackColor = true;
+            this.btn_EditarColetasGestao.Click += new System.EventHandler(this.btn_EditarColetasGestao_Click);
+            // 
+            // txt_NomeFantasia
+            // 
+            this.txt_NomeFantasia.Location = new System.Drawing.Point(12, 55);
+            this.txt_NomeFantasia.Name = "txt_NomeFantasia";
+            this.txt_NomeFantasia.ReadOnly = true;
+            this.txt_NomeFantasia.Size = new System.Drawing.Size(257, 20);
+            this.txt_NomeFantasia.TabIndex = 46;
+            // 
+            // cLIENTESTableAdapter
+            // 
+            this.cLIENTESTableAdapter.ClearBeforeFill = true;
+            // 
+            // lbl_NomedoServidor
+            // 
+            this.lbl_NomedoServidor.AutoSize = true;
+            this.lbl_NomedoServidor.Location = new System.Drawing.Point(373, 41);
+            this.lbl_NomedoServidor.Name = "lbl_NomedoServidor";
+            this.lbl_NomedoServidor.Size = new System.Drawing.Size(86, 13);
+            this.lbl_NomedoServidor.TabIndex = 47;
+            this.lbl_NomedoServidor.Text = "NomedoServidor";
+            this.lbl_NomedoServidor.Visible = false;
+            // 
+            // lbl_Unidade
+            // 
+            this.lbl_Unidade.AutoSize = true;
+            this.lbl_Unidade.Location = new System.Drawing.Point(299, 56);
+            this.lbl_Unidade.Name = "lbl_Unidade";
+            this.lbl_Unidade.Size = new System.Drawing.Size(47, 13);
+            this.lbl_Unidade.TabIndex = 48;
+            this.lbl_Unidade.Text = "Unidade";
+            this.lbl_Unidade.Visible = false;
+            // 
+            // GestaoCliente
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(464, 351);
+            this.Controls.Add(this.lbl_Unidade);
+            this.Controls.Add(this.lbl_NomedoServidor);
+            this.Controls.Add(this.txt_NomeFantasia);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btn_ImprimirClientesGestao);
+            this.Controls.Add(this.btn_PesquisarporCNPJGestaoCliente);
+            this.Controls.Add(this.btn_PesquisarPorClienteGestaoCliente);
+            this.Controls.Add(this.rdb_porCNPJGestaoCliente);
+            this.Controls.Add(this.rdb_PorAssociacaoGestaoCliente);
+            this.Controls.Add(this.cbb_AssociacaoGestaoCliente);
+            this.Controls.Add(this.btn_PesquisarporClienteeCNPJ);
+            this.Controls.Add(this.btn_CancelarEditarColetasGestao);
+            this.Controls.Add(this.btn_ExcluirEditarColetasGestao);
+            this.Controls.Add(this.btn_EditarColetasGestao);
+            this.Controls.Add(this.txt_CNPJGestaoCliente);
+            this.Controls.Add(this.dgv_ClienteGestao);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(480, 390);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(480, 390);
+            this.Name = "GestaoCliente";
+            this.Text = " Gestão de Usinas de Reciclagem";
+            this.Load += new System.EventHandler(this.GestaoCliente_Load);
+            this.MouseEnter += new System.EventHandler(this.GestaoCliente_MouseEnter);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_ClienteGestao)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cLIENTESBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sGRRC1DataSetALFABindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sGRRC1DataSetALFA)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+        private System.Windows.Forms.Button btn_ImprimirClientesGestao;
+        private System.Windows.Forms.Button btn_PesquisarporCNPJGestaoCliente;
+        private System.Windows.Forms.Button btn_PesquisarPorClienteGestaoCliente;
+        private System.Windows.Forms.RadioButton rdb_porCNPJGestaoCliente;
+        private System.Windows.Forms.RadioButton rdb_PorAssociacaoGestaoCliente;
+        private System.Windows.Forms.ComboBox cbb_AssociacaoGestaoCliente;
+        private System.Windows.Forms.Button btn_PesquisarporClienteeCNPJ;
+        private System.Windows.Forms.Button btn_CancelarEditarColetasGestao;
+        private System.Windows.Forms.Button btn_ExcluirEditarColetasGestao;
+        public System.Windows.Forms.TextBox txt_CNPJGestaoCliente;
+        public System.Windows.Forms.DataGridView dgv_ClienteGestao;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btn_EditarColetasGestao;
+        public System.Windows.Forms.TextBox txt_NomeFantasia;
+        private System.Windows.Forms.BindingSource sGRRC1DataSetALFABindingSource;
+        private SGRRC1DataSetALFA sGRRC1DataSetALFA;
+        private System.Windows.Forms.BindingSource cLIENTESBindingSource;
+        private SGRRC1DataSetALFATableAdapters.CLIENTESTableAdapter cLIENTESTableAdapter;
+        public System.Windows.Forms.Label lbl_NomedoServidor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDClienteDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeFantasiaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cNPJDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn regimedeTributacaoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn razaosocialDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datadeCadastroDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefoneDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Rua;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cidadeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bairroDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cEPDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn usuarioDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Unidade;
+        public System.Windows.Forms.Label lbl_Unidade;
+    }
+}
+
+using iTextSharp.text.pdf;
+using iTextSharp.text;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    public partial class GestaoCliente : Form
+    {
+        public GestaoCliente()
+        {
+            InitializeComponent();
+        }
+
+        private void GestaoCliente_Load(object sender, EventArgs e)
+        {
+            string NomedoServidor = lbl_NomedoServidor.Text;
+            string vqueryCliente = @"select [Nome Fantasia] from [ASSOCIACAO] order by [Nome Fantasia] ASC";
+
+            cbb_AssociacaoGestaoCliente.Items.Clear();
+            cbb_AssociacaoGestaoCliente.DataSource = ConexaoBancodeDados.dql(vqueryCliente, NomedoServidor);
+            cbb_AssociacaoGestaoCliente.DisplayMember = "Nome Fantasia";
+
+            btn_ImprimirClientesGestao.Visible = true;
+         
+        }
+
+        private void btn_EditarColetasGestao_Click(object sender, EventArgs e)
+        {
+            if (dgv_ClienteGestao.Rows.Count == 0)
+            {
+                MessageBox.Show("Cliente não selecionado.");
+                return;
+
+            }
+            else
+            {
+
+                Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
+                string CidadeCrip = cryptography.Decriptar(this.dgv_ClienteGestao.CurrentRow.Cells[9].Value.ToString());
+                string BairroCrip = cryptography.Decriptar(this.dgv_ClienteGestao.CurrentRow.Cells[10].Value.ToString());
+                string RuaCrip = cryptography.Decriptar(this.dgv_ClienteGestao.CurrentRow.Cells[8].Value.ToString());
+                string DataCadastroCrip = cryptography.Decriptar(this.dgv_ClienteGestao.CurrentRow.Cells[5].Value.ToString());
+                string CNPJCrip = cryptography.Decriptar(this.dgv_ClienteGestao.CurrentRow.Cells[2].Value.ToString());
+                string TelefoneCrip = cryptography.Decriptar(this.dgv_ClienteGestao.CurrentRow.Cells[6].Value.ToString());
+                string CEPCrip = cryptography.Decriptar(this.dgv_ClienteGestao.CurrentRow.Cells[11].Value.ToString());
+                string emailCrip = cryptography.Decriptar(this.dgv_ClienteGestao.CurrentRow.Cells[7].Value.ToString());
+
+                ClienteEditar ClienteEditado = new ClienteEditar();
+                ClienteEditado.txt_MatriculaCliente.Text = this.dgv_ClienteGestao.CurrentRow.Cells[0].Value.ToString();
+                ClienteEditado.txt_NomeFantasiaEditarCliente.Text = this.dgv_ClienteGestao.CurrentRow.Cells[1].Value.ToString();
+                ClienteEditado.txt_CNPJEditarCliente.Text = CNPJCrip;
+                ClienteEditado.cbb_RegimedeTributacaoEditarCliente.Items.Add(this.dgv_ClienteGestao.CurrentRow.Cells[3].Value.ToString());
+                ClienteEditado.cbb_RegimedeTributacaoEditarCliente.SelectedIndex = 0;
+                ClienteEditado.txt_RazaoSocialEditarCliente.Text = this.dgv_ClienteGestao.CurrentRow.Cells[4].Value.ToString();
+                ClienteEditado.txt_DatadeCadastroEditarCliente.Text = DataCadastroCrip;
+                ClienteEditado.txt_TelefoneEditarCliente.Text = TelefoneCrip;
+                ClienteEditado.txt_emailEditarCliente.Text = emailCrip;
+                ClienteEditado.txt_RuaEditarCliente.Text = RuaCrip;
+                ClienteEditado.cbb_CidadeEditarCliente.Items.Add(CidadeCrip);
+                ClienteEditado.cbb_CidadeEditarCliente.SelectedIndex = 0;
+                ClienteEditado.txt_BairroEditarCliente.Text = BairroCrip;
+                ClienteEditado.txt_CEPEditarCliente.Text = CEPCrip;
+                ClienteEditado.lbl_Unidade.Text = this.dgv_ClienteGestao.CurrentRow.Cells[12].Value.ToString();
+                ClienteEditado.lbl_Usuario.Text = this.dgv_ClienteGestao.CurrentRow.Cells[13].Value.ToString();
+                ClienteEditado.lbl_IDCliente.Text = this.dgv_ClienteGestao.CurrentRow.Cells[0].Value.ToString();
+                ClienteEditado.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
+                ClienteEditado.Show();
+            }
+        }
+
+        private void btn_PesquisarporClienteeCNPJ_Click(object sender, EventArgs e)
+        {
+
+            if (cbb_AssociacaoGestaoCliente.SelectedIndex == -1 || txt_CNPJGestaoCliente.Text == "")
+            {
+                MessageBox.Show("Escolha um cliente e digite um número de cnpj.");
+                return;
+
+            }
+            else
+            {
+                string NomedoServidor = lbl_NomedoServidor.Text;
+                Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
+                string CNPJCrip = cryptography.Encriptar(txt_CNPJGestaoCliente.Text);
+
+                string Associacao = cbb_AssociacaoGestaoCliente.Text;
+                string vqueryClientes = @"SELECT [ID_Cliente], [Nome Fantasia], [CNPJ], [RegimedeTributacao], [Razaosocial], [DatadeCadastro], [Telefone], [email], [Rua], [Cidade], [Bairro], [CEP], [Unidade], [Usuario] FROM [CLIENTES] WHERE [Unidade] = '" + Associacao + "' AND [CNPJ] ='" + CNPJCrip + "'ORDER BY [Nome Fantasia] ASC ;";
+                dgv_ClienteGestao.DataSource = ConexaoBancodeDados.dql(vqueryClientes, NomedoServidor);
+            }
+
+        }
+
+        private void btn_PesquisarporCNPJGestaoCliente_Click(object sender, EventArgs e)
+        {
+            if (txt_CNPJGestaoCliente.Text == "")
+            {
+                MessageBox.Show("Digite um número de CNPJ.");
+                return;
+
+            }
+            else
+            {
+                string NomedoServidor = lbl_NomedoServidor.Text;
+                Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
+                string CNPJ = cryptography.Encriptar(txt_CNPJGestaoCliente.Text);
+                string vqueryCatador = @"SELECT [ID_Cliente], [Nome Fantasia], [CNPJ], [RegimedeTributacao], [Razaosocial], [DatadeCadastro], [Telefone], [email], [Rua], [Cidade], [Bairro], [CEP], [Unidade], [Usuario] FROM [CLIENTES] WHERE [CNPJ] ='" + CNPJ + "'ORDER BY [Nome Fantasia] ASC ;";
+                dgv_ClienteGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
+
+            }
+        }
+
+        private void btn_PesquisarPorClienteGestaoCliente_Click(object sender, EventArgs e)
+        {
+
+            if (cbb_AssociacaoGestaoCliente.SelectedIndex == -1)
+            {
+                MessageBox.Show("Escolha um cliente da lista.");
+                return;
+
+            }
+            else
+            {
+                string NomedoServidor = lbl_NomedoServidor.Text;
+                string Cliente = cbb_AssociacaoGestaoCliente.Text;
+                string vqueryCatador = @"SELECT [ID_Cliente], [Nome Fantasia], [CNPJ], [RegimedeTributacao], [Razaosocial], [DatadeCadastro], [Telefone], [email], [Rua], [Cidade], [Bairro], [CEP], [Unidade], [Usuario] FROM [CLIENTES] WHERE [Unidade] ='" + Cliente + "' ORDER BY [Nome Fantasia] ASC ;";
+                dgv_ClienteGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
+            }
+
+        }
+
+        private void rdb_PorNomeGestaoCliente_CheckedChanged(object sender, EventArgs e)
+        {
+
+            btn_PesquisarPorClienteGestaoCliente.Visible = true;
+            btn_PesquisarporClienteeCNPJ.Visible = false;
+            btn_PesquisarporCNPJGestaoCliente.Visible = false;
+            txt_CNPJGestaoCliente.ReadOnly = true;
+            txt_CNPJGestaoCliente.BackColor = Color.LightGray;
+            cbb_AssociacaoGestaoCliente.Enabled = true;
+           
+
+        }
+
+        private void rdb_porCNPJGestaoCliente_CheckedChanged(object sender, EventArgs e)
+        {
+
+            btn_PesquisarporClienteeCNPJ.Visible = false;
+            txt_CNPJGestaoCliente.ReadOnly = false;
+            txt_CNPJGestaoCliente.BackColor = Color.White;
+            btn_PesquisarporCNPJGestaoCliente.Visible = true;
+            btn_PesquisarPorClienteGestaoCliente.Visible = false;
+            cbb_AssociacaoGestaoCliente.Enabled = false;
+
+           
+
+        }
+
+        private void btn_ExcluirEditarColetasGestao_Click(object sender, EventArgs e)
+        {
+            string NomedoServidor = lbl_NomedoServidor.Text;
+            if (dgv_ClienteGestao.Rows.Count == 0)
+            {
+                MessageBox.Show("Cliente não selecionado.");
+                return;
+
+            }
+            else
+            {
+                var Aviso = MessageBox.Show("Esta ação será irreversível. Deseja continuar?", "Exclusão de cliente", MessageBoxButtons.YesNo);
+
+                if (Aviso == DialogResult.Yes)
+                {
+                    string IDdoCliente = this.dgv_ClienteGestao.CurrentRow.Cells[0].Value.ToString();
+                    string ExclusaoCliente = @"DELETE FROM CLIENTES WHERE [ID_Cliente] ='" + IDdoCliente + "';";
+                    ConexaoBancodeDados.dql(ExclusaoCliente, NomedoServidor);
+                    MessageBox.Show("Cliente excluído com sucesso!");
+
+                    if (btn_PesquisarporClienteeCNPJ.Visible == true)
+                    {
+                        Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
+                        string CNPJCrip = cryptography.Encriptar(txt_CNPJGestaoCliente.Text);
+
+                        string Associacao = cbb_AssociacaoGestaoCliente.Text;
+                        string vqueryClientes = @"SELECT [ID_Cliente], [Nome Fantasia], [CNPJ], [RegimedeTributacao], [Razaosocial], [DatadeCadastro], [Telefone], [email], [Rua], [Cidade], [Bairro], [CEP], [Unidade], [Usuario] FROM [CLIENTES] WHERE [Unidade] = '" + Associacao + "' AND [CNPJ] ='" + CNPJCrip + "'ORDER BY [Nome Fantasia] ASC ;";
+                        dgv_ClienteGestao.DataSource = ConexaoBancodeDados.dql(vqueryClientes, NomedoServidor);
+
+                    }
+
+                    if (btn_PesquisarPorClienteGestaoCliente.Visible == true)
+                    {
+                        string Cliente = cbb_AssociacaoGestaoCliente.Text;
+                        string vqueryCatador = @"SELECT [ID_Cliente], [Nome Fantasia], [CNPJ], [RegimedeTributacao], [Razaosocial], [DatadeCadastro], [Telefone], [email], [Rua], [Cidade], [Bairro], [CEP], [Unidade], [Usuario] FROM [CLIENTES] WHERE [Unidade] ='" + Cliente + "' ORDER BY [Nome Fantasia] ASC ;";
+                        dgv_ClienteGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
+                    }
+
+                    if (btn_PesquisarporCNPJGestaoCliente.Visible == true)
+                    {
+                        Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
+                        string CNPJ = cryptography.Encriptar(txt_CNPJGestaoCliente.Text);
+                        string vqueryCatador = @"SELECT [ID_Cliente], [Nome Fantasia], [CNPJ], [RegimedeTributacao], [Razaosocial], [DatadeCadastro], [Telefone], [email], [Rua], [Cidade], [Bairro], [CEP], [Unidade], [Usuario] FROM [CLIENTES] WHERE [CNPJ] ='" + CNPJ + "'ORDER BY [Nome Fantasia] ASC ;";
+                        dgv_ClienteGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
+
+                    }
+                }
+                else
+                {
+                    return;
+                }
+            }
+        }
+
+        private void btn_ImprimirClientesGestao_Click(object sender, EventArgs e)
+        {
+            if (dgv_ClienteGestao.Rows.Count == 0)
+            {
+                MessageBox.Show("Cliente não selecionado.");
+                return;
+
+            }
+
+            string NomedoServidor = lbl_NomedoServidor.Text;
+
+            if(btn_PesquisarporClienteeCNPJ.Visible == true)
+            {
+                try
+                {
+                    string dataimpressao = DateTime.UtcNow.ToString();
+                    string output = string.Concat(dataimpressao.Where(Char.IsDigit));
+                    string nomeAssociacao = this.dgv_ClienteGestao.CurrentRow.Cells[13].Value.ToString();
+                    string nomeArquivo = Globais.caminhoImpressao + @"\CLIENTES_DA_'" + nomeAssociacao + "'_EM_'" + output + "'.pdf";
+                    FileStream arquivoPDF = new FileStream(nomeArquivo, FileMode.Create);
+                    Document doc = new Document(PageSize.A4.Rotate(), 30f, 0f, 150f, 150f);
+                    doc.SetPageSize(doc.PageSize);
+                    PdfWriter escritorPDF = PdfWriter.GetInstance(doc, arquivoPDF);
+                    escritorPDF.PageEvent = new ImprimirInfoClassecs();
+                    escritorPDF.PageEvent = new ClientesImprimirAssociao(lbl_NomedoServidor.Text, nomeAssociacao);
+
+                    iTextSharp.text.Image Logotipo = iTextSharp.text.Image.GetInstance(Globais.caminho + @"\RededeCatadoresdoCeará.png");
+                    Logotipo.ScaleToFit(140f, 120f);
+                    Logotipo.SetAbsolutePosition(77f, 478f);
+
+                    doc.Open();
+                    string dados = "";
+
+                    /*Paragraph paragrafo = new Paragraph(dados, new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 12, (int)System.Drawing.FontStyle.Bold));
+                    paragrafo.Alignment = Element.ALIGN_CENTER;
+                    paragrafo.Add("Rede dos Catadores de Resíduos Sólidos Recicláveis do Estado do Ceará");
+                    Paragraph paragrafo2 = new Paragraph(dados, new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 12, (int)System.Drawing.FontStyle.Bold));
+                    paragrafo2.Alignment = Element.ALIGN_CENTER;
+                    paragrafo2.Add("Informaçoes do Cliente");
+                    Paragraph paragrafo3 = new Paragraph(dados, new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 12, (int)System.Drawing.FontStyle.Bold));
+                    paragrafo3.Alignment = Element.ALIGN_CENTER;
+                    paragrafo3.Add(this.dgv_ClienteGestao.CurrentRow.Cells[1].Value.ToString());
+                    string NomedoSevidor = lbl_NomedoServidor.Text;*/
+                    try
+                    {
+                        SqlConnection Conectar = new SqlConnection("Data Source=DESKTOP-" + NomedoServidor + "\\SQLEXPRESS;Initial Catalog=SGRRC1;Integrated Security=True");
+                        Conectar.Open();
+                        SqlCommand cmd2 = new SqlCommand("select [EnderecoImagem] from [ASSOCIACAO] WHERE [Nome Fantasia] = '" + lbl_Unidade.Text + "'", Conectar);
+                        var EnderecoImagem = cmd2.ExecuteScalar();
+                        string Endereco = EnderecoImagem.ToString();
+
+                        iTextSharp.text.Image LogotipoAssociacao = iTextSharp.text.Image.GetInstance(Endereco);
+                        LogotipoAssociacao.ScaleToFit(140f, 120f);
+                        LogotipoAssociacao.SetAbsolutePosition(650f, 475);
+                        doc.Add(LogotipoAssociacao);
+                        Conectar.Close();
+                    }
+                    catch
+                    {
+
+                        iTextSharp.text.Image LogotipoAssociacao = iTextSharp.text.Image.GetInstance(Globais.caminho + @"\BRANCO.png");
+                        LogotipoAssociacao.ScaleToFit(140f, 120f);
+                        LogotipoAssociacao.SetAbsolutePosition(650f, 475);
+                        doc.Add(LogotipoAssociacao);
+                    }
+
+                    PdfPTable tabela1 = new PdfPTable(3);
+
+                    tabela1.TotalWidth = 300;
+
+                    tabela1.AddCell("Nome Fantasia");
+                    tabela1.AddCell("Regime de Tributação");
+                    tabela1.AddCell("Associção");
+
+                    string Associacao = this.dgv_ClienteGestao.CurrentRow.Cells[13].Value.ToString();
+                    string NomeFantasia = this.dgv_ClienteGestao.CurrentRow.Cells[1].Value.ToString();
+                    string CNPJ = this.dgv_ClienteGestao.CurrentRow.Cells[2].Value.ToString();
+                    string vqueryCatadorImpressao = @"SELECT [Nome Fantasia], [RegimedeTributacao], [Unidade] FROM [CLIENTES] where [Unidade] = '" + Associacao + "' AND [Nome Fantasia] = '" + NomeFantasia + "' AND [CNPJ] = '" + CNPJ + "' ORDER BY [Nome Fantasia] ASC";
+
+                    DataTable dtCatadorImpressao = ConexaoBancodeDados.dql(vqueryCatadorImpressao, NomedoServidor);
+                    for (int i = 0; i < dtCatadorImpressao.Rows.Count; i++)
+                    {
+                        tabela1.AddCell(new PdfPCell()).AddElement(new Paragraph(dtCatadorImpressao.Rows[i].Field<string>("Nome Fantasia"), new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 10, (int)System.Drawing.FontStyle.Regular)));
+                        tabela1.AddCell(new PdfPCell()).AddElement(new Paragraph(dtCatadorImpressao.Rows[i].Field<string>("RegimedeTributacao"), new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 10, (int)System.Drawing.FontStyle.Regular)));
+                        tabela1.AddCell(new PdfPCell()).AddElement(new Paragraph(((dtCatadorImpressao.Rows[i].Field<string>("Unidade"))), new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 10, (int)System.Drawing.FontStyle.Regular)));
+                    }
+
+                    doc.Add(Logotipo);
+                    /*doc.Add(paragrafo);
+                    doc.Add(paragrafo2);
+                    doc.Add(paragrafo3);*/
+                    doc.Add(tabela1);
+                    doc.Close();
+
+                    System.Diagnostics.Process.Start(Globais.caminhoImpressao + @"\CLIENTES_DA_'" + nomeAssociacao + "'_EM_'" + output + "'.pdf");
+                }
+                catch
+                {
+                    MessageBox.Show("Pasta 'Impressão' não encontrada.");
+                    return;
+
+                }
+            }
+
+
+
+            if (btn_PesquisarPorClienteGestaoCliente.Visible == true)
+            {
+
+                try
+                {
+                    string dataimpressao = DateTime.UtcNow.ToString();
+                    string output = string.Concat(dataimpressao.Where(Char.IsDigit));
+                    string nomeAssociacao = this.dgv_ClienteGestao.CurrentRow.Cells[13].Value.ToString();
+                    string nomeArquivo = Globais.caminhoImpressao + @"\CLIENTES_DA_'" + nomeAssociacao + "'_EM_'" + output + "'.pdf";
+                    FileStream arquivoPDF = new FileStream(nomeArquivo, FileMode.Create);
+
+                    Document doc = new Document(PageSize.A4.Rotate(), 30f, 0f, 150f, 150f);
+                    doc.SetPageSize(doc.PageSize);
+                    PdfWriter escritorPDF = PdfWriter.GetInstance(doc, arquivoPDF);
+                    escritorPDF.PageEvent = new ImprimirInfoClassecs();
+                    escritorPDF.PageEvent = new ClientesImprimirAssociao(lbl_NomedoServidor.Text, lbl_Unidade.Text);
+
+                    iTextSharp.text.Image Logotipo = iTextSharp.text.Image.GetInstance(Globais.caminho + @"\RededeCatadoresdoCeará.png");
+                    Logotipo.ScaleToFit(140f, 120f);
+                    Logotipo.SetAbsolutePosition(77f, 478f);
+
+                    doc.Open();
+                    string dados = "";
+
+                    /*Paragraph paragrafo = new Paragraph(dados, new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 12, (int)System.Drawing.FontStyle.Bold));
+                    paragrafo.Alignment = Element.ALIGN_CENTER;
+                    paragrafo.Add("Rede dos Catadores de Resíduos Sólidos Recicláveis do Estado do Ceará");
+                    Paragraph paragrafo2 = new Paragraph(dados, new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 12, (int)System.Drawing.FontStyle.Bold));
+                    paragrafo2.Alignment = Element.ALIGN_CENTER;
+                    paragrafo2.Add("Informaçoes do Cliente");
+                    Paragraph paragrafo3 = new Paragraph(dados, new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 12, (int)System.Drawing.FontStyle.Bold));
+                    paragrafo3.Alignment = Element.ALIGN_CENTER;
+                    paragrafo3.Add(this.dgv_ClienteGestao.CurrentRow.Cells[1].Value.ToString());
+                    */
+                    try
+                    {
+                        SqlConnection Conectar = new SqlConnection("Data Source=DESKTOP-" + NomedoServidor + "\\SQLEXPRESS;Initial Catalog=SGRRC1;Integrated Security=True");
+                        Conectar.Open();
+                        SqlCommand cmd2 = new SqlCommand("select [EnderecoImagem] from [ASSOCIACAO] WHERE [Nome Fantasia] = '" + lbl_Unidade.Text + "'", Conectar);
+                        var EnderecoImagem = cmd2.ExecuteScalar();
+                        string Endereco = EnderecoImagem.ToString();
+
+                        iTextSharp.text.Image LogotipoAssociacao = iTextSharp.text.Image.GetInstance(Endereco);
+                        LogotipoAssociacao.ScaleToFit(140f, 120f);
+                        LogotipoAssociacao.SetAbsolutePosition(650f, 475);
+                        doc.Add(LogotipoAssociacao);
+                        Conectar.Close();
+                    }
+                    catch
+                    {
+
+                        iTextSharp.text.Image LogotipoAssociacao = iTextSharp.text.Image.GetInstance(Globais.caminho + @"\BRANCO.png");
+                        LogotipoAssociacao.ScaleToFit(140f, 120f);
+                        LogotipoAssociacao.SetAbsolutePosition(650f, 475);
+                        doc.Add(LogotipoAssociacao);
+                    }
+
+                    PdfPTable tabela1 = new PdfPTable(3);
+
+                    tabela1.TotalWidth = 500;
+
+                    tabela1.AddCell("Nome Fantasia");
+                    tabela1.AddCell("Regime de Tributação");
+                    tabela1.AddCell("Associção");
+
+                    string Associacao = this.dgv_ClienteGestao.CurrentRow.Cells[13].Value.ToString();
+                    string NomeFantasia = this.dgv_ClienteGestao.CurrentRow.Cells[1].Value.ToString();
+                    string vqueryCatadorImpressao = @"SELECT [Nome Fantasia], [RegimedeTributacao], [Unidade] FROM [CLIENTES] where [Unidade] = '" + Associacao + "' AND [Nome Fantasia] = '" + NomeFantasia + "' ORDER BY [Nome Fantasia] ASC";
+
+                    DataTable dtCatadorImpressao = ConexaoBancodeDados.dql(vqueryCatadorImpressao, NomedoServidor);
+                    for (int i = 0; i < dtCatadorImpressao.Rows.Count; i++)
+                    {
+                        tabela1.AddCell(new PdfPCell()).AddElement(new Paragraph(dtCatadorImpressao.Rows[i].Field<string>("Nome Fantasia"), new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 10, (int)System.Drawing.FontStyle.Regular)));
+                        tabela1.AddCell(new PdfPCell()).AddElement(new Paragraph(dtCatadorImpressao.Rows[i].Field<string>("RegimedeTributacao"), new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 10, (int)System.Drawing.FontStyle.Regular)));
+                        tabela1.AddCell(new PdfPCell()).AddElement(new Paragraph(((dtCatadorImpressao.Rows[i].Field<string>("Unidade"))), new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 10, (int)System.Drawing.FontStyle.Regular)));
+                    }
+
+                    doc.Add(Logotipo);
+                    /* doc.Add(paragrafo);
+                     doc.Add(paragrafo2);
+                     doc.Add(paragrafo3);*/
+                    doc.Add(tabela1);
+                    doc.Close();
+
+                    System.Diagnostics.Process.Start(Globais.caminhoImpressao + @"\CLIENTES_DA_'" + nomeAssociacao + "'_EM_'" + output + "'.pdf");
+                }
+                catch
+                {
+                    MessageBox.Show("Pasta 'Impressão' não encontrada.");
+                    return;
+
+                }
+            }
+
+
+
+            if (btn_PesquisarporCNPJGestaoCliente.Visible == true)
+            {
+                try
+                {
+                    string dataimpressao = DateTime.UtcNow.ToString();
+                    string output = string.Concat(dataimpressao.Where(Char.IsDigit));
+                    string nomeAssociacao = this.dgv_ClienteGestao.CurrentRow.Cells[13].Value.ToString();
+                    string nomeArquivo = Globais.caminhoImpressao + @"\CLIENTES_DA_'" + nomeAssociacao + "'_EM_'" + output + "'.pdf";
+                    FileStream arquivoPDF = new FileStream(nomeArquivo, FileMode.Create);
+
+                    Document doc = new Document(PageSize.A4.Rotate(), 50f, 50f, 0f, 0f);
+                    doc.SetPageSize(doc.PageSize);
+                    PdfWriter escritorPDF = PdfWriter.GetInstance(doc, arquivoPDF);
+                    escritorPDF.PageEvent = new ImprimirInfoClassecs();
+
+                    iTextSharp.text.Image Logotipo = iTextSharp.text.Image.GetInstance(Globais.caminho + @"\RededeCatadoresdoCeará.png");
+                    Logotipo.ScaleToFit(140f, 120f);
+                    Logotipo.SetAbsolutePosition(50f, 478f);
+
+                    doc.Open();
+                    string dados = "";
+
+                    Paragraph paragrafo = new Paragraph(dados, new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 12, (int)System.Drawing.FontStyle.Bold));
+                    paragrafo.Alignment = Element.ALIGN_CENTER;
+                    paragrafo.Add("Rede dos Catadores de Resíduos Sólidos Recicláveis do Estado do Ceará");
+                    Paragraph paragrafo2 = new Paragraph(dados, new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 12, (int)System.Drawing.FontStyle.Bold));
+                    paragrafo2.Alignment = Element.ALIGN_CENTER;
+                    paragrafo2.Add("Informaçoes do Cliente");
+                    Paragraph paragrafo3 = new Paragraph(dados, new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 12, (int)System.Drawing.FontStyle.Bold));
+                    paragrafo3.Alignment = Element.ALIGN_CENTER;
+                    paragrafo3.Add(this.dgv_ClienteGestao.CurrentRow.Cells[1].Value.ToString());
+
+                    try
+                    {
+                        SqlConnection Conectar = new SqlConnection("Data Source=DESKTOP-" + NomedoServidor + "\\SQLEXPRESS;Initial Catalog=SGRRC1;Integrated Security=True");
+                        Conectar.Open();
+                        SqlCommand cmd2 = new SqlCommand("select [EnderecoImagem] from [ASSOCIACAO] WHERE [Nome Fantasia] = '" + lbl_Unidade.Text + "'", Conectar);
+                        var EnderecoImagem = cmd2.ExecuteScalar();
+                        string Endereco = EnderecoImagem.ToString();
+
+                        iTextSharp.text.Image LogotipoAssociacao = iTextSharp.text.Image.GetInstance(Endereco);
+                        LogotipoAssociacao.ScaleToFit(140f, 120f);
+                        LogotipoAssociacao.SetAbsolutePosition(650f, 475);
+                        doc.Add(LogotipoAssociacao);
+                        Conectar.Close();
+                    }
+                    catch
+                    {
+
+                        iTextSharp.text.Image LogotipoAssociacao = iTextSharp.text.Image.GetInstance(Globais.caminho + @"\BRANCO.png");
+                        LogotipoAssociacao.ScaleToFit(140f, 120f);
+                        LogotipoAssociacao.SetAbsolutePosition(650f, 475);
+                        doc.Add(LogotipoAssociacao);
+                    }
+
+                    PdfPTable tabela1 = new PdfPTable(3);
+                    tabela1.HorizontalAlignment = Element.ALIGN_TOP;
+                    tabela1.SpacingBefore = 50;
+                    tabela1.WidthPercentage = 100;
+
+                    tabela1.AddCell("Nome Fantasia");
+                    tabela1.AddCell("Regime de Tributação");
+                    tabela1.AddCell("Associção");
+
+                    string Associacao = this.dgv_ClienteGestao.CurrentRow.Cells[13].Value.ToString();
+                    string CNPJ = this.dgv_ClienteGestao.CurrentRow.Cells[2].Value.ToString();
+                    string vqueryCatadorImpressao = @"SELECT [Nome Fantasia], [RegimedeTributacao], [Unidade] FROM [CLIENTES] where [Unidade] = '" + Associacao + "' AND [CNPJ] = '" + CNPJ + "' ORDER BY [Nome Fantasia] ASC";
+                    DataTable dtCatadorImpressao = ConexaoBancodeDados.dql(vqueryCatadorImpressao, NomedoServidor);
+                    for (int i = 0; i < dtCatadorImpressao.Rows.Count; i++)
+                    {
+                        tabela1.AddCell(new PdfPCell()).AddElement(new Paragraph(dtCatadorImpressao.Rows[i].Field<string>("Nome Fantasia"), new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 10, (int)System.Drawing.FontStyle.Regular)));
+                        tabela1.AddCell(new PdfPCell()).AddElement(new Paragraph(dtCatadorImpressao.Rows[i].Field<string>("RegimedeTributacao"), new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 10, (int)System.Drawing.FontStyle.Regular)));
+                        tabela1.AddCell(new PdfPCell()).AddElement(new Paragraph(((dtCatadorImpressao.Rows[i].Field<string>("Unidade"))), new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 10, (int)System.Drawing.FontStyle.Regular)));
+                    }
+
+                    doc.Add(Logotipo);
+                    doc.Add(paragrafo);
+                    doc.Add(paragrafo2);
+                    doc.Add(paragrafo3);
+                    doc.Add(tabela1);
+                    doc.Close();
+
+                    System.Diagnostics.Process.Start(Globais.caminhoImpressao + @"\CLIENTES_DA_'" + nomeAssociacao + "'_EM_'" + output + "'.pdf");
+                }
+                catch
+                {
+                    MessageBox.Show("Pasta 'Impressão não encontada'");
+                    return;
+                }
+            }
+        }
+
+        private void txt_CNPJGestaoCliente_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void txt_CNPJGestaoCliente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsNumber(e.KeyChar)) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+
+            if (Convert.ToInt32(e.KeyChar) == 13)
+            {
+                e.Handled = true;
+
+
+                string NomedoServidor = lbl_NomedoServidor.Text;
+                SqlConnection Conectar = new SqlConnection("Data Source=DESKTOP-" + NomedoServidor + "\\SQLEXPRESS;Initial Catalog=SGRRC1;Integrated Security=True");
+                Conectar.Open();
+
+                Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
+                string CNPJCrip = cryptography.Encriptar(txt_CNPJGestaoCliente.Text);
+
+
+                SqlCommand cmd = new SqlCommand("select [Nome Fantasia] from CLIENTES WHERE [CNPJ] = '" + CNPJCrip + "'", Conectar);
+                var Catador = cmd.ExecuteScalar();
+
+                if (Catador != null)
+                {
+
+                    txt_NomeFantasia.Text = Catador.ToString();
+                    Conectar.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Cliente não encontrado.");
+                    Conectar.Close();
+                    return;
+                }
+
+            }
+
+        }
+
+        private void btn_CancelarEditarColetasGestao_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void dgv_ClienteGestao_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btn_ImprimirColetasCGestao_Click(object sender, EventArgs e)
+        {
+            string nomeCliente = this.dgv_ClienteGestao.CurrentRow.Cells[1].Value.ToString();
+            string nomeArquivo = Globais.caminhoImpressao + @"\INFORMACOES_CLIENTE" + nomeCliente + ".pdf";
+            FileStream arquivoPDF = new FileStream(nomeArquivo, FileMode.Create);
+
+            Document doc = new Document(PageSize.A4.Rotate(), 50f, 50f, 0f, 0f);
+            doc.SetPageSize(doc.PageSize);
+            PdfWriter escritorPDF = PdfWriter.GetInstance(doc, arquivoPDF);
+            escritorPDF.PageEvent = new ImprimirInfoClassecs();
+
+            iTextSharp.text.Image Logotipo = iTextSharp.text.Image.GetInstance(@"C:\\Users\\Public\\SGRCC(Teste)\\bin\\Debug\\RededeCatadoresdoCeará.png");
+            Logotipo.ScaleToFit(140f, 120f);
+            Logotipo.SetAbsolutePosition(100f, 475f);
+
+            doc.Open();
+            string dados = "";
+
+            Paragraph paragrafo = new Paragraph(dados, new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 14, (int)System.Drawing.FontStyle.Bold));
+            paragrafo.Alignment = Element.ALIGN_CENTER;
+            paragrafo.Add("Rede dos Catadores de RSR do Estado do Ceará");
+            Paragraph paragrafo2 = new Paragraph(dados, new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 14, (int)System.Drawing.FontStyle.Bold));
+            paragrafo2.Alignment = Element.ALIGN_CENTER;
+            paragrafo2.Add("Informaçoes do Cliente");
+            Paragraph paragrafo3 = new Paragraph(dados, new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 14, (int)System.Drawing.FontStyle.Bold));
+            paragrafo3.Alignment = Element.ALIGN_CENTER;
+            paragrafo3.Add(this.dgv_ClienteGestao.CurrentRow.Cells[1].Value.ToString());
+
+
+            PdfPTable tabela1 = new PdfPTable(3);
+            tabela1.HorizontalAlignment = Element.ALIGN_TOP;
+            tabela1.SpacingBefore = 50;
+            tabela1.WidthPercentage = 100;
+
+            tabela1.AddCell("Nome Fantasia");
+            tabela1.AddCell("Regime de Tributação");
+            tabela1.AddCell("Associção");
+
+            string CNPJ = this.dgv_ClienteGestao.CurrentRow.Cells[2].Value.ToString();
+            string vqueryCatadorImpressao = @"SELECT [Nome Fantasia], [RegimedeTributacao], [Unidade] FROM [CLIENTES] where [CNPJ] = '" + CNPJ + "' ORDER BY [Nome Fantasia] ASC";
+            string NomedoServidor = lbl_NomedoServidor.Text;
+
+            DataTable dtCatadorImpressao = ConexaoBancodeDados.dql(vqueryCatadorImpressao, NomedoServidor);
+            for (int i = 0; i < dtCatadorImpressao.Rows.Count; i++)
+            {
+                tabela1.AddCell(new PdfPCell()).AddElement(new Paragraph(dtCatadorImpressao.Rows[i].Field<string>("Nome Fantasia"), new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 10, (int)System.Drawing.FontStyle.Regular)));
+                tabela1.AddCell(new PdfPCell()).AddElement(new Paragraph(dtCatadorImpressao.Rows[i].Field<string>("RegimedeTributacao"), new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 10, (int)System.Drawing.FontStyle.Regular)));
+                tabela1.AddCell(new PdfPCell()).AddElement(new Paragraph(((dtCatadorImpressao.Rows[i].Field<string>("Unidade"))), new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 10, (int)System.Drawing.FontStyle.Regular)));
+            }
+
+            doc.Add(Logotipo);
+            doc.Add(paragrafo);
+            doc.Add(paragrafo2);
+            doc.Add(paragrafo3);
+            doc.Add(tabela1);
+            doc.Close();
+        }
+
+
+        private void btn_ImprimirColetasCeDGestao_Click(object sender, EventArgs e)
+        {
+
+            string dataimpressao = DateTime.UtcNow.ToString();
+            string output = string.Concat(dataimpressao.Where(Char.IsDigit));
+            string nomeAssociacao = this.dgv_ClienteGestao.CurrentRow.Cells[13].Value.ToString();
+            string nomeArquivo = Globais.caminhoImpressao + @"\CLIENTE_DA_'"+ nomeAssociacao+ "'.pdf";
+            FileStream arquivoPDF = new FileStream(nomeArquivo, FileMode.Create);
+
+            Document doc = new Document(PageSize.A4.Rotate(), 50f, 50f, 0f, 0f);
+            doc.SetPageSize(doc.PageSize);
+            PdfWriter escritorPDF = PdfWriter.GetInstance(doc, arquivoPDF);
+            escritorPDF.PageEvent = new ImprimirInfoClassecs();
+
+            iTextSharp.text.Image Logotipo = iTextSharp.text.Image.GetInstance(@"C:\\Users\\Public\\SGRCC(Teste)\\bin\\Debug\\RededeCatadoresdoCeará.png");
+            Logotipo.ScaleToFit(140f, 120f);
+            Logotipo.SetAbsolutePosition(100f, 475f);
+
+            doc.Open();
+            string dados = "";
+
+            Paragraph paragrafo = new Paragraph(dados, new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 14, (int)System.Drawing.FontStyle.Bold));
+            paragrafo.Alignment = Element.ALIGN_CENTER;
+            paragrafo.Add("Rede dos Catadores de RSR do Estado do Ceará");
+            Paragraph paragrafo2 = new Paragraph(dados, new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 14, (int)System.Drawing.FontStyle.Bold));
+            paragrafo2.Alignment = Element.ALIGN_CENTER;
+            paragrafo2.Add("Informaçoes do Cliente");
+            Paragraph paragrafo3 = new Paragraph(dados, new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 14, (int)System.Drawing.FontStyle.Bold));
+            paragrafo3.Alignment = Element.ALIGN_CENTER;
+            paragrafo3.Add(this.dgv_ClienteGestao.CurrentRow.Cells[1].Value.ToString());
+
+
+            PdfPTable tabela1 = new PdfPTable(3);
+            tabela1.HorizontalAlignment = Element.ALIGN_TOP;
+            tabela1.SpacingBefore = 50;
+            tabela1.WidthPercentage = 100;
+
+            tabela1.AddCell("Nome Fantasia");
+            tabela1.AddCell("Regime de Tributação");
+            tabela1.AddCell("Associção");
+
+            string CNPJ = this.dgv_ClienteGestao.CurrentRow.Cells[2].Value.ToString();
+            string Associacao = this.dgv_ClienteGestao.CurrentRow.Cells[13].Value.ToString();
+            string vqueryCatadorImpressao = @"SELECT [Nome Fantasia], [RegimedeTributacao], [Unidade] FROM [CLIENTES] where [CNPJ] = '" + CNPJ + "' AND [Unidade] = '"+ Associacao + "' ORDER BY [Nome Fantasia] ASC";
+            string NomedoServidor = lbl_NomedoServidor.Text;
+
+            DataTable dtCatadorImpressao = ConexaoBancodeDados.dql(vqueryCatadorImpressao, NomedoServidor);
+            for (int i = 0; i < dtCatadorImpressao.Rows.Count; i++)
+            {
+                tabela1.AddCell(new PdfPCell()).AddElement(new Paragraph(dtCatadorImpressao.Rows[i].Field<string>("Nome Fantasia"), new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 10, (int)System.Drawing.FontStyle.Regular)));
+                tabela1.AddCell(new PdfPCell()).AddElement(new Paragraph(dtCatadorImpressao.Rows[i].Field<string>("RegimedeTributacao"), new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 10, (int)System.Drawing.FontStyle.Regular)));
+                tabela1.AddCell(new PdfPCell()).AddElement(new Paragraph(((dtCatadorImpressao.Rows[i].Field<string>("Unidade"))), new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 10, (int)System.Drawing.FontStyle.Regular)));
+            }
+
+            doc.Add(Logotipo);
+            doc.Add(paragrafo);
+            doc.Add(paragrafo2);
+            doc.Add(paragrafo3);
+            doc.Add(tabela1);
+            doc.Close();
+
+        }
+
+        private void dgv_ClienteGestao_MouseEnter(object sender, EventArgs e)
+        {
+            string NomedoServidor = lbl_NomedoServidor.Text;
+            if (btn_PesquisarporClienteeCNPJ.Visible == true)
+            {
+                Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
+                string CNPJCrip = cryptography.Encriptar(txt_CNPJGestaoCliente.Text);
+
+                string Associacao = cbb_AssociacaoGestaoCliente.Text;
+                string vqueryClientes = @"SELECT [ID_Cliente], [Nome Fantasia], [CNPJ], [RegimedeTributacao], [Razaosocial], [DatadeCadastro], [Telefone], [email], [Rua], [Cidade], [Bairro], [CEP], [Unidade], [Usuario] FROM [CLIENTES] WHERE [Unidade] = '" + Associacao + "' AND [CNPJ] ='" + CNPJCrip + "'ORDER BY [Nome Fantasia] ASC ;";
+                dgv_ClienteGestao.DataSource = ConexaoBancodeDados.dql(vqueryClientes, NomedoServidor);
+
+            }
+
+            if (btn_PesquisarPorClienteGestaoCliente.Visible == true)
+            {
+                string Cliente = cbb_AssociacaoGestaoCliente.Text;
+                string vqueryCatador = @"SELECT [ID_Cliente], [Nome Fantasia], [CNPJ], [RegimedeTributacao], [Razaosocial], [DatadeCadastro], [Telefone], [email], [Rua], [Cidade], [Bairro], [CEP], [Unidade], [Usuario] FROM [CLIENTES] WHERE [Unidade] ='" + Cliente + "' ORDER BY [Nome Fantasia] ASC ;";
+                dgv_ClienteGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
+            }
+
+            if (btn_PesquisarporCNPJGestaoCliente.Visible == true)
+            {
+                Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
+                string CNPJ = cryptography.Encriptar(txt_CNPJGestaoCliente.Text);
+                string vqueryCatador = @"SELECT [ID_Cliente], [Nome Fantasia], [CNPJ], [RegimedeTributacao], [Razaosocial], [DatadeCadastro], [Telefone], [email], [Rua], [Cidade], [Bairro], [CEP], [Unidade], [Usuario] FROM [CLIENTES] WHERE [CNPJ] ='" + CNPJ + "'ORDER BY [Nome Fantasia] ASC ;";
+                dgv_ClienteGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
+
+            }
+        }
+
+        private void GestaoCliente_MouseEnter(object sender, EventArgs e)
+        {
+
+            
+        }
+
+        private void cbb_AssociacaoGestaoCliente_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+    
+}
+    
+
