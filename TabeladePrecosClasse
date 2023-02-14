@@ -1,0 +1,18 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+     class TabeladePrecosClasse
+    { 
+        public string Associacao;
+        public string TipodeMaterial;
+        public string Preco;
+        public string Grupo;
+        public string NomedoServidor;
+
+    }
+}
