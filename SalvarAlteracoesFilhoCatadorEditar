@@ -1,0 +1,17 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+     class SalvarAlteracoesFilhoCatadorEditar
+    {
+        public string NomedoServidor;
+        public  string PaiMae;
+        public  string DataNascimento;
+        public  string Genero;
+        public  string ID_Filho;
+    }
+}
