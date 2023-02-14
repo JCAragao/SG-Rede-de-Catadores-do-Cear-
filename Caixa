@@ -1,0 +1,1074 @@
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    partial class Caixa
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Caixa));
+            this.txt_CodigodoProduto = new System.Windows.Forms.TextBox();
+            this.txt_NomedoProduto = new System.Windows.Forms.TextBox();
+            this.txt_Massa = new System.Windows.Forms.TextBox();
+            this.txt_ValordaCompra = new System.Windows.Forms.TextBox();
+            this.txt_ValorRecebido = new System.Windows.Forms.TextBox();
+            this.txt_Troco = new System.Windows.Forms.TextBox();
+            this.cbb_FormadePagamento = new System.Windows.Forms.ComboBox();
+            this.btn_FinalizarCompra = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.txt_CNPJ = new System.Windows.Forms.TextBox();
+            this.txt_NomeFantasia = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.dgv_CaixaTemporario = new System.Windows.Forms.DataGridView();
+            this.caixaTemporarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sGRRC1DataSetALFA = new Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_.SGRRC1DataSetALFA();
+            this.txt_PrecoSomente = new System.Windows.Forms.TextBox();
+            this.caixaTemporarioTableAdapter = new Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_.SGRRC1DataSetALFATableAdapters.CaixaTemporarioTableAdapter();
+            this.lbl_AssociacaoCaixa = new System.Windows.Forms.Label();
+            this.lbl_Usuario = new System.Windows.Forms.Label();
+            this.btn_Excluir = new System.Windows.Forms.Button();
+            this.lbl_NomedoServidor = new System.Windows.Forms.Label();
+            this.iDCompraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeFantasiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cNPJDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.materialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.massaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_CaixaTemporario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.caixaTemporarioBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sGRRC1DataSetALFA)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // txt_CodigodoProduto
+            // 
+            this.txt_CodigodoProduto.Location = new System.Drawing.Point(8, 89);
+            this.txt_CodigodoProduto.MaxLength = 50;
+            this.txt_CodigodoProduto.Name = "txt_CodigodoProduto";
+            this.txt_CodigodoProduto.Size = new System.Drawing.Size(84, 20);
+            this.txt_CodigodoProduto.TabIndex = 2;
+            this.txt_CodigodoProduto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_CodigodoProduto_KeyPress);
+            // 
+            // txt_NomedoProduto
+            // 
+            this.txt_NomedoProduto.Location = new System.Drawing.Point(111, 89);
+            this.txt_NomedoProduto.Name = "txt_NomedoProduto";
+            this.txt_NomedoProduto.ReadOnly = true;
+            this.txt_NomedoProduto.Size = new System.Drawing.Size(188, 20);
+            this.txt_NomedoProduto.TabIndex = 1;
+            this.txt_NomedoProduto.TabStop = false;
+            // 
+            // txt_Massa
+            // 
+            this.txt_Massa.Location = new System.Drawing.Point(11, 159);
+            this.txt_Massa.MaxLength = 7;
+            this.txt_Massa.Name = "txt_Massa";
+            this.txt_Massa.Size = new System.Drawing.Size(84, 20);
+            this.txt_Massa.TabIndex = 3;
+            this.txt_Massa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Massa_KeyPress);
+            // 
+            // txt_ValordaCompra
+            // 
+            this.txt_ValordaCompra.Location = new System.Drawing.Point(115, 159);
+            this.txt_ValordaCompra.Name = "txt_ValordaCompra";
+            this.txt_ValordaCompra.ReadOnly = true;
+            this.txt_ValordaCompra.Size = new System.Drawing.Size(82, 20);
+            this.txt_ValordaCompra.TabIndex = 3;
+            this.txt_ValordaCompra.TabStop = false;
+            this.txt_ValordaCompra.Text = "0,00";
+            // 
+            // txt_ValorRecebido
+            // 
+            this.txt_ValorRecebido.Location = new System.Drawing.Point(12, 222);
+            this.txt_ValorRecebido.Name = "txt_ValorRecebido";
+            this.txt_ValorRecebido.ReadOnly = true;
+            this.txt_ValorRecebido.Size = new System.Drawing.Size(84, 20);
+            this.txt_ValorRecebido.TabIndex = 4;
+            this.txt_ValorRecebido.TabStop = false;
+            this.txt_ValorRecebido.Text = "0,00";
+            this.txt_ValorRecebido.TabStopChanged += new System.EventHandler(this.txt_ValorRecebido_TabStopChanged);
+            this.txt_ValorRecebido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_ValorRecebido_KeyPress);
+            // 
+            // txt_Troco
+            // 
+            this.txt_Troco.Location = new System.Drawing.Point(116, 222);
+            this.txt_Troco.Name = "txt_Troco";
+            this.txt_Troco.ReadOnly = true;
+            this.txt_Troco.Size = new System.Drawing.Size(82, 20);
+            this.txt_Troco.TabIndex = 5;
+            this.txt_Troco.TabStop = false;
+            this.txt_Troco.Text = "0,00";
+            // 
+            // cbb_FormadePagamento
+            // 
+            this.cbb_FormadePagamento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_FormadePagamento.FormattingEnabled = true;
+            this.cbb_FormadePagamento.Items.AddRange(new object[] {
+            "Boleto",
+            "Crédito",
+            "Cheque",
+            "Débito",
+            "Dinheiro",
+            "Outro",
+            "Transferência"});
+            this.cbb_FormadePagamento.Location = new System.Drawing.Point(215, 159);
+            this.cbb_FormadePagamento.Name = "cbb_FormadePagamento";
+            this.cbb_FormadePagamento.Size = new System.Drawing.Size(84, 21);
+            this.cbb_FormadePagamento.TabIndex = 4;
+            this.cbb_FormadePagamento.SelectedIndexChanged += new System.EventHandler(this.cbb_FormadePagamento_SelectedIndexChanged);
+            // 
+            // btn_FinalizarCompra
+            // 
+            this.btn_FinalizarCompra.Location = new System.Drawing.Point(215, 197);
+            this.btn_FinalizarCompra.Name = "btn_FinalizarCompra";
+            this.btn_FinalizarCompra.Size = new System.Drawing.Size(75, 23);
+            this.btn_FinalizarCompra.TabIndex = 5;
+            this.btn_FinalizarCompra.Text = "Finalizar";
+            this.btn_FinalizarCompra.UseVisualStyleBackColor = true;
+            this.btn_FinalizarCompra.Click += new System.EventHandler(this.btn_FinalizarCompra_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(302, 222);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "Cancelar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // txt_CNPJ
+            // 
+            this.txt_CNPJ.Location = new System.Drawing.Point(8, 30);
+            this.txt_CNPJ.MaxLength = 50;
+            this.txt_CNPJ.Name = "txt_CNPJ";
+            this.txt_CNPJ.Size = new System.Drawing.Size(84, 20);
+            this.txt_CNPJ.TabIndex = 1;
+            this.txt_CNPJ.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_CNPJ_KeyDown);
+            this.txt_CNPJ.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_CNPJ_KeyPress);
+            // 
+            // txt_NomeFantasia
+            // 
+            this.txt_NomeFantasia.Location = new System.Drawing.Point(109, 30);
+            this.txt_NomeFantasia.Name = "txt_NomeFantasia";
+            this.txt_NomeFantasia.ReadOnly = true;
+            this.txt_NomeFantasia.Size = new System.Drawing.Size(190, 20);
+            this.txt_NomeFantasia.TabIndex = 11;
+            this.txt_NomeFantasia.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "CNPJ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(108, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(78, 13);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Nome Fantasia";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 73);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(80, 13);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Código Produto";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(113, 73);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(200, 13);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Nome do Produto/ Preço por Quilograma";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(12, 131);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(38, 13);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Massa";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(113, 131);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(84, 13);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "Valor da compra";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(212, 131);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(99, 13);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "Tipo de pagamento";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(12, 197);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(75, 13);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Valor recebido";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(113, 197);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(35, 13);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Troco";
+            // 
+            // dgv_CaixaTemporario
+            // 
+            this.dgv_CaixaTemporario.AllowUserToAddRows = false;
+            this.dgv_CaixaTemporario.AllowUserToDeleteRows = false;
+            this.dgv_CaixaTemporario.AllowUserToResizeColumns = false;
+            this.dgv_CaixaTemporario.AllowUserToResizeRows = false;
+            this.dgv_CaixaTemporario.AutoGenerateColumns = false;
+            this.dgv_CaixaTemporario.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgv_CaixaTemporario.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgv_CaixaTemporario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_CaixaTemporario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDCompraDataGridViewTextBoxColumn,
+            this.nomeFantasiaDataGridViewTextBoxColumn,
+            this.cNPJDataGridViewTextBoxColumn,
+            this.materialDataGridViewTextBoxColumn,
+            this.precoDataGridViewTextBoxColumn,
+            this.massaDataGridViewTextBoxColumn,
+            this.valorDataGridViewTextBoxColumn});
+            this.dgv_CaixaTemporario.DataSource = this.caixaTemporarioBindingSource;
+            this.dgv_CaixaTemporario.Location = new System.Drawing.Point(373, 12);
+            this.dgv_CaixaTemporario.MultiSelect = false;
+            this.dgv_CaixaTemporario.Name = "dgv_CaixaTemporario";
+            this.dgv_CaixaTemporario.ReadOnly = true;
+            this.dgv_CaixaTemporario.RowHeadersVisible = false;
+            this.dgv_CaixaTemporario.Size = new System.Drawing.Size(443, 198);
+            this.dgv_CaixaTemporario.TabIndex = 21;
+            this.dgv_CaixaTemporario.TabStop = false;
+            this.dgv_CaixaTemporario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CaixaTemporario_CellContentClick);
+            // 
+            // caixaTemporarioBindingSource
+            // 
+            this.caixaTemporarioBindingSource.DataMember = "CaixaTemporario";
+            this.caixaTemporarioBindingSource.DataSource = this.sGRRC1DataSetALFA;
+            // 
+            // sGRRC1DataSetALFA
+            // 
+            this.sGRRC1DataSetALFA.DataSetName = "SGRRC1DataSetALFA";
+            this.sGRRC1DataSetALFA.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // txt_PrecoSomente
+            // 
+            this.txt_PrecoSomente.Location = new System.Drawing.Point(182, 50);
+            this.txt_PrecoSomente.Name = "txt_PrecoSomente";
+            this.txt_PrecoSomente.Size = new System.Drawing.Size(57, 20);
+            this.txt_PrecoSomente.TabIndex = 22;
+            this.txt_PrecoSomente.Visible = false;
+            // 
+            // caixaTemporarioTableAdapter
+            // 
+            this.caixaTemporarioTableAdapter.ClearBeforeFill = true;
+            // 
+            // lbl_AssociacaoCaixa
+            // 
+            this.lbl_AssociacaoCaixa.AutoSize = true;
+            this.lbl_AssociacaoCaixa.Location = new System.Drawing.Point(257, 13);
+            this.lbl_AssociacaoCaixa.Name = "lbl_AssociacaoCaixa";
+            this.lbl_AssociacaoCaixa.Size = new System.Drawing.Size(62, 13);
+            this.lbl_AssociacaoCaixa.TabIndex = 23;
+            this.lbl_AssociacaoCaixa.Text = "Associacao";
+            this.lbl_AssociacaoCaixa.Visible = false;
+            // 
+            // lbl_Usuario
+            // 
+            this.lbl_Usuario.AutoSize = true;
+            this.lbl_Usuario.Location = new System.Drawing.Point(320, 50);
+            this.lbl_Usuario.Name = "lbl_Usuario";
+            this.lbl_Usuario.Size = new System.Drawing.Size(43, 13);
+            this.lbl_Usuario.TabIndex = 24;
+            this.lbl_Usuario.Text = "Usuário";
+            this.lbl_Usuario.Visible = false;
+            // 
+            // btn_Excluir
+            // 
+            this.btn_Excluir.Location = new System.Drawing.Point(215, 224);
+            this.btn_Excluir.Name = "btn_Excluir";
+            this.btn_Excluir.Size = new System.Drawing.Size(75, 23);
+            this.btn_Excluir.TabIndex = 6;
+            this.btn_Excluir.Text = "Excluir Item";
+            this.btn_Excluir.UseVisualStyleBackColor = true;
+            this.btn_Excluir.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // lbl_NomedoServidor
+            // 
+            this.lbl_NomedoServidor.AutoSize = true;
+            this.lbl_NomedoServidor.Location = new System.Drawing.Point(415, 225);
+            this.lbl_NomedoServidor.Name = "lbl_NomedoServidor";
+            this.lbl_NomedoServidor.Size = new System.Drawing.Size(86, 13);
+            this.lbl_NomedoServidor.TabIndex = 25;
+            this.lbl_NomedoServidor.Text = "NomedoServidor";
+            this.lbl_NomedoServidor.Visible = false;
+            // 
+            // iDCompraDataGridViewTextBoxColumn
+            // 
+            this.iDCompraDataGridViewTextBoxColumn.DataPropertyName = "ID_Compra";
+            this.iDCompraDataGridViewTextBoxColumn.HeaderText = "ID_Compra";
+            this.iDCompraDataGridViewTextBoxColumn.Name = "iDCompraDataGridViewTextBoxColumn";
+            this.iDCompraDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDCompraDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // nomeFantasiaDataGridViewTextBoxColumn
+            // 
+            this.nomeFantasiaDataGridViewTextBoxColumn.DataPropertyName = "Nome Fantasia";
+            this.nomeFantasiaDataGridViewTextBoxColumn.HeaderText = "Nome Fantasia";
+            this.nomeFantasiaDataGridViewTextBoxColumn.Name = "nomeFantasiaDataGridViewTextBoxColumn";
+            this.nomeFantasiaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nomeFantasiaDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // cNPJDataGridViewTextBoxColumn
+            // 
+            this.cNPJDataGridViewTextBoxColumn.DataPropertyName = "CNPJ";
+            this.cNPJDataGridViewTextBoxColumn.HeaderText = "CNPJ";
+            this.cNPJDataGridViewTextBoxColumn.Name = "cNPJDataGridViewTextBoxColumn";
+            this.cNPJDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cNPJDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // materialDataGridViewTextBoxColumn
+            // 
+            this.materialDataGridViewTextBoxColumn.DataPropertyName = "Material";
+            this.materialDataGridViewTextBoxColumn.HeaderText = "Material";
+            this.materialDataGridViewTextBoxColumn.Name = "materialDataGridViewTextBoxColumn";
+            this.materialDataGridViewTextBoxColumn.ReadOnly = true;
+            this.materialDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // precoDataGridViewTextBoxColumn
+            // 
+            this.precoDataGridViewTextBoxColumn.DataPropertyName = "Preco";
+            this.precoDataGridViewTextBoxColumn.HeaderText = "Preco";
+            this.precoDataGridViewTextBoxColumn.Name = "precoDataGridViewTextBoxColumn";
+            this.precoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // massaDataGridViewTextBoxColumn
+            // 
+            this.massaDataGridViewTextBoxColumn.DataPropertyName = "Massa";
+            this.massaDataGridViewTextBoxColumn.HeaderText = "Massa";
+            this.massaDataGridViewTextBoxColumn.Name = "massaDataGridViewTextBoxColumn";
+            this.massaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // valorDataGridViewTextBoxColumn
+            // 
+            this.valorDataGridViewTextBoxColumn.DataPropertyName = "Valor";
+            this.valorDataGridViewTextBoxColumn.HeaderText = "Valor";
+            this.valorDataGridViewTextBoxColumn.Name = "valorDataGridViewTextBoxColumn";
+            this.valorDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // Caixa
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(832, 257);
+            this.Controls.Add(this.lbl_NomedoServidor);
+            this.Controls.Add(this.btn_Excluir);
+            this.Controls.Add(this.lbl_Usuario);
+            this.Controls.Add(this.lbl_AssociacaoCaixa);
+            this.Controls.Add(this.txt_PrecoSomente);
+            this.Controls.Add(this.dgv_CaixaTemporario);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txt_NomeFantasia);
+            this.Controls.Add(this.txt_CNPJ);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btn_FinalizarCompra);
+            this.Controls.Add(this.cbb_FormadePagamento);
+            this.Controls.Add(this.txt_Troco);
+            this.Controls.Add(this.txt_ValorRecebido);
+            this.Controls.Add(this.txt_ValordaCompra);
+            this.Controls.Add(this.txt_Massa);
+            this.Controls.Add(this.txt_NomedoProduto);
+            this.Controls.Add(this.txt_CodigodoProduto);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(848, 296);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(848, 296);
+            this.Name = "Caixa";
+            this.Text = "Financeiro";
+            this.Load += new System.EventHandler(this.Caixa_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_CaixaTemporario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.caixaTemporarioBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sGRRC1DataSetALFA)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.TextBox txt_CodigodoProduto;
+        private System.Windows.Forms.TextBox txt_NomedoProduto;
+        private System.Windows.Forms.TextBox txt_Massa;
+        private System.Windows.Forms.TextBox txt_ValordaCompra;
+        private System.Windows.Forms.TextBox txt_ValorRecebido;
+        private System.Windows.Forms.TextBox txt_Troco;
+        private System.Windows.Forms.ComboBox cbb_FormadePagamento;
+        private System.Windows.Forms.Button btn_FinalizarCompra;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox txt_CNPJ;
+        private System.Windows.Forms.TextBox txt_NomeFantasia;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.DataGridView dgv_CaixaTemporario;
+        private SGRRC1DataSetALFA sGRRC1DataSetALFA;
+        private SGRRC1DataSetALFATableAdapters.CaixaTemporarioTableAdapter caixaTemporarioTableAdapter;
+        private System.Windows.Forms.BindingSource caixaTemporarioBindingSource;
+        private System.Windows.Forms.TextBox txt_PrecoSomente;
+        public System.Windows.Forms.Label lbl_AssociacaoCaixa;
+        public System.Windows.Forms.Label lbl_Usuario;
+        private System.Windows.Forms.Button btn_Excluir;
+        public System.Windows.Forms.Label lbl_NomedoServidor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDCompraDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeFantasiaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cNPJDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn materialDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn massaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn valorDataGridViewTextBoxColumn;
+    }
+}
+
+using iTextSharp.text.pdf;
+using iTextSharp.text;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Net;
+using System.Runtime.InteropServices.WindowsRuntime;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Xml.Linq;
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    public partial class Caixa : Form
+    {
+        public Caixa()
+        {
+            InitializeComponent();
+        }
+
+        private void txt_CNPJ_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void txt_CNPJ_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; 
+            }
+
+            if (Convert.ToInt32(e.KeyChar) == 13)
+            {
+                e.Handled = true;
+
+
+                string NomedoServidor = lbl_NomedoServidor.Text;
+                SqlConnection Conectar = new SqlConnection("Data Source=DESKTOP-" + NomedoServidor + "\\SQLEXPRESS;Initial Catalog=SGRRC1;Integrated Security=True");
+
+                Conectar.Open();
+                
+                Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
+
+                string CNPJ = cryptography.Encriptar(txt_CNPJ.Text);
+                SqlCommand cmd = new SqlCommand("select [Nome Fantasia] from CLIENTES WHERE [CNPJ] = '" + CNPJ + "'", Conectar);
+                var NomeFantasia = cmd.ExecuteScalar();
+
+                if (NomeFantasia != null)
+                {
+
+                    txt_NomeFantasia.Text = NomeFantasia.ToString();
+                    Conectar.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Cliente não encontrado.");
+                    Conectar.Close();
+                    return;
+                    
+                }
+            }
+
+
+        }
+
+        private void txt_CodigodoProduto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if ((!char.IsNumber(e.KeyChar)) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+
+            }
+            else
+            {
+                e.Handled = false;
+
+            }
+
+            if (Convert.ToInt32(e.KeyChar) == 13 && txt_CodigodoProduto.Text != "")
+            {
+                e.Handled = true;
+
+                string NomedoServidor = lbl_NomedoServidor.Text;
+                SqlConnection Conectar = new SqlConnection("Data Source=DESKTOP-" + NomedoServidor + "\\SQLEXPRESS;Initial Catalog=SGRRC1;Integrated Security=True");
+                Conectar.Open();
+                string Material = txt_CodigodoProduto.Text;
+                SqlCommand cmd = new SqlCommand("select [Material] from METERIAIS WHERE [ID_Material] = '" + Material + "'", Conectar);
+                SqlCommand cmd2 = new SqlCommand("select [Preco] from METERIAIS WHERE [ID_Material] = '" + Material + "'", Conectar);
+
+                var MaterialNome = cmd.ExecuteScalar();
+                var Preco = cmd2.ExecuteScalar();
+                if (Material != null && Preco != null)
+                {
+                    try
+                    {
+                       
+                        txt_NomedoProduto.Text = MaterialNome.ToString();
+                        txt_PrecoSomente.Text = Preco.ToString();
+                        Conectar.Close();
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Material não encontrado.");
+                        return;
+
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Material não encontrado.");
+                    return;
+                }
+             
+
+            }
+
+        }
+
+        private void txt_Massa_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsNumber(e.KeyChar)) && !char.IsControl(e.KeyChar) && e.KeyChar != '.' && e.KeyChar != ',')
+            {
+                e.Handled = true;
+
+            }
+            else
+            {
+                e.Handled = false;
+            }
+
+            if(Convert.ToInt32(e.KeyChar) == 13)
+            {
+                if (txt_NomedoProduto.Text != "")
+                {
+                    if (txt_NomeFantasia.Text != "")
+                    {
+                        if (txt_Massa.Text != "")
+                        {
+                            e.Handled = true;
+
+                            Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
+                        
+                            string UnidadeCrip = cryptography.Encriptar(lbl_AssociacaoCaixa.Text);
+                            string UsuarioCrip = cryptography.Encriptar(lbl_Usuario.Text);
+
+                            CaixaTemporarioClasse CaixaTemporario = new CaixaTemporarioClasse();
+                            CaixaTemporario.Material = txt_NomedoProduto.Text;
+                            CaixaTemporario.Massa = Decimal.Parse(txt_Massa.Text);
+                            CaixaTemporario.Preco = (Decimal.Parse(cryptography.Decriptar(txt_PrecoSomente.Text)));
+                            CaixaTemporario.Valor = (Decimal.Parse((txt_Massa.Text)) * (Decimal.Parse(cryptography.Decriptar(txt_PrecoSomente.Text)))); ;
+                            CaixaTemporario.Unidade = UnidadeCrip;
+                            CaixaTemporario.Usuario = UsuarioCrip;
+                            CaixaTemporario.NomedoServidor = lbl_NomedoServidor.Text;
+                            ConexaoBancodeDados.CaixaTemporario(CaixaTemporario);
+
+                            //this.caixaTemporarioTableAdapter.Fill(this.sGRRC1DataSetALFA.CaixaTemporario);
+
+                            string vqueryCaixa = @"SELECT [ID_Compra], [Material], [Preco], [Massa], [Valor] FROM CaixaTemporario";
+                            dgv_CaixaTemporario.DataSource = ConexaoBancodeDados.dql(vqueryCaixa, lbl_NomedoServidor.Text);
+                           
+
+                            decimal TotalValor = 0;
+                            for (int i = 0; i < dgv_CaixaTemporario.Rows.Count; ++i)
+                            {
+                                TotalValor += Convert.ToDecimal(dgv_CaixaTemporario.Rows[i].Cells[6].Value);
+                            }
+                            txt_ValordaCompra.Text = TotalValor.ToString();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Digite um valor de massa.");
+                            return;
+
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Digite um CNPJ válido e aperte ENTRA.");
+                        return;
+
+                    }
+
+                }
+                else
+                {
+                    
+                    MessageBox.Show("Digite um código de produto válido e aperte ENTRA.");
+                    return;
+                }
+            }
+        }
+
+        private void txt_ValorRecebido_TabStopChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_ValorRecebido_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsNumber(e.KeyChar)) && !char.IsControl(e.KeyChar) && Convert.ToInt32(e.KeyChar) == 13)
+            {
+                e.Handled = true;
+                txt_ValorRecebido.Text = txt_ValordaCompra.Text;
+
+
+            }
+            else
+            {
+                e.Handled = false;
+
+            }
+
+            if (cbb_FormadePagamento.SelectedIndex == 4 && e.KeyChar == 13)
+            {
+                if(Decimal.Parse(txt_ValordaCompra.Text) > (Decimal.Parse(txt_ValorRecebido.Text)))
+                {
+                    MessageBox.Show("Valor recebido insuficiente.");
+                    return;
+                }
+                txt_Troco.Text = (Decimal.Parse(txt_ValorRecebido.Text) - Decimal.Parse(txt_ValordaCompra.Text)).ToString();
+
+
+            }
+        }
+
+        private void Caixa_Load(object sender, EventArgs e)
+        {
+            // TODO: esta linha de código carrega dados na tabela 'sGRRC1DataSetALFA.CaixaTemporario'. Você pode movê-la ou removê-la conforme necessário.
+
+        }
+
+        private void dgv_CaixaTemporario_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btn_FinalizarCompra_Click(object sender, EventArgs e)
+        {
+            if (txt_NomeFantasia.Text != "")
+            {
+                if (txt_CNPJ.Text != "")
+                {
+                    if (txt_CodigodoProduto.Text != "")
+                    {
+                        if (txt_NomedoProduto.Text != "")
+                        {
+                            if (txt_PrecoSomente.Text != "")
+                            {
+                                if (txt_Massa.Text != "")
+                                {
+                                    if (Decimal.Parse(txt_ValordaCompra.Text) > (Decimal.Parse(txt_ValorRecebido.Text)))
+                                    {
+                                        MessageBox.Show("Valor recebido insuficiente.");
+                                        return;
+                                    }
+
+                                    if (cbb_FormadePagamento.SelectedIndex == -1)
+                                    {
+                                        MessageBox.Show("Escolha uma forma de pagamento.");
+                                        return;
+
+                                    }
+                                    else
+                                    {
+                                        for (int i = 0; i < dgv_CaixaTemporario.Rows.Count; i++)
+                                        {
+                                            if (dgv_CaixaTemporario.Rows.Count > 0)
+                                            {
+                                                Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
+                                                string CNPJCrip = cryptography.Encriptar(txt_CNPJ.Text);
+                                                string CodProdCrip = cryptography.Encriptar(txt_CodigodoProduto.Text);
+                                                string NomedoProdutoPrecoQuiloCrip = (this.dgv_CaixaTemporario.Rows[i].Cells[3].Value?.ToString());
+                                                string TipodePagamento = cryptography.Encriptar(cbb_FormadePagamento.Text);
+                                                string ValorRecebidoCrip = cryptography.Encriptar(txt_ValorRecebido.Text);
+                                                string TrocoCrip = cryptography.Encriptar(txt_Troco.Text);
+                                                string UnidadeCrip = cryptography.Encriptar(lbl_AssociacaoCaixa.Text);
+                                                string UsuarioCrip = cryptography.Encriptar(lbl_Usuario.Text);
+                                                string MassaCrip = cryptography.Encriptar(txt_Massa.Text);
+                                                string DataHoraCrip = DateTime.Now.ToString();
+
+                                                VendasClasse Vendas = new VendasClasse();
+                                                Vendas.NomeFantasia = txt_NomeFantasia.Text;
+                                                Vendas.CNPJ = CNPJCrip;
+                                                Vendas.CodigodoProduto = CodProdCrip;
+                                                Vendas.NomedoProdutoPrecoQuilo = NomedoProdutoPrecoQuiloCrip;
+                                                Vendas.ValordaCompra = txt_ValordaCompra.Text;
+                                                Vendas.TipodePagamento = TipodePagamento;
+                                                Vendas.ValorRecebido = ValorRecebidoCrip;
+                                                Vendas.Troco = TrocoCrip;
+                                                Vendas.Associacao = UnidadeCrip;
+                                                Vendas.Usuario = UsuarioCrip;
+                                                Vendas.Massa = MassaCrip;
+                                                Vendas.DataHora = DataHoraCrip;
+                                                Vendas.Data = DateTime.Now.ToShortDateString();
+                                                Vendas.valorproduto = Decimal.Parse(this.dgv_CaixaTemporario.Rows[i].Cells[6].Value?.ToString());
+                                                Vendas.Nomedoservidor = lbl_NomedoServidor.Text;
+
+                                                ConexaoBancodeDados.NovaVenda(Vendas);
+
+                                                this.Close();
+
+                                            }
+
+
+                                            else
+                                            {
+                                                    MessageBox.Show("Nenhum produto registrado.");
+                                                    return;
+                                                
+                                            }
+                                        }
+
+                                        if(dgv_CaixaTemporario.Rows.Count != 0)
+                                        {
+                                            MessageBox.Show("Compra realizada com sucesso!");
+                                            var Recibo = MessageBox.Show("Imprimir recibo?", "Recibo", MessageBoxButtons.YesNo);
+                                            if (Recibo == DialogResult.Yes)
+                                            {
+                                                try
+                                                {
+
+                                                    string compradata = DateTime.Now.ToString();
+                                                    string output = string.Concat(compradata.Where(Char.IsDigit));
+                                                    string cliente = txt_NomeFantasia.Text;
+                                                    string troco = txt_Troco.Text;
+                                                    string total = txt_ValordaCompra.Text;
+                                                    string recebido = txt_ValorRecebido.Text;
+                                                    string forma = cbb_FormadePagamento.Text;
+                                                    string nomeserivdor = lbl_NomedoServidor.Text;
+                                                    string nomeArquivo = Globais.caminhoImpressao + @"\RECIBO_" + cliente + "_" + output + ".pdf";
+                                                    FileStream arquivoPDF = new FileStream(nomeArquivo, FileMode.Create);
+
+                                                    string nomeassociacao = lbl_AssociacaoCaixa.Text;
+                                                    Document doc = new Document(PageSize.A4.Rotate(), 30f, 0f, 150f, 150f);
+                                                    doc.SetPageSize(doc.PageSize);
+                                                    PdfWriter escritorPDF = PdfWriter.GetInstance(doc, arquivoPDF);
+                                                    escritorPDF.PageEvent = new ReciboImprmircs(cliente, troco, recebido, total, forma, nomeassociacao, nomeserivdor);
+                                                    doc.Open();
+
+
+                                                    string dados = "";
+
+                                                    Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
+
+                                                    string NomedoServidor = lbl_NomedoServidor.Text;
+                                                    SqlConnection Conectar = new SqlConnection("Data Source=DESKTOP-" + NomedoServidor + "\\SQLEXPRESS;Initial Catalog=SGRRC1;Integrated Security=True");
+                                                    Conectar.Open();
+                                                    string AdministradorLogin = cryptography.Encriptar(lbl_Usuario.Text);
+                                                    SqlCommand cmd = new SqlCommand("select [txt_NomeAdministrador] from [ADMINISTRADORES] WHERE [txt_AdministradorLogin] = '" + AdministradorLogin + "'", Conectar);
+                                                    var NomeAdministrador = cmd.ExecuteScalar();
+                                                    string AdministradorNome = NomeAdministrador.ToString();
+
+                                                    try
+                                                    {
+                                                        SqlCommand cmd2 = new SqlCommand("select [EnderecoImagem] from [ASSOCIACAO] WHERE [Nome Fantasia] = '" + lbl_AssociacaoCaixa.Text + "'", Conectar);
+                                                        var EnderecoImagem = cmd2.ExecuteScalar();
+                                                        string Endereco = EnderecoImagem.ToString();
+
+                                                        iTextSharp.text.Image LogotipoAssociacao = iTextSharp.text.Image.GetInstance(Endereco);
+                                                        LogotipoAssociacao.ScaleToFit(140f, 120f);
+                                                        LogotipoAssociacao.SetAbsolutePosition(650f, 475);
+                                                        doc.Add(LogotipoAssociacao);
+                                                        Conectar.Close();
+                                                    }
+                                                    catch
+                                                    {
+
+                                                        iTextSharp.text.Image LogotipoAssociacao = iTextSharp.text.Image.GetInstance(Globais.caminho + @"\BRANCO.png");
+                                                        LogotipoAssociacao.ScaleToFit(140f, 120f);
+                                                        LogotipoAssociacao.SetAbsolutePosition(650f, 480);
+                                                        doc.Add(LogotipoAssociacao);
+                                                    }
+
+                                                    Conectar.Close();
+
+                                                    //ColumnText ct = new ColumnText(escritorPDF.DirectContent);
+                                                    //ct.SetSimpleColumn(new iTextSharp.text.Rectangle(0, 500, 523, 0));
+                                                    //ct.AddElement(new Paragraph("Eu" + AdministradorNome + "Acuso recebimento de " + total + " de " + txt_NomeFantasia.Text + ")"));
+                                                    //ct.Go();
+
+                                                    PdfPTable tabela1 = new PdfPTable(3);
+                                                    tabela1.WidthPercentage = 50;
+                                                    tabela1.SpacingBefore = 50;
+                                                    tabela1.AddCell("Material");
+                                                    tabela1.AddCell("Massa (kg)");
+                                                    tabela1.AddCell("Valor (R$)");
+
+                                                    string UsuarioCrip = cryptography.Encriptar(lbl_Usuario.Text);
+
+                                                    string vqueryReciboImpressao = @"SELECT [Material], [Massa], [Valor] FROM [CaixaTemporario] WHERE [Usuario] ='" + UsuarioCrip + "' ORDER BY [Material] ASC";
+
+                                                    string Nomedoservidor = lbl_NomedoServidor.Text;
+                                                    DataTable dtReciboImpressao = ConexaoBancodeDados.dql(vqueryReciboImpressao, Nomedoservidor);
+                                                    for (int i2 = 0; i2 < dtReciboImpressao.Rows.Count; i2++)
+                                                    {
+                                                        tabela1.AddCell(new PdfPCell()).AddElement(new Paragraph(dtReciboImpressao.Rows[i2].Field<string>("Material"), new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 10, (int)System.Drawing.FontStyle.Bold)));
+                                                        tabela1.AddCell(new PdfPCell()).AddElement(new Paragraph(dtReciboImpressao.Rows[i2].Field<Decimal>("Massa").ToString(), new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 10, (int)System.Drawing.FontStyle.Bold)));
+                                                        tabela1.AddCell(new PdfPCell()).AddElement(new Paragraph(dtReciboImpressao.Rows[i2].Field<Decimal>("Valor").ToString(), new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 10, (int)System.Drawing.FontStyle.Bold)));
+                                                    }
+
+                                                    PdfPTable Recibo1 = new PdfPTable(1);
+                                                    Recibo1.TotalWidth = doc.PageSize.Width - doc.LeftMargin - doc.RightMargin;
+                                                    Recibo1.SpacingAfter = 20;
+                                                    PdfPCell CelulaRecibo1 = new PdfPCell((new Paragraph("Eu, " + AdministradorNome + " acuso recebimento de R$" + total + " de " + txt_NomeFantasia.Text + "," +
+                                                        "")));
+                                                    CelulaRecibo1.HorizontalAlignment = Element.ALIGN_CENTER;
+                                                    CelulaRecibo1.Border = 0;
+                                                    Recibo1.AddCell(CelulaRecibo1);
+                                                    Recibo1.WriteSelectedRows(0, -1, doc.LeftMargin, escritorPDF.PageSize.GetBottom(doc.BottomMargin) + 345, escritorPDF.DirectContent);
+
+                                                    PdfPTable Recibo2 = new PdfPTable(1);
+                                                    Recibo2.TotalWidth = doc.PageSize.Width - doc.LeftMargin - doc.RightMargin;
+                                                    Recibo2.SpacingAfter = 50;
+                                                    PdfPCell CelulaRecibo2 = new PdfPCell((new Paragraph(" CNPJ " + txt_CNPJ.Text + " referente à venda de")));
+                                                    CelulaRecibo2.HorizontalAlignment = Element.ALIGN_CENTER;
+                                                    CelulaRecibo2.Border = 0;
+                                                    Recibo2.AddCell(CelulaRecibo2);
+                                                    Recibo2.WriteSelectedRows(0, -1, doc.LeftMargin, escritorPDF.PageSize.GetBottom(doc.BottomMargin) + 325, escritorPDF.DirectContent);
+
+
+
+                                                    doc.Add(tabela1);
+                                                    doc.Close();
+
+                                                    string vqueryLimparCaixa = @"DELETE FROM CaixaTemporario WHERE [Unidade] = '" + lbl_AssociacaoCaixa.Text + "' AND [Usuario] ='" + lbl_Usuario.Text + "'";
+                                                    ConexaoBancodeDados.dql(vqueryLimparCaixa, Nomedoservidor);
+
+                                                    System.Diagnostics.Process.Start(Globais.caminhoImpressao + @"\RECIBO_" + cliente + "_" + output + ".pdf");
+                                                }
+                                                catch
+                                                {
+                                                    MessageBox.Show("Pasta 'Impressão' não encontrada");
+                                                    return;
+
+                                                }
+                                            }
+                                            else
+                                            {
+                                                string Nomedoservidor = lbl_NomedoServidor.Text;
+                                                string vqueryLimparCaixa = @"DELETE FROM CaixaTemporario WHERE [Unidade] = '" + lbl_AssociacaoCaixa.Text + "' AND [Usuario] ='" + lbl_Usuario.Text + "'";
+                                                ConexaoBancodeDados.dql(vqueryLimparCaixa, Nomedoservidor);
+                                            }
+
+
+                                        }
+                                        else
+                                        {
+                                            MessageBox.Show("Nenhum produto selecionado.");
+                                            return;
+
+                                        }
+                                      
+                                    }
+
+
+
+
+
+                                }
+                                else
+                                {
+
+                                    MessageBox.Show("Digite um valor de massa.");
+                                    return;
+
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Digite um código de produto.");
+                                return;
+
+                            }
+
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("Digite um código de produto.");
+                            return;
+                        }
+
+
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Digite um código de produto.");
+                        return;
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Digite um CNPJ.");
+                    return;
+
+                }
+
+
+            }
+            else
+            {
+                MessageBox.Show("Digite um CNPJ.");
+                return;
+
+            }
+
+        }      
+
+        private void cbb_FormadePagamento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(cbb_FormadePagamento.SelectedIndex == 4)
+            {
+                txt_ValorRecebido.ReadOnly = false;
+
+            }
+            else
+            {
+                txt_ValorRecebido.ReadOnly = true;
+                txt_ValorRecebido.Text = txt_ValordaCompra.Text;
+
+
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            if (dgv_CaixaTemporario.Rows.Count == 0)
+            {
+                MessageBox.Show("Produto não selecionado.");
+                return;
+
+            }
+            else
+            {
+
+                Caixa caixa = new Caixa();
+                Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
+                string UnidadeCrip = cryptography.Encriptar(lbl_AssociacaoCaixa.Text);
+                string UsuarioCrip = cryptography.Encriptar(lbl_Usuario.Text);
+                var IDCompras = this.dgv_CaixaTemporario.CurrentRow.Cells[0].Value;
+                string IDCompra = IDCompras.ToString();
+                string ExcluirItem = @"DELETE FROM CaixaTemporario WHERE [Unidade] = '" + UnidadeCrip + "' AND [Usuario] = '" +UsuarioCrip +"' AND ID_Compra = '"+IDCompra+"'";
+                string Nomedoservidor = lbl_NomedoServidor.Text;
+                ConexaoBancodeDados.dql(ExcluirItem, Nomedoservidor);
+
+                string vqueryCaixa = @"SELECT [ID_Compra], [Material], [Preco], [Massa], [Valor] FROM CaixaTemporario";
+                dgv_CaixaTemporario.DataSource = ConexaoBancodeDados.dql(vqueryCaixa, lbl_NomedoServidor.Text);
+
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string Nomedoservidor = lbl_NomedoServidor.Text;
+            string ExcluirItem = @"DELETE FROM CaixaTemporario WHERE [Unidade] = '" + lbl_AssociacaoCaixa.Text + "' AND [Usuario] ='" + lbl_Usuario.Text + "'";
+            ConexaoBancodeDados.dql(ExcluirItem, Nomedoservidor);
+            this.Close();
+        }
+    }
+}
