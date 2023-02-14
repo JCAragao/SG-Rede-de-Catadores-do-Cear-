@@ -1,0 +1,759 @@
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    partial class ClienteEditar
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClienteEditar));
+            this.label5 = new System.Windows.Forms.Label();
+            this.txt_emailEditarCliente = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt_RazaoSocialEditarCliente = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_DatadeCadastroEditarCliente = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txt_CEPEditarCliente = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txt_TelefoneEditarCliente = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cbb_RegimedeTributacaoEditarCliente = new System.Windows.Forms.ComboBox();
+            this.txt_CNPJEditarCliente = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txt_RuaEditarCliente = new System.Windows.Forms.TextBox();
+            this.txt_BairroEditarCliente = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btn_CancelarCadastrarCliente = new System.Windows.Forms.Button();
+            this.btn_EditarCliente = new System.Windows.Forms.Button();
+            this.cbb_CidadeEditarCliente = new System.Windows.Forms.ComboBox();
+            this.lbl_Cidade = new System.Windows.Forms.Label();
+            this.txt_NomeFantasiaEditarCliente = new System.Windows.Forms.TextBox();
+            this.lbl_NomeCompletoCadastrarCatador = new System.Windows.Forms.Label();
+            this.txt_MatriculaCliente = new System.Windows.Forms.TextBox();
+            this.lbl_Usuario = new System.Windows.Forms.Label();
+            this.lbl_Unidade = new System.Windows.Forms.Label();
+            this.lbl_DataEditada = new System.Windows.Forms.Label();
+            this.lbl_EditadoporUltimo = new System.Windows.Forms.Label();
+            this.lbl_UsuarioEditado = new System.Windows.Forms.Label();
+            this.lbl_IDCliente = new System.Windows.Forms.Label();
+            this.lbl_NomedoServidor = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(146, 129);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(31, 13);
+            this.label5.TabIndex = 125;
+            this.label5.Text = "email";
+            // 
+            // txt_emailEditarCliente
+            // 
+            this.txt_emailEditarCliente.Location = new System.Drawing.Point(146, 146);
+            this.txt_emailEditarCliente.MaxLength = 50;
+            this.txt_emailEditarCliente.Name = "txt_emailEditarCliente";
+            this.txt_emailEditarCliente.Size = new System.Drawing.Size(133, 20);
+            this.txt_emailEditarCliente.TabIndex = 124;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(149, 55);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(68, 13);
+            this.label4.TabIndex = 123;
+            this.label4.Text = "Razão social";
+            // 
+            // txt_RazaoSocialEditarCliente
+            // 
+            this.txt_RazaoSocialEditarCliente.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txt_RazaoSocialEditarCliente.Location = new System.Drawing.Point(149, 72);
+            this.txt_RazaoSocialEditarCliente.MaxLength = 50;
+            this.txt_RazaoSocialEditarCliente.Name = "txt_RazaoSocialEditarCliente";
+            this.txt_RazaoSocialEditarCliente.Size = new System.Drawing.Size(193, 20);
+            this.txt_RazaoSocialEditarCliente.TabIndex = 122;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(351, 55);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(90, 13);
+            this.label3.TabIndex = 121;
+            this.label3.Text = "Data de Cadastro";
+            // 
+            // txt_DatadeCadastroEditarCliente
+            // 
+            this.txt_DatadeCadastroEditarCliente.Location = new System.Drawing.Point(351, 72);
+            this.txt_DatadeCadastroEditarCliente.MaxLength = 10;
+            this.txt_DatadeCadastroEditarCliente.Name = "txt_DatadeCadastroEditarCliente";
+            this.txt_DatadeCadastroEditarCliente.Size = new System.Drawing.Size(73, 20);
+            this.txt_DatadeCadastroEditarCliente.TabIndex = 120;
+            this.txt_DatadeCadastroEditarCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_DatadeCadastroEditarCliente_KeyPress);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(12, 219);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(70, 13);
+            this.label12.TabIndex = 119;
+            this.label12.Text = "Rua, Número";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(12, 129);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(93, 13);
+            this.label11.TabIndex = 118;
+            this.label11.Text = "(XX)XXXXX-XXXX";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(12, 258);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(117, 13);
+            this.label10.TabIndex = 117;
+            this.label10.Text = "CEP(somente números)";
+            // 
+            // txt_CEPEditarCliente
+            // 
+            this.txt_CEPEditarCliente.Location = new System.Drawing.Point(11, 274);
+            this.txt_CEPEditarCliente.MaxLength = 8;
+            this.txt_CEPEditarCliente.Name = "txt_CEPEditarCliente";
+            this.txt_CEPEditarCliente.Size = new System.Drawing.Size(51, 20);
+            this.txt_CEPEditarCliente.TabIndex = 116;
+            this.txt_CEPEditarCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_CEPEditarCliente_KeyPress);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(12, 116);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(49, 13);
+            this.label9.TabIndex = 115;
+            this.label9.Text = "Telefone";
+            // 
+            // txt_TelefoneEditarCliente
+            // 
+            this.txt_TelefoneEditarCliente.Location = new System.Drawing.Point(15, 145);
+            this.txt_TelefoneEditarCliente.MaxLength = 15;
+            this.txt_TelefoneEditarCliente.Name = "txt_TelefoneEditarCliente";
+            this.txt_TelefoneEditarCliente.Size = new System.Drawing.Size(89, 20);
+            this.txt_TelefoneEditarCliente.TabIndex = 114;
+            this.txt_TelefoneEditarCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_TelefoneEditarCliente_KeyPress);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(16, 55);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(112, 13);
+            this.label8.TabIndex = 113;
+            this.label8.Text = "Regime de Tributação";
+            // 
+            // cbb_RegimedeTributacaoEditarCliente
+            // 
+            this.cbb_RegimedeTributacaoEditarCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_RegimedeTributacaoEditarCliente.FormattingEnabled = true;
+            this.cbb_RegimedeTributacaoEditarCliente.Items.AddRange(new object[] {
+            "MEI",
+            "Simples Nacional",
+            "Lucro Real",
+            "Lucro Presumido"});
+            this.cbb_RegimedeTributacaoEditarCliente.Location = new System.Drawing.Point(15, 71);
+            this.cbb_RegimedeTributacaoEditarCliente.Name = "cbb_RegimedeTributacaoEditarCliente";
+            this.cbb_RegimedeTributacaoEditarCliente.Size = new System.Drawing.Size(89, 21);
+            this.cbb_RegimedeTributacaoEditarCliente.TabIndex = 112;
+            // 
+            // txt_CNPJEditarCliente
+            // 
+            this.txt_CNPJEditarCliente.Location = new System.Drawing.Point(351, 24);
+            this.txt_CNPJEditarCliente.MaxLength = 12;
+            this.txt_CNPJEditarCliente.Name = "txt_CNPJEditarCliente";
+            this.txt_CNPJEditarCliente.Size = new System.Drawing.Size(89, 20);
+            this.txt_CNPJEditarCliente.TabIndex = 111;
+            this.txt_CNPJEditarCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_CNPJEditarCliente_KeyPress_1);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(348, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(123, 13);
+            this.label6.TabIndex = 110;
+            this.label6.Text = "CNPJ(somente números)";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 203);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.TabIndex = 109;
+            this.label2.Text = "Endereço";
+            // 
+            // txt_RuaEditarCliente
+            // 
+            this.txt_RuaEditarCliente.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txt_RuaEditarCliente.Location = new System.Drawing.Point(11, 235);
+            this.txt_RuaEditarCliente.MaxLength = 50;
+            this.txt_RuaEditarCliente.Name = "txt_RuaEditarCliente";
+            this.txt_RuaEditarCliente.Size = new System.Drawing.Size(194, 20);
+            this.txt_RuaEditarCliente.TabIndex = 108;
+            this.txt_RuaEditarCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_RuaEditarCliente_KeyPress);
+            // 
+            // txt_BairroEditarCliente
+            // 
+            this.txt_BairroEditarCliente.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txt_BairroEditarCliente.Location = new System.Drawing.Point(381, 235);
+            this.txt_BairroEditarCliente.MaxLength = 50;
+            this.txt_BairroEditarCliente.Name = "txt_BairroEditarCliente";
+            this.txt_BairroEditarCliente.Size = new System.Drawing.Size(90, 20);
+            this.txt_BairroEditarCliente.TabIndex = 107;
+            this.txt_BairroEditarCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_BairroEditarCliente_KeyPress);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(378, 219);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.TabIndex = 106;
+            this.label1.Text = "Bairro";
+            // 
+            // btn_CancelarCadastrarCliente
+            // 
+            this.btn_CancelarCadastrarCliente.Location = new System.Drawing.Point(315, 296);
+            this.btn_CancelarCadastrarCliente.Name = "btn_CancelarCadastrarCliente";
+            this.btn_CancelarCadastrarCliente.Size = new System.Drawing.Size(75, 34);
+            this.btn_CancelarCadastrarCliente.TabIndex = 105;
+            this.btn_CancelarCadastrarCliente.Text = "Cancelar";
+            this.btn_CancelarCadastrarCliente.UseVisualStyleBackColor = true;
+            this.btn_CancelarCadastrarCliente.Click += new System.EventHandler(this.btn_CancelarCadastrarCliente_Click);
+            // 
+            // btn_EditarCliente
+            // 
+            this.btn_EditarCliente.Location = new System.Drawing.Point(396, 296);
+            this.btn_EditarCliente.Name = "btn_EditarCliente";
+            this.btn_EditarCliente.Size = new System.Drawing.Size(75, 34);
+            this.btn_EditarCliente.TabIndex = 104;
+            this.btn_EditarCliente.Text = "Salvar Alterações";
+            this.btn_EditarCliente.UseVisualStyleBackColor = true;
+            this.btn_EditarCliente.Click += new System.EventHandler(this.btn_EditarCliente_Click);
+            // 
+            // cbb_CidadeEditarCliente
+            // 
+            this.cbb_CidadeEditarCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_CidadeEditarCliente.FormattingEnabled = true;
+            this.cbb_CidadeEditarCliente.Location = new System.Drawing.Point(210, 235);
+            this.cbb_CidadeEditarCliente.Name = "cbb_CidadeEditarCliente";
+            this.cbb_CidadeEditarCliente.Size = new System.Drawing.Size(161, 21);
+            this.cbb_CidadeEditarCliente.TabIndex = 103;
+            this.cbb_CidadeEditarCliente.Click += new System.EventHandler(this.cbb_CidadeEditarCliente_Click);
+            // 
+            // lbl_Cidade
+            // 
+            this.lbl_Cidade.AutoSize = true;
+            this.lbl_Cidade.Location = new System.Drawing.Point(211, 219);
+            this.lbl_Cidade.Name = "lbl_Cidade";
+            this.lbl_Cidade.Size = new System.Drawing.Size(40, 13);
+            this.lbl_Cidade.TabIndex = 102;
+            this.lbl_Cidade.Text = "Cidade";
+            // 
+            // txt_NomeFantasiaEditarCliente
+            // 
+            this.txt_NomeFantasiaEditarCliente.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txt_NomeFantasiaEditarCliente.Location = new System.Drawing.Point(15, 26);
+            this.txt_NomeFantasiaEditarCliente.MaxLength = 30;
+            this.txt_NomeFantasiaEditarCliente.Name = "txt_NomeFantasiaEditarCliente";
+            this.txt_NomeFantasiaEditarCliente.Size = new System.Drawing.Size(327, 20);
+            this.txt_NomeFantasiaEditarCliente.TabIndex = 101;
+            // 
+            // lbl_NomeCompletoCadastrarCatador
+            // 
+            this.lbl_NomeCompletoCadastrarCatador.AutoSize = true;
+            this.lbl_NomeCompletoCadastrarCatador.Location = new System.Drawing.Point(12, 9);
+            this.lbl_NomeCompletoCadastrarCatador.Name = "lbl_NomeCompletoCadastrarCatador";
+            this.lbl_NomeCompletoCadastrarCatador.Size = new System.Drawing.Size(78, 13);
+            this.lbl_NomeCompletoCadastrarCatador.TabIndex = 100;
+            this.lbl_NomeCompletoCadastrarCatador.Text = "Nome Fantasia";
+            // 
+            // txt_MatriculaCliente
+            // 
+            this.txt_MatriculaCliente.Location = new System.Drawing.Point(298, 146);
+            this.txt_MatriculaCliente.MaxLength = 10;
+            this.txt_MatriculaCliente.Name = "txt_MatriculaCliente";
+            this.txt_MatriculaCliente.Size = new System.Drawing.Size(73, 20);
+            this.txt_MatriculaCliente.TabIndex = 126;
+            this.txt_MatriculaCliente.Visible = false;
+            // 
+            // lbl_Usuario
+            // 
+            this.lbl_Usuario.AutoSize = true;
+            this.lbl_Usuario.Location = new System.Drawing.Point(328, 190);
+            this.lbl_Usuario.Name = "lbl_Usuario";
+            this.lbl_Usuario.Size = new System.Drawing.Size(43, 13);
+            this.lbl_Usuario.TabIndex = 128;
+            this.lbl_Usuario.Text = "Usuario";
+            this.lbl_Usuario.Visible = false;
+            // 
+            // lbl_Unidade
+            // 
+            this.lbl_Unidade.AutoSize = true;
+            this.lbl_Unidade.Location = new System.Drawing.Point(275, 190);
+            this.lbl_Unidade.Name = "lbl_Unidade";
+            this.lbl_Unidade.Size = new System.Drawing.Size(47, 13);
+            this.lbl_Unidade.TabIndex = 127;
+            this.lbl_Unidade.Text = "Unidade";
+            this.lbl_Unidade.Visible = false;
+            // 
+            // lbl_DataEditada
+            // 
+            this.lbl_DataEditada.AutoSize = true;
+            this.lbl_DataEditada.Location = new System.Drawing.Point(156, 320);
+            this.lbl_DataEditada.Name = "lbl_DataEditada";
+            this.lbl_DataEditada.Size = new System.Drawing.Size(30, 13);
+            this.lbl_DataEditada.TabIndex = 129;
+            this.lbl_DataEditada.Text = "Data";
+            this.lbl_DataEditada.Visible = false;
+            // 
+            // lbl_EditadoporUltimo
+            // 
+            this.lbl_EditadoporUltimo.AutoSize = true;
+            this.lbl_EditadoporUltimo.Location = new System.Drawing.Point(8, 307);
+            this.lbl_EditadoporUltimo.Name = "lbl_EditadoporUltimo";
+            this.lbl_EditadoporUltimo.Size = new System.Drawing.Size(109, 13);
+            this.lbl_EditadoporUltimo.TabIndex = 130;
+            this.lbl_EditadoporUltimo.Text = "Editado por último por";
+            this.lbl_EditadoporUltimo.Visible = false;
+            // 
+            // lbl_UsuarioEditado
+            // 
+            this.lbl_UsuarioEditado.AutoSize = true;
+            this.lbl_UsuarioEditado.Location = new System.Drawing.Point(8, 320);
+            this.lbl_UsuarioEditado.Name = "lbl_UsuarioEditado";
+            this.lbl_UsuarioEditado.Size = new System.Drawing.Size(79, 13);
+            this.lbl_UsuarioEditado.TabIndex = 131;
+            this.lbl_UsuarioEditado.Text = "UsuárioEditado";
+            this.lbl_UsuarioEditado.Visible = false;
+            // 
+            // lbl_IDCliente
+            // 
+            this.lbl_IDCliente.AutoSize = true;
+            this.lbl_IDCliente.Location = new System.Drawing.Point(390, 190);
+            this.lbl_IDCliente.Name = "lbl_IDCliente";
+            this.lbl_IDCliente.Size = new System.Drawing.Size(50, 13);
+            this.lbl_IDCliente.TabIndex = 132;
+            this.lbl_IDCliente.Text = "IDCliente";
+            this.lbl_IDCliente.Visible = false;
+            // 
+            // lbl_NomedoServidor
+            // 
+            this.lbl_NomedoServidor.AutoSize = true;
+            this.lbl_NomedoServidor.Location = new System.Drawing.Point(354, 129);
+            this.lbl_NomedoServidor.Name = "lbl_NomedoServidor";
+            this.lbl_NomedoServidor.Size = new System.Drawing.Size(86, 13);
+            this.lbl_NomedoServidor.TabIndex = 133;
+            this.lbl_NomedoServidor.Text = "NomedoServidor";
+            this.lbl_NomedoServidor.Visible = false;
+            // 
+            // ClienteEditar
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(484, 341);
+            this.Controls.Add(this.lbl_NomedoServidor);
+            this.Controls.Add(this.lbl_IDCliente);
+            this.Controls.Add(this.lbl_DataEditada);
+            this.Controls.Add(this.lbl_EditadoporUltimo);
+            this.Controls.Add(this.lbl_UsuarioEditado);
+            this.Controls.Add(this.lbl_Usuario);
+            this.Controls.Add(this.lbl_Unidade);
+            this.Controls.Add(this.txt_MatriculaCliente);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txt_emailEditarCliente);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txt_RazaoSocialEditarCliente);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txt_DatadeCadastroEditarCliente);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.txt_CEPEditarCliente);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.txt_TelefoneEditarCliente);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.cbb_RegimedeTributacaoEditarCliente);
+            this.Controls.Add(this.txt_CNPJEditarCliente);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txt_RuaEditarCliente);
+            this.Controls.Add(this.txt_BairroEditarCliente);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btn_CancelarCadastrarCliente);
+            this.Controls.Add(this.btn_EditarCliente);
+            this.Controls.Add(this.cbb_CidadeEditarCliente);
+            this.Controls.Add(this.lbl_Cidade);
+            this.Controls.Add(this.txt_NomeFantasiaEditarCliente);
+            this.Controls.Add(this.lbl_NomeCompletoCadastrarCatador);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(500, 380);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(500, 380);
+            this.Name = "ClienteEditar";
+            this.Text = "Editar Usina";
+            this.Load += new System.EventHandler(this.ClienteEditar_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_CancelarCadastrarCliente;
+        private System.Windows.Forms.Button btn_EditarCliente;
+        private System.Windows.Forms.Label lbl_Cidade;
+        public System.Windows.Forms.TextBox txt_NomeFantasiaEditarCliente;
+        private System.Windows.Forms.Label lbl_NomeCompletoCadastrarCatador;
+        public System.Windows.Forms.TextBox txt_CNPJEditarCliente;
+        public System.Windows.Forms.ComboBox cbb_RegimedeTributacaoEditarCliente;
+        public System.Windows.Forms.TextBox txt_DatadeCadastroEditarCliente;
+        public System.Windows.Forms.TextBox txt_emailEditarCliente;
+        public System.Windows.Forms.TextBox txt_TelefoneEditarCliente;
+        public System.Windows.Forms.TextBox txt_RuaEditarCliente;
+        public System.Windows.Forms.ComboBox cbb_CidadeEditarCliente;
+        public System.Windows.Forms.TextBox txt_CEPEditarCliente;
+        public System.Windows.Forms.TextBox txt_BairroEditarCliente;
+        public System.Windows.Forms.TextBox txt_RazaoSocialEditarCliente;
+        public System.Windows.Forms.TextBox txt_MatriculaCliente;
+        public System.Windows.Forms.Label lbl_Usuario;
+        public System.Windows.Forms.Label lbl_Unidade;
+        public System.Windows.Forms.Label lbl_DataEditada;
+        private System.Windows.Forms.Label lbl_EditadoporUltimo;
+        public System.Windows.Forms.Label lbl_UsuarioEditado;
+        public System.Windows.Forms.Label lbl_IDCliente;
+        public System.Windows.Forms.Label lbl_NomedoServidor;
+    }
+}
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
+using System.Globalization;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    public partial class ClienteEditar : Form
+    {
+        public ClienteEditar()
+        {
+            InitializeComponent();
+        }
+
+        private void btn_EditarCliente_Click(object sender, EventArgs e)
+        {
+            string format = "dd/MM/yyyy";
+            string DatadeCadastro= txt_DatadeCadastroEditarCliente.Text;
+            DateTime dateTime;
+            if (DateTime.TryParseExact(DatadeCadastro, format, CultureInfo.InvariantCulture, DateTimeStyles.AllowWhiteSpaces, out dateTime))
+            {
+                if (txt_NomeFantasiaEditarCliente.Text != "")
+                {
+                    if (txt_DatadeCadastroEditarCliente.Text != "")
+                    {
+
+                        if (cbb_RegimedeTributacaoEditarCliente.SelectedIndex != -1)
+                        {
+                            if (txt_CNPJEditarCliente.Text != "")
+                            {
+                                if (txt_CEPEditarCliente.Text != "")
+                                {
+                                    if (cbb_CidadeEditarCliente.SelectedIndex != -1)
+                                    {
+                                        if (txt_TelefoneEditarCliente.Text != "")
+                                        {
+                                            if (txt_BairroEditarCliente.Text != "")
+                                            {
+                                                if (txt_RuaEditarCliente.Text != "")
+                                                {
+
+                                                    
+                                                   {
+
+                                                        Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
+                                                        string NomeClienteCrip = txt_NomeFantasiaEditarCliente.Text;
+                                                        string CidadeCrip = cryptography.Encriptar(cbb_CidadeEditarCliente.Text);
+                                                        string BairroCrip = cryptography.Encriptar(txt_BairroEditarCliente.Text);
+                                                        string RuaCrip = cryptography.Encriptar(txt_RuaEditarCliente.Text);
+                                                        string DataCadastroCrip = cryptography.Encriptar(txt_DatadeCadastroEditarCliente.Text);
+                                                        string CNPJCrip = cryptography.Encriptar(txt_CNPJEditarCliente.Text);
+                                                        string TelefoneCrip = cryptography.Encriptar(txt_TelefoneEditarCliente.Text);
+                                                        string CEPCrip = cryptography.Encriptar(txt_CEPEditarCliente.Text);
+                                                        string emailCrip = cryptography.Encriptar(txt_emailEditarCliente.Text);
+
+
+
+
+                                                        ClienteEditadoClasse ClienteEditado = new ClienteEditadoClasse();
+                                                        ClienteEditado.NomeFantasiaEditarCliente = NomeClienteCrip;
+                                                        ClienteEditado.CidadeEditarCliente = CidadeCrip;
+                                                        ClienteEditado.BairroEditarCliente = BairroCrip;
+                                                        ClienteEditado.RuaEditarCliente = RuaCrip;
+                                                        ClienteEditado.DatadeCadastroEditarCliente = DateTime.Parse(DateTime.Now.ToString());
+                                                        ClienteEditado.CNPJEditarCliente = CNPJCrip;
+                                                        ClienteEditado.RegimedeTributacaoEditarCliente = cbb_RegimedeTributacaoEditarCliente.Text;
+                                                        ClienteEditado.TelefoneEditarCliente = TelefoneCrip;
+                                                        ClienteEditado.CEPEditarCliente = CEPCrip;
+                                                        ClienteEditado.RazaoSocialEditarCliente = txt_RazaoSocialEditarCliente.Text;
+                                                        ClienteEditado.emailEditarCliente = emailCrip;
+                                                        ClienteEditado.IDCliente = Convert.ToInt32(txt_MatriculaCliente.Text);
+                                                        ClienteEditado.UsuarioEditarCliente = lbl_Unidade.Text;
+                                                        ClienteEditado.NomedoServidor = lbl_NomedoServidor.Text;
+
+                                                        ConexaoBancodeDados.ClienteEditar(ClienteEditado);
+                                                        this.Close();
+
+                                                    }
+
+                                                }
+                                                else
+                                                {
+
+                                                    MessageBox.Show("O campo Rua e Número não foi preenchido", "Campo inválido", MessageBoxButtons.OK);
+                                                    return;
+
+                                                }
+                                            }
+                                            else
+                                            {
+
+                                                MessageBox.Show("O campo Bairro não foi preenchido", "Campo inválido", MessageBoxButtons.OK);
+                                                return;
+
+                                            }
+                                        }
+                                        else
+                                        {
+
+                                            MessageBox.Show("O campo Telefone não foi preenchido", "Campo inválido", MessageBoxButtons.OK);
+                                            return;
+
+                                        }
+                                    }
+                                    else
+                                    {
+
+                                        MessageBox.Show("O campo Cidade não foi preenchido", "Campo inválido", MessageBoxButtons.OK);
+                                        return;
+
+                                    }
+                                }
+                                else
+                                {
+
+                                    MessageBox.Show("O campo CEP não foi preenchido", "Campo inválido", MessageBoxButtons.OK);
+                                    return;
+
+                                }
+
+
+                            }
+                            else
+                            {
+
+                                MessageBox.Show("O campo CNPJ não foi preenchido", "Campo inválido", MessageBoxButtons.OK);
+                                return;
+
+                            }
+
+                        }
+
+
+                        else
+                        {
+
+                            MessageBox.Show("O campo Regime de Tributação não foi preenchido", "Campo inválido", MessageBoxButtons.OK);
+                            return;
+
+                        }
+
+
+
+                    }
+                    else
+                    {
+
+                        MessageBox.Show("O campo Data de Cadastro não foi preenchido", "Campo inválido", MessageBoxButtons.OK);
+                        return;
+
+                    }
+                }
+                else
+                {
+
+                    MessageBox.Show("O campo Nome  Fantasia  não foi preenchido", "Campo inválido", MessageBoxButtons.OK);
+                    return;
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Digite um formado de data de cadastro válido.");
+                return;
+
+            }
+
+        }
+
+        private void ClienteEditar_Load(object sender, EventArgs e)
+        {
+
+            string NomedoServidor = lbl_NomedoServidor.Text;
+            SqlConnection Conectar = new SqlConnection(@"Data Source=DESKTOP-" + NomedoServidor + "\\SQLEXPRESS;Initial Catalog=SGRRC1;Integrated Security=True");
+            Conectar.Open();
+
+
+            string Matricula = lbl_IDCliente.Text;
+            SqlCommand cmd2 = new SqlCommand("select [UsuarioEditado] from CLIENTES WHERE [ID_Cliente] = '" + Matricula + "'", Conectar);
+            var Matricula2 = cmd2.ExecuteScalar();
+
+            SqlCommand cmd3 = new SqlCommand("select [DataEditado] from CLIENTES WHERE [ID_Cliente] = '" + Matricula + "'", Conectar);
+            var DataEditado = cmd3.ExecuteScalar();
+
+            if (Matricula2 != null)
+            {
+
+                lbl_EditadoporUltimo.Visible = true;
+                label3.Visible = true;
+                lbl_UsuarioEditado.Visible = true;
+                string Matricula3 = Matricula2.ToString();
+                lbl_UsuarioEditado.Text = Matricula3;
+
+
+                lbl_DataEditada.Visible = true;
+                string DataEditado2 = DataEditado.ToString();
+                lbl_DataEditada.Text = DataEditado2;
+
+            }
+
+            Conectar.Close();
+        }
+
+        private void txt_CNPJEditarCliente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsNumber(e.KeyChar)) && !char.IsControl(e.KeyChar) && e.KeyChar != '/')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_DatadeCadastroEditarCliente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar == '/'))
+            {
+                e.Handled = true;
+            }
+
+        }
+
+        private void txt_TelefoneEditarCliente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsNumber(e.KeyChar)) && !char.IsControl(e.KeyChar) && e.KeyChar != '(' && e.KeyChar != ')' && e.KeyChar != '-')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_RuaEditarCliente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsNumber(e.KeyChar)) && (!char.IsLetter(e.KeyChar)) && !char.IsControl(e.KeyChar) && Convert.ToInt32(e.KeyChar) != 8 && Convert.ToInt32(e.KeyChar) != 32 && e.KeyChar == ',')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_BairroEditarCliente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsNumber(e.KeyChar)) && (!char.IsLetter(e.KeyChar)) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_CEPEditarCliente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsNumber(e.KeyChar)) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void cbb_CidadeEditarCliente_Click(object sender, EventArgs e)
+        {
+            string NomedoServidor = lbl_NomedoServidor.Text;
+            string vqueryCidade = @"SELECT * FROM CIDADES ORDER BY ID_Cidade ASC ;";
+            cbb_CidadeEditarCliente.DataSource = ConexaoBancodeDados.dql(vqueryCidade, NomedoServidor);
+            cbb_CidadeEditarCliente.DisplayMember = "Cidade";
+            cbb_CidadeEditarCliente.ValueMember = "ID_Cidade";
+        }
+
+        private void txt_CNPJEditarCliente_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void btn_CancelarCadastrarCliente_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
+}
