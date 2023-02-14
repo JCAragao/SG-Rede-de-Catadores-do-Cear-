@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Permissions;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    internal class CadastroCatadorClasse
+    {
+        public string NomeCompletoCatador;
+        public string CidadeCadastroCatador;
+        public string BairroCadastroCatador;
+        public string RuaCadastroCatador;
+        public string DatadeNascimentoCadastroCatador;
+        public string DatadeMatriculaCadastroCatador;
+        public string MatriculaCadastroCatador;
+        public string RGCadastroCatador;
+        public string CPFCadastroCatador;
+        public string NISCadastroCatador;
+        public string GeneroCadastroCatador;
+        public string TelefoneCadastroCatador;
+        public string CEPCadastroCatador;
+        public string AuxilioCatador;
+        public string AdminstradorCadastroCatador;
+        public string UnidadeCadastroCatadr;
+        public string Funcao;
+        public string Nomedoservidor;
+    }
+}
