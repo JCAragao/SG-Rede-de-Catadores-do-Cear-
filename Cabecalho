@@ -1,0 +1,142 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Net;
+using System.Runtime.InteropServices.ComTypes;
+using System.Runtime.Remoting.Channels;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Xml.Linq;
+using iTextSharp;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using iTextSharp.text.xml;
+using static System.Net.Mime.MediaTypeNames;
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    class Cabecalho : PdfPageEventHelper
+    {
+        string catadornome = null;
+        string associacaonome = null;
+        string servidornome = null;
+        public Cabecalho(string catnome, string nomeassociacao, string nomeservidor)
+        {
+            catadornome = catnome;
+        }
+
+        public override void OnEndPage(PdfWriter writer, Document document)
+        {
+            // base.OnEndPage(writer, document);
+            PdfPTable Cabeçalho = new PdfPTable(1);
+            Cabeçalho.TotalWidth = document.PageSize.Width - document.LeftMargin - document.RightMargin;
+            Cabeçalho.DefaultCell.Border = 0;
+            Cabeçalho.AddCell(new Paragraph());
+
+            PdfPCell Celula = new PdfPCell((new Paragraph("Rede dos Catadores de Resíduos Sólidos Recicláveis do Estado do Ceará")));
+            Celula.HorizontalAlignment = Element.ALIGN_CENTER;
+            Celula.Border = 0;
+            Cabeçalho.AddCell(Celula);
+            Cabeçalho.AddCell(new Paragraph());
+            Cabeçalho.WriteSelectedRows(0, -1, document.LeftMargin, writer.PageSize.GetTop(document.TopMargin) + 80, writer.DirectContent);
+
+            PdfPTable PaginaNumero = new PdfPTable(1);
+            PaginaNumero.TotalWidth = document.PageSize.Width - document.LeftMargin - document.RightMargin;
+            PaginaNumero.SpacingBefore = 50;
+            PdfPCell NumeroPagina = new PdfPCell((new Paragraph("Página" + writer.PageNumber)));
+            NumeroPagina.HorizontalAlignment = Element.ALIGN_RIGHT;
+            NumeroPagina.Border = 0;
+            PaginaNumero.AddCell(NumeroPagina);
+            PaginaNumero.WriteSelectedRows(0, -1, document.LeftMargin, writer.PageSize.GetBottom(document.BottomMargin) - 75, writer.DirectContent);
+
+
+            PdfPTable TextoRelatorioColetasDia = new PdfPTable(1);
+            TextoRelatorioColetasDia.TotalWidth = document.PageSize.Width - document.LeftMargin - document.RightMargin;
+            TextoRelatorioColetasDia.SpacingBefore = 50;
+            TextoRelatorioColetasDia.DefaultCell.Border = 0;
+            TextoRelatorioColetasDia.AddCell(new Paragraph());
+
+            PdfPCell CelulaRelatorioColetaDia = new PdfPCell((new Paragraph("Histórico de Coletas do Catador")));
+            CelulaRelatorioColetaDia.HorizontalAlignment = Element.ALIGN_CENTER;
+            CelulaRelatorioColetaDia.Border = 0;
+            TextoRelatorioColetasDia.AddCell(CelulaRelatorioColetaDia);
+            TextoRelatorioColetasDia.AddCell(new Paragraph());
+            TextoRelatorioColetasDia.WriteSelectedRows(0, -1, document.LeftMargin, writer.PageSize.GetTop(document.TopMargin) + 60, writer.DirectContent);
+
+
+            PdfPTable LinhaAssinatura = new PdfPTable(1);
+            LinhaAssinatura.TotalWidth = document.PageSize.Width - document.LeftMargin - document.RightMargin;
+            LinhaAssinatura.SpacingAfter = 50;
+            PdfPCell CelulaAssinatura = new PdfPCell((new Paragraph("______________________________________________________________________")));
+            CelulaAssinatura.HorizontalAlignment = Element.ALIGN_CENTER;
+            CelulaAssinatura.Border = 0;
+            LinhaAssinatura.AddCell(CelulaAssinatura);
+            LinhaAssinatura.WriteSelectedRows(0, -1, document.LeftMargin, writer.PageSize.GetBottom(document.BottomMargin) - 30, writer.DirectContent);
+
+            PdfPTable LinhaAssinaturaTexto = new PdfPTable(1);
+            LinhaAssinaturaTexto.TotalWidth = document.PageSize.Width - document.LeftMargin - document.RightMargin;
+            PdfPCell CelulaAssinaturaTexto = new PdfPCell((new Paragraph("Linha de Assinatura")));
+            CelulaAssinaturaTexto.HorizontalAlignment = Element.ALIGN_CENTER;
+            CelulaAssinaturaTexto.Border = 0;
+            LinhaAssinaturaTexto.AddCell(CelulaAssinaturaTexto);
+            LinhaAssinaturaTexto.WriteSelectedRows(0, -1, document.LeftMargin, writer.PageSize.GetBottom(document.BottomMargin) - 50, writer.DirectContent);
+
+            iTextSharp.text.Image Logotipo = iTextSharp.text.Image.GetInstance(Globais.caminho+@"\RededeCatadoresdoCeará.png");
+            Logotipo.ScaleToFit(140f, 120f);
+            Logotipo.SetAbsolutePosition(100f, 475f);
+            document.Add(Logotipo);
+
+            try
+            {
+                string NomedoServidor = servidornome;
+                SqlConnection Conectar = new SqlConnection("Data Source=DESKTOP-" + NomedoServidor + "\\SQLEXPRESS;Initial Catalog=SGRRC1;Integrated Security=True");
+                Conectar.Open();
+                SqlCommand cmd2 = new SqlCommand("select [EnderecoImagem] from [ASSOCIACAO] WHERE [Nome Fantasia] = '" + associacaonome + "'", Conectar);
+                var EnderecoImagem = cmd2.ExecuteScalar();
+                string Endereco = EnderecoImagem.ToString();
+
+                iTextSharp.text.Image LogotipoAssociacao = iTextSharp.text.Image.GetInstance(Endereco);
+                LogotipoAssociacao.ScaleToFit(140f, 120f);
+                LogotipoAssociacao.SetAbsolutePosition(650f, 475);
+                document.Add(LogotipoAssociacao);
+                Conectar.Close();
+            }
+            catch
+            {
+
+                iTextSharp.text.Image LogotipoAssociacao = iTextSharp.text.Image.GetInstance(Globais.caminho + @"\BRANCO.png");
+                LogotipoAssociacao.ScaleToFit(140f, 120f);
+                LogotipoAssociacao.SetAbsolutePosition(650f, 480);
+                document.Add(LogotipoAssociacao);
+            }
+
+            PdfPTable DatadaColeta = new PdfPTable(1);
+            DatadaColeta.TotalWidth = document.PageSize.Width - document.LeftMargin - document.RightMargin;
+            DatadaColeta.SpacingAfter = 50;
+            PdfPCell CelulaData = new PdfPCell((new Paragraph(catadornome)));
+            CelulaData.HorizontalAlignment = Element.ALIGN_CENTER;
+            CelulaData.Border = 0;
+            DatadaColeta.AddCell(CelulaData);
+            DatadaColeta.WriteSelectedRows(0, -1, document.LeftMargin, writer.PageSize.GetTop(document.TopMargin) + 45, writer.DirectContent);
+
+            PdfPTable HoraTempo = new PdfPTable(1);
+            HoraTempo.TotalWidth = document.PageSize.Width - document.LeftMargin - document.RightMargin;
+
+            PdfPCell TempoHora = new PdfPCell((new Paragraph("Data de emissão:" + DateTime.Now.ToString())));
+            TempoHora.HorizontalAlignment = Element.ALIGN_LEFT;
+            TempoHora.Border = 0;
+            HoraTempo.AddCell(TempoHora);
+            HoraTempo.WriteSelectedRows(0, -1, document.LeftMargin, writer.PageSize.GetBottom(document.BottomMargin) - 100, writer.DirectContent);
+
+        }
+
+    }
+}
+    
