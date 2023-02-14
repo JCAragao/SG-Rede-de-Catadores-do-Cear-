@@ -1,0 +1,826 @@
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    partial class AdicionarColeta
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdicionarColeta));
+            this.label1 = new System.Windows.Forms.Label();
+            this.btn_AdicionarColetaAdicionarColeta = new System.Windows.Forms.Button();
+            this.lbl_DatadaColeta = new System.Windows.Forms.Label();
+            this.txt_DatadaColeta = new System.Windows.Forms.TextBox();
+            this.txt_MassaAdicionarColeta = new System.Windows.Forms.TextBox();
+            this.lbl_MassaAdicionarColeta = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cbb_TipodeResiduoAdicionarColeta = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.cbb_OrganicoAdicionarColeta = new System.Windows.Forms.ComboBox();
+            this.rdb_OrganicoAdicionarColeta = new System.Windows.Forms.RadioButton();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.cbb_MetalicoFerrosoAdicionarColeta = new System.Windows.Forms.ComboBox();
+            this.cbb_TipodeMaterialAdicionarColeta = new System.Windows.Forms.ComboBox();
+            this.cbb_NaoMetalicoOrganicoAdicionarColeta = new System.Windows.Forms.ComboBox();
+            this.cbb_NaoMetalicoInorganicoAdicionarColeta = new System.Windows.Forms.ComboBox();
+            this.rdb_NaoMetalicoInorganicoAdicionarColeta = new System.Windows.Forms.RadioButton();
+            this.rdb_NaoMetalicoOrganicoAdicionarColeta = new System.Windows.Forms.RadioButton();
+            this.rdb_MetalicoNaoFerrosoAdicionarColeta = new System.Windows.Forms.RadioButton();
+            this.cbb_MetalicoNaoFerrosoAdicionarColeta = new System.Windows.Forms.ComboBox();
+            this.rdb_MetalicoFerrosoAdicionarColeta = new System.Windows.Forms.RadioButton();
+            this.lbl_TipodeMaterialAdicionarColeta = new System.Windows.Forms.Label();
+            this.btn_Cancelar = new System.Windows.Forms.Button();
+            this.lbl_UsuarioColeta = new System.Windows.Forms.Label();
+            this.lbl_UnidadeUsuarioColeta = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_ReciclavelAdicionarColeta = new System.Windows.Forms.TextBox();
+            this.lbl_NomedoServidor = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(22, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Catador";
+            // 
+            // btn_AdicionarColetaAdicionarColeta
+            // 
+            this.btn_AdicionarColetaAdicionarColeta.Location = new System.Drawing.Point(25, 157);
+            this.btn_AdicionarColetaAdicionarColeta.Name = "btn_AdicionarColetaAdicionarColeta";
+            this.btn_AdicionarColetaAdicionarColeta.Size = new System.Drawing.Size(111, 31);
+            this.btn_AdicionarColetaAdicionarColeta.TabIndex = 2;
+            this.btn_AdicionarColetaAdicionarColeta.Text = "Adicionar Coleta";
+            this.btn_AdicionarColetaAdicionarColeta.UseVisualStyleBackColor = true;
+            this.btn_AdicionarColetaAdicionarColeta.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // lbl_DatadaColeta
+            // 
+            this.lbl_DatadaColeta.AutoSize = true;
+            this.lbl_DatadaColeta.Location = new System.Drawing.Point(320, 13);
+            this.lbl_DatadaColeta.Name = "lbl_DatadaColeta";
+            this.lbl_DatadaColeta.Size = new System.Drawing.Size(78, 13);
+            this.lbl_DatadaColeta.TabIndex = 3;
+            this.lbl_DatadaColeta.Text = "Data da Coleta";
+            this.lbl_DatadaColeta.Visible = false;
+            // 
+            // txt_DatadaColeta
+            // 
+            this.txt_DatadaColeta.Location = new System.Drawing.Point(238, 80);
+            this.txt_DatadaColeta.MaxLength = 10;
+            this.txt_DatadaColeta.Name = "txt_DatadaColeta";
+            this.txt_DatadaColeta.Size = new System.Drawing.Size(100, 20);
+            this.txt_DatadaColeta.TabIndex = 4;
+            this.txt_DatadaColeta.Visible = false;
+            this.txt_DatadaColeta.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_DatadaColeta_KeyPress);
+            // 
+            // txt_MassaAdicionarColeta
+            // 
+            this.txt_MassaAdicionarColeta.Location = new System.Drawing.Point(323, 29);
+            this.txt_MassaAdicionarColeta.MaxLength = 7;
+            this.txt_MassaAdicionarColeta.Name = "txt_MassaAdicionarColeta";
+            this.txt_MassaAdicionarColeta.Size = new System.Drawing.Size(57, 20);
+            this.txt_MassaAdicionarColeta.TabIndex = 5;
+            this.txt_MassaAdicionarColeta.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_MassaAdicionarColeta_KeyPress);
+            // 
+            // lbl_MassaAdicionarColeta
+            // 
+            this.lbl_MassaAdicionarColeta.AutoSize = true;
+            this.lbl_MassaAdicionarColeta.Location = new System.Drawing.Point(320, 13);
+            this.lbl_MassaAdicionarColeta.Name = "lbl_MassaAdicionarColeta";
+            this.lbl_MassaAdicionarColeta.Size = new System.Drawing.Size(59, 13);
+            this.lbl_MassaAdicionarColeta.TabIndex = 6;
+            this.lbl_MassaAdicionarColeta.Text = "Massa (kg)";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(22, 106);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(87, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Tipo de Resíduo";
+            // 
+            // cbb_TipodeResiduoAdicionarColeta
+            // 
+            this.cbb_TipodeResiduoAdicionarColeta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_TipodeResiduoAdicionarColeta.FormattingEnabled = true;
+            this.cbb_TipodeResiduoAdicionarColeta.Items.AddRange(new object[] {
+            "Domiciliar",
+            "Comercial",
+            "Industrial",
+            "Público",
+            "Radioativo",
+            "Agrícola",
+            "Eletrônico",
+            "Hospitalar",
+            "Orgânico"});
+            this.cbb_TipodeResiduoAdicionarColeta.Location = new System.Drawing.Point(25, 121);
+            this.cbb_TipodeResiduoAdicionarColeta.Name = "cbb_TipodeResiduoAdicionarColeta";
+            this.cbb_TipodeResiduoAdicionarColeta.Size = new System.Drawing.Size(142, 21);
+            this.cbb_TipodeResiduoAdicionarColeta.TabIndex = 8;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.cbb_OrganicoAdicionarColeta);
+            this.panel1.Controls.Add(this.rdb_OrganicoAdicionarColeta);
+            this.panel1.Controls.Add(this.checkBox1);
+            this.panel1.Controls.Add(this.cbb_MetalicoFerrosoAdicionarColeta);
+            this.panel1.Controls.Add(this.cbb_TipodeMaterialAdicionarColeta);
+            this.panel1.Controls.Add(this.cbb_NaoMetalicoOrganicoAdicionarColeta);
+            this.panel1.Controls.Add(this.cbb_NaoMetalicoInorganicoAdicionarColeta);
+            this.panel1.Controls.Add(this.rdb_NaoMetalicoInorganicoAdicionarColeta);
+            this.panel1.Controls.Add(this.rdb_NaoMetalicoOrganicoAdicionarColeta);
+            this.panel1.Controls.Add(this.rdb_MetalicoNaoFerrosoAdicionarColeta);
+            this.panel1.Controls.Add(this.cbb_MetalicoNaoFerrosoAdicionarColeta);
+            this.panel1.Controls.Add(this.rdb_MetalicoFerrosoAdicionarColeta);
+            this.panel1.Controls.Add(this.lbl_TipodeMaterialAdicionarColeta);
+            this.panel1.Location = new System.Drawing.Point(323, 55);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(154, 174);
+            this.panel1.TabIndex = 19;
+            // 
+            // cbb_OrganicoAdicionarColeta
+            // 
+            this.cbb_OrganicoAdicionarColeta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_OrganicoAdicionarColeta.FormattingEnabled = true;
+            this.cbb_OrganicoAdicionarColeta.Items.AddRange(new object[] {
+            "Adesivos",
+            "Borracha sintética",
+            "Cerâmica",
+            "Cortiça",
+            "Feltro",
+            "Fibra",
+            "Lubrificante sintético",
+            "Plástico",
+            "Vidro",
+            "Outro"});
+            this.cbb_OrganicoAdicionarColeta.Location = new System.Drawing.Point(3, 120);
+            this.cbb_OrganicoAdicionarColeta.Name = "cbb_OrganicoAdicionarColeta";
+            this.cbb_OrganicoAdicionarColeta.Size = new System.Drawing.Size(142, 21);
+            this.cbb_OrganicoAdicionarColeta.TabIndex = 28;
+            this.cbb_OrganicoAdicionarColeta.TabStop = false;
+            this.cbb_OrganicoAdicionarColeta.Visible = false;
+            this.cbb_OrganicoAdicionarColeta.SelectedIndexChanged += new System.EventHandler(this.cbb_OrganicoAdicionarColeta_SelectedIndexChanged);
+            // 
+            // rdb_OrganicoAdicionarColeta
+            // 
+            this.rdb_OrganicoAdicionarColeta.AutoSize = true;
+            this.rdb_OrganicoAdicionarColeta.Location = new System.Drawing.Point(76, 25);
+            this.rdb_OrganicoAdicionarColeta.Name = "rdb_OrganicoAdicionarColeta";
+            this.rdb_OrganicoAdicionarColeta.Size = new System.Drawing.Size(68, 17);
+            this.rdb_OrganicoAdicionarColeta.TabIndex = 29;
+            this.rdb_OrganicoAdicionarColeta.TabStop = true;
+            this.rdb_OrganicoAdicionarColeta.Text = "Orgânico";
+            this.rdb_OrganicoAdicionarColeta.UseVisualStyleBackColor = true;
+            this.rdb_OrganicoAdicionarColeta.CheckedChanged += new System.EventHandler(this.rdb_OrganicoAdicionarColeta_CheckedChanged);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(0, 147);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(76, 17);
+            this.checkBox1.TabIndex = 25;
+            this.checkBox1.Text = "Reciclável";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.Visible = false;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // cbb_MetalicoFerrosoAdicionarColeta
+            // 
+            this.cbb_MetalicoFerrosoAdicionarColeta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_MetalicoFerrosoAdicionarColeta.FormattingEnabled = true;
+            this.cbb_MetalicoFerrosoAdicionarColeta.Items.AddRange(new object[] {
+            "Aço Carbono",
+            "Aço de Engenharia",
+            "Aço Inoxidável",
+            "Ferro Fundido",
+            "Outro"});
+            this.cbb_MetalicoFerrosoAdicionarColeta.Location = new System.Drawing.Point(3, 120);
+            this.cbb_MetalicoFerrosoAdicionarColeta.Name = "cbb_MetalicoFerrosoAdicionarColeta";
+            this.cbb_MetalicoFerrosoAdicionarColeta.Size = new System.Drawing.Size(142, 21);
+            this.cbb_MetalicoFerrosoAdicionarColeta.TabIndex = 24;
+            this.cbb_MetalicoFerrosoAdicionarColeta.Visible = false;
+            this.cbb_MetalicoFerrosoAdicionarColeta.SelectedIndexChanged += new System.EventHandler(this.cbb_MetalicoFerrosoAdicionarColeta_SelectedIndexChanged);
+            // 
+            // cbb_TipodeMaterialAdicionarColeta
+            // 
+            this.cbb_TipodeMaterialAdicionarColeta.FormattingEnabled = true;
+            this.cbb_TipodeMaterialAdicionarColeta.Location = new System.Drawing.Point(2, 147);
+            this.cbb_TipodeMaterialAdicionarColeta.Name = "cbb_TipodeMaterialAdicionarColeta";
+            this.cbb_TipodeMaterialAdicionarColeta.Size = new System.Drawing.Size(142, 21);
+            this.cbb_TipodeMaterialAdicionarColeta.TabIndex = 28;
+            this.cbb_TipodeMaterialAdicionarColeta.Visible = false;
+            // 
+            // cbb_NaoMetalicoOrganicoAdicionarColeta
+            // 
+            this.cbb_NaoMetalicoOrganicoAdicionarColeta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_NaoMetalicoOrganicoAdicionarColeta.FormattingEnabled = true;
+            this.cbb_NaoMetalicoOrganicoAdicionarColeta.Items.AddRange(new object[] {
+            "Origem Animal",
+            "Origem Vegetal"});
+            this.cbb_NaoMetalicoOrganicoAdicionarColeta.Location = new System.Drawing.Point(2, 120);
+            this.cbb_NaoMetalicoOrganicoAdicionarColeta.Name = "cbb_NaoMetalicoOrganicoAdicionarColeta";
+            this.cbb_NaoMetalicoOrganicoAdicionarColeta.Size = new System.Drawing.Size(142, 21);
+            this.cbb_NaoMetalicoOrganicoAdicionarColeta.TabIndex = 26;
+            this.cbb_NaoMetalicoOrganicoAdicionarColeta.Visible = false;
+            this.cbb_NaoMetalicoOrganicoAdicionarColeta.SelectedIndexChanged += new System.EventHandler(this.cbb_NaoMetalicoOrganicoAdicionarColeta_SelectedIndexChanged);
+            // 
+            // cbb_NaoMetalicoInorganicoAdicionarColeta
+            // 
+            this.cbb_NaoMetalicoInorganicoAdicionarColeta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_NaoMetalicoInorganicoAdicionarColeta.FormattingEnabled = true;
+            this.cbb_NaoMetalicoInorganicoAdicionarColeta.Items.AddRange(new object[] {
+            "Adesivos",
+            "Borracha sintética",
+            "Cerâmica",
+            "Cortiça",
+            "Feltro",
+            "Fibra",
+            "Lubrificante sintético",
+            "Plástico",
+            "Vidro",
+            "Outro"});
+            this.cbb_NaoMetalicoInorganicoAdicionarColeta.Location = new System.Drawing.Point(3, 120);
+            this.cbb_NaoMetalicoInorganicoAdicionarColeta.Name = "cbb_NaoMetalicoInorganicoAdicionarColeta";
+            this.cbb_NaoMetalicoInorganicoAdicionarColeta.Size = new System.Drawing.Size(142, 21);
+            this.cbb_NaoMetalicoInorganicoAdicionarColeta.TabIndex = 25;
+            this.cbb_NaoMetalicoInorganicoAdicionarColeta.TabStop = false;
+            this.cbb_NaoMetalicoInorganicoAdicionarColeta.Visible = false;
+            this.cbb_NaoMetalicoInorganicoAdicionarColeta.SelectedIndexChanged += new System.EventHandler(this.cbb_NaoMetalicoInorganicoAdicionarColeta_SelectedIndexChanged);
+            // 
+            // rdb_NaoMetalicoInorganicoAdicionarColeta
+            // 
+            this.rdb_NaoMetalicoInorganicoAdicionarColeta.AutoSize = true;
+            this.rdb_NaoMetalicoInorganicoAdicionarColeta.Location = new System.Drawing.Point(2, 93);
+            this.rdb_NaoMetalicoInorganicoAdicionarColeta.Name = "rdb_NaoMetalicoInorganicoAdicionarColeta";
+            this.rdb_NaoMetalicoInorganicoAdicionarColeta.Size = new System.Drawing.Size(49, 17);
+            this.rdb_NaoMetalicoInorganicoAdicionarColeta.TabIndex = 23;
+            this.rdb_NaoMetalicoInorganicoAdicionarColeta.TabStop = true;
+            this.rdb_NaoMetalicoInorganicoAdicionarColeta.Text = "Vidro";
+            this.rdb_NaoMetalicoInorganicoAdicionarColeta.UseVisualStyleBackColor = true;
+            this.rdb_NaoMetalicoInorganicoAdicionarColeta.CheckedChanged += new System.EventHandler(this.rdb_NaoMetalicoInorganicoAdicionarColeta_CheckedChanged);
+            // 
+            // rdb_NaoMetalicoOrganicoAdicionarColeta
+            // 
+            this.rdb_NaoMetalicoOrganicoAdicionarColeta.AutoSize = true;
+            this.rdb_NaoMetalicoOrganicoAdicionarColeta.Location = new System.Drawing.Point(2, 70);
+            this.rdb_NaoMetalicoOrganicoAdicionarColeta.Name = "rdb_NaoMetalicoOrganicoAdicionarColeta";
+            this.rdb_NaoMetalicoOrganicoAdicionarColeta.Size = new System.Drawing.Size(62, 17);
+            this.rdb_NaoMetalicoOrganicoAdicionarColeta.TabIndex = 22;
+            this.rdb_NaoMetalicoOrganicoAdicionarColeta.TabStop = true;
+            this.rdb_NaoMetalicoOrganicoAdicionarColeta.Text = "Plástico";
+            this.rdb_NaoMetalicoOrganicoAdicionarColeta.UseVisualStyleBackColor = true;
+            this.rdb_NaoMetalicoOrganicoAdicionarColeta.CheckedChanged += new System.EventHandler(this.rdb_NaoMetalicoOrganicoAdicionarColeta_CheckedChanged);
+            // 
+            // rdb_MetalicoNaoFerrosoAdicionarColeta
+            // 
+            this.rdb_MetalicoNaoFerrosoAdicionarColeta.AutoSize = true;
+            this.rdb_MetalicoNaoFerrosoAdicionarColeta.Location = new System.Drawing.Point(2, 47);
+            this.rdb_MetalicoNaoFerrosoAdicionarColeta.Name = "rdb_MetalicoNaoFerrosoAdicionarColeta";
+            this.rdb_MetalicoNaoFerrosoAdicionarColeta.Size = new System.Drawing.Size(52, 17);
+            this.rdb_MetalicoNaoFerrosoAdicionarColeta.TabIndex = 21;
+            this.rdb_MetalicoNaoFerrosoAdicionarColeta.TabStop = true;
+            this.rdb_MetalicoNaoFerrosoAdicionarColeta.Text = "Papel";
+            this.rdb_MetalicoNaoFerrosoAdicionarColeta.UseVisualStyleBackColor = true;
+            this.rdb_MetalicoNaoFerrosoAdicionarColeta.CheckedChanged += new System.EventHandler(this.rdb_MetalicoNaoFerrosoAdicionarColeta_CheckedChanged);
+            // 
+            // cbb_MetalicoNaoFerrosoAdicionarColeta
+            // 
+            this.cbb_MetalicoNaoFerrosoAdicionarColeta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_MetalicoNaoFerrosoAdicionarColeta.FormattingEnabled = true;
+            this.cbb_MetalicoNaoFerrosoAdicionarColeta.Items.AddRange(new object[] {
+            "Alumínio",
+            "Ligas de Alumínio",
+            "Latão",
+            "Zinco",
+            "Estanho",
+            "Outro"});
+            this.cbb_MetalicoNaoFerrosoAdicionarColeta.Location = new System.Drawing.Point(3, 120);
+            this.cbb_MetalicoNaoFerrosoAdicionarColeta.Name = "cbb_MetalicoNaoFerrosoAdicionarColeta";
+            this.cbb_MetalicoNaoFerrosoAdicionarColeta.Size = new System.Drawing.Size(142, 21);
+            this.cbb_MetalicoNaoFerrosoAdicionarColeta.TabIndex = 27;
+            this.cbb_MetalicoNaoFerrosoAdicionarColeta.Visible = false;
+            this.cbb_MetalicoNaoFerrosoAdicionarColeta.SelectedIndexChanged += new System.EventHandler(this.cbb_MetalicoNaoFerrosoAdicionarColeta_SelectedIndexChanged);
+            // 
+            // rdb_MetalicoFerrosoAdicionarColeta
+            // 
+            this.rdb_MetalicoFerrosoAdicionarColeta.AutoSize = true;
+            this.rdb_MetalicoFerrosoAdicionarColeta.Location = new System.Drawing.Point(2, 24);
+            this.rdb_MetalicoFerrosoAdicionarColeta.Name = "rdb_MetalicoFerrosoAdicionarColeta";
+            this.rdb_MetalicoFerrosoAdicionarColeta.Size = new System.Drawing.Size(51, 17);
+            this.rdb_MetalicoFerrosoAdicionarColeta.TabIndex = 20;
+            this.rdb_MetalicoFerrosoAdicionarColeta.TabStop = true;
+            this.rdb_MetalicoFerrosoAdicionarColeta.Text = "Metal";
+            this.rdb_MetalicoFerrosoAdicionarColeta.UseVisualStyleBackColor = true;
+            this.rdb_MetalicoFerrosoAdicionarColeta.CheckedChanged += new System.EventHandler(this.rdb_MetalicoFerrosoAdicionarColeta_CheckedChanged);
+            // 
+            // lbl_TipodeMaterialAdicionarColeta
+            // 
+            this.lbl_TipodeMaterialAdicionarColeta.AutoSize = true;
+            this.lbl_TipodeMaterialAdicionarColeta.Location = new System.Drawing.Point(3, 5);
+            this.lbl_TipodeMaterialAdicionarColeta.Name = "lbl_TipodeMaterialAdicionarColeta";
+            this.lbl_TipodeMaterialAdicionarColeta.Size = new System.Drawing.Size(83, 13);
+            this.lbl_TipodeMaterialAdicionarColeta.TabIndex = 19;
+            this.lbl_TipodeMaterialAdicionarColeta.Text = "Tipo de Material";
+            // 
+            // btn_Cancelar
+            // 
+            this.btn_Cancelar.Location = new System.Drawing.Point(25, 192);
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.Size = new System.Drawing.Size(75, 23);
+            this.btn_Cancelar.TabIndex = 24;
+            this.btn_Cancelar.Text = "Cancelar";
+            this.btn_Cancelar.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
+            // 
+            // lbl_UsuarioColeta
+            // 
+            this.lbl_UsuarioColeta.AutoSize = true;
+            this.lbl_UsuarioColeta.Location = new System.Drawing.Point(173, 48);
+            this.lbl_UsuarioColeta.Name = "lbl_UsuarioColeta";
+            this.lbl_UsuarioColeta.Size = new System.Drawing.Size(43, 13);
+            this.lbl_UsuarioColeta.TabIndex = 26;
+            this.lbl_UsuarioColeta.Text = "Usuário";
+            this.lbl_UsuarioColeta.Visible = false;
+            // 
+            // lbl_UnidadeUsuarioColeta
+            // 
+            this.lbl_UnidadeUsuarioColeta.AutoSize = true;
+            this.lbl_UnidadeUsuarioColeta.Location = new System.Drawing.Point(173, 87);
+            this.lbl_UnidadeUsuarioColeta.Name = "lbl_UnidadeUsuarioColeta";
+            this.lbl_UnidadeUsuarioColeta.Size = new System.Drawing.Size(80, 13);
+            this.lbl_UnidadeUsuarioColeta.TabIndex = 27;
+            this.lbl_UnidadeUsuarioColeta.Text = "Unidade Coleta";
+            this.lbl_UnidadeUsuarioColeta.Visible = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(25, 25);
+            this.textBox1.MaxLength = 30;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 28;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(25, 64);
+            this.textBox2.MaxLength = 10;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(155, 20);
+            this.textBox2.TabIndex = 29;
+            // 
+            // txt_ReciclavelAdicionarColeta
+            // 
+            this.txt_ReciclavelAdicionarColeta.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txt_ReciclavelAdicionarColeta.Location = new System.Drawing.Point(203, 200);
+            this.txt_ReciclavelAdicionarColeta.Name = "txt_ReciclavelAdicionarColeta";
+            this.txt_ReciclavelAdicionarColeta.Size = new System.Drawing.Size(100, 20);
+            this.txt_ReciclavelAdicionarColeta.TabIndex = 25;
+            this.txt_ReciclavelAdicionarColeta.Text = "NÃO RECICLÁVEL";
+            this.txt_ReciclavelAdicionarColeta.Visible = false;
+            // 
+            // lbl_NomedoServidor
+            // 
+            this.lbl_NomedoServidor.AutoSize = true;
+            this.lbl_NomedoServidor.Location = new System.Drawing.Point(180, 174);
+            this.lbl_NomedoServidor.Name = "lbl_NomedoServidor";
+            this.lbl_NomedoServidor.Size = new System.Drawing.Size(86, 13);
+            this.lbl_NomedoServidor.TabIndex = 30;
+            this.lbl_NomedoServidor.Text = "NomedoServidor";
+            this.lbl_NomedoServidor.Visible = false;
+            // 
+            // AdicionarColeta
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(503, 231);
+            this.Controls.Add(this.lbl_NomedoServidor);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lbl_UnidadeUsuarioColeta);
+            this.Controls.Add(this.lbl_UsuarioColeta);
+            this.Controls.Add(this.txt_ReciclavelAdicionarColeta);
+            this.Controls.Add(this.btn_Cancelar);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.cbb_TipodeResiduoAdicionarColeta);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbl_MassaAdicionarColeta);
+            this.Controls.Add(this.txt_MassaAdicionarColeta);
+            this.Controls.Add(this.txt_DatadaColeta);
+            this.Controls.Add(this.lbl_DatadaColeta);
+            this.Controls.Add(this.btn_AdicionarColetaAdicionarColeta);
+            this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(519, 270);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(519, 270);
+            this.Name = "AdicionarColeta";
+            this.Text = "Adicionar Coleta";
+            this.Load += new System.EventHandler(this.AdicionarColeta_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_AdicionarColetaAdicionarColeta;
+        private System.Windows.Forms.Label lbl_DatadaColeta;
+        private System.Windows.Forms.TextBox txt_DatadaColeta;
+        private System.Windows.Forms.TextBox txt_MassaAdicionarColeta;
+        private System.Windows.Forms.Label lbl_MassaAdicionarColeta;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cbb_TipodeResiduoAdicionarColeta;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ComboBox cbb_TipodeMaterialAdicionarColeta;
+        private System.Windows.Forms.ComboBox cbb_MetalicoNaoFerrosoAdicionarColeta;
+        private System.Windows.Forms.ComboBox cbb_NaoMetalicoOrganicoAdicionarColeta;
+        private System.Windows.Forms.ComboBox cbb_NaoMetalicoInorganicoAdicionarColeta;
+        private System.Windows.Forms.ComboBox cbb_MetalicoFerrosoAdicionarColeta;
+        private System.Windows.Forms.RadioButton rdb_NaoMetalicoInorganicoAdicionarColeta;
+        private System.Windows.Forms.RadioButton rdb_NaoMetalicoOrganicoAdicionarColeta;
+        private System.Windows.Forms.RadioButton rdb_MetalicoNaoFerrosoAdicionarColeta;
+        private System.Windows.Forms.RadioButton rdb_MetalicoFerrosoAdicionarColeta;
+        private System.Windows.Forms.Label lbl_TipodeMaterialAdicionarColeta;
+        private System.Windows.Forms.Button btn_Cancelar;
+        public System.Windows.Forms.Label lbl_UsuarioColeta;
+        public System.Windows.Forms.Label lbl_UnidadeUsuarioColeta;
+        private System.Windows.Forms.RadioButton rdb_OrganicoAdicionarColeta;
+        private System.Windows.Forms.ComboBox cbb_OrganicoAdicionarColeta;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.TextBox txt_ReciclavelAdicionarColeta;
+        public System.Windows.Forms.Label lbl_NomedoServidor;
+    }
+}
+
+using Org.BouncyCastle.Bcpg.OpenPgp;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
+using System.Globalization;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    public partial class AdicionarColeta : Form
+    {
+        public AdicionarColeta()
+        {
+            InitializeComponent();
+        }
+
+        private void AdicionarColeta_Load(object sender, EventArgs e)
+        {
+
+
+
+            Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
+
+            string Metal = cryptography.Encriptar(rdb_MetalicoFerrosoAdicionarColeta.Text);
+            string Associacao = cryptography.Encriptar(lbl_UnidadeUsuarioColeta.Text);
+            string NomedoServidor = lbl_NomedoServidor.Text;
+
+            string vqueryMetal = @"select Material from METERIAIS where Grupo = '" + Metal + "' AND Unidade = '" + Associacao + "' ";
+
+            cbb_MetalicoFerrosoAdicionarColeta.DataSource = ConexaoBancodeDados.dql(vqueryMetal, NomedoServidor);
+            cbb_MetalicoFerrosoAdicionarColeta.DisplayMember = "Material";
+
+            string Papel = cryptography.Encriptar(rdb_MetalicoNaoFerrosoAdicionarColeta.Text);
+
+            string vqueryPapel = @"select Material from METERIAIS where Grupo = '" + Papel + "' AND Unidade = '" + Associacao + "' ";
+
+            cbb_MetalicoNaoFerrosoAdicionarColeta.DataSource = ConexaoBancodeDados.dql(vqueryPapel, NomedoServidor);
+            cbb_MetalicoNaoFerrosoAdicionarColeta.DisplayMember = "Material";
+
+            string Plastico = cryptography.Encriptar(rdb_NaoMetalicoOrganicoAdicionarColeta.Text);
+
+            string vqueryPlastico = @"select Material from METERIAIS where Grupo = '" + Plastico + "' AND Unidade = '" + Associacao + "' ";
+
+            cbb_NaoMetalicoOrganicoAdicionarColeta.DataSource = ConexaoBancodeDados.dql(vqueryPlastico, NomedoServidor);
+            cbb_NaoMetalicoOrganicoAdicionarColeta.DisplayMember = "Material";
+
+            string Organico = cryptography.Encriptar(rdb_OrganicoAdicionarColeta.Text);
+
+            string vqueryOrganico = @"select Material from METERIAIS where Grupo = '" + Organico + "' AND Unidade = '" + Associacao + "' ";
+
+            cbb_OrganicoAdicionarColeta.DataSource = ConexaoBancodeDados.dql(vqueryOrganico, NomedoServidor);
+            cbb_OrganicoAdicionarColeta.DisplayMember = "Material";
+
+            string Vidro = cryptography.Encriptar(rdb_NaoMetalicoInorganicoAdicionarColeta.Text);
+
+            string vqueryVidro = @"select Material from METERIAIS where Grupo = '" + Vidro + "' AND Unidade = '" + Associacao + "' ";
+
+            cbb_NaoMetalicoInorganicoAdicionarColeta.DataSource = ConexaoBancodeDados.dql(vqueryVidro, NomedoServidor);
+            cbb_NaoMetalicoInorganicoAdicionarColeta.DisplayMember = "Material";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+         //   string format = "dd/MM/yyyy";
+          //  string DatadaVenda = txt_DatadaColeta.Text;
+           // DateTime dateTime;
+         //   if (DateTime.TryParseExact(DatadaVenda, format, CultureInfo.InvariantCulture, DateTimeStyles.AllowWhiteSpaces, out dateTime))
+           // {
+
+                    if (cbb_TipodeMaterialAdicionarColeta.Text != "System.Data.DataRowView")
+                    {
+                        if (cbb_TipodeResiduoAdicionarColeta.SelectedIndex != -1)
+                        {
+                            if (txt_MassaAdicionarColeta.Text != "")
+                            {
+                                if (textBox2.Text != "")
+                                {
+                                    
+                                       
+                                            string CatadorCrip = textBox1.Text;
+                                            string DatadaColetaCrip = txt_DatadaColeta.Text;
+                                            string MassaCrip = txt_MassaAdicionarColeta.Text;
+                                            decimal MassaIntCrip = Decimal.Parse(txt_MassaAdicionarColeta.Text);
+                                            string TipodeResiduoCrip =cbb_TipodeResiduoAdicionarColeta.Text;
+                                            string TipodeMaterialCrip = cbb_TipodeMaterialAdicionarColeta.Text;
+                                            string RaciclavelCrip = txt_ReciclavelAdicionarColeta.Text;
+                                            string AdministradorCrip = lbl_UsuarioColeta.Text;
+                                            string UnidadeCrip = lbl_UnidadeUsuarioColeta.Text;
+                                            string NomedoServidor = lbl_NomedoServidor.Text;
+
+                                            AdicionarColetaClasse novacoleta = new AdicionarColetaClasse();
+                                            novacoleta.CatadorAdicionarColeta = CatadorCrip;
+                                            novacoleta.DatadaColetaAdicionarColeta =DateTime.Parse(DateTime.Now.ToShortDateString()); 
+                                            novacoleta.MassaAdicionarColeta = MassaCrip;
+                                            novacoleta.MassaINTAdicionarColeta = MassaIntCrip;
+                                            novacoleta.TipodeResiduoAdicionarColeta = TipodeResiduoCrip;
+                                            novacoleta.TipodeMaterialAdicionarColeta = TipodeMaterialCrip;
+                                            novacoleta.ReciclavelAdicionarColeta = RaciclavelCrip;
+                                            novacoleta.AdministradorAdicionarColeta = AdministradorCrip;
+                                            novacoleta.UnidadeAdicionarColeta = UnidadeCrip;
+                                            novacoleta.NomedoServidor = NomedoServidor;
+                                            ConexaoBancodeDados.ColetaNew(novacoleta);
+                                            this.Close();
+
+                                  
+                                }
+                                else
+                                {
+
+                                    MessageBox.Show("O campo Catador não foi preenchido", "Campo inválido", MessageBoxButtons.OK);
+                                    return;
+                                }
+                            }
+                            else
+                            {
+
+                                MessageBox.Show("O campo massa não foi preenchido", "Campo inválido", MessageBoxButtons.OK);
+                                return;
+                            }
+                        }
+                        else
+                        {
+
+                            MessageBox.Show("O campo Tipo de Resíduo não foi preenchido", "campo inválido", MessageBoxButtons.OK);
+                            return;
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("O campo Tipo de Material não foi preenchido. Clique na lista e escolha.", "Campo inválido", MessageBoxButtons.OK);
+                        return;
+                    }
+            
+          
+        }
+
+        private void txt_DatadaColeta_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsNumber(e.KeyChar)) && !char.IsControl(e.KeyChar) && e.KeyChar != '/')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_MassaAdicionarColeta_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsNumber(e.KeyChar)) && !char.IsControl(e.KeyChar) && e.KeyChar != ',' && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void rdb_MetalicoFerrosoAdicionarColeta_CheckedChanged(object sender, EventArgs e)
+        {
+            cbb_MetalicoFerrosoAdicionarColeta.Visible = true;
+            cbb_MetalicoNaoFerrosoAdicionarColeta.Text = "";
+            cbb_NaoMetalicoOrganicoAdicionarColeta.Text = "";
+            cbb_NaoMetalicoInorganicoAdicionarColeta.Text = "";
+
+            cbb_MetalicoNaoFerrosoAdicionarColeta.Visible = false;
+            cbb_NaoMetalicoOrganicoAdicionarColeta.Visible = false;
+            cbb_NaoMetalicoInorganicoAdicionarColeta.Visible = false;
+
+            cbb_OrganicoAdicionarColeta.Text = "";
+            cbb_OrganicoAdicionarColeta.Visible = false;
+
+
+        }
+
+        private void cbb_MetalicoFerrosoAdicionarColeta_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbb_TipodeMaterialAdicionarColeta.Items.Clear();
+            cbb_TipodeMaterialAdicionarColeta.Items.Add(cbb_MetalicoFerrosoAdicionarColeta.Text);
+            cbb_TipodeMaterialAdicionarColeta.SelectedIndex = 0;
+        }
+
+        private void rdb_MetalicoNaoFerrosoAdicionarColeta_CheckedChanged(object sender, EventArgs e)
+        {
+            cbb_MetalicoNaoFerrosoAdicionarColeta.Visible = true;
+
+            cbb_MetalicoFerrosoAdicionarColeta.Text = "";
+            cbb_NaoMetalicoOrganicoAdicionarColeta.Text = "";
+            cbb_NaoMetalicoInorganicoAdicionarColeta.Text = "";
+            cbb_OrganicoAdicionarColeta.Text = "";
+
+
+            cbb_MetalicoFerrosoAdicionarColeta.Visible = false;
+            cbb_NaoMetalicoInorganicoAdicionarColeta.Visible = false;
+            cbb_NaoMetalicoOrganicoAdicionarColeta.Visible = false;
+            cbb_OrganicoAdicionarColeta.Visible = false;
+        }
+
+        private void cbb_MetalicoNaoFerrosoAdicionarColeta_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbb_TipodeMaterialAdicionarColeta.Items.Clear();
+            cbb_TipodeMaterialAdicionarColeta.Items.Add(cbb_MetalicoNaoFerrosoAdicionarColeta.Text);
+            cbb_TipodeMaterialAdicionarColeta.SelectedIndex = 0;
+        }
+
+        private void rdb_NaoMetalicoOrganicoAdicionarColeta_CheckedChanged(object sender, EventArgs e)
+        {
+            cbb_NaoMetalicoOrganicoAdicionarColeta.Visible = true;
+            cbb_MetalicoFerrosoAdicionarColeta.Text = "";
+            cbb_MetalicoNaoFerrosoAdicionarColeta.Text = "";
+            cbb_NaoMetalicoInorganicoAdicionarColeta.Text = "";
+            cbb_OrganicoAdicionarColeta.Text = "";
+            cbb_OrganicoAdicionarColeta.Visible = false;
+
+            cbb_MetalicoFerrosoAdicionarColeta.Visible = false;
+            cbb_MetalicoNaoFerrosoAdicionarColeta.Visible = false;
+            cbb_NaoMetalicoInorganicoAdicionarColeta.Visible = false;
+        }
+
+        private void cbb_NaoMetalicoOrganicoAdicionarColeta_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbb_TipodeMaterialAdicionarColeta.Items.Clear();
+            cbb_TipodeMaterialAdicionarColeta.Items.Add(cbb_NaoMetalicoOrganicoAdicionarColeta.Text);
+            cbb_TipodeMaterialAdicionarColeta.SelectedIndex = 0;
+        }
+
+        private void rdb_NaoMetalicoInorganicoAdicionarColeta_CheckedChanged(object sender, EventArgs e)
+        {
+            cbb_OrganicoAdicionarColeta.Text = "";
+            cbb_OrganicoAdicionarColeta.Visible = false;
+            cbb_NaoMetalicoInorganicoAdicionarColeta.Visible = true;
+            cbb_MetalicoFerrosoAdicionarColeta.Text = "";
+            cbb_MetalicoNaoFerrosoAdicionarColeta.Text = "";
+            cbb_NaoMetalicoOrganicoAdicionarColeta.Text = "";
+
+
+            cbb_MetalicoFerrosoAdicionarColeta.Visible = false;
+            cbb_MetalicoNaoFerrosoAdicionarColeta.Visible = false;
+            cbb_NaoMetalicoOrganicoAdicionarColeta.Visible = false;
+        }
+
+        private void cbb_NaoMetalicoInorganicoAdicionarColeta_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbb_TipodeMaterialAdicionarColeta.Items.Clear();
+            cbb_TipodeMaterialAdicionarColeta.Items.Add(cbb_NaoMetalicoInorganicoAdicionarColeta.Text);
+            cbb_TipodeMaterialAdicionarColeta.SelectedIndex = 0;
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
+            {
+                txt_ReciclavelAdicionarColeta.Text = "Reciclável";
+            }
+
+            else
+            {
+                txt_ReciclavelAdicionarColeta.Text = "Não Reciclável";
+
+            }
+        }
+
+        private void cbb_CatadorAdicionarColeta_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void rdb_OrganicoAdicionarColeta_CheckedChanged(object sender, EventArgs e)
+        {
+            cbb_MetalicoFerrosoAdicionarColeta.Text = "";
+            cbb_MetalicoNaoFerrosoAdicionarColeta.Text = "";
+            cbb_NaoMetalicoInorganicoAdicionarColeta.Text = "";
+            cbb_NaoMetalicoInorganicoAdicionarColeta.Text = "";
+
+            cbb_NaoMetalicoOrganicoAdicionarColeta.Visible = false;
+            cbb_MetalicoFerrosoAdicionarColeta.Visible = false;
+            cbb_MetalicoNaoFerrosoAdicionarColeta.Visible = false;
+            cbb_NaoMetalicoInorganicoAdicionarColeta.Visible = false;
+            cbb_OrganicoAdicionarColeta.Visible = true;
+        }
+
+        private void cbb_OrganicoAdicionarColeta_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbb_TipodeMaterialAdicionarColeta.Items.Clear();
+            cbb_TipodeMaterialAdicionarColeta.Items.Add(cbb_OrganicoAdicionarColeta.Text);
+            cbb_TipodeMaterialAdicionarColeta.SelectedIndex = 0;
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+
+            if (Convert.ToInt32(e.KeyChar) == 13)
+            {
+                e.Handled = true;
+
+
+                string NomedoServidor = lbl_NomedoServidor.Text;
+                SqlConnection Conectar = new SqlConnection("Data Source=DESKTOP-" + NomedoServidor + "\\SQLEXPRESS;Initial Catalog=SGRRC1;Integrated Security=True");
+                Conectar.Open();
+                string IDCatador = textBox1.Text;
+                SqlCommand cmd = new SqlCommand("select [Catador] from CATADORES WHERE [Matrícula] = '" + IDCatador + "'", Conectar);
+                var Catador = cmd.ExecuteScalar();
+
+                if (Catador != null)
+                {
+
+                    textBox2.Text = Catador.ToString();
+                    Conectar.Close();
+                }
+                else
+                {
+                    if (textBox1.Text == "0")
+                    {
+                        textBox2.Text = "Catador não associado";
+
+                    }
+
+                    else
+                    {
+                        MessageBox.Show("Catador não encontrado.");
+                        Conectar.Close();
+                        return;
+                    }
+                }
+
+               
+            }
+        }
+    }
+}
