@@ -1,0 +1,25 @@
+using System;
+using System.Data.SqlClient;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Microsoft.SqlServer.Server;
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+     class Globais
+    {
+        public static string versao = "1.0";
+        public static Boolean  logado = false;
+        public static int nivel = 0;
+
+        public static string caminho = System.Environment.CurrentDirectory;
+        public static string nomedobanco = "SGRRC1";
+        public static string caminhobanco = caminho+ @"\Banco de Dados SGRCC1";
+
+        public static string desktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+
+        public static string caminhoImpressao = System.IO.Path.Combine(desktop, "Impressão");
+    }
+}
