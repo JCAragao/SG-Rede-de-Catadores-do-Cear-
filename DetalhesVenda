@@ -1,0 +1,341 @@
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    partial class DetalhesVenda
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DetalhesVenda));
+            this.lbl_Usuario = new System.Windows.Forms.Label();
+            this.lbl_AssociacaoCaixa = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_NomeFantasia = new System.Windows.Forms.TextBox();
+            this.txt_CNPJ = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.txt_Troco = new System.Windows.Forms.TextBox();
+            this.txt_ValorRecebido = new System.Windows.Forms.TextBox();
+            this.txt_ValordaCompra = new System.Windows.Forms.TextBox();
+            this.txt_Massa = new System.Windows.Forms.TextBox();
+            this.txt_NomedoProduto = new System.Windows.Forms.TextBox();
+            this.txt_TipodePagamento = new System.Windows.Forms.TextBox();
+            this.txt_Precoitemselecionado = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // lbl_Usuario
+            // 
+            this.lbl_Usuario.AutoSize = true;
+            this.lbl_Usuario.Location = new System.Drawing.Point(320, 50);
+            this.lbl_Usuario.Name = "lbl_Usuario";
+            this.lbl_Usuario.Size = new System.Drawing.Size(43, 13);
+            this.lbl_Usuario.TabIndex = 49;
+            this.lbl_Usuario.Text = "Usuário";
+            this.lbl_Usuario.Visible = false;
+            // 
+            // lbl_AssociacaoCaixa
+            // 
+            this.lbl_AssociacaoCaixa.AutoSize = true;
+            this.lbl_AssociacaoCaixa.Location = new System.Drawing.Point(257, 13);
+            this.lbl_AssociacaoCaixa.Name = "lbl_AssociacaoCaixa";
+            this.lbl_AssociacaoCaixa.Size = new System.Drawing.Size(62, 13);
+            this.lbl_AssociacaoCaixa.TabIndex = 48;
+            this.lbl_AssociacaoCaixa.Text = "Associacao";
+            this.lbl_AssociacaoCaixa.Visible = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(113, 197);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(35, 13);
+            this.label9.TabIndex = 45;
+            this.label9.Text = "Troco";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(12, 197);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(75, 13);
+            this.label8.TabIndex = 44;
+            this.label8.Text = "Valor recebido";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(212, 131);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(99, 13);
+            this.label7.TabIndex = 43;
+            this.label7.Text = "Tipo de pagamento";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(113, 131);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(84, 13);
+            this.label6.TabIndex = 42;
+            this.label6.Text = "Valor da compra";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(12, 131);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(38, 13);
+            this.label5.TabIndex = 41;
+            this.label5.Text = "Massa";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 73);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(159, 13);
+            this.label4.TabIndex = 40;
+            this.label4.Text = "Nome do Produto/ Preço por kg";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(108, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(78, 13);
+            this.label2.TabIndex = 38;
+            this.label2.Text = "Nome Fantasia";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.TabIndex = 37;
+            this.label1.Text = "CNPJ";
+            // 
+            // txt_NomeFantasia
+            // 
+            this.txt_NomeFantasia.Location = new System.Drawing.Point(109, 30);
+            this.txt_NomeFantasia.Name = "txt_NomeFantasia";
+            this.txt_NomeFantasia.ReadOnly = true;
+            this.txt_NomeFantasia.Size = new System.Drawing.Size(190, 20);
+            this.txt_NomeFantasia.TabIndex = 36;
+            this.txt_NomeFantasia.TabStop = false;
+            // 
+            // txt_CNPJ
+            // 
+            this.txt_CNPJ.Location = new System.Drawing.Point(8, 30);
+            this.txt_CNPJ.Name = "txt_CNPJ";
+            this.txt_CNPJ.ReadOnly = true;
+            this.txt_CNPJ.Size = new System.Drawing.Size(84, 20);
+            this.txt_CNPJ.TabIndex = 25;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(215, 222);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 35;
+            this.button3.Text = "Cancelar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // txt_Troco
+            // 
+            this.txt_Troco.Location = new System.Drawing.Point(116, 222);
+            this.txt_Troco.Name = "txt_Troco";
+            this.txt_Troco.ReadOnly = true;
+            this.txt_Troco.Size = new System.Drawing.Size(82, 20);
+            this.txt_Troco.TabIndex = 32;
+            this.txt_Troco.TabStop = false;
+            this.txt_Troco.Text = "0,00";
+            // 
+            // txt_ValorRecebido
+            // 
+            this.txt_ValorRecebido.Location = new System.Drawing.Point(12, 222);
+            this.txt_ValorRecebido.Name = "txt_ValorRecebido";
+            this.txt_ValorRecebido.ReadOnly = true;
+            this.txt_ValorRecebido.Size = new System.Drawing.Size(84, 20);
+            this.txt_ValorRecebido.TabIndex = 30;
+            this.txt_ValorRecebido.TabStop = false;
+            this.txt_ValorRecebido.Text = "0,00";
+            // 
+            // txt_ValordaCompra
+            // 
+            this.txt_ValordaCompra.Location = new System.Drawing.Point(115, 159);
+            this.txt_ValordaCompra.Name = "txt_ValordaCompra";
+            this.txt_ValordaCompra.ReadOnly = true;
+            this.txt_ValordaCompra.Size = new System.Drawing.Size(82, 20);
+            this.txt_ValordaCompra.TabIndex = 29;
+            this.txt_ValordaCompra.TabStop = false;
+            this.txt_ValordaCompra.Text = "0,00";
+            // 
+            // txt_Massa
+            // 
+            this.txt_Massa.Location = new System.Drawing.Point(11, 159);
+            this.txt_Massa.Name = "txt_Massa";
+            this.txt_Massa.ReadOnly = true;
+            this.txt_Massa.Size = new System.Drawing.Size(84, 20);
+            this.txt_Massa.TabIndex = 28;
+            // 
+            // txt_NomedoProduto
+            // 
+            this.txt_NomedoProduto.Location = new System.Drawing.Point(10, 89);
+            this.txt_NomedoProduto.Name = "txt_NomedoProduto";
+            this.txt_NomedoProduto.ReadOnly = true;
+            this.txt_NomedoProduto.Size = new System.Drawing.Size(188, 20);
+            this.txt_NomedoProduto.TabIndex = 26;
+            this.txt_NomedoProduto.TabStop = false;
+            // 
+            // txt_TipodePagamento
+            // 
+            this.txt_TipodePagamento.Location = new System.Drawing.Point(215, 159);
+            this.txt_TipodePagamento.Name = "txt_TipodePagamento";
+            this.txt_TipodePagamento.ReadOnly = true;
+            this.txt_TipodePagamento.Size = new System.Drawing.Size(82, 20);
+            this.txt_TipodePagamento.TabIndex = 50;
+            this.txt_TipodePagamento.TabStop = false;
+            this.txt_TipodePagamento.Text = "0,00";
+            // 
+            // txt_Precoitemselecionado
+            // 
+            this.txt_Precoitemselecionado.Location = new System.Drawing.Point(213, 89);
+            this.txt_Precoitemselecionado.Name = "txt_Precoitemselecionado";
+            this.txt_Precoitemselecionado.ReadOnly = true;
+            this.txt_Precoitemselecionado.Size = new System.Drawing.Size(84, 20);
+            this.txt_Precoitemselecionado.TabIndex = 51;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(202, 73);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(117, 13);
+            this.label3.TabIndex = 52;
+            this.label3.Text = "Preço item selecionado";
+            // 
+            // DetalhesVenda
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(321, 254);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txt_Precoitemselecionado);
+            this.Controls.Add(this.txt_TipodePagamento);
+            this.Controls.Add(this.lbl_Usuario);
+            this.Controls.Add(this.lbl_AssociacaoCaixa);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txt_NomeFantasia);
+            this.Controls.Add(this.txt_CNPJ);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.txt_Troco);
+            this.Controls.Add(this.txt_ValorRecebido);
+            this.Controls.Add(this.txt_ValordaCompra);
+            this.Controls.Add(this.txt_Massa);
+            this.Controls.Add(this.txt_NomedoProduto);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(337, 293);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(337, 293);
+            this.Name = "DetalhesVenda";
+            this.Text = "DetalhesVenda";
+            this.Load += new System.EventHandler(this.DetalhesVenda_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+        public System.Windows.Forms.Label lbl_Usuario;
+        public System.Windows.Forms.Label lbl_AssociacaoCaixa;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button3;
+        public System.Windows.Forms.TextBox txt_NomeFantasia;
+        public System.Windows.Forms.TextBox txt_CNPJ;
+        public System.Windows.Forms.TextBox txt_Troco;
+        public System.Windows.Forms.TextBox txt_ValorRecebido;
+        public System.Windows.Forms.TextBox txt_ValordaCompra;
+        public System.Windows.Forms.TextBox txt_Massa;
+        public System.Windows.Forms.TextBox txt_TipodePagamento;
+        public System.Windows.Forms.TextBox txt_NomedoProduto;
+        public System.Windows.Forms.TextBox txt_Precoitemselecionado;
+        private System.Windows.Forms.Label label3;
+    }
+}
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    public partial class DetalhesVenda : Form
+    {
+        public DetalhesVenda()
+        {
+            InitializeComponent();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void DetalhesVenda_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
