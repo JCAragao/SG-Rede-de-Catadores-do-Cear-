@@ -1,0 +1,412 @@
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    partial class MostrarFilhos
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MostrarFilhos));
+            this.dgv_MostrarFilhos = new System.Windows.Forms.DataGridView();
+            this.paiMaeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataDeNascimentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gêneroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDFilhoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fILHOSBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.sGRRC1DataSet = new Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_.SGRRC1DataSet();
+            this.listadeFilhosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sistema_de_ColetaDataSet2 = new Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_.Sistema_de_ColetaDataSet2();
+            this.listadeFilhosTableAdapter = new Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_.Sistema_de_ColetaDataSet2TableAdapters.ListadeFilhosTableAdapter();
+            this.btn_EditarMostrarFilhos = new System.Windows.Forms.Button();
+            this.btn_ExcluirMostrarFilhos = new System.Windows.Forms.Button();
+            this.btn_CancelarMostrarFilhos = new System.Windows.Forms.Button();
+            this.btn_AdicionarFilhoMostrarFilhos = new System.Windows.Forms.Button();
+            this.fILHOSBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fILHOSTableAdapter = new Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_.SGRRC1DataSetTableAdapters.FILHOSTableAdapter();
+            this.fILHOSBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.fILHOSBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.cbb_PaiMaeMostrarFilhos = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_NomedoServidor = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_MostrarFilhos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fILHOSBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sGRRC1DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listadeFilhosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sistema_de_ColetaDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fILHOSBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fILHOSBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fILHOSBindingSource3)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dgv_MostrarFilhos
+            // 
+            this.dgv_MostrarFilhos.AllowUserToAddRows = false;
+            this.dgv_MostrarFilhos.AllowUserToDeleteRows = false;
+            this.dgv_MostrarFilhos.AutoGenerateColumns = false;
+            this.dgv_MostrarFilhos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_MostrarFilhos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.paiMaeDataGridViewTextBoxColumn,
+            this.dataDeNascimentoDataGridViewTextBoxColumn,
+            this.gêneroDataGridViewTextBoxColumn,
+            this.iDFilhoDataGridViewTextBoxColumn});
+            this.dgv_MostrarFilhos.DataSource = this.fILHOSBindingSource1;
+            this.dgv_MostrarFilhos.Location = new System.Drawing.Point(12, 12);
+            this.dgv_MostrarFilhos.Name = "dgv_MostrarFilhos";
+            this.dgv_MostrarFilhos.ReadOnly = true;
+            this.dgv_MostrarFilhos.RowHeadersVisible = false;
+            this.dgv_MostrarFilhos.Size = new System.Drawing.Size(237, 150);
+            this.dgv_MostrarFilhos.TabIndex = 0;
+            this.dgv_MostrarFilhos.MouseEnter += new System.EventHandler(this.dgv_MostrarFilhos_MouseEnter);
+            // 
+            // paiMaeDataGridViewTextBoxColumn
+            // 
+            this.paiMaeDataGridViewTextBoxColumn.DataPropertyName = "Pai/Mae";
+            this.paiMaeDataGridViewTextBoxColumn.Frozen = true;
+            this.paiMaeDataGridViewTextBoxColumn.HeaderText = "Pai/Mae";
+            this.paiMaeDataGridViewTextBoxColumn.Name = "paiMaeDataGridViewTextBoxColumn";
+            this.paiMaeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.paiMaeDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.paiMaeDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // dataDeNascimentoDataGridViewTextBoxColumn
+            // 
+            this.dataDeNascimentoDataGridViewTextBoxColumn.DataPropertyName = "Data de Nascimento";
+            this.dataDeNascimentoDataGridViewTextBoxColumn.Frozen = true;
+            this.dataDeNascimentoDataGridViewTextBoxColumn.HeaderText = "Data de Nascimento";
+            this.dataDeNascimentoDataGridViewTextBoxColumn.Name = "dataDeNascimentoDataGridViewTextBoxColumn";
+            this.dataDeNascimentoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dataDeNascimentoDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataDeNascimentoDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.dataDeNascimentoDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // gêneroDataGridViewTextBoxColumn
+            // 
+            this.gêneroDataGridViewTextBoxColumn.DataPropertyName = "Gênero";
+            this.gêneroDataGridViewTextBoxColumn.Frozen = true;
+            this.gêneroDataGridViewTextBoxColumn.HeaderText = "Gênero";
+            this.gêneroDataGridViewTextBoxColumn.Name = "gêneroDataGridViewTextBoxColumn";
+            this.gêneroDataGridViewTextBoxColumn.ReadOnly = true;
+            this.gêneroDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.gêneroDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // iDFilhoDataGridViewTextBoxColumn
+            // 
+            this.iDFilhoDataGridViewTextBoxColumn.DataPropertyName = "ID_Filho";
+            this.iDFilhoDataGridViewTextBoxColumn.HeaderText = "ID_Filho";
+            this.iDFilhoDataGridViewTextBoxColumn.Name = "iDFilhoDataGridViewTextBoxColumn";
+            this.iDFilhoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDFilhoDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // fILHOSBindingSource1
+            // 
+            this.fILHOSBindingSource1.DataMember = "FILHOS";
+            this.fILHOSBindingSource1.DataSource = this.sGRRC1DataSet;
+            // 
+            // sGRRC1DataSet
+            // 
+            this.sGRRC1DataSet.DataSetName = "SGRRC1DataSet";
+            this.sGRRC1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // listadeFilhosBindingSource
+            // 
+            this.listadeFilhosBindingSource.DataMember = "ListadeFilhos";
+            this.listadeFilhosBindingSource.DataSource = this.sistema_de_ColetaDataSet2;
+            // 
+            // sistema_de_ColetaDataSet2
+            // 
+            this.sistema_de_ColetaDataSet2.DataSetName = "Sistema_de_ColetaDataSet2";
+            this.sistema_de_ColetaDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // listadeFilhosTableAdapter
+            // 
+            this.listadeFilhosTableAdapter.ClearBeforeFill = true;
+            // 
+            // btn_EditarMostrarFilhos
+            // 
+            this.btn_EditarMostrarFilhos.Location = new System.Drawing.Point(12, 168);
+            this.btn_EditarMostrarFilhos.Name = "btn_EditarMostrarFilhos";
+            this.btn_EditarMostrarFilhos.Size = new System.Drawing.Size(75, 23);
+            this.btn_EditarMostrarFilhos.TabIndex = 1;
+            this.btn_EditarMostrarFilhos.Text = "Editar";
+            this.btn_EditarMostrarFilhos.UseVisualStyleBackColor = true;
+            this.btn_EditarMostrarFilhos.Click += new System.EventHandler(this.btn_EditarMostrarFilhos_Click);
+            // 
+            // btn_ExcluirMostrarFilhos
+            // 
+            this.btn_ExcluirMostrarFilhos.Location = new System.Drawing.Point(93, 168);
+            this.btn_ExcluirMostrarFilhos.Name = "btn_ExcluirMostrarFilhos";
+            this.btn_ExcluirMostrarFilhos.Size = new System.Drawing.Size(75, 23);
+            this.btn_ExcluirMostrarFilhos.TabIndex = 2;
+            this.btn_ExcluirMostrarFilhos.Text = "Excluir";
+            this.btn_ExcluirMostrarFilhos.UseVisualStyleBackColor = true;
+            this.btn_ExcluirMostrarFilhos.Click += new System.EventHandler(this.btn_ExcluirMostrarFilhos_Click);
+            // 
+            // btn_CancelarMostrarFilhos
+            // 
+            this.btn_CancelarMostrarFilhos.Location = new System.Drawing.Point(174, 168);
+            this.btn_CancelarMostrarFilhos.Name = "btn_CancelarMostrarFilhos";
+            this.btn_CancelarMostrarFilhos.Size = new System.Drawing.Size(75, 23);
+            this.btn_CancelarMostrarFilhos.TabIndex = 3;
+            this.btn_CancelarMostrarFilhos.Text = "Cancelar";
+            this.btn_CancelarMostrarFilhos.UseVisualStyleBackColor = true;
+            this.btn_CancelarMostrarFilhos.Click += new System.EventHandler(this.btn_CancelarMostrarFilhos_Click);
+            // 
+            // btn_AdicionarFilhoMostrarFilhos
+            // 
+            this.btn_AdicionarFilhoMostrarFilhos.Location = new System.Drawing.Point(255, 168);
+            this.btn_AdicionarFilhoMostrarFilhos.Name = "btn_AdicionarFilhoMostrarFilhos";
+            this.btn_AdicionarFilhoMostrarFilhos.Size = new System.Drawing.Size(75, 23);
+            this.btn_AdicionarFilhoMostrarFilhos.TabIndex = 4;
+            this.btn_AdicionarFilhoMostrarFilhos.Text = "Adicionar";
+            this.btn_AdicionarFilhoMostrarFilhos.UseVisualStyleBackColor = true;
+            this.btn_AdicionarFilhoMostrarFilhos.Click += new System.EventHandler(this.btn_AdicionarFilhoMostrarFilhos_Click);
+            // 
+            // fILHOSBindingSource
+            // 
+            this.fILHOSBindingSource.DataMember = "FILHOS";
+            this.fILHOSBindingSource.DataSource = this.sGRRC1DataSet;
+            // 
+            // fILHOSTableAdapter
+            // 
+            this.fILHOSTableAdapter.ClearBeforeFill = true;
+            // 
+            // fILHOSBindingSource2
+            // 
+            this.fILHOSBindingSource2.DataMember = "FILHOS";
+            this.fILHOSBindingSource2.DataSource = this.sGRRC1DataSet;
+            // 
+            // fILHOSBindingSource3
+            // 
+            this.fILHOSBindingSource3.DataMember = "FILHOS";
+            this.fILHOSBindingSource3.DataSource = this.sGRRC1DataSet;
+            this.fILHOSBindingSource3.CurrentChanged += new System.EventHandler(this.fILHOSBindingSource3_CurrentChanged);
+            // 
+            // cbb_PaiMaeMostrarFilhos
+            // 
+            this.cbb_PaiMaeMostrarFilhos.FormattingEnabled = true;
+            this.cbb_PaiMaeMostrarFilhos.Location = new System.Drawing.Point(12, 212);
+            this.cbb_PaiMaeMostrarFilhos.Name = "cbb_PaiMaeMostrarFilhos";
+            this.cbb_PaiMaeMostrarFilhos.Size = new System.Drawing.Size(121, 21);
+            this.cbb_PaiMaeMostrarFilhos.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(276, 81);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Label1";
+            this.label1.Visible = false;
+            // 
+            // lbl_NomedoServidor
+            // 
+            this.lbl_NomedoServidor.AutoSize = true;
+            this.lbl_NomedoServidor.Location = new System.Drawing.Point(255, 44);
+            this.lbl_NomedoServidor.Name = "lbl_NomedoServidor";
+            this.lbl_NomedoServidor.Size = new System.Drawing.Size(86, 13);
+            this.lbl_NomedoServidor.TabIndex = 8;
+            this.lbl_NomedoServidor.Text = "NomedoServidor";
+            this.lbl_NomedoServidor.Visible = false;
+            // 
+            // MostrarFilhos
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(335, 196);
+            this.Controls.Add(this.lbl_NomedoServidor);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cbb_PaiMaeMostrarFilhos);
+            this.Controls.Add(this.btn_AdicionarFilhoMostrarFilhos);
+            this.Controls.Add(this.btn_CancelarMostrarFilhos);
+            this.Controls.Add(this.btn_ExcluirMostrarFilhos);
+            this.Controls.Add(this.btn_EditarMostrarFilhos);
+            this.Controls.Add(this.dgv_MostrarFilhos);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(351, 235);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(351, 235);
+            this.Name = "MostrarFilhos";
+            this.Text = "Mostrar Filhos";
+            this.Load += new System.EventHandler(this.MostrarFilhos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_MostrarFilhos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fILHOSBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sGRRC1DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listadeFilhosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sistema_de_ColetaDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fILHOSBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fILHOSBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fILHOSBindingSource3)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+        private Sistema_de_ColetaDataSet2 sistema_de_ColetaDataSet2;
+        private System.Windows.Forms.BindingSource listadeFilhosBindingSource;
+        private Sistema_de_ColetaDataSet2TableAdapters.ListadeFilhosTableAdapter listadeFilhosTableAdapter;
+        private System.Windows.Forms.Button btn_EditarMostrarFilhos;
+        private System.Windows.Forms.Button btn_ExcluirMostrarFilhos;
+        private System.Windows.Forms.Button btn_CancelarMostrarFilhos;
+        public System.Windows.Forms.DataGridView dgv_MostrarFilhos;
+        private System.Windows.Forms.Button btn_AdicionarFilhoMostrarFilhos;
+        private SGRRC1DataSet sGRRC1DataSet;
+        private System.Windows.Forms.BindingSource fILHOSBindingSource;
+        private SGRRC1DataSetTableAdapters.FILHOSTableAdapter fILHOSTableAdapter;
+        private System.Windows.Forms.BindingSource fILHOSBindingSource1;
+        private System.Windows.Forms.BindingSource fILHOSBindingSource2;
+        private System.Windows.Forms.BindingSource fILHOSBindingSource3;
+        public System.Windows.Forms.ComboBox cbb_PaiMaeMostrarFilhos;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label lbl_NomedoServidor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn paiMaeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataDeNascimentoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gêneroDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDFilhoDataGridViewTextBoxColumn;
+    }
+}
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    public partial class MostrarFilhos : Form
+    {
+        public MostrarFilhos()
+        {
+            InitializeComponent();
+        }
+
+        private void MostrarFilhos_Load(object sender, EventArgs e)
+        {
+            // TODO: esta linha de código carrega dados na tabela 'sGRRC1DataSet.FILHOS'. Você pode movê-la ou removê-la conforme necessário.
+            if (this.dgv_MostrarFilhos.RowCount == 0)
+            {
+
+                btn_AdicionarFilhoMostrarFilhos.Visible = true;
+                btn_ExcluirMostrarFilhos.Visible = false;
+                btn_EditarMostrarFilhos.Visible = false;
+
+              
+
+            }
+
+        }
+
+        private void btn_EditarMostrarFilhos_Click(object sender, EventArgs e)
+        {
+            FilhoCatadorEditar EditarCatadorFilho = new FilhoCatadorEditar();
+            string vqueryCatador = @"select [Catador] from CATADORES order by Catador ASC";
+
+            string NomedoServidor = lbl_NomedoServidor.Text;
+            EditarCatadorFilho.cbb_MaePaiEditarFilho.Items.Clear();
+            EditarCatadorFilho.cbb_MaePaiEditarFilho.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
+            EditarCatadorFilho.cbb_MaePaiEditarFilho.DisplayMember = "Catador";
+            EditarCatadorFilho.cbb_MaePaiEditarFilho.SelectedIndex = cbb_PaiMaeMostrarFilhos.SelectedIndex;
+            EditarCatadorFilho.lbl_NomedoServidor.Text = NomedoServidor;
+
+            Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
+            string DataDecrip = cryptography.Decriptar(this.dgv_MostrarFilhos.CurrentRow.Cells[1].Value.ToString());
+
+            EditarCatadorFilho.txt_DatadeNascimentoFilhoEditar.Text = DataDecrip;
+            EditarCatadorFilho.cbb_GeneroFilhoEditar.Text = this.dgv_MostrarFilhos.CurrentRow.Cells[2].Value.ToString();
+            EditarCatadorFilho.txt_FilhoIDFilhoCatadorEditar.Text = this.dgv_MostrarFilhos.CurrentRow.Cells[3].Value.ToString();
+            EditarCatadorFilho.Show();
+        }
+
+        private void btn_AdicionarFilhoMostrarFilhos_Click(object sender, EventArgs e)
+        {
+            CadastroFilho filho = new CadastroFilho();
+
+        
+
+            filho.txt_MaePaiCadastroFilho.Text = label1.Text;
+            filho.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
+            filho.Show();
+        }
+
+        private void fILHOSBindingSource3_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_ExcluirMostrarFilhos_Click(object sender, EventArgs e)
+        {
+            if (dgv_MostrarFilhos.Rows.Count == 0)
+            {
+                MessageBox.Show("Filho(a) não selecionado(a).");
+                return;
+
+            }
+            else
+            {
+                var Aviso = MessageBox.Show("Esta ação será irreversível. Deseja continuar?", "Exclusão de Filho(a)", MessageBoxButtons.YesNo);
+
+                if (Aviso == DialogResult.Yes)
+                {
+                    string NomedoServidor = lbl_NomedoServidor.Text;
+                    string IDdoFilho = this.dgv_MostrarFilhos.CurrentRow.Cells[3].Value.ToString();
+                    string ExclusaoFilhos = @"DELETE FROM FILHOS WHERE [ID_Filho]='" + IDdoFilho + "';";
+                    ConexaoBancodeDados.dql(ExclusaoFilhos, NomedoServidor);
+                    MessageBox.Show("Filho(a) excluído(a) com sucesso!");
+
+
+                    string vqueryFilho = @"SELECT [Pai/Mae], [Data de Nascimento], [Gênero], [ID_Filho] FROM FILHOS WHERE [Pai/Mae] ='" + label1.Text + "' ;";
+                    dgv_MostrarFilhos.DataSource = ConexaoBancodeDados.dql(vqueryFilho, NomedoServidor);
+                }
+                else
+                {
+                    return;
+                }
+
+            }
+        }
+
+        private void btn_CancelarMostrarFilhos_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void dgv_MostrarFilhos_MouseEnter(object sender, EventArgs e)
+        {
+            string NomedoServidor = lbl_NomedoServidor.Text;
+            string vqueryFilho = @"SELECT [Pai/Mae], [Data de Nascimento], [Gênero], [ID_Filho] FROM FILHOS WHERE [Pai/Mae] ='" + label1.Text + "' ;";
+            dgv_MostrarFilhos.DataSource = ConexaoBancodeDados.dql(vqueryFilho, NomedoServidor);
+
+        }
+    }
+}
