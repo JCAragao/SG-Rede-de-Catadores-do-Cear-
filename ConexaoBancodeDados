@@ -1,0 +1,942 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data.SqlClient;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Security.Cryptography.X509Certificates;
+using System.CodeDom;
+using System.Windows.Forms;
+using System.Runtime.InteropServices.ComTypes;
+using iTextSharp.text;
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+
+
+    class ConexaoBancodeDados
+    {
+        private static SqlConnection Conexao;
+
+       
+        private static SqlConnection ConexaoBanco(string Nomedoservidor)
+        {
+           
+                string nomedoservidor = Nomedoservidor;
+
+           
+                Conexao = new SqlConnection("Data Source=DESKTOP-" + nomedoservidor + "\\SQLEXPRESS;Initial Catalog=SGRRC1;Integrated Security=True");
+                Conexao.Open();
+                return Conexao;
+           
+        }
+          
+
+
+
+    public static DataTable dql(string sql, string Nomedoservidor)//Data Query Language for Select
+        {
+
+            SqlDataAdapter da = null;
+            DataTable dt = new DataTable();
+
+            try
+            {
+                string nomedoservidor = Nomedoservidor;
+
+                var vcon = ConexaoBanco(nomedoservidor);
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = sql;
+                da = new SqlDataAdapter(cmd.CommandText, vcon);
+                da.Fill(dt);
+                vcon.Close();
+                return dt;
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro com o banco de dados!");
+                throw ex;
+            }
+        }
+
+        public static DataTable ObterTodosUsuarios(Administradorclasse A)
+        {
+            string Nomedoservidor = A.Nomedoservidor;
+            SqlDataAdapter da = null;
+            DataTable dt = new DataTable();
+
+            try
+            {
+                using (var cmd = ConexaoBanco(Nomedoservidor).CreateCommand())
+                {
+                    cmd.CommandText = "SELECT*FROM ADMINISTRADORES";
+                    da = new SqlDataAdapter(cmd.CommandText, ConexaoBanco(Nomedoservidor));
+                    da.Fill(dt);
+                    ConexaoBanco(Nomedoservidor).Close();
+                    return dt;
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                ConexaoBanco(Nomedoservidor).Close();
+                throw ex;
+
+            }
+
+
+        }
+
+        public static void dml(string NomedoServidor, string q, string msgOK = null, string msgERRO = null)// Data Manipulation language for Insert, Delete, and Update
+        {
+            string nomedoservidor = NomedoServidor;
+            SqlDataAdapter da = null;
+            DataTable dt = new DataTable();
+
+            try
+            {
+
+                var vcon = ConexaoBanco(nomedoservidor);
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = q;
+                da = new SqlDataAdapter(cmd.CommandText, vcon);
+                cmd.ExecuteNonQuery();
+                vcon.Close();
+                if (msgOK != null)
+                {
+                    MessageBox.Show(msgOK);
+
+                }
+
+            }
+
+            catch (Exception ex)
+            {
+
+                if (msgERRO != null)
+                {
+                    MessageBox.Show(msgERRO + "\n" + ex.Message);
+
+                }
+                throw ex;
+
+            }
+
+        }
+
+
+
+
+        public static DataTable consulta(string sql, string Nomedoservidor)
+        {
+            string nomedoservidor = Nomedoservidor;
+            SqlDataAdapter da = null;
+            DataTable dt = new DataTable();
+
+            try
+            {
+                using (var cmd = ConexaoBanco(nomedoservidor).CreateCommand())
+                {
+                    cmd.CommandText = sql;
+                    da = new SqlDataAdapter(cmd.CommandText, ConexaoBanco(nomedoservidor));
+                    da.Fill(dt);
+                    ConexaoBanco(nomedoservidor).Close();
+                    return dt;
+
+                }
+
+            }
+            catch (SqlException)
+            {
+                ConexaoBanco(nomedoservidor).Close();
+                throw;
+
+            }
+        }
+
+        public static bool existenomecatador(CadastroCatadorClasse CCC)
+        {
+            bool res;
+            SqlDataAdapter da = null;
+            DataTable dt = new DataTable();
+            string Nomedoservidor = CCC.Nomedoservidor;
+
+            var cmd = ConexaoBanco(Nomedoservidor).CreateCommand();
+            cmd.CommandText = "select [Catador] from CATADORES where [Catador] ='" + CCC.NomeCompletoCatador + "'";
+            da = new SqlDataAdapter(cmd.CommandText, ConexaoBanco(Nomedoservidor));
+            da.Fill(dt);
+
+            if (dt.Rows.Count > 0)
+            {
+                res = true;
+
+            }
+
+            else
+            {
+
+                res = false;
+            }
+            return res;
+        }
+
+
+        public static void NewCatador(CadastroCatadorClasse CCC)
+        {
+            if (existenomecatador(CCC))
+            {
+
+                MessageBox.Show("Foi detectado que já existe um catador com esse EXATO nome.");
+                return;
+
+            }
+
+            try
+            {
+                string Nomedoservidor = CCC.Nomedoservidor;
+                var cmd = ConexaoBanco(Nomedoservidor).CreateCommand();
+
+                cmd.CommandText = @"insert into CATADORES([Catador], [Cidade], [Bairro], [Rua], [Data de Nascimento], [Data de Matrícula], [RG], [CPF], [NIS], [Gênero], [Telefone], [CEP], [AuxilioCatador], [Administrador], [Unidade], [Funcao] ) values (@NomeCompletoCatador, @CidadeCadastroCatador, @BairroCadastroCatador, @RuaCadastroCatador, @DatadeNascimentoCadastroCatador, @DatadeMatriculaCadastroCatador, @RGCadastroCatador, @CPFCadastroCatador, @NISCadastroCatador, @GeneroCadastroCatador, @TelefoneCadastroCatador, @CEPCadastroCatador, @AuxilioCatador, @Administrador, @Unidade, @Funcao)";
+                cmd.Parameters.AddWithValue("NomeCompletoCatador", CCC.NomeCompletoCatador);
+                cmd.Parameters.AddWithValue("CidadeCadastroCatador", CCC.CidadeCadastroCatador);
+                cmd.Parameters.AddWithValue("BairroCadastroCatador", CCC.BairroCadastroCatador);
+                cmd.Parameters.AddWithValue("Funcao", CCC.Funcao);
+                cmd.Parameters.AddWithValue("RuaCadastroCatador", CCC.RuaCadastroCatador);
+                cmd.Parameters.AddWithValue("DatadeNascimentoCadastroCatador", CCC.DatadeNascimentoCadastroCatador);
+                cmd.Parameters.AddWithValue("DatadeMatriculaCadastroCatador", CCC.DatadeMatriculaCadastroCatador);
+                cmd.Parameters.AddWithValue("RGCadastroCatador", CCC.RGCadastroCatador);
+                cmd.Parameters.AddWithValue("CPFCadastroCatador", CCC.CPFCadastroCatador);
+                cmd.Parameters.AddWithValue("NISCadastroCatador", CCC.NISCadastroCatador);
+                cmd.Parameters.AddWithValue("GeneroCadastroCatador", CCC.GeneroCadastroCatador);
+                cmd.Parameters.AddWithValue("TelefoneCadastroCatador", CCC.TelefoneCadastroCatador);
+                cmd.Parameters.AddWithValue("CEPCadastroCatador", CCC.CEPCadastroCatador);
+                cmd.Parameters.AddWithValue("AuxilioCatador", CCC.AuxilioCatador);
+                cmd.Parameters.AddWithValue("Administrador", CCC.AdminstradorCadastroCatador);
+                cmd.Parameters.AddWithValue("Unidade", CCC.UnidadeCadastroCatadr);
+
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Novo Associado Registrado!");
+                var possuifilho = MessageBox.Show("Possui filho menor de idade?", "Cadastro de Filho", MessageBoxButtons.YesNo);
+                ConexaoBanco(Nomedoservidor).Close();
+
+                if (possuifilho == DialogResult.Yes)
+                {
+                    CadastroFilho FilhoCadastro = new CadastroFilho();
+                    FilhoCadastro.txt_MaePaiCadastroFilho.Text = CCC.NomeCompletoCatador;
+                    FilhoCadastro.lbl_CPF.Text = CCC.CPFCadastroCatador;
+                    FilhoCadastro.lbl_NomedoServidor.Text = CCC.Nomedoservidor;
+                    FilhoCadastro.Show();
+
+                }
+
+            }
+
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERRO! Verifique se todos os campos foram preenchidos corretamente.");
+                throw ex;
+
+            }
+
+
+        }
+
+
+        public static void NovaVenda(VendasClasse VC)
+        {
+
+            try
+            {
+                string Nomedoservidor = VC.Nomedoservidor;
+                var cmd = ConexaoBanco(Nomedoservidor).CreateCommand();
+
+                cmd.CommandText = @"insert into VENDAS(CNPJ, NomeFantasia, NomedoProdutoPrecoQuilo, [Massa], 
+ValordaCompra, TipodePagamento, DataHora, Usuario, Unidade, ValorRecebido, Data, ValorProduto, Dia, Mes, ano) values 
+(@CNPJ, @NomeFantasia, @NomedoProdutoPrecoQuilo, @Massa, @ValordaCompra, @TipodePagamento, @DataHora, 
+@Usuario, @Unidade, @ValorRecebido, @Data, @ValorProduto, (select datepart(day, getdate())), (select datepart(month, getdate())), (select datepart(year, getdate())))";
+                cmd.Parameters.AddWithValue("CNPJ", VC.CNPJ);
+                cmd.Parameters.AddWithValue("NomeFantasia", VC.NomeFantasia);
+                cmd.Parameters.AddWithValue("NomedoProdutoPrecoQuilo", VC.NomedoProdutoPrecoQuilo);
+                cmd.Parameters.AddWithValue("Massa", (VC.Massa));
+                cmd.Parameters.AddWithValue("ValordaCompra", VC.ValordaCompra);
+                cmd.Parameters.AddWithValue("TipodePagamento", VC.TipodePagamento);
+                cmd.Parameters.AddWithValue("DataHora", VC.DataHora);
+                cmd.Parameters.AddWithValue("Usuario", VC.Usuario);
+                cmd.Parameters.AddWithValue("Unidade", VC.Associacao);
+                cmd.Parameters.AddWithValue("ValorRecebido", VC.ValorRecebido);
+                cmd.Parameters.AddWithValue("Data", DateTime.Parse(VC.Data));
+                cmd.Parameters.AddWithValue("ValorProduto", VC.valorproduto);
+                cmd.ExecuteNonQuery();
+                ConexaoBanco(Nomedoservidor).Close();
+
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+
+            }
+        }
+
+        public static void NovoFilho(CadastroFilhoClasse CFC)
+        {
+            string NomedoServidor = CFC.Nomedoservidor;
+
+
+            try
+            {
+                var cmd = ConexaoBanco(NomedoServidor).CreateCommand();
+
+                cmd.CommandText = @"insert into FILHOS([Pai/Mae], [Data de Nascimento], [Gênero], [CPF]) values (@PaiMae, @DatadeNascimento, @Genero, @CPF)";
+                cmd.Parameters.AddWithValue("PaiMae", CFC.PaiMae);
+                cmd.Parameters.AddWithValue("DatadeNascimento", CFC.DatadeNascimentoCadastroFilho);
+                cmd.Parameters.AddWithValue("Genero", CFC.GeneroCadastroFilho);
+                cmd.Parameters.AddWithValue("CPF", CFC.CPFPaiMae);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Novo(a) filho(a) Registrado(a)!");
+                ConexaoBanco(NomedoServidor).Close();
+
+                var AdicionarOutro = MessageBox.Show("Adicionar outro?", "", MessageBoxButtons.YesNo);
+                if (AdicionarOutro == DialogResult.Yes)
+                {
+                    CadastroFilho FilhoCadastro = new CadastroFilho();
+                    FilhoCadastro.txt_MaePaiCadastroFilho.Text = CFC.PaiMae;
+                    FilhoCadastro.lbl_NomedoServidor.Text = CFC.Nomedoservidor;
+                    FilhoCadastro.Show();
+                }
+                else
+                {
+                    CadastroFilho.ActiveForm.Close();
+                }
+
+            }
+
+            catch (Exception)
+            {
+                MessageBox.Show("ERRO! Verifique se todos os campos foram preenchidos corretamente.");
+                ConexaoBanco(NomedoServidor).Close();
+
+                return;
+
+            }
+
+        }
+
+        public static void ColetaEditar(EditarColetaClasse ECC)
+        {
+            string NomedoServidor = ECC.NomedoServidor;
+
+            try
+            {
+
+                var cmd = ConexaoBanco(NomedoServidor).CreateCommand();
+                cmd.CommandText = @"UPDATE COLETAS SET [Catador] = @Catador, [Unidade] = @Unidade, [UsuarioEditado] = @Usuario, [DataEditado] = @DatadaColeta, [Massa] = @Massa, [MassaINT] = @MassaINT, [TipodeResiduo] =  @TipodeResiduo, [TipodeMaterial] = @TipodeMaterial WHERE [ID_Coleta] = @ID_Coleta;";
+                cmd.Parameters.AddWithValue("Catador", ECC.CatadorEditarColeta);
+                cmd.Parameters.AddWithValue("Massa", ECC.MassaEditarColeta);
+                cmd.Parameters.AddWithValue("MassaINT", ECC.MassaINTEditarColeta);
+                cmd.Parameters.AddWithValue("TipodeResiduo", ECC.TipodeResiduoEditarColeta);
+                cmd.Parameters.AddWithValue("TipodeMaterial", ECC.TipodeMaterialEditarColeta);
+                cmd.Parameters.AddWithValue("Unidade", ECC.UnidadeEditarColeta);
+                cmd.Parameters.AddWithValue("Usuario", ECC.UsuarioEditarColeta);
+                cmd.Parameters.AddWithValue("ID_Coleta", ECC.ID_ColetaEditarColeta);
+                cmd.Parameters.AddWithValue("DatadaColeta", ECC.DatadaColetaEditarColeta);
+
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Coleta Alterada com sucesso!");
+                ConexaoBanco(NomedoServidor).Close();
+            }
+
+            catch (Exception)
+            {
+                MessageBox.Show("Erro! Verifique se todos os campos foram preenchidos corretamente.");
+                ConexaoBanco(NomedoServidor).Close();
+
+                return;
+            }
+
+        }
+
+        public static void CatadorEdite(EditarCatadorClasse Ecc)
+        {
+            string NomedoServidor = Ecc.NomedoServidor;
+            try
+            {
+                var cmd = ConexaoBanco(NomedoServidor).CreateCommand();
+                cmd.CommandText = @"UPDATE CATADORES SET [Catador] = @Catador, [Funcao] = @Funcao , [UsuarioEditadoCatador] = @Usuario, [DataEditadoCatador] = @DataEditado , [Unidade] = @Unidade, [Cidade] = @Cidade, [Bairro] = @Bairro, [Rua] =  @Rua, [Data de Nascimento] = @DatadeNascimento, [Data de Matrícula] = @DatadeMatricula, [RG] = @RG, [CPF] = @CPF, [Gênero] = @Genero, [NIS] = @NIS, [Telefone] = @Telefone, [CEP] = @CEP, [AuxilioCatador] = @Auxilio WHERE [Matrícula] = @Matrícula;";
+                cmd.Parameters.AddWithValue("Catador", Ecc.NomeCompletoCatadorEditar);
+                cmd.Parameters.AddWithValue("Cidade", Ecc.CidadeCadastroCatadorEditar);
+                cmd.Parameters.AddWithValue("Bairro", Ecc.BairroCadastroCatadorEditar);
+                cmd.Parameters.AddWithValue("Rua", Ecc.RuaCadastroCatadorEditar);
+                cmd.Parameters.AddWithValue("DatadeNascimento", Ecc.DatadeNascimentoCatadorEditar);
+                cmd.Parameters.AddWithValue("DatadeMatricula", Ecc.DatadeMatriculaoCatadorEditar);
+                cmd.Parameters.AddWithValue("RG", Ecc.RGCadastroCatadorEditar);
+                cmd.Parameters.AddWithValue("CPF", Ecc.CPFCadastroCatadorEditar);
+                cmd.Parameters.AddWithValue("NIS", Ecc.NISCadastroCatadorEditar);
+                cmd.Parameters.AddWithValue("Genero", Ecc.GeneroCadastroCatadorEditar);
+                cmd.Parameters.AddWithValue("Telefone", Ecc.TelefoneCadastroCatadorEditar);
+                cmd.Parameters.AddWithValue("CEP", Ecc.CEPCadastroCatadorEditar);
+                cmd.Parameters.AddWithValue("Auxilio", Ecc.AuxilioCatadorEditar);
+                cmd.Parameters.AddWithValue("Usuario", Ecc.UsuarioCatadorEditar);
+                cmd.Parameters.AddWithValue("Unidade", Ecc.UnidadeCatadorEditar);
+                cmd.Parameters.AddWithValue("DataEditado", Ecc.DataCatadorEditar);
+                cmd.Parameters.AddWithValue("Funcao", Ecc.FuncaoCatadorEditar);
+                cmd.Parameters.AddWithValue("Matrícula", Ecc.MatriculaCatadorEditar);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Associado(a) Alterado(a) com sucesso!");
+                ConexaoBanco(NomedoServidor).Close();
+            }
+
+            catch (Exception)
+            {
+                MessageBox.Show("Erro! Verifique se todos os campos foram preenchidos corretamente.");
+                return;
+            }
+
+        }
+
+        public static void ClienteEditar(ClienteEditadoClasse CEC)
+        {
+            string NomedoServidor = CEC.NomedoServidor;
+            try
+            {
+                var cmd = ConexaoBanco(NomedoServidor).CreateCommand();
+                cmd.CommandText = @"UPDATE CLIENTES SET [Nome Fantasia] = @NomeFantasia, [CNPJ] = @CNPJ, 
+               [RegimedeTributacao] = @RegimedeTributacao, [Razaosocial] = @Razaosocial, [DataEditado] = 
+               @DatadeCadastro, [Telefone] = @Telefone, [email] = @email, [Rua] = @Rua, [Cidade] = @Cidade, 
+              [Bairro] = @Bairro, [CEP] = @CEP, [UsuarioEditado] = @UsuarioEditado  WHERE [ID_Cliente] = @Matricula;";
+                cmd.Parameters.AddWithValue("Matricula", CEC.IDCliente);
+                cmd.Parameters.AddWithValue("NomeFantasia", CEC.NomeFantasiaEditarCliente);
+                cmd.Parameters.AddWithValue("CNPJ", CEC.CNPJEditarCliente);
+                cmd.Parameters.AddWithValue("RegimedeTributacao", CEC.RegimedeTributacaoEditarCliente);
+                cmd.Parameters.AddWithValue("Razaosocial", CEC.RazaoSocialEditarCliente);
+                cmd.Parameters.AddWithValue("DatadeCadastro", CEC.DatadeCadastroEditarCliente);
+                cmd.Parameters.AddWithValue("Telefone", CEC.TelefoneEditarCliente);
+                cmd.Parameters.AddWithValue("email", CEC.emailEditarCliente);
+                cmd.Parameters.AddWithValue("Rua", CEC.RuaEditarCliente);
+                cmd.Parameters.AddWithValue("Cidade", CEC.CidadeEditarCliente);
+                cmd.Parameters.AddWithValue("Bairro", CEC.BairroEditarCliente);
+                cmd.Parameters.AddWithValue("CEP", CEC.CEPEditarCliente);
+                cmd.Parameters.AddWithValue("UsuarioEditado", CEC.UsuarioEditarCliente);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Cliente Alterado com sucesso!");
+                ConexaoBanco(NomedoServidor).Close();
+            }
+
+            catch (Exception)
+            {
+                MessageBox.Show("Erro! Verifique se todos os campos foram preenchidos corretamente.");
+                return;
+            }
+
+        }
+
+        public static void AssociacaoEditar(AssociacaoEditarClasse AEC)
+        {
+            string NomedoServidor = AEC.NomedoServidor;
+
+            try
+            {
+                var cmd = ConexaoBanco(NomedoServidor).CreateCommand();
+                cmd.CommandText = @"UPDATE ASSOCIACAO SET [Nome Fantasia] = @NomeFantasia, [CNPJ] = @CNPJ, [RegimedeTributacao] = @RegimedeTributacao, [Razaosocial] = @Razaosocial, [DatadeCadastro] = @DatadeCadastro, [Telefone] = @Telefone, [email] = @email, [Rua] = @Rua, [Cidade] = @Cidade, [Bairro] = @Bairro, [CEP] = @CEP, [EnderecoImagem] = @Imagem WHERE [ID_Associacao] = @Matricula;";
+                cmd.Parameters.AddWithValue("Matricula", AEC.MatriculaEditarAssociacao);
+                cmd.Parameters.AddWithValue("NomeFantasia", AEC.NomeFantasiaEditarAssociacao);
+                cmd.Parameters.AddWithValue("CNPJ", AEC.CNPJEditarAssociacao);
+                cmd.Parameters.AddWithValue("RegimedeTributacao", AEC.RegimedeTributacaoEditarAssociacao);
+                cmd.Parameters.AddWithValue("Razaosocial", AEC.RazaoSocialEditarAssociacao);
+                cmd.Parameters.AddWithValue("DatadeCadastro", AEC.DatadeCadastroEditarAssociacao);
+                cmd.Parameters.AddWithValue("Telefone", AEC.TelefoneEditarssociacao);
+                cmd.Parameters.AddWithValue("email", AEC.emailEditarAssociacao);
+                cmd.Parameters.AddWithValue("Rua", AEC.RuaEditarAssociacao);
+                cmd.Parameters.AddWithValue("Cidade", AEC.CidadeEditarAssociacao);
+                cmd.Parameters.AddWithValue("Bairro", AEC.BairroEditarAssociacao);
+                cmd.Parameters.AddWithValue("CEP", AEC.CEPEditarAssociacao);
+                cmd.Parameters.AddWithValue("Imagem", AEC.ImagemEditarAssociacao);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Associacação alterada com sucesso!");
+                ConexaoBanco(NomedoServidor).Close();
+            }
+
+            catch (Exception)
+            {
+                MessageBox.Show("Erro! Verifique se todos os campos foram preenchidos corretamente.");
+                return;
+            }
+
+        }
+
+
+        public static void AdministradorEdite(EditarAdministradorClasse EAC)
+        {
+            string NomedoServidor = EAC.NomedoServidor;
+            try
+            {
+                string IDADMINISTRADOR = EAC.ID_AdministradorEditarAdministrador.ToString();
+                var cmd = ConexaoBanco(NomedoServidor).CreateCommand();
+
+
+                cmd.CommandText = @"UPDATE ADMINISTRADORES SET [txt_NomeAdministrador] = @txt_NomeAdministrador,[txt_Bairro] = @txt_Bairro, [txt_CEP] = @txt_CEP, [cbb_Cidade] = @cbb_Cidade, [txt_CPF] = @txt_CPF, [txt_DatadeMatricula] = @txt_DatadeMatricula, [txt_DatadeNascimento] = @txt_DatadeNascimento, [txt_[e-mail]]] = @txt_email, txt_Endereco = @txt_Endereco, [cbb_Genero] = @cbb_Genero, [txt_AdministradorLogin] = @txt_AdministradorLogin, [nud_Nivel] = @nud_Nivel, [txt_RG] = @txt_RG, [txt_SenhaLogin] = @txt_SenhaLogin, [txt_Telefone] = @txt_Telefone, [txt_NIS] = @txt_NIS WHERE [ID_doAdministrador] ='" + IDADMINISTRADOR + "'";
+                cmd.Parameters.AddWithValue("txt_NomeAdministrador", EAC.NomeAdministradorEditarAdministrador);
+                cmd.Parameters.AddWithValue("txt_Bairro", EAC.BairroEditarAdministrador);
+                cmd.Parameters.AddWithValue("txt_CEP", EAC.CEPEditarAdministrador);
+                cmd.Parameters.AddWithValue("cbb_Cidade", EAC.CidadeEditarAdministrador);
+                cmd.Parameters.AddWithValue("txt_CPF", EAC.CPFEditarAdministrador);
+                cmd.Parameters.AddWithValue("txt_DatadeMatricula", EAC.DatadeMatriculaEditarAdministrador);
+                cmd.Parameters.AddWithValue("txt_DatadeNascimento", EAC.DatadeNascimentoEditarAdministrador);
+                cmd.Parameters.AddWithValue("txt_email", EAC.emailEditarAdministrador);
+                cmd.Parameters.AddWithValue("txt_Endereco", EAC.EnderecoEditarAdministrador);
+                cmd.Parameters.AddWithValue("cbb_Genero", EAC.GeneroEditardministrador);
+                cmd.Parameters.AddWithValue("txt_AdministradorLogin", EAC.LoginEditarAdministrador);
+                cmd.Parameters.AddWithValue("nud_Nivel", EAC.NivelEditarAdministrador);
+                cmd.Parameters.AddWithValue("txt_RG", EAC.RGEditarAdministrador);
+                cmd.Parameters.AddWithValue("txt_SenhaLogin", EAC.SenhaEditarAdministrador);
+                cmd.Parameters.AddWithValue("txt_Telefone", EAC.TelefoneEditarAdministrador);
+                cmd.Parameters.AddWithValue("txt_NIS", EAC.NISEditarAdministrador);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Administrador(a) Alterado(a) com sucesso!");
+                ConexaoBanco(NomedoServidor).Close();
+
+                GestaoAdministradores gestao = new GestaoAdministradores();
+                if (gestao.btn_PesquisarPorAssociacaoGestao.Visible == true)
+                {
+                    string Associacao = (gestao.cbb_Administradorestao.Text);
+
+                    string vqueryCatador = @"SELECT [ID_doAdministrador], [txt_NomeAdministrador], 
+[txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS],
+[txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade],
+[txt_Bairro], [txt_CEP], [nud_Nivel], [Unidade], [Usuario] FROM [ADMINISTRADORES] WHERE
+[Unidade] ='" + Associacao + "'ORDER BY txt_NomeAdministrador ASC";
+                    gestao.dgv_AdministradorGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
+                }
+
+                if (Globais.nivel == 1)
+                {
+                    string Administrador = gestao.cbb_Administradorestao.Text;
+                    string vqueryCatador = @"SELECT [ID_doAdministrador], [txt_NomeAdministrador], 
+[txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS], 
+[txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade], 
+[txt_Bairro], [txt_CEP], [nud_Nivel], [Administrador], [Unidade] FROM [ADMINISTRADORES] WHERE 
+[txt_NomeAdministrador] ='" + Administrador + "' AND [nud_Nivel] = 2 ORDER BY txt_NomeAdministrador ASC";
+                    gestao.dgv_AdministradorGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
+
+
+                }
+
+
+
+                if (gestao.btn_PesquisarporMatriculaAdministradorGestao.Visible == true)
+                {
+
+                    string Matricula = gestao.txt_MatriculaAdministradorGestao.Text;
+                    string vqueryCatador = @"SELECT[ID_doAdministrador], [txt_NomeAdministrador],
+[txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS],
+[txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade],
+[txt_Bairro], [txt_CEP], [nud_Nivel], [Unidade], [Usuario] FROM[ADMINISTRADORES] WHERE
+[ID_doAdministrador] = '" + Matricula + "'ORDER BY txt_NomeAdministrador ASC";
+                    gestao.dgv_AdministradorGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
+
+                }
+
+                if (gestao.btn_porAssociacaoeMatricula.Visible == true)
+                {
+
+                    string Associacao = gestao.cbb_Administradorestao.Text;
+                    string Matricula = gestao.txt_MatriculaAdministradorGestao.Text;
+
+
+                    string vqueryCatador = @"SELECT[ID_doAdministrador], [txt_NomeAdministrador],
+[txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS],
+[txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade],
+[txt_Bairro], [txt_CEP], [nud_Nivel], [Unidade], [Usuario] FROM[ADMINISTRADORES] WHERE
+[Unidade] = '" + Associacao + "' AND ID_doAdministrador = '" + Matricula + "' ORDER BY txt_NomeAdministrador ASC";
+                    gestao.dgv_AdministradorGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
+                    gestao.dgv_AdministradorGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
+
+
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro! Verifique se todos os campos foram preenchidos corretamente.");
+                return;
+                ConexaoBanco(NomedoServidor).Close();
+
+                throw ex;
+            }
+
+        }
+
+        public static void AdicionarMaterial(TabeladePrecosAdicionar TPA)
+        {
+            string NomedoServidor = TPA.NomedoServidor;
+            try
+            {
+                var cmd = ConexaoBanco(NomedoServidor).CreateCommand();
+                cmd.CommandText = @"INSERT INTO METERIAIS ([Unidade], [Material], [Preco], [Grupo]) values(@Associacao, @Material, @Preco, @Grupo)";
+                cmd.Parameters.AddWithValue("Preco", TPA.PrecoAdicionar);
+                cmd.Parameters.AddWithValue("Material", TPA.TipodeMaterialAdicionar);
+                cmd.Parameters.AddWithValue("Associacao", TPA.AssociacaoAdicionar);
+                cmd.Parameters.AddWithValue("Grupo", TPA.Grupo);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Material Adicionado!");
+                ConexaoBanco(NomedoServidor).Close();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+
+            }
+
+        }
+
+        public static void CaixaTemporario(CaixaTemporarioClasse CTC)
+        {
+            string NomedoServidor = CTC.NomedoServidor;
+            try
+            {
+                var cmd = ConexaoBanco(NomedoServidor).CreateCommand();
+                cmd.CommandText = @"INSERT INTO [CaixaTemporario]([Material], [Preco], [Massa], [Valor], [Unidade], [Usuario]) VALUES (@Material,@Preco, @Massa, @Valor, @Unidade, @Usuario)";
+                cmd.Parameters.AddWithValue("Material", CTC.Material);
+                cmd.Parameters.AddWithValue("Massa", CTC.Massa);
+                cmd.Parameters.AddWithValue("Preco", CTC.Preco);
+                cmd.Parameters.AddWithValue("Valor", CTC.Valor);
+                cmd.Parameters.AddWithValue("Unidade", CTC.Unidade);
+                cmd.Parameters.AddWithValue("Usuario", CTC.Usuario);
+                cmd.ExecuteNonQuery();
+                ConexaoBanco(NomedoServidor).Close();
+            }
+
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+        public static void EditarPreco(TabeladePrecosClasse TPC)
+        {
+            string NomedoServidor = TPC.NomedoServidor;
+            try
+            {
+                var cmd = ConexaoBanco(NomedoServidor).CreateCommand();
+                cmd.CommandText = @"UPDATE METERIAIS SET [Preco] = @Preco WHERE [Unidade] = @Associacao AND [Material] = @Material";
+                cmd.Parameters.AddWithValue("Preco", TPC.Preco);
+                cmd.Parameters.AddWithValue("Material", TPC.TipodeMaterial);
+                cmd.Parameters.AddWithValue("Associacao", TPC.Associacao);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Preço do material selecionado alterado!");
+                ConexaoBanco(NomedoServidor).Close();
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+        }
+
+        public static void ColetaNew(AdicionarColetaClasse ACC)
+        {
+            string NomedoServidor = ACC.NomedoServidor;
+            try
+            {
+                var cmd = ConexaoBanco(NomedoServidor).CreateCommand();
+                cmd.CommandText = @"insert into COLETAS([Catador], [Data da Coleta], [Massa], [MassaINT], [TipodeResiduo], [TipodeMaterial], [Reciclavel], [Administrador], [Unidade], [Dia], [Mês], [Ano]) values (@Catador,(SELECT FORMAT(GETDATE(), 'dd / MM / yyyy')) , @Massa, @MassaINT, @TipodeResiduo, @TipodeMaterial, @Reciclavel, @Administrador, @Unidade, (select datepart(day, getdate())), (select datepart(month, getdate())), (select datepart(year, getdate())))";
+                cmd.Parameters.AddWithValue("Catador", ACC.CatadorAdicionarColeta);
+                cmd.Parameters.AddWithValue("DatadaColeta", ACC.DatadaColetaAdicionarColeta);
+                cmd.Parameters.AddWithValue("Massa", ACC.MassaAdicionarColeta);
+                cmd.Parameters.AddWithValue("MassaINT", ACC.MassaINTAdicionarColeta);
+                cmd.Parameters.AddWithValue("TipodeResiduo", ACC.TipodeResiduoAdicionarColeta);
+                cmd.Parameters.AddWithValue("TipodeMaterial", ACC.TipodeMaterialAdicionarColeta);
+                cmd.Parameters.AddWithValue("Reciclavel", ACC.ReciclavelAdicionarColeta);
+                cmd.Parameters.AddWithValue("Administrador", ACC.AdministradorAdicionarColeta);
+                cmd.Parameters.AddWithValue("Unidade", ACC.UnidadeAdicionarColeta);
+
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Coleta adicionada com sucesso!");
+                ConexaoBanco(NomedoServidor).Close();
+            }
+
+            catch (Exception)
+            {
+                MessageBox.Show("Erro! Verifique se todos os campos foram preenchidos corretamente.");
+                return;
+            }
+
+        }
+
+
+        public static void NewAssociacao(AdicionarAssociacaoClasse AAC)
+        {
+            string NomedoServidor = AAC.NomedoServidor;
+            var cmd = ConexaoBanco(NomedoServidor).CreateCommand();
+            cmd.CommandText = @"INSERT INTO [ASSOCIACAO] ([Cidade], [Bairro], [Rua], [DatadeCadastro], [CNPJ], [RegimedeTributacao], [Telefone], [CEP], [Nome Fantasia], [Razaosocial], [email], [EnderecoImagem]) VALUES (@Cidade, @Bairro, @Rua, @DatadeCadastro, @CNPJ, @RegimedeTributacao, @Telefone, @CEP, @NomeFantasia, @Razaosocial, @email, @Imagem) ";
+            cmd.Parameters.AddWithValue("Cidade", AAC.CidadeAdicionarAssociacao);
+            cmd.Parameters.AddWithValue("Bairro", AAC.BairroAdicionarAssociacao);
+            cmd.Parameters.AddWithValue("Rua", AAC.RuaAdicionarAssociacao);
+            cmd.Parameters.AddWithValue("DatadeCadastro", AAC.DatadeCadastroAdicionarAssociacao);
+            cmd.Parameters.AddWithValue("CNPJ", AAC.CNPJAdicionarAssociacao);
+            cmd.Parameters.AddWithValue("RegimedeTributacao", AAC.RegimedeTributacaoAdicionarAssociacao);
+            cmd.Parameters.AddWithValue("Telefone", AAC.TelefoneAdicionarAssociacao);
+            cmd.Parameters.AddWithValue("CEP", AAC.CEPAdicionarAssociacao);
+            cmd.Parameters.AddWithValue("NomeFantasia", AAC.NomeFantasiaAdicionarAssociacao);
+            cmd.Parameters.AddWithValue("Razaosocial", AAC.RazaoSocialAdicionarAssociacao);
+            cmd.Parameters.AddWithValue("email", AAC.emailAdicionarAssociacao);
+            cmd.Parameters.AddWithValue("Imagem", AAC.ImagemAdicionarAssociacao);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Associação adicionada com sucesso!");
+            ConexaoBanco(NomedoServidor).Close();
+
+        }
+
+        public static void SalvarAlteracoesFilho(SalvarAlteracoesFilhoCatadorEditar SAFCE)
+        {
+            string NomedoServidor = SAFCE.NomedoServidor;
+            try
+            {
+                var cmd = ConexaoBanco(NomedoServidor).CreateCommand();
+                cmd.CommandText = @"UPDATE FILHOS SET [Pai/Mae] = @PaiMae, [Data de Nascimento] = @DatadeNascimento, [Gênero] = @Genero WHERE [ID_Filho] = @ID_Filho;";
+                cmd.Parameters.AddWithValue("PaiMae", SAFCE.PaiMae);
+                cmd.Parameters.AddWithValue("DatadeNascimento", SAFCE.DataNascimento);
+                cmd.Parameters.AddWithValue("Genero", SAFCE.Genero);
+                cmd.Parameters.AddWithValue("ID_Filho", SAFCE.ID_Filho);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Filho(a) Alterado(a) com sucesso!");
+                ConexaoBanco(NomedoServidor).Close();
+
+            }
+
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Erro! Verifique se todos os campos foram preenchidos corretamente.");
+                return;
+            }
+        }
+        public static DataTable ObterUsuariosIdNome(Administradorclasse A)
+        {
+            string Nomedoservidor = A.Nomedoservidor;
+            SqlDataAdapter da = null;
+            DataTable dt = new DataTable();
+            try
+            {
+                var vcon = ConexaoBanco(Nomedoservidor);
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "Select ID_Coletor as 'ID Usuário'";
+                da = new SqlDataAdapter(cmd.CommandText, vcon);
+                da.Fill(dt);
+                vcon.Close();
+                return dt;
+            }
+
+            catch (Exception ex)
+            {
+                throw ex;
+
+            }
+        }
+
+        public static DataTable ObterTodosUsuarios2(Administradorclasse A)
+        {
+            string Nomedoservidor = A.Nomedoservidor;
+            SqlDataAdapter da = null;
+            DataTable dt = new DataTable();
+            try
+            {
+
+                var vcon = ConexaoBanco(Nomedoservidor);
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "select*from [SGRCC1.dbo]";
+                da = new SqlDataAdapter(cmd.CommandText, vcon);
+                da.Fill(dt);
+                vcon.Close();
+                return dt;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+
+            }
+
+
+
+        }
+
+
+        public static DataTable ObterDadosUsuario(String id, Administradorclasse A)
+        {
+            SqlDataAdapter da = null;
+            DataTable dt = new DataTable();
+            string Nomedoservidor = A.Nomedoservidor;
+
+            try
+            {
+
+                var vcon = ConexaoBanco(Nomedoservidor);
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "select*from [SGRCC1.dbo]";
+                da = new SqlDataAdapter(cmd.CommandText, vcon);
+                da.Fill(dt);
+                vcon.Close();
+                return dt;
+            }
+
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        public static bool existeadministrador(Administradorclasse AA)
+        {
+            string Nomedoservidor = AA.Nomedoservidor;
+            bool res2;
+
+            SqlDataAdapter da = null;
+            DataTable dt = new DataTable();
+
+            var cmd = ConexaoBanco(Nomedoservidor).CreateCommand();
+            cmd.CommandText = "select [txt_AdministradorLogin] from ADMINISTRADORES where [nud_Nivel] = 0";
+            da = new SqlDataAdapter(cmd.CommandText, ConexaoBanco(Nomedoservidor));
+            da.Fill(dt);
+
+            if (dt.Rows.Count > 0)
+            {
+                res2 = true;
+
+            }
+
+            else
+            {
+
+                res2 = false;
+            }
+            return res2;
+
+        }
+
+        public static bool existeusuario(Administradorclasse A)
+        {
+            bool res;
+            SqlDataAdapter da = null;
+            DataTable dt = new DataTable();
+            string Nomedoservidor = A.Nomedoservidor;
+
+            var cmd = ConexaoBanco(Nomedoservidor).CreateCommand();
+            cmd.CommandText = "select [txt_AdministradorLogin] from ADMINISTRADORES where [txt_AdministradorLogin] ='" + A.LoginAdicionarAdministrador + "'";
+            da = new SqlDataAdapter(cmd.CommandText, ConexaoBanco(Nomedoservidor));
+            da.Fill(dt);
+
+            if (dt.Rows.Count > 0)
+            {
+                res = true;
+
+            }
+
+            else
+            {
+
+                res = false;
+            }
+            return res;
+        }
+
+        public static void NovoAdministrador(Administradorclasse A)
+        {
+            if (existeusuario(A))
+            {
+                MessageBox.Show("Nome de Usuário já em uso.");
+                return;
+            }
+
+            string NomedoServidor = A.Nomedoservidor;
+
+            try
+            {
+                var cmd = ConexaoBanco(NomedoServidor).CreateCommand();
+                cmd.CommandText = @"insert into ADMINISTRADORES([txt_NomeAdministrador], [txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF],[txt_NIS], [txt_DatadeMatricula],[cbb_Genero],  [txt_Telefone], [txt_[e-mail]]], [txt_Endereco],[cbb_Cidade], [txt_Bairro], [txt_CEP], [nud_Nivel], [Unidade], [Usuario]) values (@txt_NomeAdministrador, @txt_AdministradorLogin, @txt_SenhaLogin,  @txt_DatadeNascimento, @txt_RG, @txt_CPF, @txt_NIS, @txt_DatadeMatricula,  @cbb_Genero,  @txt_Telefone, @txt_email, @txt_Endereco, @cbb_Cidade, @txt_Bairro, @txt_CEP, @nud_Nivel,  @Unidade, @Usuario)";
+                cmd.Parameters.AddWithValue("txt_NomeAdministrador", A.NomeAdministradorAdicionarAdministrador);
+                cmd.Parameters.AddWithValue("txt_AdministradorLogin", A.LoginAdicionarAdministrador);
+                cmd.Parameters.AddWithValue("txt_SenhaLogin", A.SenhaAdicionarAdministrador);
+                cmd.Parameters.AddWithValue("txt_DatadeNascimento", A.DatadeNascimentoAdicionarAdministrador);
+                cmd.Parameters.AddWithValue("txt_RG", A.RGAdicionarAdministrador);
+                cmd.Parameters.AddWithValue("txt_CPF", A.CPFAdicionarAdministrador);
+                cmd.Parameters.AddWithValue("txt_NIS", A.NISAdicionarAdministrador);
+                cmd.Parameters.AddWithValue("txt_DatadeMatricula", A.DatadeMatriculaAdicionarAdministrador);
+                cmd.Parameters.AddWithValue("cbb_Genero", A.GeneroAdicionarAdministrador);
+                cmd.Parameters.AddWithValue("txt_Telefone", A.TelefoneAdicionarAdministrador);
+                cmd.Parameters.AddWithValue("txt_email", A.emailAdicionarAdministrador);
+                cmd.Parameters.AddWithValue("txt_Endereco", A.EnderecoAdicionarAdministrador);
+                cmd.Parameters.AddWithValue("cbb_Cidade", A.CidadeAdicionarAdministrador);
+                cmd.Parameters.AddWithValue("txt_Bairro", A.BairroAdicionarAdministrador);
+                cmd.Parameters.AddWithValue("txt_CEP", A.CEPAdicionarAdministrador);
+                cmd.Parameters.AddWithValue("nud_Nivel", A.NivelAdicionarAdministrador);
+                cmd.Parameters.AddWithValue("Unidade", A.UnidadeAdicionarAdministrador);
+                cmd.Parameters.AddWithValue("Usuario", A.UsuarioAdicionarAdministrado);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Novo administrador cadastrado");
+                ConexaoBanco(NomedoServidor).Close();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro! Verifique se todos os campos foram preenchidos corretamente.");
+                ConexaoBanco(NomedoServidor).Close();
+            }
+
+        }
+
+        public static void NewCliente(CadastrarClienteClasse CCCl)
+        {
+            string NomedoServidor = CCCl.NomedoServidor;
+            try
+            {
+                var cmd = ConexaoBanco(NomedoServidor).CreateCommand();
+                cmd.CommandText = @"insert into CLIENTES([Nome Fantasia], [CNPJ], [RegimedeTributacao], [Razaosocial], 
+[DatadeCadastro], [Telefone], [email], [Rua], [Cidade],  [Bairro], [CEP], [Unidade], [Usuario]) 
+values (@NomeFantasia, @CNPJ, @RegimedeTributacao, @Razaosocial, @DatadeCadastro, @Telefone, @email, @Rua,  @Cidade, @Bairro, @CEP, @Unidade, @Usuario)";
+                cmd.Parameters.AddWithValue("NomeFantasia", CCCl.NomeFantasiaCadastroCliente);
+                cmd.Parameters.AddWithValue("CNPJ", CCCl.CNPJCadastroCliente);
+                cmd.Parameters.AddWithValue("RegimedeTributacao", CCCl.RegimedeTributacaoCadastroCliente);
+                cmd.Parameters.AddWithValue("Razaosocial", CCCl.RazaoSocialCadastroCliente);
+                cmd.Parameters.AddWithValue("DatadeCadastro", CCCl.DatadeCadastroCadastroCliente);
+                cmd.Parameters.AddWithValue("Telefone", CCCl.TelefoneCadastroCliente);
+                cmd.Parameters.AddWithValue("email", CCCl.emailCadastroCliente);
+                cmd.Parameters.AddWithValue("Rua", CCCl.RuaCadastroCliente);
+                cmd.Parameters.AddWithValue("Cidade", CCCl.CidadeCadastroCliente);
+                cmd.Parameters.AddWithValue("Bairro", CCCl.BairroCadastroCliente);
+                cmd.Parameters.AddWithValue("CEP", CCCl.CEPCadastroCliente);
+                cmd.Parameters.AddWithValue("Unidade", CCCl.UnidadeCadastroCliente);
+                cmd.Parameters.AddWithValue("Usuario", CCCl.UsuarioCadastroCliente);
+
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Novo cliente cadastrado");
+                ConexaoBanco(NomedoServidor).Close();
+            }
+
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Erro! Verifique se todos os campos foram preenchidos corretamente.");
+                ConexaoBanco(NomedoServidor).Close();
+            }
+
+        }
+
+
+    }
+
+}
+
+
+
+
+
