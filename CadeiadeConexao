@@ -1,0 +1,59 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    public partial class CadeiadeConexao : Form
+    {
+
+
+        public CadeiadeConexao()
+        {
+            InitializeComponent();
+            string nomecomputador = System.Windows.Forms.SystemInformation.ComputerName;
+            string nomecomputadornome = nomecomputador.Remove(0, 8);
+            textBox2.Text = nomecomputadornome;
+
+
+            try
+            {
+                SqlConnection conectar = new SqlConnection("Data Source=DESKTOP-" + textBox2.Text + "\\SQLEXPRESS;Initial Catalog=master;Integrated Security=True");
+                conectar.Open();
+                conectar.Close();
+
+            }
+            catch
+            {
+                MessageBox.Show("Conexão com o banco de dados falhou!");
+                return;
+
+            }
+
+        }
+
+        private void btn_Enter_Click(object sender, EventArgs e)
+        {
+
+           
+
+        }
+
+        private void CadeiadeConexao_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+    }
+}
