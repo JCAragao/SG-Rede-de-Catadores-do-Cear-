@@ -1,0 +1,1211 @@
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    partial class Login
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            this.lbl_UsuarioLogin = new System.Windows.Forms.Label();
+            this.txt_UsuarioLogin = new System.Windows.Forms.TextBox();
+            this.lbl_SenhaLogin = new System.Windows.Forms.Label();
+            this.txt_SenhaLogin = new System.Windows.Forms.TextBox();
+            this.btn_Logar = new System.Windows.Forms.Button();
+            this.btn_Cancelar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.chb_MostrarSenhaLogin = new System.Windows.Forms.CheckBox();
+            this.lbl2022 = new System.Windows.Forms.Label();
+            this.pnl_Creditos = new System.Windows.Forms.Panel();
+            this.lbl_Creditos = new System.Windows.Forms.Label();
+            this.lbl_NomedoServidor = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.pnl_Creditos.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // lbl_UsuarioLogin
+            // 
+            this.lbl_UsuarioLogin.AutoSize = true;
+            this.lbl_UsuarioLogin.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl_UsuarioLogin.Image = ((System.Drawing.Image)(resources.GetObject("lbl_UsuarioLogin.Image")));
+            this.lbl_UsuarioLogin.Location = new System.Drawing.Point(12, 9);
+            this.lbl_UsuarioLogin.Name = "lbl_UsuarioLogin";
+            this.lbl_UsuarioLogin.Size = new System.Drawing.Size(43, 13);
+            this.lbl_UsuarioLogin.TabIndex = 0;
+            this.lbl_UsuarioLogin.Text = "Usuário";
+            // 
+            // txt_UsuarioLogin
+            // 
+            this.txt_UsuarioLogin.Location = new System.Drawing.Point(15, 35);
+            this.txt_UsuarioLogin.MaxLength = 50;
+            this.txt_UsuarioLogin.Name = "txt_UsuarioLogin";
+            this.txt_UsuarioLogin.Size = new System.Drawing.Size(180, 20);
+            this.txt_UsuarioLogin.TabIndex = 1;
+            // 
+            // lbl_SenhaLogin
+            // 
+            this.lbl_SenhaLogin.AutoSize = true;
+            this.lbl_SenhaLogin.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl_SenhaLogin.Image = ((System.Drawing.Image)(resources.GetObject("lbl_SenhaLogin.Image")));
+            this.lbl_SenhaLogin.Location = new System.Drawing.Point(12, 71);
+            this.lbl_SenhaLogin.Name = "lbl_SenhaLogin";
+            this.lbl_SenhaLogin.Size = new System.Drawing.Size(38, 13);
+            this.lbl_SenhaLogin.TabIndex = 2;
+            this.lbl_SenhaLogin.Text = "Senha";
+            // 
+            // txt_SenhaLogin
+            // 
+            this.txt_SenhaLogin.Location = new System.Drawing.Point(15, 101);
+            this.txt_SenhaLogin.MaxLength = 50;
+            this.txt_SenhaLogin.Name = "txt_SenhaLogin";
+            this.txt_SenhaLogin.Size = new System.Drawing.Size(180, 20);
+            this.txt_SenhaLogin.TabIndex = 3;
+            this.txt_SenhaLogin.UseSystemPasswordChar = true;
+            // 
+            // btn_Logar
+            // 
+            this.btn_Logar.Location = new System.Drawing.Point(15, 138);
+            this.btn_Logar.Name = "btn_Logar";
+            this.btn_Logar.Size = new System.Drawing.Size(75, 23);
+            this.btn_Logar.TabIndex = 4;
+            this.btn_Logar.Text = "Logar";
+            this.btn_Logar.UseVisualStyleBackColor = true;
+            this.btn_Logar.Click += new System.EventHandler(this.btn_Logar_Click);
+            // 
+            // btn_Cancelar
+            // 
+            this.btn_Cancelar.Location = new System.Drawing.Point(120, 138);
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.Size = new System.Drawing.Size(75, 23);
+            this.btn_Cancelar.TabIndex = 5;
+            this.btn_Cancelar.Text = "Cancelar";
+            this.btn_Cancelar.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(212, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(101, 112);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
+            this.label1.Location = new System.Drawing.Point(198, 124);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(134, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Sistema de Gerenciamento";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(201, 186);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(54, 78);
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
+            this.label2.Location = new System.Drawing.Point(233, 168);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Realização";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(267, 186);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(46, 83);
+            this.pictureBox3.TabIndex = 10;
+            this.pictureBox3.TabStop = false;
+            // 
+            // chb_MostrarSenhaLogin
+            // 
+            this.chb_MostrarSenhaLogin.AutoSize = true;
+            this.chb_MostrarSenhaLogin.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.chb_MostrarSenhaLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chb_MostrarSenhaLogin.BackgroundImage")));
+            this.chb_MostrarSenhaLogin.Location = new System.Drawing.Point(15, 167);
+            this.chb_MostrarSenhaLogin.Name = "chb_MostrarSenhaLogin";
+            this.chb_MostrarSenhaLogin.Size = new System.Drawing.Size(95, 17);
+            this.chb_MostrarSenhaLogin.TabIndex = 11;
+            this.chb_MostrarSenhaLogin.Text = "Mostrar Senha";
+            this.chb_MostrarSenhaLogin.UseVisualStyleBackColor = false;
+            this.chb_MostrarSenhaLogin.CheckedChanged += new System.EventHandler(this.chb_MostrarSenhaLogin_CheckedChanged);
+            // 
+            // lbl2022
+            // 
+            this.lbl2022.AutoSize = true;
+            this.lbl2022.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl2022.Location = new System.Drawing.Point(15, 255);
+            this.lbl2022.Name = "lbl2022";
+            this.lbl2022.Size = new System.Drawing.Size(40, 13);
+            this.lbl2022.TabIndex = 12;
+            this.lbl2022.Text = "2023.1";
+            // 
+            // pnl_Creditos
+            // 
+            this.pnl_Creditos.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pnl_Creditos.Controls.Add(this.lbl_Creditos);
+            this.pnl_Creditos.Location = new System.Drawing.Point(397, 12);
+            this.pnl_Creditos.Name = "pnl_Creditos";
+            this.pnl_Creditos.Size = new System.Drawing.Size(325, 172);
+            this.pnl_Creditos.TabIndex = 14;
+            this.pnl_Creditos.Click += new System.EventHandler(this.pnl_Creditos_Click);
+            this.pnl_Creditos.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // lbl_Creditos
+            // 
+            this.lbl_Creditos.AutoSize = true;
+            this.lbl_Creditos.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbl_Creditos.Image = ((System.Drawing.Image)(resources.GetObject("lbl_Creditos.Image")));
+            this.lbl_Creditos.Location = new System.Drawing.Point(-3, 0);
+            this.lbl_Creditos.Name = "lbl_Creditos";
+            this.lbl_Creditos.Size = new System.Drawing.Size(328, 169);
+            this.lbl_Creditos.TabIndex = 14;
+            this.lbl_Creditos.Text = resources.GetString("lbl_Creditos.Text");
+            this.lbl_Creditos.Visible = false;
+            this.lbl_Creditos.Click += new System.EventHandler(this.lbl_Creditos_Click_1);
+            // 
+            // lbl_NomedoServidor
+            // 
+            this.lbl_NomedoServidor.AutoSize = true;
+            this.lbl_NomedoServidor.Image = ((System.Drawing.Image)(resources.GetObject("lbl_NomedoServidor.Image")));
+            this.lbl_NomedoServidor.Location = new System.Drawing.Point(92, 227);
+            this.lbl_NomedoServidor.Name = "lbl_NomedoServidor";
+            this.lbl_NomedoServidor.Size = new System.Drawing.Size(92, 13);
+            this.lbl_NomedoServidor.TabIndex = 15;
+            this.lbl_NomedoServidor.Text = "Nome do Servidor";
+            this.lbl_NomedoServidor.Visible = false;
+            // 
+            // Login
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(360, 274);
+            this.Controls.Add(this.lbl_NomedoServidor);
+            this.Controls.Add(this.pnl_Creditos);
+            this.Controls.Add(this.lbl2022);
+            this.Controls.Add(this.chb_MostrarSenhaLogin);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btn_Cancelar);
+            this.Controls.Add(this.btn_Logar);
+            this.Controls.Add(this.txt_SenhaLogin);
+            this.Controls.Add(this.lbl_SenhaLogin);
+            this.Controls.Add(this.txt_UsuarioLogin);
+            this.Controls.Add(this.lbl_UsuarioLogin);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(750, 313);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(376, 313);
+            this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.pnl_Creditos.ResumeLayout(false);
+            this.pnl_Creditos.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label lbl_UsuarioLogin;
+        private System.Windows.Forms.TextBox txt_UsuarioLogin;
+        private System.Windows.Forms.Label lbl_SenhaLogin;
+        private System.Windows.Forms.TextBox txt_SenhaLogin;
+        private System.Windows.Forms.Button btn_Logar;
+        private System.Windows.Forms.Button btn_Cancelar;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.CheckBox chb_MostrarSenhaLogin;
+        private System.Windows.Forms.Label lbl2022;
+        private System.Windows.Forms.Panel pnl_Creditos;
+        private System.Windows.Forms.Label lbl_Creditos;
+        public System.Windows.Forms.Label lbl_NomedoServidor;
+    }
+}
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
+using System.Deployment.Application;
+using System.Drawing;
+using System.Drawing.Text;
+using System.IO;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using IWshRuntimeLibrary;
+using Org.BouncyCastle.Utilities;
+using System.Runtime.InteropServices;
+using System.Runtime.InteropServices.ComTypes;
+using iTextSharp.text.pdf.parser;
+
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    public partial class Login : Form
+    {
+        Principal form1;
+        DataTable dt = new DataTable();
+        public Login(Principal f)
+        {
+
+          
+                InitializeComponent();
+
+        
+            form1 = f;
+            
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.Exit();
+        }
+
+
+
+
+        private void btn_Logar_Click(object sender, EventArgs e)
+        {
+
+            bool conect;
+
+            try
+            {
+                string Servidornome0 = lbl_NomedoServidor.Text;
+                SqlConnection Conectar20 = new SqlConnection("Data Source=DESKTOP-" + Servidornome0 + "\\SQLEXPRESS;Initial Catalog=SGRRC1;Integrated Security=True");
+                Conectar20.Open();
+                conect = true;
+            }
+            catch
+            {
+                MessageBox.Show("Conexão com o banco de dados falhou! Dica: Verifique se informou o nome do servidor corretamente.");
+                this.Close();
+
+                string nomedoservidor;
+                CadeiadeConexao conexaocadeia = new CadeiadeConexao();
+                nomedoservidor = conexaocadeia.textBox2.Text;
+                lbl_NomedoServidor.Text = nomedoservidor;
+                conect = false;
+            }
+
+            if (conect == true)
+            {
+                string Servidornome = lbl_NomedoServidor.Text;
+                SqlConnection Conectar2 = new SqlConnection("Data Source=DESKTOP-" + Servidornome + "\\SQLEXPRESS;Initial Catalog=SGRRC1;Integrated Security=True");
+                Conectar2.Open();
+
+                SqlCommand cmd0 = new SqlCommand(@"select count(*) as tables from ASSOCIACAO ", Conectar2);
+                string NumerodeTabelas0 = cmd0.ExecuteScalar().ToString();
+
+                if (NumerodeTabelas0 == "0")
+                {
+                    Associacao associacao = new Associacao();
+                    associacao.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
+                    associacao.ShowDialog();
+                }
+
+                SqlCommand cmd1 = new SqlCommand(@"select count(*) as tables from ADMINISTRADORES ", Conectar2);
+                string NumerodeTabelas = cmd1.ExecuteScalar().ToString();
+
+                if (NumerodeTabelas == "0")
+                {
+                    NovoAdministrador NovoAdministrador = new NovoAdministrador();
+                    NovoAdministrador.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
+                    NovoAdministrador.ShowDialog();
+                }
+                Conectar2.Close();
+
+                string usuario = txt_UsuarioLogin.Text;
+                string senha = txt_SenhaLogin.Text;
+
+                if (usuario == "" || senha == "")
+                {
+                    MessageBox.Show("Usuario e ou senha inválidos");
+                    txt_UsuarioLogin.Focus();
+                    return;
+
+                }
+
+
+                Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
+                string LoginCrip = cryptography.Encriptar(usuario);
+                string SenhaCrip = cryptography.Encriptar(senha);
+                string Nomedoservidor = lbl_NomedoServidor.Text;
+
+
+                string sql = "select*from ADMINISTRADORES where txt_AdministradorLogin ='" + LoginCrip + "'and txt_SenhaLogin='" + SenhaCrip + "'";
+                dt = ConexaoBancodeDados.consulta(sql, Nomedoservidor);
+
+                if (dt.Rows.Count == 1)
+                {
+
+                    MessageBox.Show("Logado com sucesso! Iniciando sessão");
+                    form1.lbl_LeveldeAcessoForm1.Text = dt.Rows[0].ItemArray[16].ToString();
+                    form1.lbl_NomeUsuario.Text = cryptography.Decriptar(dt.Rows[0].Field<string>("txt_AdministradorLogin"));
+                    form1.lbl_AssociacaoForm1.Text = dt.Rows[0].ItemArray[17].ToString();
+                    form1.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
+                    Globais.nivel = dt.Rows[0].Field<Int32>("nud_Nivel");
+                    Globais.logado = true;
+                    this.Close();
+                }
+
+
+                else
+                {
+
+                    MessageBox.Show("Usuário não encontrado!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Conexão com o banco de dados falhou. Tente outra vez! Dica: Verifique se informou o nome do Servidor corretamente.");
+                this.Close();
+                string nomedoservidor;
+                CadeiadeConexao conexaocadeia = new CadeiadeConexao();
+                nomedoservidor = conexaocadeia.textBox2.Text;
+                lbl_NomedoServidor.Text = nomedoservidor;
+
+
+            }
+        }
+
+
+        
+
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            //if (ApplicationDeployment.IsNetworkDeployed)
+            //{
+            //  string sql = "select*from ADMINISTRADORES where [nud_Nivel] = 0";
+            //dt = ConexaoBancodeDados.consulta(sql);
+            //ApplicationDeployment deployment = ApplicationDeployment.CurrentDeployment;
+
+            string nomedoservidor;
+            CadeiadeConexao conexaocadeia = new CadeiadeConexao();
+            string nomecomputador2 = System.Windows.Forms.SystemInformation.ComputerName;
+            string nomecomputadornome2 = nomecomputador2.Remove(0, 8);
+
+            conexaocadeia.textBox2.Text = nomecomputadornome2;
+            nomedoservidor = conexaocadeia.textBox2.Text;
+            lbl_NomedoServidor.Text = nomedoservidor;
+
+            bool conec;
+            try
+            {
+                SqlConnection Conectar0 = new SqlConnection("Data Source=DESKTOP-" + nomedoservidor + "\\SQLEXPRESS;Initial Catalog=master;Integrated Security=True");
+                Conectar0.Open();
+                Conectar0.Close();
+                conec = true;
+            }
+            catch
+            {
+                MessageBox.Show("Conexão com o banco de dados falhou. Tente outra vez! Dica: se informou o nome do Servidor corretamente.");
+
+                string nomedoservidor2;
+                CadeiadeConexao conexaocadeia2 = new CadeiadeConexao();
+                string nomecomputador3 = System.Windows.Forms.SystemInformation.ComputerName;
+                string nomecomputadornome3 = nomecomputador3.Remove(0, 8);
+
+                conexaocadeia2.textBox2.Text = nomecomputadornome3;
+                nomedoservidor2 = conexaocadeia2.textBox2.Text;
+                lbl_NomedoServidor.Text = nomedoservidor2;
+                conec = false;
+            }
+
+            if (conec == true)
+            {
+                SqlConnection Conectar = new SqlConnection("Data Source=DESKTOP-" + nomedoservidor + "\\SQLEXPRESS;Initial Catalog=master;Integrated Security=True");
+                Conectar.Open();
+                
+                SqlCommand cmd0 = new SqlCommand(@"SELECT COUNT(*) as bancodedados FROM sys.databases where name = 'SGRRC1' ", Conectar);
+                string NumerodeBancos = cmd0.ExecuteScalar().ToString();
+                if (NumerodeBancos == "0")
+                {
+
+                    try
+                    {
+                        CriarDesktop criar = new CriarDesktop();
+                        criar.CreateDesktopShortcutForAllUsers();
+
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Entre como um administrador");
+                        return;
+                        Application.Exit();
+
+                    }
+
+                    SqlCommand cmd = new SqlCommand(@"
+USE [master]
+
+
+CREATE DATABASE [SGRRC1]
+ CONTAINMENT = NONE
+ ON  PRIMARY 
+( NAME = N'SGRRC1', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\SGRRC1.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
+ LOG ON 
+( NAME = N'SGRRC1_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\SGRRC1_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
+ WITH CATALOG_COLLATION = DATABASE_DEFAULT
+
+
+IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
+begin
+EXEC [SGRRC1].[dbo].[sp_fulltext_database] @action = 'enable'
+end
+
+
+ALTER DATABASE [SGRRC1] SET ANSI_NULL_DEFAULT OFF 
+
+
+ALTER DATABASE [SGRRC1] SET ANSI_NULLS OFF 
+
+
+ALTER DATABASE [SGRRC1] SET ANSI_PADDING OFF 
+
+
+ALTER DATABASE [SGRRC1] SET ANSI_WARNINGS OFF 
+
+
+ALTER DATABASE [SGRRC1] SET ARITHABORT OFF 
+
+
+ALTER DATABASE [SGRRC1] SET AUTO_CLOSE OFF 
+
+
+ALTER DATABASE [SGRRC1] SET AUTO_SHRINK OFF 
+
+
+ALTER DATABASE [SGRRC1] SET AUTO_UPDATE_STATISTICS ON 
+
+
+ALTER DATABASE [SGRRC1] SET CURSOR_CLOSE_ON_COMMIT OFF 
+
+
+ALTER DATABASE [SGRRC1] SET CURSOR_DEFAULT  GLOBAL 
+
+
+ALTER DATABASE [SGRRC1] SET CONCAT_NULL_YIELDS_NULL OFF 
+
+
+ALTER DATABASE [SGRRC1] SET NUMERIC_ROUNDABORT OFF 
+
+
+ALTER DATABASE [SGRRC1] SET QUOTED_IDENTIFIER OFF 
+
+
+ALTER DATABASE [SGRRC1] SET RECURSIVE_TRIGGERS OFF 
+
+
+ALTER DATABASE [SGRRC1] SET  DISABLE_BROKER 
+
+
+ALTER DATABASE [SGRRC1] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
+
+
+ALTER DATABASE [SGRRC1] SET DATE_CORRELATION_OPTIMIZATION OFF 
+
+
+ALTER DATABASE [SGRRC1] SET TRUSTWORTHY OFF 
+
+
+ALTER DATABASE [SGRRC1] SET ALLOW_SNAPSHOT_ISOLATION OFF 
+
+
+ALTER DATABASE [SGRRC1] SET PARAMETERIZATION SIMPLE 
+
+
+ALTER DATABASE [SGRRC1] SET READ_COMMITTED_SNAPSHOT OFF 
+
+
+ALTER DATABASE [SGRRC1] SET HONOR_BROKER_PRIORITY OFF 
+
+
+ALTER DATABASE [SGRRC1] SET RECOVERY SIMPLE 
+
+
+ALTER DATABASE [SGRRC1] SET  MULTI_USER 
+
+
+ALTER DATABASE [SGRRC1] SET PAGE_VERIFY CHECKSUM  
+
+
+ALTER DATABASE [SGRRC1] SET DB_CHAINING OFF 
+
+
+ALTER DATABASE [SGRRC1] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
+
+
+ALTER DATABASE [SGRRC1] SET TARGET_RECOVERY_TIME = 60 SECONDS 
+
+
+ALTER DATABASE [SGRRC1] SET DELAYED_DURABILITY = DISABLED 
+
+
+ALTER DATABASE [SGRRC1] SET ACCELERATED_DATABASE_RECOVERY = OFF  
+
+
+ALTER DATABASE [SGRRC1] SET QUERY_STORE = OFF
+
+
+ALTER DATABASE [SGRRC1] SET  READ_WRITE 
+
+", Conectar);
+                    cmd.ExecuteNonQuery();
+
+                    Conectar.Close();
+
+                    string desktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                    string diretorio = System.IO.Path.Combine(desktop, "Impressão");
+                    System.IO.Directory.CreateDirectory(diretorio);
+
+                  
+                    /*object shDesktop = (object)"Desktop";
+                    WshShell shell = new WshShell();
+                    string shortcutAddress = (string)shell.SpecialFolders.Item(ref shDesktop) + @"\Notepad.lnk";
+                    IWshShortcut shortcut = (IWshShortcut)shell.CreateShortcut(shortcutAddress);
+                    shortcut.Description = "Atalho para o Sistema de Gerenciamento da Rede de Catadores de Resíduos Sólidos Recicláveis do Estado do Ceará";
+                    shortcut.Hotkey = "Ctrl+Shift+N";
+                    shortcut.TargetPath = Environment.GetFolderPath(Environment.SpecialFolder.System) + @"\Sistema de Gerenciamento da Rede de Catadores do Ceará.exe";
+                    shortcut.Save();*/
+
+                    /*var startupFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
+                    WshShell shell = new WshShell();
+                    var shortCutLinkFilePath = Path.Combine(startupFolderPath, @"\Sistema de Gerenciamento da Rede de Catadores do Ceará.lnk");
+                    MessageBox.Show(shortCutLinkFilePath.ToString());
+                    var windowsApplicationShortcut = (IWshShortcut)shell.CreateShortcut(shortCutLinkFilePath);
+                    windowsApplicationShortcut.Description = "";
+                    windowsApplicationShortcut.WorkingDirectory = Application.StartupPath;
+                    windowsApplicationShortcut.TargetPath = Application.ExecutablePath;
+                    windowsApplicationShortcut.Save();*/
+
+
+                }
+
+
+                SqlConnection Conectar3 = new SqlConnection("Data Source=DESKTOP-" + nomedoservidor + "\\SQLEXPRESS;Initial Catalog=SGRRC1;Integrated Security=True");
+                Conectar3.Open();
+
+                SqlCommand cmd1 = new SqlCommand(@"select count(*) as [tables] from sys.tables ", Conectar3);
+                string NumerodeTabelas = cmd1.ExecuteScalar().ToString();
+
+                if (NumerodeTabelas == "0")
+                {
+
+                    SqlCommand cmd = new SqlCommand(@" USE [SGRRC1]
+
+/****** Object:  Table [dbo].[ADMINISTRADORES]    Script Date: 09/12/2022 19:42:17 ******/
+SET ANSI_NULLS ON
+
+
+SET QUOTED_IDENTIFIER ON
+
+
+CREATE TABLE [ADMINISTRADORES](
+	[ID_doAdministrador] [numeric](18, 0) IDENTITY(1,1) NOT NULL,
+	[txt_NomeAdministrador] [varchar](50) NULL,
+	[txt_AdministradorLogin] [varchar](50) NULL,
+	[txt_SenhaLogin] [varchar](50) NULL,
+	[txt_DatadeNascimento] [varchar](50) NULL,
+	[txt_RG] [varchar](50) NULL,
+	[txt_CPF] [varchar](50) NULL,
+	[txt_NIS] [varchar](50) NULL,
+	[txt_DatadeMatricula] [varchar](50) NULL,
+	[cbb_Genero] [varchar](50) NULL,
+	[txt_Telefone] [varchar](50) NULL,
+	[txt_[e-mail]]] [varchar](50) NULL,
+	[txt_Endereco] [varchar](50) NULL,
+	[cbb_Cidade] [varchar](50) NULL,
+	[txt_Bairro] [varchar](50) NULL,
+	[txt_CEP] [varchar](50) NULL,
+	[nud_Nivel] [int] NULL,
+	[Unidade] [varchar](50) NULL,
+	[Usuario] [varchar](50) NULL,
+ CONSTRAINT [PK_ADMINISTRADORES] PRIMARY KEY CLUSTERED 
+(
+	[ID_doAdministrador] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+
+
+USE [SGRRC1]
+
+
+/****** Object:  Table [dbo].[ASSOCIACAO]    Script Date: 09/12/2022 19:43:46 ******/
+SET ANSI_NULLS ON
+
+
+SET QUOTED_IDENTIFIER ON
+
+
+CREATE TABLE [dbo].[ASSOCIACAO](
+	[ID_Associacao] [int] IDENTITY(1,1) NOT NULL,
+	[Nome Fantasia] [varchar](50) NULL,
+	[CNPJ] [varchar](50) NULL,
+	[RegimedeTributacao] [varchar](50) NULL,
+	[Razaosocial] [varchar](50) NULL,
+	[DatadeCadastro] [varchar](50) NULL,
+	[Telefone] [varchar](50) NULL,
+	[email] [varchar](50) NULL,
+	[Rua] [varchar](50) NULL,
+	[Cidade] [varchar](50) NULL,
+	[Bairro] [varchar](50) NULL,
+	[CEP] [varchar](50) NULL,
+	[EnderecoImagem] [varchar](100) NULL,
+
+ CONSTRAINT [PK_ASSOCIACAO] PRIMARY KEY CLUSTERED 
+(
+	[ID_Associacao] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+
+
+USE [SGRRC1]
+
+
+SET ANSI_NULLS ON
+
+
+SET QUOTED_IDENTIFIER ON
+
+
+CREATE TABLE [dbo].[CaixaTemporario](
+	[ID_Compra] [int] IDENTITY(1,1) NOT NULL,
+	[Nome Fantasia] [varchar](50) NULL,
+	[CNPJ] [varchar](50) NULL,
+	[Material] [varchar](50) NULL,
+	[Preco] [decimal](18, 2) NULL,
+	[Massa] [decimal](18, 2) NULL,
+	[Valor] [decimal](18, 2) NULL,
+	[Unidade] [varchar](50) NULL,
+	[Usuario] [varchar](50) NULL,
+	[Data] [varchar](50) NULL,
+ CONSTRAINT [PK_CaixaTemporario] PRIMARY KEY CLUSTERED 
+(
+	[ID_Compra] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+
+
+USE [SGRRC1]
+
+
+
+SET ANSI_NULLS ON
+
+SET QUOTED_IDENTIFIER ON
+
+CREATE TABLE [dbo].[CATADORES](
+	[ID_Catador] [numeric](18, 0) IDENTITY(1,1) NOT NULL,
+	[Catador] [varchar](50) NULL,
+	[Cidade] [varchar](50) NULL,
+	[Bairro] [varchar](50) NULL,
+	[Rua] [varchar](50) NULL,
+	[Data de Nascimento] [varchar](50) NULL,
+	[Data de Matrícula] [varchar](50) NULL,
+	[RG] [varchar](50) NULL,
+	[CPF] [varchar](50) NULL,
+	[NIS] [varchar](50) NULL,
+	[AuxilioCatador] [varchar](50) NULL,
+	[Gênero] [varchar](50) NULL,
+	[Telefone] [varchar](50) NULL,
+	[CEP] [varchar](50) NULL,
+	[Administrador] [varchar](50) NULL,
+	[Unidade] [varchar](50) NULL,
+    [UsuarioEditadoCatador] [varchar](50) NULL,
+    [DataEditadoCatador] [datetime] NULL,
+    [Funcao] [varchar](50) NULL,
+	[Matrícula] [varchar](50) NULL,
+
+ CONSTRAINT [PK_CATADORES] PRIMARY KEY CLUSTERED 
+(
+	[ID_Catador] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+
+USE [SGRRC1]
+
+
+SET ANSI_NULLS ON
+
+
+SET QUOTED_IDENTIFIER ON
+
+
+CREATE TABLE [dbo].[CIDADES](
+	[ID_Cidade] [numeric](18, 0) IDENTITY(1,1) NOT NULL,
+	[Cidade] [varchar](50) NULL,
+ CONSTRAINT [PK_CIDADES] PRIMARY KEY CLUSTERED 
+(
+	[ID_Cidade] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+
+USE [SGRRC1]
+
+SET ANSI_NULLS ON
+
+SET QUOTED_IDENTIFIER ON
+
+CREATE TABLE [dbo].[CLIENTES](
+	[ID_Cliente] [int] IDENTITY(1,1) NOT NULL,
+	[Nome Fantasia] [varchar](50) NULL,
+	[CNPJ] [varchar](50) NULL,
+	[RegimedeTributacao] [varchar](50) NULL,
+	[Razaosocial] [varchar](50) NULL,
+	[DatadeCadastro] [varchar](50) NULL,
+	[Telefone] [varchar](50) NULL,
+	[email] [varchar](50) NULL,
+	[Rua] [varchar](50) NULL,
+	[Cidade] [varchar](50) NULL,
+	[Bairro] [varchar](50) NULL,
+	[CEP] [varchar](50) NULL,
+	[Usuario] [varchar](50) NULL,
+	[Unidade] [varchar](50) NULL,
+    [DataEditado] [datetime] NULL,
+    [UsuarioEditado] [varchar](50) NULL,
+ CONSTRAINT [PK_CLIENTES] PRIMARY KEY CLUSTERED 
+(
+	[ID_Cliente] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+
+USE [SGRRC1]
+
+
+SET ANSI_NULLS ON
+
+
+SET QUOTED_IDENTIFIER ON
+
+
+CREATE TABLE [dbo].[COLETAS](
+	[ID_Coleta] [numeric](18, 0) IDENTITY(1,1) NOT NULL,
+	[Catador] [varchar](50) NULL,
+	[Massa] [varchar](50) NULL,
+	[TipodeResiduo] [varchar](50) NULL,
+	[TipodeMaterial] [varchar](50) NULL,
+	[Cidade] [varchar](50) NULL,
+	[Bairro] [varchar](50) NULL,
+	[Reciclavel] [varchar](50) NULL,
+	[Data da Coleta] [varchar](50) NULL,
+	[MassaINT] [varchar](50) NULL,
+	[Unidade] [varchar](50) NULL,
+	[Administrador] [varchar](50) NULL,
+	[MassaDECIMAL] [decimal](4,2) NULL,
+    [Dia] [varchar](50) NULL,
+    [Mês] [varchar](50) NULL,
+    [Ano] [varchar](50) NULL,
+    [DataEditado] [datetime] NULL,
+    [UsuarioEditado] [varchar](50) NULL,
+ CONSTRAINT [PK_COLETAS] PRIMARY KEY CLUSTERED 
+(
+	[ID_Coleta] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+
+USE [SGRRC1]
+
+
+SET ANSI_NULLS ON
+
+
+SET QUOTED_IDENTIFIER ON
+
+
+CREATE TABLE [dbo].[FILHOS](
+	[ID_Filho] [numeric](18, 0) IDENTITY(1,1) NOT NULL,
+	[Pai/Mae] [varchar](50) NULL,
+	[Data de Nascimento] [varchar](50) NULL,
+	[Gênero] [varchar](50) NULL,
+    [CPF] [varchar](50) NULL,
+ CONSTRAINT [PK_FILHOS] PRIMARY KEY CLUSTERED 
+(
+	[ID_Filho] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+
+USE [SGRRC1]
+
+
+SET ANSI_NULLS ON
+
+
+SET QUOTED_IDENTIFIER ON
+
+
+CREATE TABLE [dbo].[METERIAIS](
+	[ID_Material] [numeric](18, 0) IDENTITY(1,1) NOT NULL,
+	[Material] [varchar](50) NULL,
+	[Residuo] [varchar](50) NULL,
+	[Preco] [varchar](50) NULL,
+	[Unidade] [varchar](50) NULL,
+	[Grupo] [varchar](50) NULL,
+ CONSTRAINT [PK_METERIAIS] PRIMARY KEY CLUSTERED 
+(
+	[ID_Material] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+
+
+USE [SGRRC1]
+
+SET ANSI_NULLS ON
+
+
+SET QUOTED_IDENTIFIER ON
+
+
+CREATE TABLE [dbo].[VENDAS](
+	[ID_Venda] [numeric](18, 0) IDENTITY(1,1) NOT NULL,
+	[CNPJ] [varchar](50) NULL,
+	[NomeFantasia] [varchar](50) NULL,
+	[NomedoProdutoPrecoQuilo] [varchar](50) NULL,
+	[Massa] [varchar](50) NULL,
+	[ValordaCompra] [varchar](50) NULL,
+	[TipodePagamento] [varchar](50) NULL,
+	[DataHora] [varchar](50) NULL,
+	[Usuario] [varchar](50) NULL,
+	[Unidade] [varchar](50) NULL,
+	[ValorRecebido] [varchar](50) NULL,
+	[Data] [varchar](50) NULL,
+	[ValorProduto] [decimal](18, 2) NULL,
+    [Dia] [int] NULL,
+	[Mes] [int] NULL,
+	[Ano] [int] NULL,
+ CONSTRAINT [PK_VENDAS] PRIMARY KEY CLUSTERED 
+(
+	[ID_Venda] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+
+USE [SGRRC1]
+
+
+SET ANSI_NULLS ON
+
+
+SET QUOTED_IDENTIFIER ON
+
+
+CREATE TABLE [dbo].[FUNCOES](
+	[Funcao] [varchar](50) NULL,
+	[Unidade] [varchar](50) NULL,
+[ID_Funcao] [numeric](18, 0) IDENTITY(1,1) NOT NULL,
+
+) ON [PRIMARY]
+
+
+
+INSERT INTO CIDADES([Cidade]) VALUES ('Abaiara')
+INSERT INTO CIDADES([Cidade]) VALUES ('Acarapé')
+INSERT INTO CIDADES([Cidade]) VALUES ('Acaraú')
+INSERT INTO CIDADES([Cidade]) VALUES ('Acopiara')
+INSERT INTO CIDADES([Cidade]) VALUES ('Aiuaba')
+INSERT INTO CIDADES([Cidade]) VALUES ('Alcântaras')
+INSERT INTO CIDADES([Cidade]) VALUES ('Altaneira')
+INSERT INTO CIDADES([Cidade]) VALUES ('Alto Santo')
+INSERT INTO CIDADES([Cidade]) VALUES ('Amontada')
+INSERT INTO CIDADES([Cidade]) VALUES ('Antonina do Norte')
+INSERT INTO CIDADES([Cidade]) VALUES ('Apuiarés')
+INSERT INTO CIDADES([Cidade]) VALUES ('Aquiraz')
+INSERT INTO CIDADES([Cidade]) VALUES ('Aracati')
+INSERT INTO CIDADES([Cidade]) VALUES ('Aracoiaba')
+INSERT INTO CIDADES([Cidade]) VALUES ('Ararendá')
+INSERT INTO CIDADES([Cidade]) VALUES ('Araripe')
+INSERT INTO CIDADES([Cidade]) VALUES ('Aratuba')
+INSERT INTO CIDADES([Cidade]) VALUES ('Arneiroz')
+INSERT INTO CIDADES([Cidade]) VALUES ('Assaré')
+INSERT INTO CIDADES([Cidade]) VALUES ('Aurora')
+INSERT INTO CIDADES([Cidade]) VALUES ('Baixio')
+INSERT INTO CIDADES([Cidade]) VALUES ('Banabuiú')
+INSERT INTO CIDADES([Cidade]) VALUES ('Barbalha')
+INSERT INTO CIDADES([Cidade]) VALUES ('Barreira')
+INSERT INTO CIDADES([Cidade]) VALUES ('Barro')
+INSERT INTO CIDADES([Cidade]) VALUES ('Barroquinha')
+INSERT INTO CIDADES([Cidade]) VALUES ('Baturité')
+INSERT INTO CIDADES([Cidade]) VALUES ('Beberibe')
+INSERT INTO CIDADES([Cidade]) VALUES ('Bela Cruz')
+INSERT INTO CIDADES([Cidade]) VALUES ('Boa Viagem')
+INSERT INTO CIDADES([Cidade]) VALUES ('Brejo Santo')
+INSERT INTO CIDADES([Cidade]) VALUES ('Camocim')
+INSERT INTO CIDADES([Cidade]) VALUES ('Campos Sales')
+INSERT INTO CIDADES([Cidade]) VALUES ('Canindé')
+INSERT INTO CIDADES([Cidade]) VALUES ('Capistrano')
+INSERT INTO CIDADES([Cidade]) VALUES ('Caridade')
+INSERT INTO CIDADES([Cidade]) VALUES ('Cariré')
+INSERT INTO CIDADES([Cidade]) VALUES ('Caririaçu')
+INSERT INTO CIDADES([Cidade]) VALUES ('Cariús')
+INSERT INTO CIDADES([Cidade]) VALUES ('Carnaubal')
+INSERT INTO CIDADES([Cidade]) VALUES ('Cascavel')
+INSERT INTO CIDADES([Cidade]) VALUES ('Catarina')
+INSERT INTO CIDADES([Cidade]) VALUES ('Catunda')
+INSERT INTO CIDADES([Cidade]) VALUES ('Caucaia')
+INSERT INTO CIDADES([Cidade]) VALUES ('Cedro')
+INSERT INTO CIDADES([Cidade]) VALUES ('Chaval')
+INSERT INTO CIDADES([Cidade]) VALUES ('Choró')
+INSERT INTO CIDADES([Cidade]) VALUES ('Chorozinho')
+INSERT INTO CIDADES([Cidade]) VALUES ('Coreaú')
+INSERT INTO CIDADES([Cidade]) VALUES ('Crateús')
+INSERT INTO CIDADES([Cidade]) VALUES ('Crato')
+INSERT INTO CIDADES([Cidade]) VALUES ('Croatá')
+INSERT INTO CIDADES([Cidade]) VALUES ('Cruz')
+INSERT INTO CIDADES([Cidade]) VALUES ('Deputado Irapuan Pinheiro')
+INSERT INTO CIDADES([Cidade]) VALUES ('Ererê')
+INSERT INTO CIDADES([Cidade]) VALUES ('Eusébio')
+INSERT INTO CIDADES([Cidade]) VALUES ('Farias Brito')
+INSERT INTO CIDADES([Cidade]) VALUES ('Forquilha')
+INSERT INTO CIDADES([Cidade]) VALUES ('Fortaleza')
+INSERT INTO CIDADES([Cidade]) VALUES ('Fortim')
+INSERT INTO CIDADES([Cidade]) VALUES ('Frecheirinha')
+INSERT INTO CIDADES([Cidade]) VALUES ('General Sampaio')
+INSERT INTO CIDADES([Cidade]) VALUES ('Graça')
+INSERT INTO CIDADES([Cidade]) VALUES ('Granja')
+INSERT INTO CIDADES([Cidade]) VALUES ('Granjeiro')
+INSERT INTO CIDADES([Cidade]) VALUES ('Groaíras')
+INSERT INTO CIDADES([Cidade]) VALUES ('Guaiúba')
+INSERT INTO CIDADES([Cidade]) VALUES ('Guaraciaba do Norte')
+INSERT INTO CIDADES([Cidade]) VALUES ('Guaramiranga')
+INSERT INTO CIDADES([Cidade]) VALUES ('Hidrolândia')
+INSERT INTO CIDADES([Cidade]) VALUES ('Horizonte')
+INSERT INTO CIDADES([Cidade]) VALUES ('Ibaretama')
+INSERT INTO CIDADES([Cidade]) VALUES ('Ibiapina')
+INSERT INTO CIDADES([Cidade]) VALUES ('Ibicuitinga')
+INSERT INTO CIDADES([Cidade]) VALUES ('Icapuí')
+INSERT INTO CIDADES([Cidade]) VALUES ('Icó')
+INSERT INTO CIDADES([Cidade]) VALUES ('Iguatu')
+INSERT INTO CIDADES([Cidade]) VALUES ('Independência')
+INSERT INTO CIDADES([Cidade]) VALUES ('Ipaporanga')
+INSERT INTO CIDADES([Cidade]) VALUES ('Ipaumirim')
+INSERT INTO CIDADES([Cidade]) VALUES ('Ipu')
+INSERT INTO CIDADES([Cidade]) VALUES ('Ipueiras')
+INSERT INTO CIDADES([Cidade]) VALUES ('Iracema')
+INSERT INTO CIDADES([Cidade]) VALUES ('Irauçuba')
+INSERT INTO CIDADES([Cidade]) VALUES ('Itaiçaba')
+INSERT INTO CIDADES([Cidade]) VALUES ('Itaitinga')
+INSERT INTO CIDADES([Cidade]) VALUES ('Itapagé')
+INSERT INTO CIDADES([Cidade]) VALUES ('Itapipoca')
+INSERT INTO CIDADES([Cidade]) VALUES ('Itapiúna')
+INSERT INTO CIDADES([Cidade]) VALUES ('Itarema')
+INSERT INTO CIDADES([Cidade]) VALUES ('Itatira')
+INSERT INTO CIDADES([Cidade]) VALUES ('Jaguaretama')
+INSERT INTO CIDADES([Cidade]) VALUES ('Jaguaribara')
+INSERT INTO CIDADES([Cidade]) VALUES ('Jaguaribe')
+INSERT INTO CIDADES([Cidade]) VALUES ('Jaguaruana')
+INSERT INTO CIDADES([Cidade]) VALUES ('Jardim')
+INSERT INTO CIDADES([Cidade]) VALUES ('Jati')
+INSERT INTO CIDADES([Cidade]) VALUES ('Jijoca de Jericoacoara')
+INSERT INTO CIDADES([Cidade]) VALUES ('Juazeiro do Norte')
+INSERT INTO CIDADES([Cidade]) VALUES ('Jucás')
+INSERT INTO CIDADES([Cidade]) VALUES ('Lavras da Mangabeira')
+INSERT INTO CIDADES([Cidade]) VALUES ('Limoeiro do Norte')
+INSERT INTO CIDADES([Cidade]) VALUES ('Madalena')
+INSERT INTO CIDADES([Cidade]) VALUES ('Maracanaú')
+INSERT INTO CIDADES([Cidade]) VALUES ('Maranguape')
+INSERT INTO CIDADES([Cidade]) VALUES ('Marco')
+INSERT INTO CIDADES([Cidade]) VALUES ('Martinópole')
+INSERT INTO CIDADES([Cidade]) VALUES ('Massapê')
+INSERT INTO CIDADES([Cidade]) VALUES ('Mauriti')
+INSERT INTO CIDADES([Cidade]) VALUES ('Meruoca')
+INSERT INTO CIDADES([Cidade]) VALUES ('Milagres')
+INSERT INTO CIDADES([Cidade]) VALUES ('Milhã')
+INSERT INTO CIDADES([Cidade]) VALUES ('Miraíma')
+INSERT INTO CIDADES([Cidade]) VALUES ('Missão Velha')
+INSERT INTO CIDADES([Cidade]) VALUES ('Mombaça')
+INSERT INTO CIDADES([Cidade]) VALUES ('Monsenhor Tabosa')
+INSERT INTO CIDADES([Cidade]) VALUES ('Morada Nova')
+INSERT INTO CIDADES([Cidade]) VALUES ('Moraújo')
+INSERT INTO CIDADES([Cidade]) VALUES ('Morrinhos')
+INSERT INTO CIDADES([Cidade]) VALUES ('Mucambo')
+INSERT INTO CIDADES([Cidade]) VALUES ('Mulungu')
+INSERT INTO CIDADES([Cidade]) VALUES ('Nova Olinda')
+INSERT INTO CIDADES([Cidade]) VALUES ('Nova Russas')
+INSERT INTO CIDADES([Cidade]) VALUES ('Novo Oriente')
+INSERT INTO CIDADES([Cidade]) VALUES ('Ocara')
+INSERT INTO CIDADES([Cidade]) VALUES ('Orós')
+INSERT INTO CIDADES([Cidade]) VALUES ('Pacajus')
+INSERT INTO CIDADES([Cidade]) VALUES ('Pacatuba')
+INSERT INTO CIDADES([Cidade]) VALUES ('Pacoti')
+INSERT INTO CIDADES([Cidade]) VALUES ('Pacujá')
+INSERT INTO CIDADES([Cidade]) VALUES ('Palhano')
+INSERT INTO CIDADES([Cidade]) VALUES ('Palmácia')
+INSERT INTO CIDADES([Cidade]) VALUES ('Paracuru')
+INSERT INTO CIDADES([Cidade]) VALUES ('Paraipaba')
+INSERT INTO CIDADES([Cidade]) VALUES ('Parambu')
+INSERT INTO CIDADES([Cidade]) VALUES ('Paramoti')
+INSERT INTO CIDADES([Cidade]) VALUES ('Pedra Branca')
+INSERT INTO CIDADES([Cidade]) VALUES ('Penaforte')
+INSERT INTO CIDADES([Cidade]) VALUES ('Pentecoste')
+INSERT INTO CIDADES([Cidade]) VALUES ('Pereiro')
+INSERT INTO CIDADES([Cidade]) VALUES ('Pindoretama')
+INSERT INTO CIDADES([Cidade]) VALUES ('Piquet Carneiro')
+INSERT INTO CIDADES([Cidade]) VALUES ('Pires Ferreira')
+INSERT INTO CIDADES([Cidade]) VALUES ('Poranga')
+INSERT INTO CIDADES([Cidade]) VALUES ('Porteiras')
+INSERT INTO CIDADES([Cidade]) VALUES ('Potengi')
+INSERT INTO CIDADES([Cidade]) VALUES ('Potiretama')
+INSERT INTO CIDADES([Cidade]) VALUES ('Quiterianópolis')
+INSERT INTO CIDADES([Cidade]) VALUES ('Quixadá')
+INSERT INTO CIDADES([Cidade]) VALUES ('Quixelô')
+INSERT INTO CIDADES([Cidade]) VALUES ('Quixeramobim')
+INSERT INTO CIDADES([Cidade]) VALUES ('Quixeré')
+INSERT INTO CIDADES([Cidade]) VALUES ('Redenção')
+INSERT INTO CIDADES([Cidade]) VALUES ('Reriutaba')
+INSERT INTO CIDADES([Cidade]) VALUES ('Russas')
+INSERT INTO CIDADES([Cidade]) VALUES ('Saboeiro')
+INSERT INTO CIDADES([Cidade]) VALUES ('Salitre')
+INSERT INTO CIDADES([Cidade]) VALUES ('Santa Quitéria')
+INSERT INTO CIDADES([Cidade]) VALUES ('Santana do Acaraú')
+INSERT INTO CIDADES([Cidade]) VALUES ('Santana do Cariri')
+INSERT INTO CIDADES([Cidade]) VALUES ('São Benedito')
+INSERT INTO CIDADES([Cidade]) VALUES ('São Gonçalo do Amarante')
+INSERT INTO CIDADES([Cidade]) VALUES ('São João do Jaguaribe')
+INSERT INTO CIDADES([Cidade]) VALUES ('São Luís do Curu')
+INSERT INTO CIDADES([Cidade]) VALUES ('Senador Pompeu')
+INSERT INTO CIDADES([Cidade]) VALUES ('Senador Sá')
+INSERT INTO CIDADES([Cidade]) VALUES ('Sobral')
+INSERT INTO CIDADES([Cidade]) VALUES ('Solonópole')
+INSERT INTO CIDADES([Cidade]) VALUES ('Tabuleiro do Norte')
+INSERT INTO CIDADES([Cidade]) VALUES ('Tamboril')
+INSERT INTO CIDADES([Cidade]) VALUES ('Tarrafas')
+INSERT INTO CIDADES([Cidade]) VALUES ('Tauá')
+INSERT INTO CIDADES([Cidade]) VALUES ('Tejuçuoca')
+INSERT INTO CIDADES([Cidade]) VALUES ('Tianguá')
+INSERT INTO CIDADES([Cidade]) VALUES ('Trairi')
+INSERT INTO CIDADES([Cidade]) VALUES ('Tururu')
+INSERT INTO CIDADES([Cidade]) VALUES ('Ubajara')
+INSERT INTO CIDADES([Cidade]) VALUES ('Umari')
+INSERT INTO CIDADES([Cidade]) VALUES ('Umirim')
+INSERT INTO CIDADES([Cidade]) VALUES ('Uruburetama')
+INSERT INTO CIDADES([Cidade]) VALUES ('Uruoca')
+INSERT INTO CIDADES([Cidade]) VALUES ('Varjota')
+INSERT INTO CIDADES([Cidade]) VALUES ('Várzea Alegre')
+INSERT INTO CIDADES([Cidade]) VALUES ('Viçosa do Ceará')
+
+", Conectar3);
+
+                    cmd.ExecuteNonQuery();
+                    
+
+
+                    Conectar3.Close();
+
+                    MessageBox.Show("Bem vindo(a)! Esta é a primeira sessão desta Unidade do SISTEMA DE GERENCIAMENTO DA REDE DOS CATADORES DE RESÍDUOS SÓLIDOS RECICLÁVEIS DO ESTADO DO CEARÁ!");
+                    var possuifilho = MessageBox.Show("Clique no botão Logar que apareceá no próximo formulário para cadastrar uma nova associação e o Administrador nível 0.");
+
+                    if (possuifilho == DialogResult.Yes)
+                    {
+                        NovoAdministrador AdicionarAdmini = new NovoAdministrador();
+                        AdicionarAdmini.ShowDialog();
+                    }
+                }
+            }
+          
+        }
+
+
+
+        private void chb_MostrarSenhaLogin_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chb_MostrarSenhaLogin.Checked == true)
+            {
+                txt_SenhaLogin.UseSystemPasswordChar = false;
+
+            }
+
+            else
+            {
+                txt_SenhaLogin.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void lbl_Creditos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbl_Creditos_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnl_Creditos_Click(object sender, EventArgs e)
+        {
+            lbl_Creditos.Visible = true;
+        }
+    }
+}
