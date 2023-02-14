@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    internal class ClienteEditadoClasse
+    {
+        public string NomedoServidor;
+        public int IDCliente;
+        public string CidadeEditarCliente;
+        public string BairroEditarCliente;
+        public string RuaEditarCliente;
+        public DateTime DatadeCadastroEditarCliente;
+        public string CNPJEditarCliente;
+        public string RegimedeTributacaoEditarCliente;
+        public string TelefoneEditarCliente;
+        public string CEPEditarCliente;
+        public string NomeFantasiaEditarCliente;
+        public string RazaoSocialEditarCliente;
+        public string emailEditarCliente;
+        public string UsuarioEditarCliente;
+    }
+}
