@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+     class EditarCatadorClasse
+    {
+        public string NomedoServidor;
+        public string NomeCompletoCatadorEditar;
+        public string CidadeCadastroCatadorEditar;
+        public string BairroCadastroCatadorEditar;
+        public string RuaCadastroCatadorEditar;
+        public string DatadeNascimentoCatadorEditar;
+        public string DatadeMatriculaoCatadorEditar;
+        public string RGCadastroCatadorEditar;
+        public string CPFCadastroCatadorEditar;
+        public string NISCadastroCatadorEditar;
+        public string GeneroCadastroCatadorEditar;
+        public string TelefoneCadastroCatadorEditar;
+        public string CEPCadastroCatadorEditar;
+        public string AuxilioCatadorEditar;
+        public string UnidadeCatadorEditar;
+        public string MatriculaCatadorEditar;
+        public string UsuarioCatadorEditar;
+        public DateTime DataCatadorEditar;
+        public string FuncaoCatadorEditar;
+    }
+}
