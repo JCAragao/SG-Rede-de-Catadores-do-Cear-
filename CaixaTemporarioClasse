@@ -1,0 +1,19 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+     class CaixaTemporarioClasse
+    {
+        public string NomedoServidor;
+        public string  Material ;
+        public decimal Massa;
+        public decimal Preco;
+        public decimal Valor;
+        public string Unidade;
+        public string Usuario;
+    }
+}
