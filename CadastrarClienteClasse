@@ -1,0 +1,27 @@
+using Org.BouncyCastle.Asn1.Mozilla;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    internal class CadastrarClienteClasse
+    {
+    public string CidadeCadastroCliente;
+    public string BairroCadastroCliente;
+    public string RuaCadastroCliente;
+    public string DatadeCadastroCadastroCliente;
+    public string CNPJCadastroCliente;
+    public string RegimedeTributacaoCadastroCliente;
+    public string TelefoneCadastroCliente;
+    public string CEPCadastroCliente;
+    public string NomeFantasiaCadastroCliente;
+    public string RazaoSocialCadastroCliente;
+    public string emailCadastroCliente;
+    public string UnidadeCadastroCliente;
+    public string UsuarioCadastroCliente;
+     public string NomedoServidor;
+    }
+}
