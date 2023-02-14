@@ -1,0 +1,392 @@
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    partial class Funções
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Funções));
+            this.txt_Funcoes = new System.Windows.Forms.TextBox();
+            this.btn_Excluir = new System.Windows.Forms.Button();
+            this.btn_AdicionarNovoMaterial = new System.Windows.Forms.Button();
+            this.txt_AssociacaoFuncoes = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbb_Funcoes = new System.Windows.Forms.ComboBox();
+            this.cbb_NaoMetalicoInorganicoColetasEditar = new System.Windows.Forms.ComboBox();
+            this.cbb_NaoMetalicoOrganicoColetasEditar = new System.Windows.Forms.ComboBox();
+            this.cbb_MetalicoNaoFerrosoColetasEditar = new System.Windows.Forms.ComboBox();
+            this.cbb_OrganicoTabeladePrecos = new System.Windows.Forms.ComboBox();
+            this.cbb_MetalicoFerrosoColetasEditar = new System.Windows.Forms.ComboBox();
+            this.lbl_Funcao = new System.Windows.Forms.Label();
+            this.cbb_AssociacaoFuncoes = new System.Windows.Forms.ComboBox();
+            this.lbl_NomedoServidor = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // txt_Funcoes
+            // 
+            this.txt_Funcoes.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txt_Funcoes.Location = new System.Drawing.Point(16, 73);
+            this.txt_Funcoes.MaxLength = 50;
+            this.txt_Funcoes.Name = "txt_Funcoes";
+            this.txt_Funcoes.Size = new System.Drawing.Size(127, 20);
+            this.txt_Funcoes.TabIndex = 75;
+            this.txt_Funcoes.TabStop = false;
+            // 
+            // btn_Excluir
+            // 
+            this.btn_Excluir.Location = new System.Drawing.Point(88, 136);
+            this.btn_Excluir.Name = "btn_Excluir";
+            this.btn_Excluir.Size = new System.Drawing.Size(66, 20);
+            this.btn_Excluir.TabIndex = 66;
+            this.btn_Excluir.Text = "Excluir";
+            this.btn_Excluir.UseVisualStyleBackColor = true;
+            this.btn_Excluir.Click += new System.EventHandler(this.btn_Excluir_Click);
+            // 
+            // btn_AdicionarNovoMaterial
+            // 
+            this.btn_AdicionarNovoMaterial.Location = new System.Drawing.Point(16, 136);
+            this.btn_AdicionarNovoMaterial.Name = "btn_AdicionarNovoMaterial";
+            this.btn_AdicionarNovoMaterial.Size = new System.Drawing.Size(66, 20);
+            this.btn_AdicionarNovoMaterial.TabIndex = 62;
+            this.btn_AdicionarNovoMaterial.Text = "Adicionar";
+            this.btn_AdicionarNovoMaterial.UseVisualStyleBackColor = true;
+            this.btn_AdicionarNovoMaterial.Click += new System.EventHandler(this.btn_AdicionarNovoMaterial_Click);
+            // 
+            // txt_AssociacaoFuncoes
+            // 
+            this.txt_AssociacaoFuncoes.Location = new System.Drawing.Point(15, 26);
+            this.txt_AssociacaoFuncoes.Name = "txt_AssociacaoFuncoes";
+            this.txt_AssociacaoFuncoes.ReadOnly = true;
+            this.txt_AssociacaoFuncoes.Size = new System.Drawing.Size(128, 20);
+            this.txt_AssociacaoFuncoes.TabIndex = 59;
+            this.txt_AssociacaoFuncoes.Click += new System.EventHandler(this.txt_AssociacaoFuncoes_Click);
+            this.txt_AssociacaoFuncoes.TextChanged += new System.EventHandler(this.txt_AssociacaoFuncoes_TextChanged);
+            this.txt_AssociacaoFuncoes.DoubleClick += new System.EventHandler(this.txt_AssociacaoFuncoes_DoubleClick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(62, 13);
+            this.label1.TabIndex = 58;
+            this.label1.Text = "Associação";
+            // 
+            // cbb_Funcoes
+            // 
+            this.cbb_Funcoes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_Funcoes.FormattingEnabled = true;
+            this.cbb_Funcoes.Location = new System.Drawing.Point(15, 98);
+            this.cbb_Funcoes.Name = "cbb_Funcoes";
+            this.cbb_Funcoes.Size = new System.Drawing.Size(142, 21);
+            this.cbb_Funcoes.TabIndex = 80;
+            this.cbb_Funcoes.TabStop = false;
+            this.cbb_Funcoes.Click += new System.EventHandler(this.cbb_Funcoes_Click);
+            // 
+            // cbb_NaoMetalicoInorganicoColetasEditar
+            // 
+            this.cbb_NaoMetalicoInorganicoColetasEditar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_NaoMetalicoInorganicoColetasEditar.FormattingEnabled = true;
+            this.cbb_NaoMetalicoInorganicoColetasEditar.Items.AddRange(new object[] {
+            "Adesivos",
+            "Borracha sintética",
+            "Cerâmica",
+            "Cortiça",
+            "Feltro",
+            "Fibra",
+            "Lubrificante sintético",
+            "Plástico",
+            "Vidro",
+            "Outro"});
+            this.cbb_NaoMetalicoInorganicoColetasEditar.Location = new System.Drawing.Point(15, 98);
+            this.cbb_NaoMetalicoInorganicoColetasEditar.Name = "cbb_NaoMetalicoInorganicoColetasEditar";
+            this.cbb_NaoMetalicoInorganicoColetasEditar.Size = new System.Drawing.Size(142, 21);
+            this.cbb_NaoMetalicoInorganicoColetasEditar.TabIndex = 77;
+            this.cbb_NaoMetalicoInorganicoColetasEditar.TabStop = false;
+            this.cbb_NaoMetalicoInorganicoColetasEditar.Visible = false;
+            // 
+            // cbb_NaoMetalicoOrganicoColetasEditar
+            // 
+            this.cbb_NaoMetalicoOrganicoColetasEditar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_NaoMetalicoOrganicoColetasEditar.FormattingEnabled = true;
+            this.cbb_NaoMetalicoOrganicoColetasEditar.Items.AddRange(new object[] {
+            "Origem Animal",
+            "Origem Vegetal"});
+            this.cbb_NaoMetalicoOrganicoColetasEditar.Location = new System.Drawing.Point(16, 98);
+            this.cbb_NaoMetalicoOrganicoColetasEditar.Name = "cbb_NaoMetalicoOrganicoColetasEditar";
+            this.cbb_NaoMetalicoOrganicoColetasEditar.Size = new System.Drawing.Size(142, 21);
+            this.cbb_NaoMetalicoOrganicoColetasEditar.TabIndex = 78;
+            this.cbb_NaoMetalicoOrganicoColetasEditar.TabStop = false;
+            this.cbb_NaoMetalicoOrganicoColetasEditar.Visible = false;
+            // 
+            // cbb_MetalicoNaoFerrosoColetasEditar
+            // 
+            this.cbb_MetalicoNaoFerrosoColetasEditar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_MetalicoNaoFerrosoColetasEditar.FormattingEnabled = true;
+            this.cbb_MetalicoNaoFerrosoColetasEditar.Items.AddRange(new object[] {
+            "Alumínio",
+            "Ligas de Alumínio",
+            "Latão",
+            "Zinco",
+            "Estanho",
+            "Outro"});
+            this.cbb_MetalicoNaoFerrosoColetasEditar.Location = new System.Drawing.Point(16, 98);
+            this.cbb_MetalicoNaoFerrosoColetasEditar.Name = "cbb_MetalicoNaoFerrosoColetasEditar";
+            this.cbb_MetalicoNaoFerrosoColetasEditar.Size = new System.Drawing.Size(142, 21);
+            this.cbb_MetalicoNaoFerrosoColetasEditar.TabIndex = 79;
+            this.cbb_MetalicoNaoFerrosoColetasEditar.TabStop = false;
+            this.cbb_MetalicoNaoFerrosoColetasEditar.Visible = false;
+            // 
+            // cbb_OrganicoTabeladePrecos
+            // 
+            this.cbb_OrganicoTabeladePrecos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_OrganicoTabeladePrecos.FormattingEnabled = true;
+            this.cbb_OrganicoTabeladePrecos.Location = new System.Drawing.Point(16, 98);
+            this.cbb_OrganicoTabeladePrecos.Name = "cbb_OrganicoTabeladePrecos";
+            this.cbb_OrganicoTabeladePrecos.Size = new System.Drawing.Size(142, 21);
+            this.cbb_OrganicoTabeladePrecos.TabIndex = 81;
+            this.cbb_OrganicoTabeladePrecos.TabStop = false;
+            this.cbb_OrganicoTabeladePrecos.Visible = false;
+            // 
+            // cbb_MetalicoFerrosoColetasEditar
+            // 
+            this.cbb_MetalicoFerrosoColetasEditar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_MetalicoFerrosoColetasEditar.FormattingEnabled = true;
+            this.cbb_MetalicoFerrosoColetasEditar.Items.AddRange(new object[] {
+            "Aço Carbono",
+            "Aço de Engenharia",
+            "Aço Inoxidável",
+            "Ferro Fundido",
+            "Outro"});
+            this.cbb_MetalicoFerrosoColetasEditar.Location = new System.Drawing.Point(15, 98);
+            this.cbb_MetalicoFerrosoColetasEditar.Name = "cbb_MetalicoFerrosoColetasEditar";
+            this.cbb_MetalicoFerrosoColetasEditar.Size = new System.Drawing.Size(142, 21);
+            this.cbb_MetalicoFerrosoColetasEditar.TabIndex = 76;
+            this.cbb_MetalicoFerrosoColetasEditar.TabStop = false;
+            this.cbb_MetalicoFerrosoColetasEditar.Visible = false;
+            // 
+            // lbl_Funcao
+            // 
+            this.lbl_Funcao.AutoSize = true;
+            this.lbl_Funcao.Location = new System.Drawing.Point(13, 57);
+            this.lbl_Funcao.Name = "lbl_Funcao";
+            this.lbl_Funcao.Size = new System.Drawing.Size(43, 13);
+            this.lbl_Funcao.TabIndex = 82;
+            this.lbl_Funcao.Text = "Função";
+            // 
+            // cbb_AssociacaoFuncoes
+            // 
+            this.cbb_AssociacaoFuncoes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_AssociacaoFuncoes.FormattingEnabled = true;
+            this.cbb_AssociacaoFuncoes.Location = new System.Drawing.Point(16, 25);
+            this.cbb_AssociacaoFuncoes.Name = "cbb_AssociacaoFuncoes";
+            this.cbb_AssociacaoFuncoes.Size = new System.Drawing.Size(142, 21);
+            this.cbb_AssociacaoFuncoes.TabIndex = 83;
+            this.cbb_AssociacaoFuncoes.TabStop = false;
+            this.cbb_AssociacaoFuncoes.Visible = false;
+            this.cbb_AssociacaoFuncoes.Click += new System.EventHandler(this.cbb_AssociacaoFuncoes_Click);
+            // 
+            // lbl_NomedoServidor
+            // 
+            this.lbl_NomedoServidor.AutoSize = true;
+            this.lbl_NomedoServidor.Location = new System.Drawing.Point(85, 57);
+            this.lbl_NomedoServidor.Name = "lbl_NomedoServidor";
+            this.lbl_NomedoServidor.Size = new System.Drawing.Size(86, 13);
+            this.lbl_NomedoServidor.TabIndex = 84;
+            this.lbl_NomedoServidor.Text = "NomedoServidor";
+            this.lbl_NomedoServidor.Visible = false;
+            // 
+            // Funções
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(173, 161);
+            this.Controls.Add(this.lbl_NomedoServidor);
+            this.Controls.Add(this.cbb_AssociacaoFuncoes);
+            this.Controls.Add(this.lbl_Funcao);
+            this.Controls.Add(this.cbb_Funcoes);
+            this.Controls.Add(this.cbb_NaoMetalicoInorganicoColetasEditar);
+            this.Controls.Add(this.cbb_NaoMetalicoOrganicoColetasEditar);
+            this.Controls.Add(this.cbb_MetalicoNaoFerrosoColetasEditar);
+            this.Controls.Add(this.cbb_OrganicoTabeladePrecos);
+            this.Controls.Add(this.cbb_MetalicoFerrosoColetasEditar);
+            this.Controls.Add(this.txt_Funcoes);
+            this.Controls.Add(this.btn_Excluir);
+            this.Controls.Add(this.btn_AdicionarNovoMaterial);
+            this.Controls.Add(this.txt_AssociacaoFuncoes);
+            this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Funções";
+            this.Text = "Funções";
+            this.Load += new System.EventHandler(this.Funções_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+        private System.Windows.Forms.TextBox txt_Funcoes;
+        private System.Windows.Forms.Button btn_Excluir;
+        private System.Windows.Forms.Button btn_AdicionarNovoMaterial;
+        public System.Windows.Forms.TextBox txt_AssociacaoFuncoes;
+        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.ComboBox cbb_Funcoes;
+        private System.Windows.Forms.ComboBox cbb_NaoMetalicoInorganicoColetasEditar;
+        private System.Windows.Forms.ComboBox cbb_NaoMetalicoOrganicoColetasEditar;
+        private System.Windows.Forms.ComboBox cbb_MetalicoNaoFerrosoColetasEditar;
+        public System.Windows.Forms.ComboBox cbb_OrganicoTabeladePrecos;
+        private System.Windows.Forms.ComboBox cbb_MetalicoFerrosoColetasEditar;
+        private System.Windows.Forms.Label lbl_Funcao;
+        public System.Windows.Forms.ComboBox cbb_AssociacaoFuncoes;
+        public System.Windows.Forms.Label lbl_NomedoServidor;
+    }
+}
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    public partial class Funções : Form
+    {
+        public Funções()
+        {
+            InitializeComponent();
+        }
+
+        private void btn_AdicionarNovoMaterial_Click(object sender, EventArgs e)
+        {
+            
+
+          
+
+            if(cbb_AssociacaoFuncoes.SelectedIndex != -1)
+            {
+                string NomedoServidor = lbl_NomedoServidor.Text;
+                SqlConnection Conectar = new SqlConnection("Data Source=DESKTOP-" + NomedoServidor + "\\SQLEXPRESS;Initial Catalog=SGRRC1;Integrated Security=True");
+                Conectar.Open();
+
+                string associacao = cbb_AssociacaoFuncoes.Text;
+                string funcoes = txt_Funcoes.Text;
+
+                SqlCommand cmd = new SqlCommand("insert into [FUNCOES] ([Funcao], [Unidade]) values ('" +funcoes+ "', '"+associacao+"')\r\n", Conectar);
+                cmd.ExecuteNonQuery();
+                Conectar.Close();
+                this.Close();
+
+            }
+            else
+            {
+
+                string associacao = txt_AssociacaoFuncoes.Text;
+                string funcoes = txt_Funcoes.Text;
+
+                string NomedoServidor = lbl_NomedoServidor.Text;
+                SqlConnection Conectar = new SqlConnection("Data Source=DESKTOP-" + NomedoServidor + "\\SQLEXPRESS;Initial Catalog=SGRRC1;Integrated Security=True");
+                Conectar.Open();
+                SqlCommand cmd = new SqlCommand("insert into [FUNCOES] ([Funcao], [Unidade]) values ('" + funcoes + "', '" + associacao + "')", Conectar);
+                cmd.ExecuteNonQuery();
+                Conectar.Close();
+                this.Close();
+
+            }
+
+           
+        }
+
+        private void btn_Excluir_Click(object sender, EventArgs e)
+        {
+
+            string NomedoServidor = lbl_NomedoServidor.Text;
+            SqlConnection Conectar = new SqlConnection("Data Source=DESKTOP-'" + NomedoServidor + "'\\SQLEXPRESS;Initial Catalog=SGRRC1;Integrated Security=True");
+            Conectar.Open();
+
+            if (cbb_AssociacaoFuncoes.SelectedIndex == -1)
+            {
+                SqlCommand cmd = new SqlCommand("delete [Funcao] from [FUNCOES] where [Unidade] = '" + cbb_AssociacaoFuncoes.Text + "')");
+                cmd.ExecuteNonQuery();
+                Conectar.Close();
+
+            }
+            else
+            {
+                SqlCommand cmd = new SqlCommand("delete [Funcao] from [FUNCOES] where [Unidade] =  '" + txt_AssociacaoFuncoes.Text + "')");
+                cmd.ExecuteNonQuery();
+                Conectar.Close();
+
+            }
+
+        }
+
+        private void txt_AssociacaoFuncoes_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void txt_AssociacaoFuncoes_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void txt_AssociacaoFuncoes_DoubleClick(object sender, EventArgs e)
+        {
+            txt_AssociacaoFuncoes.Visible = false;
+            cbb_AssociacaoFuncoes.Visible = true;
+        }
+
+        private void cbb_AssociacaoFuncoes_Click(object sender, EventArgs e)
+        {
+            string NomedoServidor = lbl_NomedoServidor.Text;
+            string vqueryAssociacao = @"SELECT [Nome Fantasia] FROM ASSOCIACAO ORDER BY [Nome Fantasia] ASC";
+            cbb_AssociacaoFuncoes.DataSource = ConexaoBancodeDados.dql(vqueryAssociacao, NomedoServidor);
+            cbb_AssociacaoFuncoes.DisplayMember = "Nome Fantasia";
+            cbb_AssociacaoFuncoes.DisplayMember = ("Nome Fantasia");
+        }
+
+        private void Funções_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbb_Funcoes_Click(object sender, EventArgs e)
+        {
+            string NomedoServidor = lbl_NomedoServidor.Text;
+            string vqueryFuncao = @"SELECT * FROM FUNCOES ORDER BY Funcao ASC ;";
+            cbb_Funcoes.DataSource = ConexaoBancodeDados.dql(vqueryFuncao, NomedoServidor);
+            cbb_Funcoes.DisplayMember = "Funcao";
+        }
+    }
+}
