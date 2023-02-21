@@ -1,3 +1,993 @@
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    partial class Principal
+    {
+        /// <summary>
+        /// Variável de designer necessária.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Limpar os recursos que estão sendo usados.
+        /// </summary>
+        /// <param name="disposing">true se for necessário descartar os recursos gerenciados; caso contrário, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Código gerado pelo Windows Form Designer
+
+        /// <summary>
+        /// Método necessário para suporte ao Designer - não modifique 
+        /// o conteúdo deste método com o editor de código.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.novoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.novoAdministradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.novaColetaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.novoClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.novaAssociaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.novoAssociadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gerenciamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AdministradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CatadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.coletasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CaixaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.trocarAssociaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarPerfilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarPerfilAssociaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.encerrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.novoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.salvarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salvarcomoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.imprimirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.visualizarImpressãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.desfazerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.refazerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.recortarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copiarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.selecionarTudoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ferramentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personalizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.opçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.conteúdoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.índiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pesquisarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.arquivoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.novoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.abrirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.salvarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.salvarcomoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            this.imprimirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.visualizarImpressãoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
+            this.sairToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.desfazerToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.refazerToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
+            this.recortarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.copiarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.colarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
+            this.selecionarTudoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ferramentasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.personalizarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.opçõesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ajudaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.conteúdoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.índiceToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pesquisarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
+            this.sobreToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.lbl_UsuarioForm1 = new System.Windows.Forms.Label();
+            this.lbl_NomeUsuario = new System.Windows.Forms.Label();
+            this.lbl_NiveldeAcessoForm1 = new System.Windows.Forms.Label();
+            this.lbl_LeveldeAcessoForm1 = new System.Windows.Forms.Label();
+            this.lbl_AssociacaoForm1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.cbb_AssociacaoGestaoCliente = new System.Windows.Forms.ComboBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lbl_NomedoServidor = new System.Windows.Forms.Label();
+            this.lbl_VerificarNomeAssociacao = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.menuStrip1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.novoToolStripMenuItem,
+            this.gerenciamentoToolStripMenuItem,
+            this.CaixaToolStripMenuItem,
+            this.toolStripMenuItem1,
+            this.arquivoToolStripMenuItem,
+            this.editarToolStripMenuItem,
+            this.ferramentasToolStripMenuItem,
+            this.ajudaToolStripMenuItem,
+            this.arquivoToolStripMenuItem1,
+            this.editarToolStripMenuItem1,
+            this.ferramentasToolStripMenuItem1,
+            this.ajudaToolStripMenuItem1});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(344, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // novoToolStripMenuItem
+            // 
+            this.novoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.novoAdministradorToolStripMenuItem,
+            this.novaColetaToolStripMenuItem,
+            this.novoClienteToolStripMenuItem,
+            this.novaAssociaçãoToolStripMenuItem,
+            this.novoAssociadoToolStripMenuItem});
+            this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
+            this.novoToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.novoToolStripMenuItem.Text = "Cadastro";
+            // 
+            // novoAdministradorToolStripMenuItem
+            // 
+            this.novoAdministradorToolStripMenuItem.Name = "novoAdministradorToolStripMenuItem";
+            this.novoAdministradorToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.novoAdministradorToolStripMenuItem.Text = "Novo Administrador";
+            this.novoAdministradorToolStripMenuItem.Click += new System.EventHandler(this.novoAdministradorToolStripMenuItem_Click);
+            // 
+            // novaColetaToolStripMenuItem
+            // 
+            this.novaColetaToolStripMenuItem.Name = "novaColetaToolStripMenuItem";
+            this.novaColetaToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.novaColetaToolStripMenuItem.Text = "Nova Coleta";
+            this.novaColetaToolStripMenuItem.Click += new System.EventHandler(this.novaColetaToolStripMenuItem_Click);
+            // 
+            // novoClienteToolStripMenuItem
+            // 
+            this.novoClienteToolStripMenuItem.Name = "novoClienteToolStripMenuItem";
+            this.novoClienteToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.novoClienteToolStripMenuItem.Text = "Nova Usina de Reciclagem";
+            this.novoClienteToolStripMenuItem.Click += new System.EventHandler(this.novoClienteToolStripMenuItem_Click);
+            // 
+            // novaAssociaçãoToolStripMenuItem
+            // 
+            this.novaAssociaçãoToolStripMenuItem.Name = "novaAssociaçãoToolStripMenuItem";
+            this.novaAssociaçãoToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.novaAssociaçãoToolStripMenuItem.Text = "Nova Associação";
+            this.novaAssociaçãoToolStripMenuItem.Click += new System.EventHandler(this.novaAssociaçãoToolStripMenuItem_Click);
+            // 
+            // novoAssociadoToolStripMenuItem
+            // 
+            this.novoAssociadoToolStripMenuItem.Name = "novoAssociadoToolStripMenuItem";
+            this.novoAssociadoToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.novoAssociadoToolStripMenuItem.Text = "Novo Associado";
+            this.novoAssociadoToolStripMenuItem.Click += new System.EventHandler(this.novoAssociadoToolStripMenuItem_Click);
+            // 
+            // gerenciamentoToolStripMenuItem
+            // 
+            this.gerenciamentoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.AdministradorToolStripMenuItem,
+            this.CatadorToolStripMenuItem,
+            this.coletasToolStripMenuItem,
+            this.clientesToolStripMenuItem,
+            this.vendasToolStripMenuItem});
+            this.gerenciamentoToolStripMenuItem.Name = "gerenciamentoToolStripMenuItem";
+            this.gerenciamentoToolStripMenuItem.Size = new System.Drawing.Size(100, 20);
+            this.gerenciamentoToolStripMenuItem.Text = "Gerenciamento";
+            // 
+            // AdministradorToolStripMenuItem
+            // 
+            this.AdministradorToolStripMenuItem.Name = "AdministradorToolStripMenuItem";
+            this.AdministradorToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.AdministradorToolStripMenuItem.Text = "Administrador";
+            this.AdministradorToolStripMenuItem.Click += new System.EventHandler(this.AdministradorToolStripMenuItem_Click);
+            // 
+            // CatadorToolStripMenuItem
+            // 
+            this.CatadorToolStripMenuItem.Name = "CatadorToolStripMenuItem";
+            this.CatadorToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.CatadorToolStripMenuItem.Text = "Associado";
+            this.CatadorToolStripMenuItem.Click += new System.EventHandler(this.CatadorToolStripMenuItem_Click_1);
+            // 
+            // coletasToolStripMenuItem
+            // 
+            this.coletasToolStripMenuItem.Name = "coletasToolStripMenuItem";
+            this.coletasToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.coletasToolStripMenuItem.Text = "Coletas";
+            this.coletasToolStripMenuItem.Click += new System.EventHandler(this.coletasToolStripMenuItem_Click);
+            // 
+            // clientesToolStripMenuItem
+            // 
+            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.clientesToolStripMenuItem.Text = "Usinas de Reciclagem";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
+            // 
+            // vendasToolStripMenuItem
+            // 
+            this.vendasToolStripMenuItem.Name = "vendasToolStripMenuItem";
+            this.vendasToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.vendasToolStripMenuItem.Text = "Vendas";
+            this.vendasToolStripMenuItem.Click += new System.EventHandler(this.vendasToolStripMenuItem_Click);
+            // 
+            // CaixaToolStripMenuItem
+            // 
+            this.CaixaToolStripMenuItem.Name = "CaixaToolStripMenuItem";
+            this.CaixaToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
+            this.CaixaToolStripMenuItem.Text = "Financeiro";
+            this.CaixaToolStripMenuItem.Click += new System.EventHandler(this.CaixaToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.trocarAssociaçãoToolStripMenuItem,
+            this.editarPerfilToolStripMenuItem,
+            this.editarPerfilAssociaçãoToolStripMenuItem,
+            this.encerrarToolStripMenuItem});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(96, 20);
+            this.toolStripMenuItem1.Text = "Configurações";
+            // 
+            // trocarAssociaçãoToolStripMenuItem
+            // 
+            this.trocarAssociaçãoToolStripMenuItem.Name = "trocarAssociaçãoToolStripMenuItem";
+            this.trocarAssociaçãoToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.trocarAssociaçãoToolStripMenuItem.Text = "Trocar Associação";
+            this.trocarAssociaçãoToolStripMenuItem.Click += new System.EventHandler(this.trocarAssociaçãoToolStripMenuItem_Click);
+            // 
+            // editarPerfilToolStripMenuItem
+            // 
+            this.editarPerfilToolStripMenuItem.Name = "editarPerfilToolStripMenuItem";
+            this.editarPerfilToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.editarPerfilToolStripMenuItem.Text = "Editar Perfil Usuário";
+            this.editarPerfilToolStripMenuItem.Click += new System.EventHandler(this.editarPerfilToolStripMenuItem_Click);
+            // 
+            // editarPerfilAssociaçãoToolStripMenuItem
+            // 
+            this.editarPerfilAssociaçãoToolStripMenuItem.Name = "editarPerfilAssociaçãoToolStripMenuItem";
+            this.editarPerfilAssociaçãoToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.editarPerfilAssociaçãoToolStripMenuItem.Text = "Editar Perfil Associação";
+            this.editarPerfilAssociaçãoToolStripMenuItem.Click += new System.EventHandler(this.editarPerfilAssociaçãoToolStripMenuItem_Click);
+            // 
+            // encerrarToolStripMenuItem
+            // 
+            this.encerrarToolStripMenuItem.Name = "encerrarToolStripMenuItem";
+            this.encerrarToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.encerrarToolStripMenuItem.Text = "Encerrar";
+            this.encerrarToolStripMenuItem.Click += new System.EventHandler(this.encerrarToolStripMenuItem_Click);
+            // 
+            // arquivoToolStripMenuItem
+            // 
+            this.arquivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.novoToolStripMenuItem1,
+            this.abrirToolStripMenuItem,
+            this.toolStripSeparator,
+            this.salvarToolStripMenuItem,
+            this.salvarcomoToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.imprimirToolStripMenuItem,
+            this.visualizarImpressãoToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.sairToolStripMenuItem});
+            this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
+            this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.arquivoToolStripMenuItem.Text = "&Arquivo";
+            // 
+            // novoToolStripMenuItem1
+            // 
+            this.novoToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("novoToolStripMenuItem1.Image")));
+            this.novoToolStripMenuItem1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.novoToolStripMenuItem1.Name = "novoToolStripMenuItem1";
+            this.novoToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.novoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.novoToolStripMenuItem1.Text = "&Novo";
+            // 
+            // abrirToolStripMenuItem
+            // 
+            this.abrirToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("abrirToolStripMenuItem.Image")));
+            this.abrirToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
+            this.abrirToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.abrirToolStripMenuItem.Text = "&Abrir";
+            // 
+            // toolStripSeparator
+            // 
+            this.toolStripSeparator.Name = "toolStripSeparator";
+            this.toolStripSeparator.Size = new System.Drawing.Size(177, 6);
+            // 
+            // salvarToolStripMenuItem
+            // 
+            this.salvarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("salvarToolStripMenuItem.Image")));
+            this.salvarToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.salvarToolStripMenuItem.Name = "salvarToolStripMenuItem";
+            this.salvarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.salvarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salvarToolStripMenuItem.Text = "&Salvar";
+            // 
+            // salvarcomoToolStripMenuItem
+            // 
+            this.salvarcomoToolStripMenuItem.Name = "salvarcomoToolStripMenuItem";
+            this.salvarcomoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salvarcomoToolStripMenuItem.Text = "Salvar &como";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            // 
+            // imprimirToolStripMenuItem
+            // 
+            this.imprimirToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("imprimirToolStripMenuItem.Image")));
+            this.imprimirToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.imprimirToolStripMenuItem.Name = "imprimirToolStripMenuItem";
+            this.imprimirToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
+            this.imprimirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.imprimirToolStripMenuItem.Text = "&Imprimir";
+            // 
+            // visualizarImpressãoToolStripMenuItem
+            // 
+            this.visualizarImpressãoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("visualizarImpressãoToolStripMenuItem.Image")));
+            this.visualizarImpressãoToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.visualizarImpressãoToolStripMenuItem.Name = "visualizarImpressãoToolStripMenuItem";
+            this.visualizarImpressãoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.visualizarImpressãoToolStripMenuItem.Text = "Visuali&zar Impressão";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
+            // 
+            // sairToolStripMenuItem
+            // 
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sairToolStripMenuItem.Text = "Sai&r";
+            // 
+            // editarToolStripMenuItem
+            // 
+            this.editarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.desfazerToolStripMenuItem,
+            this.refazerToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.recortarToolStripMenuItem,
+            this.copiarToolStripMenuItem,
+            this.colarToolStripMenuItem,
+            this.toolStripSeparator4,
+            this.selecionarTudoToolStripMenuItem});
+            this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.editarToolStripMenuItem.Text = "&Editar";
+            // 
+            // desfazerToolStripMenuItem
+            // 
+            this.desfazerToolStripMenuItem.Name = "desfazerToolStripMenuItem";
+            this.desfazerToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
+            this.desfazerToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.desfazerToolStripMenuItem.Text = "&Desfazer";
+            // 
+            // refazerToolStripMenuItem
+            // 
+            this.refazerToolStripMenuItem.Name = "refazerToolStripMenuItem";
+            this.refazerToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
+            this.refazerToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.refazerToolStripMenuItem.Text = "&Refazer";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(156, 6);
+            // 
+            // recortarToolStripMenuItem
+            // 
+            this.recortarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("recortarToolStripMenuItem.Image")));
+            this.recortarToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.recortarToolStripMenuItem.Name = "recortarToolStripMenuItem";
+            this.recortarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
+            this.recortarToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.recortarToolStripMenuItem.Text = "Recor&tar";
+            // 
+            // copiarToolStripMenuItem
+            // 
+            this.copiarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("copiarToolStripMenuItem.Image")));
+            this.copiarToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.copiarToolStripMenuItem.Name = "copiarToolStripMenuItem";
+            this.copiarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
+            this.copiarToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.copiarToolStripMenuItem.Text = "&Copiar";
+            // 
+            // colarToolStripMenuItem
+            // 
+            this.colarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("colarToolStripMenuItem.Image")));
+            this.colarToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.colarToolStripMenuItem.Name = "colarToolStripMenuItem";
+            this.colarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
+            this.colarToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.colarToolStripMenuItem.Text = "C&olar";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(156, 6);
+            // 
+            // selecionarTudoToolStripMenuItem
+            // 
+            this.selecionarTudoToolStripMenuItem.Name = "selecionarTudoToolStripMenuItem";
+            this.selecionarTudoToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.selecionarTudoToolStripMenuItem.Text = "Selecionar &Tudo";
+            // 
+            // ferramentasToolStripMenuItem
+            // 
+            this.ferramentasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.personalizarToolStripMenuItem,
+            this.opçõesToolStripMenuItem});
+            this.ferramentasToolStripMenuItem.Name = "ferramentasToolStripMenuItem";
+            this.ferramentasToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
+            this.ferramentasToolStripMenuItem.Text = "Ferra&mentas";
+            // 
+            // personalizarToolStripMenuItem
+            // 
+            this.personalizarToolStripMenuItem.Name = "personalizarToolStripMenuItem";
+            this.personalizarToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.personalizarToolStripMenuItem.Text = "&Personalizar";
+            // 
+            // opçõesToolStripMenuItem
+            // 
+            this.opçõesToolStripMenuItem.Name = "opçõesToolStripMenuItem";
+            this.opçõesToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.opçõesToolStripMenuItem.Text = "&Opções";
+            // 
+            // ajudaToolStripMenuItem
+            // 
+            this.ajudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.conteúdoToolStripMenuItem,
+            this.índiceToolStripMenuItem,
+            this.pesquisarToolStripMenuItem,
+            this.toolStripSeparator5,
+            this.sobreToolStripMenuItem});
+            this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
+            this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.ajudaToolStripMenuItem.Text = "Aj&uda";
+            // 
+            // conteúdoToolStripMenuItem
+            // 
+            this.conteúdoToolStripMenuItem.Name = "conteúdoToolStripMenuItem";
+            this.conteúdoToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.conteúdoToolStripMenuItem.Text = "&Conteúdo";
+            // 
+            // índiceToolStripMenuItem
+            // 
+            this.índiceToolStripMenuItem.Name = "índiceToolStripMenuItem";
+            this.índiceToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.índiceToolStripMenuItem.Text = "Í&ndice";
+            // 
+            // pesquisarToolStripMenuItem
+            // 
+            this.pesquisarToolStripMenuItem.Name = "pesquisarToolStripMenuItem";
+            this.pesquisarToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.pesquisarToolStripMenuItem.Text = "&Pesquisar";
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(124, 6);
+            // 
+            // sobreToolStripMenuItem
+            // 
+            this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.sobreToolStripMenuItem.Text = "&Sobre...";
+            // 
+            // arquivoToolStripMenuItem1
+            // 
+            this.arquivoToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.novoToolStripMenuItem2,
+            this.abrirToolStripMenuItem1,
+            this.toolStripSeparator6,
+            this.salvarToolStripMenuItem1,
+            this.salvarcomoToolStripMenuItem1,
+            this.toolStripSeparator7,
+            this.imprimirToolStripMenuItem1,
+            this.visualizarImpressãoToolStripMenuItem1,
+            this.toolStripSeparator8,
+            this.sairToolStripMenuItem1});
+            this.arquivoToolStripMenuItem1.Name = "arquivoToolStripMenuItem1";
+            this.arquivoToolStripMenuItem1.Size = new System.Drawing.Size(61, 20);
+            this.arquivoToolStripMenuItem1.Text = "&Arquivo";
+            // 
+            // novoToolStripMenuItem2
+            // 
+            this.novoToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("novoToolStripMenuItem2.Image")));
+            this.novoToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.novoToolStripMenuItem2.Name = "novoToolStripMenuItem2";
+            this.novoToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.novoToolStripMenuItem2.Text = "&Novo";
+            // 
+            // abrirToolStripMenuItem1
+            // 
+            this.abrirToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("abrirToolStripMenuItem1.Image")));
+            this.abrirToolStripMenuItem1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.abrirToolStripMenuItem1.Name = "abrirToolStripMenuItem1";
+            this.abrirToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.abrirToolStripMenuItem1.Text = "&Abrir";
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(177, 6);
+            // 
+            // salvarToolStripMenuItem1
+            // 
+            this.salvarToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("salvarToolStripMenuItem1.Image")));
+            this.salvarToolStripMenuItem1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.salvarToolStripMenuItem1.Name = "salvarToolStripMenuItem1";
+            this.salvarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.salvarToolStripMenuItem1.Text = "&Salvar";
+            // 
+            // salvarcomoToolStripMenuItem1
+            // 
+            this.salvarcomoToolStripMenuItem1.Name = "salvarcomoToolStripMenuItem1";
+            this.salvarcomoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.salvarcomoToolStripMenuItem1.Text = "Salvar &como";
+            // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(177, 6);
+            // 
+            // imprimirToolStripMenuItem1
+            // 
+            this.imprimirToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("imprimirToolStripMenuItem1.Image")));
+            this.imprimirToolStripMenuItem1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.imprimirToolStripMenuItem1.Name = "imprimirToolStripMenuItem1";
+            this.imprimirToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.imprimirToolStripMenuItem1.Text = "&Imprimir";
+            // 
+            // visualizarImpressãoToolStripMenuItem1
+            // 
+            this.visualizarImpressãoToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("visualizarImpressãoToolStripMenuItem1.Image")));
+            this.visualizarImpressãoToolStripMenuItem1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.visualizarImpressãoToolStripMenuItem1.Name = "visualizarImpressãoToolStripMenuItem1";
+            this.visualizarImpressãoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.visualizarImpressãoToolStripMenuItem1.Text = "Visuali&zar Impressão";
+            // 
+            // toolStripSeparator8
+            // 
+            this.toolStripSeparator8.Name = "toolStripSeparator8";
+            this.toolStripSeparator8.Size = new System.Drawing.Size(177, 6);
+            // 
+            // sairToolStripMenuItem1
+            // 
+            this.sairToolStripMenuItem1.Name = "sairToolStripMenuItem1";
+            this.sairToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.sairToolStripMenuItem1.Text = "Sai&r";
+            // 
+            // editarToolStripMenuItem1
+            // 
+            this.editarToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.desfazerToolStripMenuItem1,
+            this.refazerToolStripMenuItem1,
+            this.toolStripSeparator9,
+            this.recortarToolStripMenuItem1,
+            this.copiarToolStripMenuItem1,
+            this.colarToolStripMenuItem1,
+            this.toolStripSeparator10,
+            this.selecionarTudoToolStripMenuItem1});
+            this.editarToolStripMenuItem1.Name = "editarToolStripMenuItem1";
+            this.editarToolStripMenuItem1.Size = new System.Drawing.Size(49, 20);
+            this.editarToolStripMenuItem1.Text = "&Editar";
+            // 
+            // desfazerToolStripMenuItem1
+            // 
+            this.desfazerToolStripMenuItem1.Name = "desfazerToolStripMenuItem1";
+            this.desfazerToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
+            this.desfazerToolStripMenuItem1.Text = "&Desfazer";
+            // 
+            // refazerToolStripMenuItem1
+            // 
+            this.refazerToolStripMenuItem1.Name = "refazerToolStripMenuItem1";
+            this.refazerToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
+            this.refazerToolStripMenuItem1.Text = "&Refazer";
+            // 
+            // toolStripSeparator9
+            // 
+            this.toolStripSeparator9.Name = "toolStripSeparator9";
+            this.toolStripSeparator9.Size = new System.Drawing.Size(155, 6);
+            // 
+            // recortarToolStripMenuItem1
+            // 
+            this.recortarToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("recortarToolStripMenuItem1.Image")));
+            this.recortarToolStripMenuItem1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.recortarToolStripMenuItem1.Name = "recortarToolStripMenuItem1";
+            this.recortarToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
+            this.recortarToolStripMenuItem1.Text = "Recor&tar";
+            // 
+            // copiarToolStripMenuItem1
+            // 
+            this.copiarToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("copiarToolStripMenuItem1.Image")));
+            this.copiarToolStripMenuItem1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.copiarToolStripMenuItem1.Name = "copiarToolStripMenuItem1";
+            this.copiarToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
+            this.copiarToolStripMenuItem1.Text = "&Copiar";
+            // 
+            // colarToolStripMenuItem1
+            // 
+            this.colarToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("colarToolStripMenuItem1.Image")));
+            this.colarToolStripMenuItem1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.colarToolStripMenuItem1.Name = "colarToolStripMenuItem1";
+            this.colarToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
+            this.colarToolStripMenuItem1.Text = "C&olar";
+            // 
+            // toolStripSeparator10
+            // 
+            this.toolStripSeparator10.Name = "toolStripSeparator10";
+            this.toolStripSeparator10.Size = new System.Drawing.Size(155, 6);
+            // 
+            // selecionarTudoToolStripMenuItem1
+            // 
+            this.selecionarTudoToolStripMenuItem1.Name = "selecionarTudoToolStripMenuItem1";
+            this.selecionarTudoToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
+            this.selecionarTudoToolStripMenuItem1.Text = "Selecionar &Tudo";
+            // 
+            // ferramentasToolStripMenuItem1
+            // 
+            this.ferramentasToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.personalizarToolStripMenuItem1,
+            this.opçõesToolStripMenuItem1});
+            this.ferramentasToolStripMenuItem1.Name = "ferramentasToolStripMenuItem1";
+            this.ferramentasToolStripMenuItem1.Size = new System.Drawing.Size(84, 20);
+            this.ferramentasToolStripMenuItem1.Text = "Ferra&mentas";
+            // 
+            // personalizarToolStripMenuItem1
+            // 
+            this.personalizarToolStripMenuItem1.Name = "personalizarToolStripMenuItem1";
+            this.personalizarToolStripMenuItem1.Size = new System.Drawing.Size(137, 22);
+            this.personalizarToolStripMenuItem1.Text = "&Personalizar";
+            // 
+            // opçõesToolStripMenuItem1
+            // 
+            this.opçõesToolStripMenuItem1.Name = "opçõesToolStripMenuItem1";
+            this.opçõesToolStripMenuItem1.Size = new System.Drawing.Size(137, 22);
+            this.opçõesToolStripMenuItem1.Text = "&Opções";
+            // 
+            // ajudaToolStripMenuItem1
+            // 
+            this.ajudaToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.conteúdoToolStripMenuItem1,
+            this.índiceToolStripMenuItem1,
+            this.pesquisarToolStripMenuItem1,
+            this.toolStripSeparator11,
+            this.sobreToolStripMenuItem1});
+            this.ajudaToolStripMenuItem1.Name = "ajudaToolStripMenuItem1";
+            this.ajudaToolStripMenuItem1.Size = new System.Drawing.Size(50, 20);
+            this.ajudaToolStripMenuItem1.Text = "Aj&uda";
+            // 
+            // conteúdoToolStripMenuItem1
+            // 
+            this.conteúdoToolStripMenuItem1.Name = "conteúdoToolStripMenuItem1";
+            this.conteúdoToolStripMenuItem1.Size = new System.Drawing.Size(127, 22);
+            this.conteúdoToolStripMenuItem1.Text = "&Conteúdo";
+            // 
+            // índiceToolStripMenuItem1
+            // 
+            this.índiceToolStripMenuItem1.Name = "índiceToolStripMenuItem1";
+            this.índiceToolStripMenuItem1.Size = new System.Drawing.Size(127, 22);
+            this.índiceToolStripMenuItem1.Text = "Í&ndice";
+            // 
+            // pesquisarToolStripMenuItem1
+            // 
+            this.pesquisarToolStripMenuItem1.Name = "pesquisarToolStripMenuItem1";
+            this.pesquisarToolStripMenuItem1.Size = new System.Drawing.Size(127, 22);
+            this.pesquisarToolStripMenuItem1.Text = "&Pesquisar";
+            // 
+            // toolStripSeparator11
+            // 
+            this.toolStripSeparator11.Name = "toolStripSeparator11";
+            this.toolStripSeparator11.Size = new System.Drawing.Size(124, 6);
+            // 
+            // sobreToolStripMenuItem1
+            // 
+            this.sobreToolStripMenuItem1.Name = "sobreToolStripMenuItem1";
+            this.sobreToolStripMenuItem1.Size = new System.Drawing.Size(127, 22);
+            this.sobreToolStripMenuItem1.Text = "&Sobre...";
+            // 
+            // lbl_UsuarioForm1
+            // 
+            this.lbl_UsuarioForm1.AutoSize = true;
+            this.lbl_UsuarioForm1.BackColor = System.Drawing.SystemColors.Window;
+            this.lbl_UsuarioForm1.Location = new System.Drawing.Point(12, 234);
+            this.lbl_UsuarioForm1.Name = "lbl_UsuarioForm1";
+            this.lbl_UsuarioForm1.Size = new System.Drawing.Size(46, 13);
+            this.lbl_UsuarioForm1.TabIndex = 1;
+            this.lbl_UsuarioForm1.Text = "Usuário:";
+            // 
+            // lbl_NomeUsuario
+            // 
+            this.lbl_NomeUsuario.AutoSize = true;
+            this.lbl_NomeUsuario.BackColor = System.Drawing.SystemColors.Window;
+            this.lbl_NomeUsuario.Location = new System.Drawing.Point(64, 234);
+            this.lbl_NomeUsuario.Name = "lbl_NomeUsuario";
+            this.lbl_NomeUsuario.Size = new System.Drawing.Size(10, 13);
+            this.lbl_NomeUsuario.TabIndex = 2;
+            this.lbl_NomeUsuario.Text = "-";
+            // 
+            // lbl_NiveldeAcessoForm1
+            // 
+            this.lbl_NiveldeAcessoForm1.AutoSize = true;
+            this.lbl_NiveldeAcessoForm1.BackColor = System.Drawing.SystemColors.Window;
+            this.lbl_NiveldeAcessoForm1.Location = new System.Drawing.Point(226, 253);
+            this.lbl_NiveldeAcessoForm1.Name = "lbl_NiveldeAcessoForm1";
+            this.lbl_NiveldeAcessoForm1.Size = new System.Drawing.Size(89, 13);
+            this.lbl_NiveldeAcessoForm1.TabIndex = 3;
+            this.lbl_NiveldeAcessoForm1.Text = "Nível de Acesso:";
+            // 
+            // lbl_LeveldeAcessoForm1
+            // 
+            this.lbl_LeveldeAcessoForm1.AutoSize = true;
+            this.lbl_LeveldeAcessoForm1.BackColor = System.Drawing.SystemColors.Window;
+            this.lbl_LeveldeAcessoForm1.Location = new System.Drawing.Point(321, 253);
+            this.lbl_LeveldeAcessoForm1.Name = "lbl_LeveldeAcessoForm1";
+            this.lbl_LeveldeAcessoForm1.Size = new System.Drawing.Size(10, 13);
+            this.lbl_LeveldeAcessoForm1.TabIndex = 4;
+            this.lbl_LeveldeAcessoForm1.Text = "-";
+            // 
+            // lbl_AssociacaoForm1
+            // 
+            this.lbl_AssociacaoForm1.AutoSize = true;
+            this.lbl_AssociacaoForm1.BackColor = System.Drawing.SystemColors.Window;
+            this.lbl_AssociacaoForm1.Location = new System.Drawing.Point(2, 4);
+            this.lbl_AssociacaoForm1.Name = "lbl_AssociacaoForm1";
+            this.lbl_AssociacaoForm1.Size = new System.Drawing.Size(62, 13);
+            this.lbl_AssociacaoForm1.TabIndex = 5;
+            this.lbl_AssociacaoForm1.Text = "Associacao";
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.lbl_AssociacaoForm1);
+            this.panel1.Controls.Add(this.cbb_AssociacaoGestaoCliente);
+            this.panel1.Location = new System.Drawing.Point(12, 250);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(208, 21);
+            this.panel1.TabIndex = 7;
+            // 
+            // cbb_AssociacaoGestaoCliente
+            // 
+            this.cbb_AssociacaoGestaoCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_AssociacaoGestaoCliente.FormattingEnabled = true;
+            this.cbb_AssociacaoGestaoCliente.Location = new System.Drawing.Point(0, 0);
+            this.cbb_AssociacaoGestaoCliente.Name = "cbb_AssociacaoGestaoCliente";
+            this.cbb_AssociacaoGestaoCliente.Size = new System.Drawing.Size(136, 21);
+            this.cbb_AssociacaoGestaoCliente.TabIndex = 34;
+            this.cbb_AssociacaoGestaoCliente.Visible = false;
+            this.cbb_AssociacaoGestaoCliente.SelectedIndexChanged += new System.EventHandler(this.cbb_AssociacaoGestaoCliente_SelectedIndexChanged);
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(0, 27);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(92, 33);
+            this.panel2.TabIndex = 35;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Window;
+            this.label1.Location = new System.Drawing.Point(3, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 13);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "Trocar Assoc.";
+            this.label1.Visible = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
+            this.panel3.Location = new System.Drawing.Point(6, 213);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(68, 18);
+            this.panel3.TabIndex = 36;
+            this.panel3.Click += new System.EventHandler(this.panel3_Click);
+            // 
+            // lbl_NomedoServidor
+            // 
+            this.lbl_NomedoServidor.AutoSize = true;
+            this.lbl_NomedoServidor.BackColor = System.Drawing.SystemColors.Window;
+            this.lbl_NomedoServidor.Location = new System.Drawing.Point(213, 27);
+            this.lbl_NomedoServidor.Name = "lbl_NomedoServidor";
+            this.lbl_NomedoServidor.Size = new System.Drawing.Size(92, 13);
+            this.lbl_NomedoServidor.TabIndex = 37;
+            this.lbl_NomedoServidor.Text = "Nome do Servidor";
+            this.lbl_NomedoServidor.Visible = false;
+            // 
+            // lbl_VerificarNomeAssociacao
+            // 
+            this.lbl_VerificarNomeAssociacao.AutoSize = true;
+            this.lbl_VerificarNomeAssociacao.BackColor = System.Drawing.SystemColors.Window;
+            this.lbl_VerificarNomeAssociacao.Location = new System.Drawing.Point(252, 234);
+            this.lbl_VerificarNomeAssociacao.Name = "lbl_VerificarNomeAssociacao";
+            this.lbl_VerificarNomeAssociacao.Size = new System.Drawing.Size(146, 13);
+            this.lbl_VerificarNomeAssociacao.TabIndex = 38;
+            this.lbl_VerificarNomeAssociacao.Text = "Verificação nome associação";
+            this.lbl_VerificarNomeAssociacao.Visible = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(12, 170);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 39;
+            this.textBox1.Visible = false;
+            // 
+            // Principal
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(344, 276);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lbl_VerificarNomeAssociacao);
+            this.Controls.Add(this.lbl_NomedoServidor);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.lbl_LeveldeAcessoForm1);
+            this.Controls.Add(this.lbl_NiveldeAcessoForm1);
+            this.Controls.Add(this.lbl_NomeUsuario);
+            this.Controls.Add(this.lbl_UsuarioForm1);
+            this.Controls.Add(this.menuStrip1);
+            this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
+            this.MaximumSize = new System.Drawing.Size(360, 315);
+            this.MinimumSize = new System.Drawing.Size(360, 315);
+            this.Name = "Principal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Sistema de Gerenciamento";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.MouseEnter += new System.EventHandler(this.Form1_MouseEnter);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem novoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem novoAdministradorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem novaColetaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gerenciamentoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem AdministradorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem CatadorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem CaixaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem coletasToolStripMenuItem;
+        private System.Windows.Forms.Label lbl_UsuarioForm1;
+        private System.Windows.Forms.Label lbl_NiveldeAcessoForm1;
+        public System.Windows.Forms.Label lbl_LeveldeAcessoForm1;
+        public System.Windows.Forms.Label lbl_NomeUsuario;
+        private System.Windows.Forms.ToolStripMenuItem novoClienteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem vendasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        public System.Windows.Forms.Label lbl_AssociacaoForm1;
+        private System.Windows.Forms.ToolStripMenuItem novaAssociaçãoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem arquivoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem novoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem abrirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
+        private System.Windows.Forms.ToolStripMenuItem salvarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salvarcomoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem imprimirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem visualizarImpressãoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem desfazerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem refazerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem recortarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem copiarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem colarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripMenuItem selecionarTudoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ferramentasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem personalizarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem opçõesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem conteúdoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem índiceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pesquisarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem arquivoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem novoToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem abrirToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.ToolStripMenuItem salvarToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem salvarcomoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
+        private System.Windows.Forms.ToolStripMenuItem imprimirToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem visualizarImpressãoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
+        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem desfazerToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem refazerToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
+        private System.Windows.Forms.ToolStripMenuItem recortarToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem copiarToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem colarToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator10;
+        private System.Windows.Forms.ToolStripMenuItem selecionarTudoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ferramentasToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem personalizarToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem opçõesToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem conteúdoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem índiceToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem pesquisarToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator11;
+        private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ToolStripMenuItem novoAssociadoToolStripMenuItem;
+        private System.Windows.Forms.ComboBox cbb_AssociacaoGestaoCliente;
+        private System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel3;
+        public System.Windows.Forms.Label lbl_NomedoServidor;
+        public System.Windows.Forms.Label lbl_VerificarNomeAssociacao;
+        private System.Windows.Forms.ToolStripMenuItem trocarAssociaçãoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editarPerfilToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editarPerfilAssociaçãoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem encerrarToolStripMenuItem;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ToolTip toolTip1;
+    }
+}
+
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +1004,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 {
     public partial class Principal : Form
     {
-
+        //Carregamento do formulário de Login.
         public Principal()
         { 
 
@@ -29,106 +1019,37 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //Medida de segurança em caso de burla do formulário de
+            //Login fechando-o sem utilizar o botão de cancelar.
             if (lbl_LeveldeAcessoForm1.Text == "-")
             {
                 MessageBox.Show("Usuário não logado. Encerrando sessão.");
                 Application.Exit();
             }
 
-         
-            if(lbl_AssociacaoForm1.Text == "Unidade")
-            {
-                lbl_AssociacaoForm1.Text = cbb_AssociacaoGestaoCliente.Text;
-
-            }
-
-            Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
-
-            textBox1.Text = cryptography.Encriptar(lbl_AssociacaoForm1.Text);
-
         }
 
         private void novaColetaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Globais.logado == true)
-            {
-
+           //Abertura de formulario de coleta e transferência dos parâmetros adequados
                 AdicionarColeta Novac = new AdicionarColeta();
                 Novac.lbl_UsuarioColeta.Text = lbl_NomeUsuario.Text;
                 Novac.lbl_UnidadeUsuarioColeta.Text = lbl_AssociacaoForm1.Text;
                 Novac.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
                 Novac.ShowDialog();
-            }
-
-            else
-            {
-                MessageBox.Show("Usuário não logado");
-                return;
-            }
-            
         }
 
         private void encerrarSessãoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        {  //Encerrar a aplicação.
             Application.Exit();
         }
 
-        private void novoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (Globais.logado == true)
-            {
-
-       
-
-            }
-
-            else
-            {
-                MessageBox.Show("Usuário não logado! Encerrando sessão.");
-                Application.Exit();
-            }
-
-        }
-
-        private void gerenciamentoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (Globais.logado == true)
-            {
-
-            }
-
-            else
-            {
-                MessageBox.Show("Usuário não logado! Encerrando sessão.");
-                Application.Exit();
-            }
-
-        }
-
-        private void estatísticasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (Globais.logado == true)
-            {
-
-               
-            }
-
-            else
-            {
-
-                MessageBox.Show("Usuário não logado! Encerrando sessão.");
-                Application.Exit();
-            }
-
-        }
-
-        private void novoCatadorToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
+        
 
         private void novoAdministradorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            // Abertura de formulário de cadastro de novos administradores.
+            // Apenas administradores nível 1 podem abrí-lo.
             if(Globais.nivel <= 1)
             {
                 NovoAdministrador NovoAdministrador = new NovoAdministrador();
@@ -145,12 +1066,32 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
         }
 
-        private void catadorToolStripMenuItem_Click(object sender, EventArgs e)
+        //Cadastro de nova usina de reciclagem.
+        private void novoClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Globais.nivel == 0)
+            {
+                Cadastro_Cliente ClienteCadastro = new Cadastro_Cliente();
+                ClienteCadastro.lbl_Unidade.Text = lbl_AssociacaoForm1.Text;
+                ClienteCadastro.lbl_Usuario.Text = lbl_NomeUsuario.Text;
+                ClienteCadastro.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
+                ClienteCadastro.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Usuário não possui permissão para acessar o formulário.");
+                return;
+
+            }
+        }
+
+        //Abrir o formulário de gerenciamento de administradores.
+        private void AdministradorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (Globais.nivel == 0)
             {
                 GestaoAdministradores Administrador = new GestaoAdministradores();
-                Administrador.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text ; 
+                Administrador.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
                 Administrador.ShowDialog();
 
             }
@@ -161,21 +1102,8 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
         }
 
-        private void Form1_MouseClick(object sender, MouseEventArgs e)
-        {
-            if(Globais.logado == true)
-            {
-                
 
-            }
-
-            else
-            {
-                MessageBox.Show("Usuário não logado");
-                Application.Exit();
-            }
-        }
-
+        //Abrir o formulário de gerencimento de coletas.
         private void coletasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ColetasGestao GerenciarColeta = new ColetasGestao();
@@ -195,33 +1123,15 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
             else
             {
-                CatadorGestao GerirCatador = new CatadorGestao();
+                AssociadoGestao GerirCatador = new AssociadoGestao();
                 GerirCatador.lbl_Unidade.Text = lbl_AssociacaoForm1.Text;
                 GerirCatador.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
                 GerirCatador.ShowDialog();
             }
         }
 
-        private void novoClienteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (Globais.nivel == 0)
-            {
-                Cadastro_Cliente ClienteCadastro = new Cadastro_Cliente();
-                ClienteCadastro.lbl_Unidade.Text = lbl_AssociacaoForm1.Text;
-                ClienteCadastro.lbl_Usuario.Text = lbl_NomeUsuario.Text;
-                ClienteCadastro.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
-                ClienteCadastro.ShowDialog();
-            }
-            else
-            {
-                MessageBox.Show("Usuário não possui permissão para acessar o formulário.");
-                return;
-
-            }
-
-
-        }
-
+       
+        // Abrir o formulário de gerenciamento de Usinas.
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (Globais.nivel == 0)
@@ -239,6 +1149,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
         }
 
+        //Abrir o formulário de gerenciamento de vendas.
         private void vendasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (Globais.nivel == 0)
@@ -257,6 +1168,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
         }
 
+        //Abertura do sistema de caixa financeiro.
         private void CaixaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (Globais.nivel == 0 || Globais.nivel == 1)
@@ -284,21 +1196,17 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
         }
 
-        private void EncerrartoolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-          
 
-        }
+        //Abertura do formulário de cadastro de nova associação
 
         private void novaAssociaçãoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
             if (Globais.nivel == 0 || Globais.nivel == 1)
             {
                 Associacao associacao = new Associacao();
                 associacao.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
                 associacao.ShowDialog();
-
-               
 
             }
             else
@@ -310,6 +1218,19 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
            
         }
 
+        //Cadastro de novo associado. Transferência dos parâmetros necessários 
+        private void novoAssociadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            CadastroAssociado NovoCat = new CadastroAssociado();
+            NovoCat.lbl_UsuariodoCadastroCatador.Text = lbl_NomeUsuario.Text;
+            NovoCat.lbl_UnidadeAdministradorCatador.Text = lbl_AssociacaoForm1.Text;
+            NovoCat.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
+            NovoCat.ShowDialog();
+
+        }
+
+        //Limpar a tabela CaixaTemporário.
         private void Form1_MouseEnter(object sender, EventArgs e)
         {
             Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
@@ -319,86 +1240,25 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 
             string vqueryLimparCaixa = @"DELETE FROM CaixaTemporario WHERE [Unidade] = '" + UnidadeCrip + "' AND [Usuario] = '" + UsuarioCrip + "'";
             ConexaoBancodeDados.dql(vqueryLimparCaixa, Nomedoservidor);
-
-            
         }
 
-        private void lbl_AssociacaoForm1_Click(object sender, EventArgs e)
-        {
-            if(Globais.nivel == 0)
-            {
-                string NomedoServidor = lbl_NomedoServidor.Text;
-                SqlConnection Conectar = new SqlConnection("Data Source=DESKTOP-" + NomedoServidor + "\\SQLEXPRESS;Initial Catalog=SGRRC1;Integrated Security=True");
-                Conectar.Open();
-                string Unidade = lbl_AssociacaoForm1.Text;
-                SqlCommand cmd = new SqlCommand("select [ID_Associacao] from ASSOCIACAO WHERE [Nome Fantasia] = '" + Unidade + "'", Conectar);
-                var NomeFantasia = cmd.ExecuteScalar();
-
-                AssociacaoEditar EditarAss = new AssociacaoEditar();
-                EditarAss.label7.Text = NomeFantasia.ToString();
-                Conectar.Close();
-
-            }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-           
-        }
-
-        private void panel1_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void novoAssociadoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-                CadastroCatador NovoCat = new CadastroCatador();
-                NovoCat.lbl_UsuariodoCadastroCatador.Text = lbl_NomeUsuario.Text;
-                NovoCat.lbl_UnidadeAdministradorCatador.Text = lbl_AssociacaoForm1.Text;
-                NovoCat.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
-                NovoCat.ShowDialog();
-         
-        }
-
-        private void panel1_DoubleClick(object sender, EventArgs e)
-        {
-        }
-
+        //Muda o texto da label lbl_AssociacaoForm1 para o texto escolhido
+        //na combobox cbb_AssociacaoGestaoCliente.
         private void cbb_AssociacaoGestaoCliente_SelectedIndexChanged(object sender, EventArgs e)
         {
             lbl_AssociacaoForm1.Text = cbb_AssociacaoGestaoCliente.Text;
             cbb_AssociacaoGestaoCliente.Visible = false;
             lbl_AssociacaoForm1.Visible = true;
-            label2.Text = lbl_AssociacaoForm1.Text;
-        }
-
-        private void panel2_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-           
-        }
-
-        private void panel3_DoubleClick(object sender, EventArgs e)
-        {
+            lbl_VerificarNomeAssociacao.Text = lbl_AssociacaoForm1.Text;
         }
 
         private void panel3_Click(object sender, EventArgs e)
         {
-            label2.Text = lbl_NomedoServidor.Text;
+            lbl_VerificarNomeAssociacao.Text = lbl_NomedoServidor.Text;
 
         }
 
+        //Encerrar a sessão.
         private void encerrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Globais.logado = false;
@@ -427,6 +1287,8 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
         }
 
+
+        //Editar perfil do administrador logado.
         private void editarPerfilToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -512,11 +1374,13 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             administradoreditado.ShowDialog();
         }
 
+        //Abertura do formulário de edição de informações da associação
+        //e transferência dos parâmetros necessários.
         private void editarPerfilAssociaçãoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string Unidade = lbl_AssociacaoForm1.Text;
 
-            if (Globais.nivel == 0 && label2.Text != "System.Data.DataRowView")
+            if (Globais.nivel == 0 && lbl_VerificarNomeAssociacao.Text != "System.Data.DataRowView")
             {
                
                     string NomedoServidor = lbl_NomedoServidor.Text;
@@ -563,7 +1427,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 
 
                     AssociacaoEditar EditarAss = new AssociacaoEditar();
-                    EditarAss.label7.Text = Matricula.ToString();
+                    EditarAss.lbl_Matricula.Text = Matricula.ToString();
                     EditarAss.txt_NomeFantasiaCadastrarAssociacao.Text = NomeFantasiaVar.ToString();
                     EditarAss.txt_CNPJCadastroAssociacao.Text = CNPJCrip;
                     EditarAss.cbb_RegimedeTributacaoCadastroAssociacao.Text = RegimedeTributacao.ToString();
@@ -587,8 +1451,8 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 
             else
             {
-
-                if (label2.Text == "System.Data.DataRowView")
+                 
+                if (lbl_VerificarNomeAssociacao.Text == "System.Data.DataRowView")
                 {
                     MessageBox.Show("Verifique se a associação foi escolhida.");
                     return;
@@ -608,4 +1472,5 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 }
     
     
+
 
