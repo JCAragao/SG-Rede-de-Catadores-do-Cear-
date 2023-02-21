@@ -1,3 +1,503 @@
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    partial class GestaoAdministradores
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestaoAdministradores));
+            this.btn_porAssociacaoeMatricula = new System.Windows.Forms.Button();
+            this.rdb_porAssociacao = new System.Windows.Forms.RadioButton();
+            this.btn_ImprimirColetasGestao = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.btn_CancelarEditarColetasGestao = new System.Windows.Forms.Button();
+            this.btn_ExcluirEditarColetasGestao = new System.Windows.Forms.Button();
+            this.btn_EditarAdministradorGestao = new System.Windows.Forms.Button();
+            this.btn_PesquisarporMatriculaAdministradorGestao = new System.Windows.Forms.Button();
+            this.btn_PesquisarPorAssociacaoGestao = new System.Windows.Forms.Button();
+            this.rdb_porMatricula = new System.Windows.Forms.RadioButton();
+            this.lbl_AssociacaoGestao = new System.Windows.Forms.Label();
+            this.cbb_AssociacaoGestao = new System.Windows.Forms.ComboBox();
+            this.lbl_DatadeNascimentoCatadorGestao = new System.Windows.Forms.Label();
+            this.txt_MatriculaAdministradorGestao = new System.Windows.Forms.TextBox();
+            this.dgv_AdministradorGestao = new System.Windows.Forms.DataGridView();
+            this.iDdoAdministradorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtNomeAdministradorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtAdministradorLoginDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtSenhaLoginDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtDatadeNascimentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtDatadeMatriculaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtRGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtCPFDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtNISDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cbbGeneroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtTelefoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtemailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cbbCidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtBairroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtEnderecoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtCEPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nudNivelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aDMINISTRADORESBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sGRRC1DataSetALFA = new Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_.SGRRC1DataSetALFA();
+            this.aDMINISTRADORESTableAdapter = new Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_.SGRRC1DataSetALFATableAdapters.ADMINISTRADORESTableAdapter();
+            this.lbl_NomedoServidor = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_AdministradorGestao)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aDMINISTRADORESBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sGRRC1DataSetALFA)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // btn_porAssociacaoeMatricula
+            // 
+            this.btn_porAssociacaoeMatricula.Location = new System.Drawing.Point(343, 113);
+            this.btn_porAssociacaoeMatricula.Name = "btn_porAssociacaoeMatricula";
+            this.btn_porAssociacaoeMatricula.Size = new System.Drawing.Size(75, 23);
+            this.btn_porAssociacaoeMatricula.TabIndex = 69;
+            this.btn_porAssociacaoeMatricula.Text = "Pesquisar";
+            this.btn_porAssociacaoeMatricula.UseVisualStyleBackColor = true;
+            this.btn_porAssociacaoeMatricula.Click += new System.EventHandler(this.btn_porAssociacaoeMatricula_Click);
+            // 
+            // rdb_porAssociacao
+            // 
+            this.rdb_porAssociacao.AutoSize = true;
+            this.rdb_porAssociacao.Location = new System.Drawing.Point(343, 84);
+            this.rdb_porAssociacao.Name = "rdb_porAssociacao";
+            this.rdb_porAssociacao.Size = new System.Drawing.Size(98, 17);
+            this.rdb_porAssociacao.TabIndex = 68;
+            this.rdb_porAssociacao.TabStop = true;
+            this.rdb_porAssociacao.Text = "por Associação";
+            this.rdb_porAssociacao.UseVisualStyleBackColor = true;
+            this.rdb_porAssociacao.CheckedChanged += new System.EventHandler(this.rdb_porAssociacao_CheckedChanged);
+            // 
+            // btn_ImprimirColetasGestao
+            // 
+            this.btn_ImprimirColetasGestao.Location = new System.Drawing.Point(343, 229);
+            this.btn_ImprimirColetasGestao.Name = "btn_ImprimirColetasGestao";
+            this.btn_ImprimirColetasGestao.Size = new System.Drawing.Size(75, 23);
+            this.btn_ImprimirColetasGestao.TabIndex = 59;
+            this.btn_ImprimirColetasGestao.Text = "Imprimir";
+            this.btn_ImprimirColetasGestao.UseVisualStyleBackColor = true;
+            this.btn_ImprimirColetasGestao.Visible = false;
+            this.btn_ImprimirColetasGestao.Click += new System.EventHandler(this.btn_ImprimirColetasGestao_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(609, 299);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(129, 23);
+            this.button4.TabIndex = 58;
+            this.button4.Text = "Enviar par a central";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // btn_CancelarEditarColetasGestao
+            // 
+            this.btn_CancelarEditarColetasGestao.Location = new System.Drawing.Point(343, 200);
+            this.btn_CancelarEditarColetasGestao.Name = "btn_CancelarEditarColetasGestao";
+            this.btn_CancelarEditarColetasGestao.Size = new System.Drawing.Size(75, 23);
+            this.btn_CancelarEditarColetasGestao.TabIndex = 57;
+            this.btn_CancelarEditarColetasGestao.Text = "Cancelar";
+            this.btn_CancelarEditarColetasGestao.UseVisualStyleBackColor = true;
+            this.btn_CancelarEditarColetasGestao.Click += new System.EventHandler(this.btn_CancelarEditarColetasGestao_Click);
+            // 
+            // btn_ExcluirEditarColetasGestao
+            // 
+            this.btn_ExcluirEditarColetasGestao.Location = new System.Drawing.Point(343, 171);
+            this.btn_ExcluirEditarColetasGestao.Name = "btn_ExcluirEditarColetasGestao";
+            this.btn_ExcluirEditarColetasGestao.Size = new System.Drawing.Size(75, 23);
+            this.btn_ExcluirEditarColetasGestao.TabIndex = 56;
+            this.btn_ExcluirEditarColetasGestao.Text = "Excluir";
+            this.btn_ExcluirEditarColetasGestao.UseVisualStyleBackColor = true;
+            this.btn_ExcluirEditarColetasGestao.Click += new System.EventHandler(this.btn_ExcluirEditarColetasGestao_Click);
+            // 
+            // btn_EditarAdministradorGestao
+            // 
+            this.btn_EditarAdministradorGestao.Location = new System.Drawing.Point(343, 142);
+            this.btn_EditarAdministradorGestao.Name = "btn_EditarAdministradorGestao";
+            this.btn_EditarAdministradorGestao.Size = new System.Drawing.Size(75, 23);
+            this.btn_EditarAdministradorGestao.TabIndex = 55;
+            this.btn_EditarAdministradorGestao.Text = "Editar";
+            this.btn_EditarAdministradorGestao.UseVisualStyleBackColor = true;
+            this.btn_EditarAdministradorGestao.Click += new System.EventHandler(this.btn_EditarAdministradorGestao_Click);
+            // 
+            // btn_PesquisarporMatriculaAdministradorGestao
+            // 
+            this.btn_PesquisarporMatriculaAdministradorGestao.Location = new System.Drawing.Point(343, 113);
+            this.btn_PesquisarporMatriculaAdministradorGestao.Name = "btn_PesquisarporMatriculaAdministradorGestao";
+            this.btn_PesquisarporMatriculaAdministradorGestao.Size = new System.Drawing.Size(75, 23);
+            this.btn_PesquisarporMatriculaAdministradorGestao.TabIndex = 54;
+            this.btn_PesquisarporMatriculaAdministradorGestao.Text = "Pesquisar";
+            this.btn_PesquisarporMatriculaAdministradorGestao.UseVisualStyleBackColor = true;
+            this.btn_PesquisarporMatriculaAdministradorGestao.Visible = false;
+            this.btn_PesquisarporMatriculaAdministradorGestao.Click += new System.EventHandler(this.btn_PesquisarporMatriculaAdministradorGestao_Click);
+            // 
+            // btn_PesquisarPorAssociacaoGestao
+            // 
+            this.btn_PesquisarPorAssociacaoGestao.Location = new System.Drawing.Point(343, 113);
+            this.btn_PesquisarPorAssociacaoGestao.Name = "btn_PesquisarPorAssociacaoGestao";
+            this.btn_PesquisarPorAssociacaoGestao.Size = new System.Drawing.Size(75, 23);
+            this.btn_PesquisarPorAssociacaoGestao.TabIndex = 53;
+            this.btn_PesquisarPorAssociacaoGestao.Text = "Pesquisar";
+            this.btn_PesquisarPorAssociacaoGestao.UseVisualStyleBackColor = true;
+            this.btn_PesquisarPorAssociacaoGestao.Visible = false;
+            this.btn_PesquisarPorAssociacaoGestao.Click += new System.EventHandler(this.btn_PesquisarPorAssociacaoGestao_Click);
+            // 
+            // rdb_porMatricula
+            // 
+            this.rdb_porMatricula.AutoSize = true;
+            this.rdb_porMatricula.Location = new System.Drawing.Point(343, 61);
+            this.rdb_porMatricula.Name = "rdb_porMatricula";
+            this.rdb_porMatricula.Size = new System.Drawing.Size(101, 17);
+            this.rdb_porMatricula.TabIndex = 52;
+            this.rdb_porMatricula.TabStop = true;
+            this.rdb_porMatricula.Text = "por nº Matrícula";
+            this.rdb_porMatricula.UseVisualStyleBackColor = true;
+            this.rdb_porMatricula.CheckedChanged += new System.EventHandler(this.rdb_porMatricula_CheckedChanged);
+            // 
+            // lbl_AssociacaoGestao
+            // 
+            this.lbl_AssociacaoGestao.AutoSize = true;
+            this.lbl_AssociacaoGestao.Location = new System.Drawing.Point(12, 9);
+            this.lbl_AssociacaoGestao.Name = "lbl_AssociacaoGestao";
+            this.lbl_AssociacaoGestao.Size = new System.Drawing.Size(62, 13);
+            this.lbl_AssociacaoGestao.TabIndex = 50;
+            this.lbl_AssociacaoGestao.Text = "Associação";
+            // 
+            // cbb_AssociacaoGestao
+            // 
+            this.cbb_AssociacaoGestao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_AssociacaoGestao.FormattingEnabled = true;
+            this.cbb_AssociacaoGestao.Location = new System.Drawing.Point(12, 30);
+            this.cbb_AssociacaoGestao.Name = "cbb_AssociacaoGestao";
+            this.cbb_AssociacaoGestao.Size = new System.Drawing.Size(319, 21);
+            this.cbb_AssociacaoGestao.TabIndex = 49;
+            this.cbb_AssociacaoGestao.MouseUp += new System.Windows.Forms.MouseEventHandler(this.cbb_Administradorestao_MouseUp);
+            // 
+            // lbl_DatadeNascimentoCatadorGestao
+            // 
+            this.lbl_DatadeNascimentoCatadorGestao.AutoSize = true;
+            this.lbl_DatadeNascimentoCatadorGestao.Location = new System.Drawing.Point(340, 14);
+            this.lbl_DatadeNascimentoCatadorGestao.Name = "lbl_DatadeNascimentoCatadorGestao";
+            this.lbl_DatadeNascimentoCatadorGestao.Size = new System.Drawing.Size(65, 13);
+            this.lbl_DatadeNascimentoCatadorGestao.TabIndex = 47;
+            this.lbl_DatadeNascimentoCatadorGestao.Text = "nº Matrícula";
+            // 
+            // txt_MatriculaAdministradorGestao
+            // 
+            this.txt_MatriculaAdministradorGestao.Location = new System.Drawing.Point(343, 35);
+            this.txt_MatriculaAdministradorGestao.MaxLength = 50;
+            this.txt_MatriculaAdministradorGestao.Name = "txt_MatriculaAdministradorGestao";
+            this.txt_MatriculaAdministradorGestao.Size = new System.Drawing.Size(65, 20);
+            this.txt_MatriculaAdministradorGestao.TabIndex = 46;
+            this.txt_MatriculaAdministradorGestao.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_MatriculaAdministradorGestao_KeyPress);
+            // 
+            // dgv_AdministradorGestao
+            // 
+            this.dgv_AdministradorGestao.AllowUserToAddRows = false;
+            this.dgv_AdministradorGestao.AllowUserToDeleteRows = false;
+            this.dgv_AdministradorGestao.AllowUserToResizeColumns = false;
+            this.dgv_AdministradorGestao.AllowUserToResizeRows = false;
+            this.dgv_AdministradorGestao.AutoGenerateColumns = false;
+            this.dgv_AdministradorGestao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_AdministradorGestao.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDdoAdministradorDataGridViewTextBoxColumn,
+            this.txtNomeAdministradorDataGridViewTextBoxColumn,
+            this.txtAdministradorLoginDataGridViewTextBoxColumn,
+            this.txtSenhaLoginDataGridViewTextBoxColumn,
+            this.txtDatadeNascimentoDataGridViewTextBoxColumn,
+            this.txtDatadeMatriculaDataGridViewTextBoxColumn,
+            this.txtRGDataGridViewTextBoxColumn,
+            this.txtCPFDataGridViewTextBoxColumn,
+            this.txtNISDataGridViewTextBoxColumn,
+            this.cbbGeneroDataGridViewTextBoxColumn,
+            this.txtTelefoneDataGridViewTextBoxColumn,
+            this.txtemailDataGridViewTextBoxColumn,
+            this.cbbCidadeDataGridViewTextBoxColumn,
+            this.txtBairroDataGridViewTextBoxColumn,
+            this.txtEnderecoDataGridViewTextBoxColumn,
+            this.txtCEPDataGridViewTextBoxColumn,
+            this.nudNivelDataGridViewTextBoxColumn,
+            this.unidadeDataGridViewTextBoxColumn});
+            this.dgv_AdministradorGestao.DataSource = this.aDMINISTRADORESBindingSource;
+            this.dgv_AdministradorGestao.Location = new System.Drawing.Point(12, 57);
+            this.dgv_AdministradorGestao.MultiSelect = false;
+            this.dgv_AdministradorGestao.Name = "dgv_AdministradorGestao";
+            this.dgv_AdministradorGestao.ReadOnly = true;
+            this.dgv_AdministradorGestao.RowHeadersVisible = false;
+            this.dgv_AdministradorGestao.Size = new System.Drawing.Size(302, 223);
+            this.dgv_AdministradorGestao.TabIndex = 45;
+            this.dgv_AdministradorGestao.MouseEnter += new System.EventHandler(this.dgv_AdministradorGestao_MouseEnter);
+            // 
+            // iDdoAdministradorDataGridViewTextBoxColumn
+            // 
+            this.iDdoAdministradorDataGridViewTextBoxColumn.DataPropertyName = "ID_doAdministrador";
+            this.iDdoAdministradorDataGridViewTextBoxColumn.HeaderText = "nº Matrícula";
+            this.iDdoAdministradorDataGridViewTextBoxColumn.Name = "iDdoAdministradorDataGridViewTextBoxColumn";
+            this.iDdoAdministradorDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDdoAdministradorDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // txtNomeAdministradorDataGridViewTextBoxColumn
+            // 
+            this.txtNomeAdministradorDataGridViewTextBoxColumn.DataPropertyName = "txt_NomeAdministrador";
+            this.txtNomeAdministradorDataGridViewTextBoxColumn.HeaderText = "Administrador";
+            this.txtNomeAdministradorDataGridViewTextBoxColumn.Name = "txtNomeAdministradorDataGridViewTextBoxColumn";
+            this.txtNomeAdministradorDataGridViewTextBoxColumn.ReadOnly = true;
+            this.txtNomeAdministradorDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // txtAdministradorLoginDataGridViewTextBoxColumn
+            // 
+            this.txtAdministradorLoginDataGridViewTextBoxColumn.DataPropertyName = "txt_AdministradorLogin";
+            this.txtAdministradorLoginDataGridViewTextBoxColumn.HeaderText = "Login Usuário";
+            this.txtAdministradorLoginDataGridViewTextBoxColumn.Name = "txtAdministradorLoginDataGridViewTextBoxColumn";
+            this.txtAdministradorLoginDataGridViewTextBoxColumn.ReadOnly = true;
+            this.txtAdministradorLoginDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // txtSenhaLoginDataGridViewTextBoxColumn
+            // 
+            this.txtSenhaLoginDataGridViewTextBoxColumn.DataPropertyName = "txt_SenhaLogin";
+            this.txtSenhaLoginDataGridViewTextBoxColumn.HeaderText = "Senha";
+            this.txtSenhaLoginDataGridViewTextBoxColumn.Name = "txtSenhaLoginDataGridViewTextBoxColumn";
+            this.txtSenhaLoginDataGridViewTextBoxColumn.ReadOnly = true;
+            this.txtSenhaLoginDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // txtDatadeNascimentoDataGridViewTextBoxColumn
+            // 
+            this.txtDatadeNascimentoDataGridViewTextBoxColumn.DataPropertyName = "txt_DatadeNascimento";
+            this.txtDatadeNascimentoDataGridViewTextBoxColumn.HeaderText = "Data de Nascimento";
+            this.txtDatadeNascimentoDataGridViewTextBoxColumn.Name = "txtDatadeNascimentoDataGridViewTextBoxColumn";
+            this.txtDatadeNascimentoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.txtDatadeNascimentoDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // txtDatadeMatriculaDataGridViewTextBoxColumn
+            // 
+            this.txtDatadeMatriculaDataGridViewTextBoxColumn.DataPropertyName = "txt_DatadeMatricula";
+            this.txtDatadeMatriculaDataGridViewTextBoxColumn.HeaderText = "Data de Matrícula";
+            this.txtDatadeMatriculaDataGridViewTextBoxColumn.Name = "txtDatadeMatriculaDataGridViewTextBoxColumn";
+            this.txtDatadeMatriculaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.txtDatadeMatriculaDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // txtRGDataGridViewTextBoxColumn
+            // 
+            this.txtRGDataGridViewTextBoxColumn.DataPropertyName = "txt_RG";
+            this.txtRGDataGridViewTextBoxColumn.HeaderText = "RG";
+            this.txtRGDataGridViewTextBoxColumn.Name = "txtRGDataGridViewTextBoxColumn";
+            this.txtRGDataGridViewTextBoxColumn.ReadOnly = true;
+            this.txtRGDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // txtCPFDataGridViewTextBoxColumn
+            // 
+            this.txtCPFDataGridViewTextBoxColumn.DataPropertyName = "txt_CPF";
+            this.txtCPFDataGridViewTextBoxColumn.HeaderText = "CPF";
+            this.txtCPFDataGridViewTextBoxColumn.Name = "txtCPFDataGridViewTextBoxColumn";
+            this.txtCPFDataGridViewTextBoxColumn.ReadOnly = true;
+            this.txtCPFDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // txtNISDataGridViewTextBoxColumn
+            // 
+            this.txtNISDataGridViewTextBoxColumn.DataPropertyName = "txt_NIS";
+            this.txtNISDataGridViewTextBoxColumn.HeaderText = "NIS";
+            this.txtNISDataGridViewTextBoxColumn.Name = "txtNISDataGridViewTextBoxColumn";
+            this.txtNISDataGridViewTextBoxColumn.ReadOnly = true;
+            this.txtNISDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // cbbGeneroDataGridViewTextBoxColumn
+            // 
+            this.cbbGeneroDataGridViewTextBoxColumn.DataPropertyName = "cbb_Genero";
+            this.cbbGeneroDataGridViewTextBoxColumn.HeaderText = "Gênero";
+            this.cbbGeneroDataGridViewTextBoxColumn.Name = "cbbGeneroDataGridViewTextBoxColumn";
+            this.cbbGeneroDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cbbGeneroDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // txtTelefoneDataGridViewTextBoxColumn
+            // 
+            this.txtTelefoneDataGridViewTextBoxColumn.DataPropertyName = "txt_Telefone";
+            this.txtTelefoneDataGridViewTextBoxColumn.HeaderText = "Telefone";
+            this.txtTelefoneDataGridViewTextBoxColumn.Name = "txtTelefoneDataGridViewTextBoxColumn";
+            this.txtTelefoneDataGridViewTextBoxColumn.ReadOnly = true;
+            this.txtTelefoneDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // txtemailDataGridViewTextBoxColumn
+            // 
+            this.txtemailDataGridViewTextBoxColumn.DataPropertyName = "txt_[e-mail]";
+            this.txtemailDataGridViewTextBoxColumn.HeaderText = "e-mail";
+            this.txtemailDataGridViewTextBoxColumn.Name = "txtemailDataGridViewTextBoxColumn";
+            this.txtemailDataGridViewTextBoxColumn.ReadOnly = true;
+            this.txtemailDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // cbbCidadeDataGridViewTextBoxColumn
+            // 
+            this.cbbCidadeDataGridViewTextBoxColumn.DataPropertyName = "cbb_Cidade";
+            this.cbbCidadeDataGridViewTextBoxColumn.HeaderText = "Cidade";
+            this.cbbCidadeDataGridViewTextBoxColumn.Name = "cbbCidadeDataGridViewTextBoxColumn";
+            this.cbbCidadeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cbbCidadeDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // txtBairroDataGridViewTextBoxColumn
+            // 
+            this.txtBairroDataGridViewTextBoxColumn.DataPropertyName = "txt_Bairro";
+            this.txtBairroDataGridViewTextBoxColumn.HeaderText = "Bairro";
+            this.txtBairroDataGridViewTextBoxColumn.Name = "txtBairroDataGridViewTextBoxColumn";
+            this.txtBairroDataGridViewTextBoxColumn.ReadOnly = true;
+            this.txtBairroDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // txtEnderecoDataGridViewTextBoxColumn
+            // 
+            this.txtEnderecoDataGridViewTextBoxColumn.DataPropertyName = "txt_Endereco";
+            this.txtEnderecoDataGridViewTextBoxColumn.HeaderText = "Rua e Número";
+            this.txtEnderecoDataGridViewTextBoxColumn.Name = "txtEnderecoDataGridViewTextBoxColumn";
+            this.txtEnderecoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.txtEnderecoDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // txtCEPDataGridViewTextBoxColumn
+            // 
+            this.txtCEPDataGridViewTextBoxColumn.DataPropertyName = "txt_CEP";
+            this.txtCEPDataGridViewTextBoxColumn.HeaderText = "CEP";
+            this.txtCEPDataGridViewTextBoxColumn.Name = "txtCEPDataGridViewTextBoxColumn";
+            this.txtCEPDataGridViewTextBoxColumn.ReadOnly = true;
+            this.txtCEPDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // nudNivelDataGridViewTextBoxColumn
+            // 
+            this.nudNivelDataGridViewTextBoxColumn.DataPropertyName = "nud_Nivel";
+            this.nudNivelDataGridViewTextBoxColumn.HeaderText = "Nível de Acesso";
+            this.nudNivelDataGridViewTextBoxColumn.Name = "nudNivelDataGridViewTextBoxColumn";
+            this.nudNivelDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nudNivelDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // unidadeDataGridViewTextBoxColumn
+            // 
+            this.unidadeDataGridViewTextBoxColumn.DataPropertyName = "Unidade";
+            this.unidadeDataGridViewTextBoxColumn.HeaderText = "Unidade";
+            this.unidadeDataGridViewTextBoxColumn.Name = "unidadeDataGridViewTextBoxColumn";
+            this.unidadeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.unidadeDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // aDMINISTRADORESBindingSource
+            // 
+            this.aDMINISTRADORESBindingSource.DataMember = "ADMINISTRADORES";
+            this.aDMINISTRADORESBindingSource.DataSource = this.sGRRC1DataSetALFA;
+            // 
+            // sGRRC1DataSetALFA
+            // 
+            this.sGRRC1DataSetALFA.DataSetName = "SGRRC1DataSetALFA";
+            this.sGRRC1DataSetALFA.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // aDMINISTRADORESTableAdapter
+            // 
+            this.aDMINISTRADORESTableAdapter.ClearBeforeFill = true;
+            // 
+            // lbl_NomedoServidor
+            // 
+            this.lbl_NomedoServidor.AutoSize = true;
+            this.lbl_NomedoServidor.Location = new System.Drawing.Point(223, 9);
+            this.lbl_NomedoServidor.Name = "lbl_NomedoServidor";
+            this.lbl_NomedoServidor.Size = new System.Drawing.Size(86, 13);
+            this.lbl_NomedoServidor.TabIndex = 70;
+            this.lbl_NomedoServidor.Text = "NomedoServidor";
+            this.lbl_NomedoServidor.Visible = false;
+            // 
+            // GestaoAdministradores
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(451, 295);
+            this.Controls.Add(this.lbl_NomedoServidor);
+            this.Controls.Add(this.btn_porAssociacaoeMatricula);
+            this.Controls.Add(this.rdb_porAssociacao);
+            this.Controls.Add(this.btn_ImprimirColetasGestao);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btn_CancelarEditarColetasGestao);
+            this.Controls.Add(this.btn_ExcluirEditarColetasGestao);
+            this.Controls.Add(this.btn_EditarAdministradorGestao);
+            this.Controls.Add(this.btn_PesquisarporMatriculaAdministradorGestao);
+            this.Controls.Add(this.btn_PesquisarPorAssociacaoGestao);
+            this.Controls.Add(this.rdb_porMatricula);
+            this.Controls.Add(this.lbl_AssociacaoGestao);
+            this.Controls.Add(this.cbb_AssociacaoGestao);
+            this.Controls.Add(this.lbl_DatadeNascimentoCatadorGestao);
+            this.Controls.Add(this.txt_MatriculaAdministradorGestao);
+            this.Controls.Add(this.dgv_AdministradorGestao);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(467, 334);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(467, 334);
+            this.Name = "GestaoAdministradores";
+            this.Text = "Gestao Administradores";
+            this.Load += new System.EventHandler(this.GestaoAdministradores_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_AdministradorGestao)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aDMINISTRADORESBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sGRRC1DataSetALFA)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+        private System.Windows.Forms.RadioButton rdb_porAssociacao;
+        private System.Windows.Forms.Button btn_ImprimirColetasGestao;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_CancelarEditarColetasGestao;
+        private System.Windows.Forms.Button btn_ExcluirEditarColetasGestao;
+        private System.Windows.Forms.Button btn_EditarAdministradorGestao;
+        private System.Windows.Forms.RadioButton rdb_porMatricula;
+        private System.Windows.Forms.Label lbl_AssociacaoGestao;
+        private System.Windows.Forms.Label lbl_DatadeNascimentoCatadorGestao;
+        public System.Windows.Forms.DataGridView dgv_AdministradorGestao;
+        private SGRRC1DataSetALFA sGRRC1DataSetALFA;
+        private System.Windows.Forms.BindingSource aDMINISTRADORESBindingSource;
+        private SGRRC1DataSetALFATableAdapters.ADMINISTRADORESTableAdapter aDMINISTRADORESTableAdapter;
+        public System.Windows.Forms.Button btn_porAssociacaoeMatricula;
+        public System.Windows.Forms.Button btn_PesquisarporMatriculaAdministradorGestao;
+        public System.Windows.Forms.Button btn_PesquisarPorAssociacaoGestao;
+        public System.Windows.Forms.ComboBox cbb_AssociacaoGestao;
+        public System.Windows.Forms.TextBox txt_MatriculaAdministradorGestao;
+        public System.Windows.Forms.Label lbl_NomedoServidor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDdoAdministradorDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txtNomeAdministradorDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txtAdministradorLoginDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txtSenhaLoginDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txtDatadeNascimentoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txtDatadeMatriculaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txtRGDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txtCPFDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txtNISDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cbbGeneroDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txtTelefoneDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txtemailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cbbCidadeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txtBairroDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txtEnderecoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txtCEPDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nudNivelDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn unidadeDataGridViewTextBoxColumn;
+    }
+}
+
 using iTextSharp.text.pdf;
 using iTextSharp.text;
 using Org.BouncyCastle.Asn1.X509;
