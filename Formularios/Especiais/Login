@@ -197,7 +197,6 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             this.pnl_Creditos.Size = new System.Drawing.Size(325, 172);
             this.pnl_Creditos.TabIndex = 14;
             this.pnl_Creditos.Click += new System.EventHandler(this.pnl_Creditos_Click);
-            this.pnl_Creditos.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // lbl_Creditos
             // 
@@ -210,7 +209,6 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             this.lbl_Creditos.TabIndex = 14;
             this.lbl_Creditos.Text = resources.GetString("lbl_Creditos.Text");
             this.lbl_Creditos.Visible = false;
-            this.lbl_Creditos.Click += new System.EventHandler(this.lbl_Creditos_Click_1);
             // 
             // lbl_NomedoServidor
             // 
@@ -310,19 +308,17 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 {
     public partial class Login : Form
     {
+        //Eventos de carregamento do sistema. 
         Principal form1;
         DataTable dt = new DataTable();
         public Login(Principal f)
         {
-
-          
                 InitializeComponent();
-
-        
-            form1 = f;
+                form1 = f;
             
         }
 
+        //Saída do sistema
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -331,12 +327,15 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 
 
 
-
+        //Consulta no banco de dados se as informações de login e senha existem.
+        //Se existirem o formulário principal será carregado, com as informações repassadas
+        //De Login, Associação de origem do administrador, nível de acesso, e nome do computador.
         private void btn_Logar_Click(object sender, EventArgs e)
         {
 
             bool conect;
 
+            //Rentativa de conexão com o banco de dados.
             try
             {
                 string Servidornome0 = lbl_NomedoServidor.Text;
@@ -356,6 +355,9 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
                 conect = false;
             }
 
+            //Consultas no servidor se o banco de dados SGRRC1 possui uma associação, e se
+            //possui administrador 0. Em caso de ocorrência, o sistema ofererá
+            //Os formulários de cadastro de administrador e de associação.
             if (conect == true)
             {
                 string Servidornome = lbl_NomedoServidor.Text;
@@ -440,15 +442,11 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 
         
 
-
+        //Consulta da existência do banco de dados SGRRC1 e de suas tabelas. Se não existirem,
+        //Serão criados.
         private void Login_Load(object sender, EventArgs e)
         {
-            //if (ApplicationDeployment.IsNetworkDeployed)
-            //{
-            //  string sql = "select*from ADMINISTRADORES where [nud_Nivel] = 0";
-            //dt = ConexaoBancodeDados.consulta(sql);
-            //ApplicationDeployment deployment = ApplicationDeployment.CurrentDeployment;
-
+           
             string nomedoservidor;
             CadeiadeConexao conexaocadeia = new CadeiadeConexao();
             string nomecomputador2 = System.Windows.Forms.SystemInformation.ComputerName;
@@ -627,28 +625,6 @@ ALTER DATABASE [SGRRC1] SET  READ_WRITE
                     string desktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
                     string diretorio = System.IO.Path.Combine(desktop, "Impressão");
                     System.IO.Directory.CreateDirectory(diretorio);
-
-                  
-                    /*object shDesktop = (object)"Desktop";
-                    WshShell shell = new WshShell();
-                    string shortcutAddress = (string)shell.SpecialFolders.Item(ref shDesktop) + @"\Notepad.lnk";
-                    IWshShortcut shortcut = (IWshShortcut)shell.CreateShortcut(shortcutAddress);
-                    shortcut.Description = "Atalho para o Sistema de Gerenciamento da Rede de Catadores de Resíduos Sólidos Recicláveis do Estado do Ceará";
-                    shortcut.Hotkey = "Ctrl+Shift+N";
-                    shortcut.TargetPath = Environment.GetFolderPath(Environment.SpecialFolder.System) + @"\Sistema de Gerenciamento da Rede de Catadores do Ceará.exe";
-                    shortcut.Save();*/
-
-                    /*var startupFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
-                    WshShell shell = new WshShell();
-                    var shortCutLinkFilePath = Path.Combine(startupFolderPath, @"\Sistema de Gerenciamento da Rede de Catadores do Ceará.lnk");
-                    MessageBox.Show(shortCutLinkFilePath.ToString());
-                    var windowsApplicationShortcut = (IWshShortcut)shell.CreateShortcut(shortCutLinkFilePath);
-                    windowsApplicationShortcut.Description = "";
-                    windowsApplicationShortcut.WorkingDirectory = Application.StartupPath;
-                    windowsApplicationShortcut.TargetPath = Application.ExecutablePath;
-                    windowsApplicationShortcut.Save();*/
-
-
                 }
 
 
@@ -1173,7 +1149,7 @@ INSERT INTO CIDADES([Cidade]) VALUES ('Viçosa do Ceará')
         }
 
 
-
+        //Revelar senha
         private void chb_MostrarSenhaLogin_CheckedChanged(object sender, EventArgs e)
         {
             if (chb_MostrarSenhaLogin.Checked == true)
@@ -1186,21 +1162,6 @@ INSERT INTO CIDADES([Cidade]) VALUES ('Viçosa do Ceará')
             {
                 txt_SenhaLogin.UseSystemPasswordChar = true;
             }
-        }
-
-        private void lbl_Creditos_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lbl_Creditos_Click_1(object sender, EventArgs e)
-        {
-
         }
 
         private void pnl_Creditos_Click(object sender, EventArgs e)
