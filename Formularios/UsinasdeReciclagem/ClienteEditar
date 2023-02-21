@@ -202,7 +202,6 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             this.txt_CNPJEditarCliente.Name = "txt_CNPJEditarCliente";
             this.txt_CNPJEditarCliente.Size = new System.Drawing.Size(89, 20);
             this.txt_CNPJEditarCliente.TabIndex = 111;
-            this.txt_CNPJEditarCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_CNPJEditarCliente_KeyPress_1);
             // 
             // label6
             // 
@@ -499,6 +498,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             InitializeComponent();
         }
 
+        //Salvar alterações.
         private void btn_EditarCliente_Click(object sender, EventArgs e)
         {
             string format = "dd/MM/yyyy";
@@ -654,6 +654,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 
         }
 
+        //Verificar se ocorreu alteração nas informações do banco de dados.
         private void ClienteEditar_Load(object sender, EventArgs e)
         {
 
@@ -688,6 +689,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             Conectar.Close();
         }
 
+        //Somente números são permitidos.
         private void txt_CNPJEditarCliente_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((!char.IsNumber(e.KeyChar)) && !char.IsControl(e.KeyChar) && e.KeyChar != '/')
@@ -696,6 +698,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
         }
 
+        //Somente números e '/' são permitidos.
         private void txt_DatadeCadastroEditarCliente_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar == '/'))
@@ -705,6 +708,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 
         }
 
+        //Somente números e '(' ')' são permitidos.
         private void txt_TelefoneEditarCliente_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((!char.IsNumber(e.KeyChar)) && !char.IsControl(e.KeyChar) && e.KeyChar != '(' && e.KeyChar != ')' && e.KeyChar != '-')
@@ -713,6 +717,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
         }
 
+        //Somente letras são permitidas.
         private void txt_RuaEditarCliente_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((!char.IsNumber(e.KeyChar)) && (!char.IsLetter(e.KeyChar)) && !char.IsControl(e.KeyChar) && Convert.ToInt32(e.KeyChar) != 8 && Convert.ToInt32(e.KeyChar) != 32 && e.KeyChar == ',')
@@ -721,6 +726,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
         }
 
+        //Somente letras são permitidas.
         private void txt_BairroEditarCliente_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((!char.IsNumber(e.KeyChar)) && (!char.IsLetter(e.KeyChar)) && !char.IsControl(e.KeyChar))
@@ -729,6 +735,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
         }
 
+        //Somente números são aceitos.
         private void txt_CEPEditarCliente_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((!char.IsNumber(e.KeyChar)) && !char.IsControl(e.KeyChar))
@@ -737,6 +744,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
         }
 
+        //Carregamento das cidades
         private void cbb_CidadeEditarCliente_Click(object sender, EventArgs e)
         {
             string NomedoServidor = lbl_NomedoServidor.Text;
@@ -745,12 +753,8 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             cbb_CidadeEditarCliente.DisplayMember = "Cidade";
             cbb_CidadeEditarCliente.ValueMember = "ID_Cidade";
         }
-
-        private void txt_CNPJEditarCliente_KeyPress_1(object sender, KeyPressEventArgs e)
-        {
-
-        }
-
+        
+        //Fechar o formulário
         private void btn_CancelarCadastrarCliente_Click(object sender, EventArgs e)
         {
             this.Close();
