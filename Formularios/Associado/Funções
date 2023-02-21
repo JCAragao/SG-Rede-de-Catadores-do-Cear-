@@ -31,7 +31,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Funções));
             this.txt_Funcoes = new System.Windows.Forms.TextBox();
             this.btn_Excluir = new System.Windows.Forms.Button();
-            this.btn_AdicionarNovoMaterial = new System.Windows.Forms.Button();
+            this.btn_AdicionarNovaFuncao = new System.Windows.Forms.Button();
             this.txt_AssociacaoFuncoes = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cbb_Funcoes = new System.Windows.Forms.ComboBox();
@@ -65,15 +65,15 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             this.btn_Excluir.UseVisualStyleBackColor = true;
             this.btn_Excluir.Click += new System.EventHandler(this.btn_Excluir_Click);
             // 
-            // btn_AdicionarNovoMaterial
+            // btn_AdicionarNovaFuncao
             // 
-            this.btn_AdicionarNovoMaterial.Location = new System.Drawing.Point(16, 136);
-            this.btn_AdicionarNovoMaterial.Name = "btn_AdicionarNovoMaterial";
-            this.btn_AdicionarNovoMaterial.Size = new System.Drawing.Size(66, 20);
-            this.btn_AdicionarNovoMaterial.TabIndex = 62;
-            this.btn_AdicionarNovoMaterial.Text = "Adicionar";
-            this.btn_AdicionarNovoMaterial.UseVisualStyleBackColor = true;
-            this.btn_AdicionarNovoMaterial.Click += new System.EventHandler(this.btn_AdicionarNovoMaterial_Click);
+            this.btn_AdicionarNovaFuncao.Location = new System.Drawing.Point(16, 136);
+            this.btn_AdicionarNovaFuncao.Name = "btn_AdicionarNovaFuncao";
+            this.btn_AdicionarNovaFuncao.Size = new System.Drawing.Size(66, 20);
+            this.btn_AdicionarNovaFuncao.TabIndex = 62;
+            this.btn_AdicionarNovaFuncao.Text = "Adicionar";
+            this.btn_AdicionarNovaFuncao.UseVisualStyleBackColor = true;
+            this.btn_AdicionarNovaFuncao.Click += new System.EventHandler(this.btn_AdicionarNovaFuncao_Click);
             // 
             // txt_AssociacaoFuncoes
             // 
@@ -82,8 +82,6 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             this.txt_AssociacaoFuncoes.ReadOnly = true;
             this.txt_AssociacaoFuncoes.Size = new System.Drawing.Size(128, 20);
             this.txt_AssociacaoFuncoes.TabIndex = 59;
-            this.txt_AssociacaoFuncoes.Click += new System.EventHandler(this.txt_AssociacaoFuncoes_Click);
-            this.txt_AssociacaoFuncoes.TextChanged += new System.EventHandler(this.txt_AssociacaoFuncoes_TextChanged);
             this.txt_AssociacaoFuncoes.DoubleClick += new System.EventHandler(this.txt_AssociacaoFuncoes_DoubleClick);
             // 
             // label1
@@ -235,7 +233,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             this.Controls.Add(this.cbb_MetalicoFerrosoColetasEditar);
             this.Controls.Add(this.txt_Funcoes);
             this.Controls.Add(this.btn_Excluir);
-            this.Controls.Add(this.btn_AdicionarNovoMaterial);
+            this.Controls.Add(this.btn_AdicionarNovaFuncao);
             this.Controls.Add(this.txt_AssociacaoFuncoes);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -252,7 +250,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
         #endregion
         private System.Windows.Forms.TextBox txt_Funcoes;
         private System.Windows.Forms.Button btn_Excluir;
-        private System.Windows.Forms.Button btn_AdicionarNovoMaterial;
+        private System.Windows.Forms.Button btn_AdicionarNovaFuncao;
         public System.Windows.Forms.TextBox txt_AssociacaoFuncoes;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.ComboBox cbb_Funcoes;
@@ -287,13 +285,16 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             InitializeComponent();
         }
 
-        private void btn_AdicionarNovoMaterial_Click(object sender, EventArgs e)
+        private void Funções_Load(object sender, EventArgs e)
         {
-            
 
-          
+        }
 
-            if(cbb_AssociacaoFuncoes.SelectedIndex != -1)
+        //Cadastro de nova função
+        private void btn_AdicionarNovaFuncao_Click(object sender, EventArgs e)
+        {
+
+            if (cbb_AssociacaoFuncoes.SelectedIndex != -1)
             {
                 string NomedoServidor = lbl_NomedoServidor.Text;
                 SqlConnection Conectar = new SqlConnection("Data Source=DESKTOP-" + NomedoServidor + "\\SQLEXPRESS;Initial Catalog=SGRRC1;Integrated Security=True");
@@ -302,7 +303,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
                 string associacao = cbb_AssociacaoFuncoes.Text;
                 string funcoes = txt_Funcoes.Text;
 
-                SqlCommand cmd = new SqlCommand("insert into [FUNCOES] ([Funcao], [Unidade]) values ('" +funcoes+ "', '"+associacao+"')\r\n", Conectar);
+                SqlCommand cmd = new SqlCommand("insert into [FUNCOES] ([Funcao], [Unidade]) values ('" + funcoes + "', '" + associacao + "')\r\n", Conectar);
                 cmd.ExecuteNonQuery();
                 Conectar.Close();
                 this.Close();
@@ -310,7 +311,6 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
             else
             {
-
                 string associacao = txt_AssociacaoFuncoes.Text;
                 string funcoes = txt_Funcoes.Text;
 
@@ -321,12 +321,10 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
                 cmd.ExecuteNonQuery();
                 Conectar.Close();
                 this.Close();
-
             }
-
-           
         }
 
+        //Exclusão de função.
         private void btn_Excluir_Click(object sender, EventArgs e)
         {
 
@@ -351,22 +349,15 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 
         }
 
-        private void txt_AssociacaoFuncoes_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
 
-        private void txt_AssociacaoFuncoes_Click(object sender, EventArgs e)
-        {
-          
-        }
-
+        //Ativação da visibilidade do text box e combox funções
         private void txt_AssociacaoFuncoes_DoubleClick(object sender, EventArgs e)
         {
             txt_AssociacaoFuncoes.Visible = false;
             cbb_AssociacaoFuncoes.Visible = true;
         }
 
+        //Carregamento das associações
         private void cbb_AssociacaoFuncoes_Click(object sender, EventArgs e)
         {
             string NomedoServidor = lbl_NomedoServidor.Text;
@@ -374,19 +365,15 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             cbb_AssociacaoFuncoes.DataSource = ConexaoBancodeDados.dql(vqueryAssociacao, NomedoServidor);
             cbb_AssociacaoFuncoes.DisplayMember = "Nome Fantasia";
             cbb_AssociacaoFuncoes.DisplayMember = ("Nome Fantasia");
-        }
+        }      
 
-        private void Funções_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        //Carregamento das funções
         private void cbb_Funcoes_Click(object sender, EventArgs e)
         {
             string NomedoServidor = lbl_NomedoServidor.Text;
             string vqueryFuncao = @"SELECT * FROM FUNCOES ORDER BY Funcao ASC ;";
             cbb_Funcoes.DataSource = ConexaoBancodeDados.dql(vqueryFuncao, NomedoServidor);
             cbb_Funcoes.DisplayMember = "Funcao";
-        }
+        }   
     }
 }
