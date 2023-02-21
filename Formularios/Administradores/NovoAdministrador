@@ -1,3 +1,604 @@
+namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
+{
+    partial class NovoAdministrador
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NovoAdministrador));
+            this.lbl_NomeCompletoAdicionarAdministrador = new System.Windows.Forms.Label();
+            this.txt_NomeCompletoAdicionarAdministrado = new System.Windows.Forms.TextBox();
+            this.lbl_DatadeNascimentoAdicionarAdministrador = new System.Windows.Forms.Label();
+            this.txt_DatadeNascimentoAdicionarAdministrador = new System.Windows.Forms.TextBox();
+            this.lbl_CEPAdicionarAdministrador = new System.Windows.Forms.Label();
+            this.txt_CEPAdicionarAdministrador = new System.Windows.Forms.TextBox();
+            this.lbl_TelefoneAdicionarAdministrador = new System.Windows.Forms.Label();
+            this.txt_TelefoneAdicionarAdministrador = new System.Windows.Forms.TextBox();
+            this.lbl_GeneroAdicionarAdministrador = new System.Windows.Forms.Label();
+            this.cbb_GeneroAdicionarAdministrador = new System.Windows.Forms.ComboBox();
+            this.lbl_NISAdicionarAdministrador = new System.Windows.Forms.Label();
+            this.txt_NISAdicionarAdministrador = new System.Windows.Forms.TextBox();
+            this.txt_CPFAdicionarAdministrador = new System.Windows.Forms.TextBox();
+            this.lbl_CPFAdicionarAdministrador = new System.Windows.Forms.Label();
+            this.lbl_RGdicionarAdministrador = new System.Windows.Forms.Label();
+            this.txt_RGAdicionarAdministrador = new System.Windows.Forms.TextBox();
+            this.txt_DatadeMatriculaAdicionarAdministrador = new System.Windows.Forms.TextBox();
+            this.lbl_DatadeMatriculaAdicionarAdministrador = new System.Windows.Forms.Label();
+            this.lbl_EnderecoAdicionarAdministrador = new System.Windows.Forms.Label();
+            this.txt_RuaAdicionarAdministrador = new System.Windows.Forms.TextBox();
+            this.txt_BairroAdicionarAdministrador = new System.Windows.Forms.TextBox();
+            this.lbl_BairroAdicionarAdministrador = new System.Windows.Forms.Label();
+            this.cbb_CidadeAdicionarAdministrador = new System.Windows.Forms.ComboBox();
+            this.lbl_CidadeAdicionarAdministrador = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_emailAdicionarAdministrador = new System.Windows.Forms.TextBox();
+            this.lbl_emailAdicionarAdministrador = new System.Windows.Forms.Label();
+            this.lbl_NomedeUsuarioAdicionarCatador = new System.Windows.Forms.Label();
+            this.txt_NomedeUsuarioAdicionarAdministrador = new System.Windows.Forms.TextBox();
+            this.lbl_SenhaAdicionarAdministrador = new System.Windows.Forms.Label();
+            this.txt_SenhaAdicionarAdministrador = new System.Windows.Forms.TextBox();
+            this.lbl_ConfirmarsenhaAdicionarAdministrador = new System.Windows.Forms.Label();
+            this.txt_ConfirmarsenhaAdicionarAdministrador = new System.Windows.Forms.TextBox();
+            this.btn_AdicionarAdministradorAdicionarAdministrador = new System.Windows.Forms.Button();
+            this.btn_CancelarAdicionarAdministrador = new System.Windows.Forms.Button();
+            this.chb_MostrarSenhaAdicionarAdministrador = new System.Windows.Forms.CheckBox();
+            this.nud_0AdicionarAdministrador = new System.Windows.Forms.NumericUpDown();
+            this.nud_1AdicionarAdministrador = new System.Windows.Forms.NumericUpDown();
+            this.cbb_NiveldeAcessoAdicionarAdministrador = new System.Windows.Forms.ComboBox();
+            this.lbl_Unidade = new System.Windows.Forms.Label();
+            this.lbl_Usuario = new System.Windows.Forms.Label();
+            this.lbl_NomedoServidor = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_0AdicionarAdministrador)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_1AdicionarAdministrador)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // lbl_NomeCompletoAdicionarAdministrador
+            // 
+            this.lbl_NomeCompletoAdicionarAdministrador.AutoSize = true;
+            this.lbl_NomeCompletoAdicionarAdministrador.Location = new System.Drawing.Point(12, 9);
+            this.lbl_NomeCompletoAdicionarAdministrador.Name = "lbl_NomeCompletoAdicionarAdministrador";
+            this.lbl_NomeCompletoAdicionarAdministrador.Size = new System.Drawing.Size(82, 13);
+            this.lbl_NomeCompletoAdicionarAdministrador.TabIndex = 0;
+            this.lbl_NomeCompletoAdicionarAdministrador.Text = "Nome Completo";
+            // 
+            // txt_NomeCompletoAdicionarAdministrado
+            // 
+            this.txt_NomeCompletoAdicionarAdministrado.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txt_NomeCompletoAdicionarAdministrado.Location = new System.Drawing.Point(12, 25);
+            this.txt_NomeCompletoAdicionarAdministrado.MaxLength = 30;
+            this.txt_NomeCompletoAdicionarAdministrado.Name = "txt_NomeCompletoAdicionarAdministrado";
+            this.txt_NomeCompletoAdicionarAdministrado.Size = new System.Drawing.Size(293, 20);
+            this.txt_NomeCompletoAdicionarAdministrado.TabIndex = 1;
+            this.txt_NomeCompletoAdicionarAdministrado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_NomeCompletoAdicionarAdministrado_KeyPress);
+            // 
+            // lbl_DatadeNascimentoAdicionarAdministrador
+            // 
+            this.lbl_DatadeNascimentoAdicionarAdministrador.AutoSize = true;
+            this.lbl_DatadeNascimentoAdicionarAdministrador.Location = new System.Drawing.Point(361, 9);
+            this.lbl_DatadeNascimentoAdicionarAdministrador.Name = "lbl_DatadeNascimentoAdicionarAdministrador";
+            this.lbl_DatadeNascimentoAdicionarAdministrador.Size = new System.Drawing.Size(104, 13);
+            this.lbl_DatadeNascimentoAdicionarAdministrador.TabIndex = 2;
+            this.lbl_DatadeNascimentoAdicionarAdministrador.Text = "Data de Nascimento";
+            // 
+            // txt_DatadeNascimentoAdicionarAdministrador
+            // 
+            this.txt_DatadeNascimentoAdicionarAdministrador.Location = new System.Drawing.Point(364, 25);
+            this.txt_DatadeNascimentoAdicionarAdministrador.MaxLength = 10;
+            this.txt_DatadeNascimentoAdicionarAdministrador.Name = "txt_DatadeNascimentoAdicionarAdministrador";
+            this.txt_DatadeNascimentoAdicionarAdministrador.Size = new System.Drawing.Size(97, 20);
+            this.txt_DatadeNascimentoAdicionarAdministrador.TabIndex = 2;
+            this.txt_DatadeNascimentoAdicionarAdministrador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_DatadeNascimentoAdicionarAdministrador_KeyPress);
+            // 
+            // lbl_CEPAdicionarAdministrador
+            // 
+            this.lbl_CEPAdicionarAdministrador.AutoSize = true;
+            this.lbl_CEPAdicionarAdministrador.Location = new System.Drawing.Point(5, 257);
+            this.lbl_CEPAdicionarAdministrador.Name = "lbl_CEPAdicionarAdministrador";
+            this.lbl_CEPAdicionarAdministrador.Size = new System.Drawing.Size(117, 13);
+            this.lbl_CEPAdicionarAdministrador.TabIndex = 75;
+            this.lbl_CEPAdicionarAdministrador.Text = "CEP(somente números)";
+            // 
+            // txt_CEPAdicionarAdministrador
+            // 
+            this.txt_CEPAdicionarAdministrador.Location = new System.Drawing.Point(4, 273);
+            this.txt_CEPAdicionarAdministrador.MaxLength = 8;
+            this.txt_CEPAdicionarAdministrador.Name = "txt_CEPAdicionarAdministrador";
+            this.txt_CEPAdicionarAdministrador.Size = new System.Drawing.Size(51, 20);
+            this.txt_CEPAdicionarAdministrador.TabIndex = 13;
+            this.txt_CEPAdicionarAdministrador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_CEPAdicionarAdministrador_KeyPress);
+            // 
+            // lbl_TelefoneAdicionarAdministrador
+            // 
+            this.lbl_TelefoneAdicionarAdministrador.AutoSize = true;
+            this.lbl_TelefoneAdicionarAdministrador.Location = new System.Drawing.Point(106, 116);
+            this.lbl_TelefoneAdicionarAdministrador.Name = "lbl_TelefoneAdicionarAdministrador";
+            this.lbl_TelefoneAdicionarAdministrador.Size = new System.Drawing.Size(49, 13);
+            this.lbl_TelefoneAdicionarAdministrador.TabIndex = 73;
+            this.lbl_TelefoneAdicionarAdministrador.Text = "Telefone";
+            // 
+            // txt_TelefoneAdicionarAdministrador
+            // 
+            this.txt_TelefoneAdicionarAdministrador.Location = new System.Drawing.Point(109, 132);
+            this.txt_TelefoneAdicionarAdministrador.MaxLength = 15;
+            this.txt_TelefoneAdicionarAdministrador.Name = "txt_TelefoneAdicionarAdministrador";
+            this.txt_TelefoneAdicionarAdministrador.Size = new System.Drawing.Size(89, 20);
+            this.txt_TelefoneAdicionarAdministrador.TabIndex = 8;
+            this.txt_TelefoneAdicionarAdministrador.Text = "(XX)XXXXX-XXXX";
+            this.txt_TelefoneAdicionarAdministrador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_TelefoneAdicionarAdministrador_KeyPress);
+            // 
+            // lbl_GeneroAdicionarAdministrador
+            // 
+            this.lbl_GeneroAdicionarAdministrador.AutoSize = true;
+            this.lbl_GeneroAdicionarAdministrador.Location = new System.Drawing.Point(9, 116);
+            this.lbl_GeneroAdicionarAdministrador.Name = "lbl_GeneroAdicionarAdministrador";
+            this.lbl_GeneroAdicionarAdministrador.Size = new System.Drawing.Size(42, 13);
+            this.lbl_GeneroAdicionarAdministrador.TabIndex = 71;
+            this.lbl_GeneroAdicionarAdministrador.Text = "Gênero";
+            // 
+            // cbb_GeneroAdicionarAdministrador
+            // 
+            this.cbb_GeneroAdicionarAdministrador.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_GeneroAdicionarAdministrador.FormattingEnabled = true;
+            this.cbb_GeneroAdicionarAdministrador.Items.AddRange(new object[] {
+            "Masculino",
+            "Feminino"});
+            this.cbb_GeneroAdicionarAdministrador.Location = new System.Drawing.Point(8, 132);
+            this.cbb_GeneroAdicionarAdministrador.Name = "cbb_GeneroAdicionarAdministrador";
+            this.cbb_GeneroAdicionarAdministrador.Size = new System.Drawing.Size(89, 21);
+            this.cbb_GeneroAdicionarAdministrador.TabIndex = 7;
+            // 
+            // lbl_NISAdicionarAdministrador
+            // 
+            this.lbl_NISAdicionarAdministrador.AutoSize = true;
+            this.lbl_NISAdicionarAdministrador.Location = new System.Drawing.Point(243, 62);
+            this.lbl_NISAdicionarAdministrador.Name = "lbl_NISAdicionarAdministrador";
+            this.lbl_NISAdicionarAdministrador.Size = new System.Drawing.Size(114, 13);
+            this.lbl_NISAdicionarAdministrador.TabIndex = 69;
+            this.lbl_NISAdicionarAdministrador.Text = "NIS(somente números)";
+            // 
+            // txt_NISAdicionarAdministrador
+            // 
+            this.txt_NISAdicionarAdministrador.Location = new System.Drawing.Point(246, 77);
+            this.txt_NISAdicionarAdministrador.MaxLength = 11;
+            this.txt_NISAdicionarAdministrador.Name = "txt_NISAdicionarAdministrador";
+            this.txt_NISAdicionarAdministrador.Size = new System.Drawing.Size(89, 20);
+            this.txt_NISAdicionarAdministrador.TabIndex = 5;
+            this.txt_NISAdicionarAdministrador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_NISAdicionarAdministrador_KeyPress);
+            // 
+            // txt_CPFAdicionarAdministrador
+            // 
+            this.txt_CPFAdicionarAdministrador.Location = new System.Drawing.Point(131, 77);
+            this.txt_CPFAdicionarAdministrador.MaxLength = 11;
+            this.txt_CPFAdicionarAdministrador.Name = "txt_CPFAdicionarAdministrador";
+            this.txt_CPFAdicionarAdministrador.Size = new System.Drawing.Size(89, 20);
+            this.txt_CPFAdicionarAdministrador.TabIndex = 4;
+            this.txt_CPFAdicionarAdministrador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_CPFAdicionarAdministrador_KeyPress);
+            // 
+            // lbl_CPFAdicionarAdministrador
+            // 
+            this.lbl_CPFAdicionarAdministrador.AutoSize = true;
+            this.lbl_CPFAdicionarAdministrador.Location = new System.Drawing.Point(128, 62);
+            this.lbl_CPFAdicionarAdministrador.Name = "lbl_CPFAdicionarAdministrador";
+            this.lbl_CPFAdicionarAdministrador.Size = new System.Drawing.Size(116, 13);
+            this.lbl_CPFAdicionarAdministrador.TabIndex = 66;
+            this.lbl_CPFAdicionarAdministrador.Text = "CPF(somente números)";
+            // 
+            // lbl_RGdicionarAdministrador
+            // 
+            this.lbl_RGdicionarAdministrador.AutoSize = true;
+            this.lbl_RGdicionarAdministrador.Location = new System.Drawing.Point(9, 62);
+            this.lbl_RGdicionarAdministrador.Name = "lbl_RGdicionarAdministrador";
+            this.lbl_RGdicionarAdministrador.Size = new System.Drawing.Size(115, 13);
+            this.lbl_RGdicionarAdministrador.TabIndex = 65;
+            this.lbl_RGdicionarAdministrador.Text = "RG (somente números)";
+            // 
+            // txt_RGAdicionarAdministrador
+            // 
+            this.txt_RGAdicionarAdministrador.Location = new System.Drawing.Point(8, 78);
+            this.txt_RGAdicionarAdministrador.MaxLength = 11;
+            this.txt_RGAdicionarAdministrador.Name = "txt_RGAdicionarAdministrador";
+            this.txt_RGAdicionarAdministrador.Size = new System.Drawing.Size(89, 20);
+            this.txt_RGAdicionarAdministrador.TabIndex = 3;
+            this.txt_RGAdicionarAdministrador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_RGAdicionarAdministrador_KeyPress);
+            // 
+            // txt_DatadeMatriculaAdicionarAdministrador
+            // 
+            this.txt_DatadeMatriculaAdicionarAdministrador.Location = new System.Drawing.Point(364, 91);
+            this.txt_DatadeMatriculaAdicionarAdministrador.MaxLength = 10;
+            this.txt_DatadeMatriculaAdicionarAdministrador.Name = "txt_DatadeMatriculaAdicionarAdministrador";
+            this.txt_DatadeMatriculaAdicionarAdministrador.Size = new System.Drawing.Size(97, 20);
+            this.txt_DatadeMatriculaAdicionarAdministrador.TabIndex = 6;
+            this.txt_DatadeMatriculaAdicionarAdministrador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_DatadeMatriculaAdicionarAdministrador_KeyPress);
+            // 
+            // lbl_DatadeMatriculaAdicionarAdministrador
+            // 
+            this.lbl_DatadeMatriculaAdicionarAdministrador.AutoSize = true;
+            this.lbl_DatadeMatriculaAdicionarAdministrador.Location = new System.Drawing.Point(368, 62);
+            this.lbl_DatadeMatriculaAdicionarAdministrador.Name = "lbl_DatadeMatriculaAdicionarAdministrador";
+            this.lbl_DatadeMatriculaAdicionarAdministrador.Size = new System.Drawing.Size(93, 26);
+            this.lbl_DatadeMatriculaAdicionarAdministrador.TabIndex = 62;
+            this.lbl_DatadeMatriculaAdicionarAdministrador.Text = "Data de Matrícula\r\n(Administrador)";
+            // 
+            // lbl_EnderecoAdicionarAdministrador
+            // 
+            this.lbl_EnderecoAdicionarAdministrador.AutoSize = true;
+            this.lbl_EnderecoAdicionarAdministrador.Location = new System.Drawing.Point(5, 202);
+            this.lbl_EnderecoAdicionarAdministrador.Name = "lbl_EnderecoAdicionarAdministrador";
+            this.lbl_EnderecoAdicionarAdministrador.Size = new System.Drawing.Size(53, 13);
+            this.lbl_EnderecoAdicionarAdministrador.TabIndex = 61;
+            this.lbl_EnderecoAdicionarAdministrador.Text = "Endereço";
+            // 
+            // txt_RuaAdicionarAdministrador
+            // 
+            this.txt_RuaAdicionarAdministrador.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txt_RuaAdicionarAdministrador.Location = new System.Drawing.Point(4, 219);
+            this.txt_RuaAdicionarAdministrador.MaxLength = 50;
+            this.txt_RuaAdicionarAdministrador.Name = "txt_RuaAdicionarAdministrador";
+            this.txt_RuaAdicionarAdministrador.Size = new System.Drawing.Size(194, 20);
+            this.txt_RuaAdicionarAdministrador.TabIndex = 10;
+            this.txt_RuaAdicionarAdministrador.Text = "RUA, NÚMERO";
+            this.txt_RuaAdicionarAdministrador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_RuaAdicionarAdministrador_KeyPress);
+            // 
+            // txt_BairroAdicionarAdministrador
+            // 
+            this.txt_BairroAdicionarAdministrador.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txt_BairroAdicionarAdministrador.Location = new System.Drawing.Point(371, 220);
+            this.txt_BairroAdicionarAdministrador.MaxLength = 50;
+            this.txt_BairroAdicionarAdministrador.Name = "txt_BairroAdicionarAdministrador";
+            this.txt_BairroAdicionarAdministrador.Size = new System.Drawing.Size(90, 20);
+            this.txt_BairroAdicionarAdministrador.TabIndex = 12;
+            // 
+            // lbl_BairroAdicionarAdministrador
+            // 
+            this.lbl_BairroAdicionarAdministrador.AutoSize = true;
+            this.lbl_BairroAdicionarAdministrador.Location = new System.Drawing.Point(368, 202);
+            this.lbl_BairroAdicionarAdministrador.Name = "lbl_BairroAdicionarAdministrador";
+            this.lbl_BairroAdicionarAdministrador.Size = new System.Drawing.Size(34, 13);
+            this.lbl_BairroAdicionarAdministrador.TabIndex = 58;
+            this.lbl_BairroAdicionarAdministrador.Text = "Bairro";
+            // 
+            // cbb_CidadeAdicionarAdministrador
+            // 
+            this.cbb_CidadeAdicionarAdministrador.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_CidadeAdicionarAdministrador.FormattingEnabled = true;
+            this.cbb_CidadeAdicionarAdministrador.Location = new System.Drawing.Point(204, 220);
+            this.cbb_CidadeAdicionarAdministrador.Name = "cbb_CidadeAdicionarAdministrador";
+            this.cbb_CidadeAdicionarAdministrador.Size = new System.Drawing.Size(161, 21);
+            this.cbb_CidadeAdicionarAdministrador.TabIndex = 11;
+            // 
+            // lbl_CidadeAdicionarAdministrador
+            // 
+            this.lbl_CidadeAdicionarAdministrador.AutoSize = true;
+            this.lbl_CidadeAdicionarAdministrador.Location = new System.Drawing.Point(201, 203);
+            this.lbl_CidadeAdicionarAdministrador.Name = "lbl_CidadeAdicionarAdministrador";
+            this.lbl_CidadeAdicionarAdministrador.Size = new System.Drawing.Size(40, 13);
+            this.lbl_CidadeAdicionarAdministrador.TabIndex = 56;
+            this.lbl_CidadeAdicionarAdministrador.Text = "Cidade";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(5, 322);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(86, 13);
+            this.label1.TabIndex = 76;
+            this.label1.Text = "Nível de Acesso";
+            // 
+            // txt_emailAdicionarAdministrador
+            // 
+            this.txt_emailAdicionarAdministrador.Location = new System.Drawing.Point(246, 133);
+            this.txt_emailAdicionarAdministrador.MaxLength = 50;
+            this.txt_emailAdicionarAdministrador.Name = "txt_emailAdicionarAdministrador";
+            this.txt_emailAdicionarAdministrador.Size = new System.Drawing.Size(136, 20);
+            this.txt_emailAdicionarAdministrador.TabIndex = 9;
+            // 
+            // lbl_emailAdicionarAdministrador
+            // 
+            this.lbl_emailAdicionarAdministrador.AutoSize = true;
+            this.lbl_emailAdicionarAdministrador.Location = new System.Drawing.Point(243, 116);
+            this.lbl_emailAdicionarAdministrador.Name = "lbl_emailAdicionarAdministrador";
+            this.lbl_emailAdicionarAdministrador.Size = new System.Drawing.Size(34, 13);
+            this.lbl_emailAdicionarAdministrador.TabIndex = 79;
+            this.lbl_emailAdicionarAdministrador.Text = "e-mail";
+            // 
+            // lbl_NomedeUsuarioAdicionarCatador
+            // 
+            this.lbl_NomedeUsuarioAdicionarCatador.AutoSize = true;
+            this.lbl_NomedeUsuarioAdicionarCatador.Location = new System.Drawing.Point(109, 322);
+            this.lbl_NomedeUsuarioAdicionarCatador.Name = "lbl_NomedeUsuarioAdicionarCatador";
+            this.lbl_NomedeUsuarioAdicionarCatador.Size = new System.Drawing.Size(89, 13);
+            this.lbl_NomedeUsuarioAdicionarCatador.TabIndex = 80;
+            this.lbl_NomedeUsuarioAdicionarCatador.Text = "Nome de Usuário";
+            // 
+            // txt_NomedeUsuarioAdicionarAdministrador
+            // 
+            this.txt_NomedeUsuarioAdicionarAdministrador.Location = new System.Drawing.Point(114, 338);
+            this.txt_NomedeUsuarioAdicionarAdministrador.MaxLength = 50;
+            this.txt_NomedeUsuarioAdicionarAdministrador.Name = "txt_NomedeUsuarioAdicionarAdministrador";
+            this.txt_NomedeUsuarioAdicionarAdministrador.Size = new System.Drawing.Size(90, 20);
+            this.txt_NomedeUsuarioAdicionarAdministrador.TabIndex = 15;
+            // 
+            // lbl_SenhaAdicionarAdministrador
+            // 
+            this.lbl_SenhaAdicionarAdministrador.AutoSize = true;
+            this.lbl_SenhaAdicionarAdministrador.Location = new System.Drawing.Point(219, 322);
+            this.lbl_SenhaAdicionarAdministrador.Name = "lbl_SenhaAdicionarAdministrador";
+            this.lbl_SenhaAdicionarAdministrador.Size = new System.Drawing.Size(38, 13);
+            this.lbl_SenhaAdicionarAdministrador.TabIndex = 82;
+            this.lbl_SenhaAdicionarAdministrador.Text = "Senha";
+            // 
+            // txt_SenhaAdicionarAdministrador
+            // 
+            this.txt_SenhaAdicionarAdministrador.Location = new System.Drawing.Point(222, 338);
+            this.txt_SenhaAdicionarAdministrador.MaxLength = 50;
+            this.txt_SenhaAdicionarAdministrador.Name = "txt_SenhaAdicionarAdministrador";
+            this.txt_SenhaAdicionarAdministrador.Size = new System.Drawing.Size(100, 20);
+            this.txt_SenhaAdicionarAdministrador.TabIndex = 16;
+            this.txt_SenhaAdicionarAdministrador.UseSystemPasswordChar = true;
+            // 
+            // lbl_ConfirmarsenhaAdicionarAdministrador
+            // 
+            this.lbl_ConfirmarsenhaAdicionarAdministrador.AutoSize = true;
+            this.lbl_ConfirmarsenhaAdicionarAdministrador.Location = new System.Drawing.Point(344, 322);
+            this.lbl_ConfirmarsenhaAdicionarAdministrador.Name = "lbl_ConfirmarsenhaAdicionarAdministrador";
+            this.lbl_ConfirmarsenhaAdicionarAdministrador.Size = new System.Drawing.Size(83, 13);
+            this.lbl_ConfirmarsenhaAdicionarAdministrador.TabIndex = 84;
+            this.lbl_ConfirmarsenhaAdicionarAdministrador.Text = "Confirmar senha";
+            // 
+            // txt_ConfirmarsenhaAdicionarAdministrador
+            // 
+            this.txt_ConfirmarsenhaAdicionarAdministrador.Location = new System.Drawing.Point(347, 338);
+            this.txt_ConfirmarsenhaAdicionarAdministrador.MaxLength = 50;
+            this.txt_ConfirmarsenhaAdicionarAdministrador.Name = "txt_ConfirmarsenhaAdicionarAdministrador";
+            this.txt_ConfirmarsenhaAdicionarAdministrador.Size = new System.Drawing.Size(100, 20);
+            this.txt_ConfirmarsenhaAdicionarAdministrador.TabIndex = 18;
+            this.txt_ConfirmarsenhaAdicionarAdministrador.UseSystemPasswordChar = true;
+            // 
+            // btn_AdicionarAdministradorAdicionarAdministrador
+            // 
+            this.btn_AdicionarAdministradorAdicionarAdministrador.Location = new System.Drawing.Point(379, 401);
+            this.btn_AdicionarAdministradorAdicionarAdministrador.Name = "btn_AdicionarAdministradorAdicionarAdministrador";
+            this.btn_AdicionarAdministradorAdicionarAdministrador.Size = new System.Drawing.Size(86, 37);
+            this.btn_AdicionarAdministradorAdicionarAdministrador.TabIndex = 20;
+            this.btn_AdicionarAdministradorAdicionarAdministrador.Text = "Adicionar Administrador";
+            this.btn_AdicionarAdministradorAdicionarAdministrador.UseVisualStyleBackColor = true;
+            this.btn_AdicionarAdministradorAdicionarAdministrador.Click += new System.EventHandler(this.btn_AdicionarAdministradorAdicionarAdministrador_Click);
+            // 
+            // btn_CancelarAdicionarAdministrador
+            // 
+            this.btn_CancelarAdicionarAdministrador.Location = new System.Drawing.Point(271, 401);
+            this.btn_CancelarAdicionarAdministrador.Name = "btn_CancelarAdicionarAdministrador";
+            this.btn_CancelarAdicionarAdministrador.Size = new System.Drawing.Size(86, 37);
+            this.btn_CancelarAdicionarAdministrador.TabIndex = 19;
+            this.btn_CancelarAdicionarAdministrador.Text = "Cancelar";
+            this.btn_CancelarAdicionarAdministrador.UseVisualStyleBackColor = true;
+            this.btn_CancelarAdicionarAdministrador.Click += new System.EventHandler(this.btn_CancelarAdicionarAdministrador_Click);
+            // 
+            // chb_MostrarSenhaAdicionarAdministrador
+            // 
+            this.chb_MostrarSenhaAdicionarAdministrador.AutoSize = true;
+            this.chb_MostrarSenhaAdicionarAdministrador.Location = new System.Drawing.Point(222, 364);
+            this.chb_MostrarSenhaAdicionarAdministrador.Name = "chb_MostrarSenhaAdicionarAdministrador";
+            this.chb_MostrarSenhaAdicionarAdministrador.Size = new System.Drawing.Size(95, 17);
+            this.chb_MostrarSenhaAdicionarAdministrador.TabIndex = 17;
+            this.chb_MostrarSenhaAdicionarAdministrador.Text = "Mostrar Senha";
+            this.chb_MostrarSenhaAdicionarAdministrador.UseVisualStyleBackColor = true;
+            this.chb_MostrarSenhaAdicionarAdministrador.CheckedChanged += new System.EventHandler(this.chb_MostrarSenhaAdicionarAdministrador_CheckedChanged);
+            // 
+            // nud_0AdicionarAdministrador
+            // 
+            this.nud_0AdicionarAdministrador.Location = new System.Drawing.Point(8, 338);
+            this.nud_0AdicionarAdministrador.Maximum = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.nud_0AdicionarAdministrador.Name = "nud_0AdicionarAdministrador";
+            this.nud_0AdicionarAdministrador.Size = new System.Drawing.Size(47, 20);
+            this.nud_0AdicionarAdministrador.TabIndex = 89;
+            this.nud_0AdicionarAdministrador.Visible = false;
+            this.nud_0AdicionarAdministrador.ValueChanged += new System.EventHandler(this.nud_0AdicionarAdministrador_ValueChanged);
+            // 
+            // nud_1AdicionarAdministrador
+            // 
+            this.nud_1AdicionarAdministrador.Location = new System.Drawing.Point(8, 338);
+            this.nud_1AdicionarAdministrador.Maximum = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.nud_1AdicionarAdministrador.Minimum = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.nud_1AdicionarAdministrador.Name = "nud_1AdicionarAdministrador";
+            this.nud_1AdicionarAdministrador.Size = new System.Drawing.Size(47, 20);
+            this.nud_1AdicionarAdministrador.TabIndex = 14;
+            this.nud_1AdicionarAdministrador.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.nud_1AdicionarAdministrador.Visible = false;
+            // 
+            // cbb_NiveldeAcessoAdicionarAdministrador
+            // 
+            this.cbb_NiveldeAcessoAdicionarAdministrador.FormattingEnabled = true;
+            this.cbb_NiveldeAcessoAdicionarAdministrador.Items.AddRange(new object[] {
+            "Masculino Cis",
+            "Masculino Trans",
+            "Feminino Cis",
+            "Feminino Trans"});
+            this.cbb_NiveldeAcessoAdicionarAdministrador.Location = new System.Drawing.Point(8, 365);
+            this.cbb_NiveldeAcessoAdicionarAdministrador.Name = "cbb_NiveldeAcessoAdicionarAdministrador";
+            this.cbb_NiveldeAcessoAdicionarAdministrador.Size = new System.Drawing.Size(47, 21);
+            this.cbb_NiveldeAcessoAdicionarAdministrador.TabIndex = 92;
+            this.cbb_NiveldeAcessoAdicionarAdministrador.TabStop = false;
+            this.cbb_NiveldeAcessoAdicionarAdministrador.Visible = false;
+            // 
+            // lbl_Unidade
+            // 
+            this.lbl_Unidade.AutoSize = true;
+            this.lbl_Unidade.Location = new System.Drawing.Point(284, 292);
+            this.lbl_Unidade.Name = "lbl_Unidade";
+            this.lbl_Unidade.Size = new System.Drawing.Size(47, 13);
+            this.lbl_Unidade.TabIndex = 93;
+            this.lbl_Unidade.Text = "Unidade";
+            this.lbl_Unidade.Visible = false;
+            // 
+            // lbl_Usuario
+            // 
+            this.lbl_Usuario.AutoSize = true;
+            this.lbl_Usuario.Location = new System.Drawing.Point(337, 292);
+            this.lbl_Usuario.Name = "lbl_Usuario";
+            this.lbl_Usuario.Size = new System.Drawing.Size(43, 13);
+            this.lbl_Usuario.TabIndex = 94;
+            this.lbl_Usuario.Text = "Usuario";
+            this.lbl_Usuario.Visible = false;
+            // 
+            // lbl_NomedoServidor
+            // 
+            this.lbl_NomedoServidor.AutoSize = true;
+            this.lbl_NomedoServidor.Location = new System.Drawing.Point(269, 175);
+            this.lbl_NomedoServidor.Name = "lbl_NomedoServidor";
+            this.lbl_NomedoServidor.Size = new System.Drawing.Size(86, 13);
+            this.lbl_NomedoServidor.TabIndex = 95;
+            this.lbl_NomedoServidor.Text = "NomedoServidor";
+            this.lbl_NomedoServidor.Visible = false;
+            // 
+            // NovoAdministrador
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(475, 450);
+            this.Controls.Add(this.lbl_NomedoServidor);
+            this.Controls.Add(this.lbl_Usuario);
+            this.Controls.Add(this.lbl_Unidade);
+            this.Controls.Add(this.cbb_NiveldeAcessoAdicionarAdministrador);
+            this.Controls.Add(this.nud_1AdicionarAdministrador);
+            this.Controls.Add(this.nud_0AdicionarAdministrador);
+            this.Controls.Add(this.chb_MostrarSenhaAdicionarAdministrador);
+            this.Controls.Add(this.btn_CancelarAdicionarAdministrador);
+            this.Controls.Add(this.btn_AdicionarAdministradorAdicionarAdministrador);
+            this.Controls.Add(this.txt_ConfirmarsenhaAdicionarAdministrador);
+            this.Controls.Add(this.lbl_ConfirmarsenhaAdicionarAdministrador);
+            this.Controls.Add(this.txt_SenhaAdicionarAdministrador);
+            this.Controls.Add(this.lbl_SenhaAdicionarAdministrador);
+            this.Controls.Add(this.txt_NomedeUsuarioAdicionarAdministrador);
+            this.Controls.Add(this.lbl_NomedeUsuarioAdicionarCatador);
+            this.Controls.Add(this.lbl_emailAdicionarAdministrador);
+            this.Controls.Add(this.txt_emailAdicionarAdministrador);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl_CEPAdicionarAdministrador);
+            this.Controls.Add(this.txt_CEPAdicionarAdministrador);
+            this.Controls.Add(this.lbl_TelefoneAdicionarAdministrador);
+            this.Controls.Add(this.txt_TelefoneAdicionarAdministrador);
+            this.Controls.Add(this.lbl_GeneroAdicionarAdministrador);
+            this.Controls.Add(this.cbb_GeneroAdicionarAdministrador);
+            this.Controls.Add(this.lbl_NISAdicionarAdministrador);
+            this.Controls.Add(this.txt_NISAdicionarAdministrador);
+            this.Controls.Add(this.txt_CPFAdicionarAdministrador);
+            this.Controls.Add(this.lbl_CPFAdicionarAdministrador);
+            this.Controls.Add(this.lbl_RGdicionarAdministrador);
+            this.Controls.Add(this.txt_RGAdicionarAdministrador);
+            this.Controls.Add(this.txt_DatadeMatriculaAdicionarAdministrador);
+            this.Controls.Add(this.lbl_DatadeMatriculaAdicionarAdministrador);
+            this.Controls.Add(this.lbl_EnderecoAdicionarAdministrador);
+            this.Controls.Add(this.txt_RuaAdicionarAdministrador);
+            this.Controls.Add(this.txt_BairroAdicionarAdministrador);
+            this.Controls.Add(this.lbl_BairroAdicionarAdministrador);
+            this.Controls.Add(this.cbb_CidadeAdicionarAdministrador);
+            this.Controls.Add(this.lbl_CidadeAdicionarAdministrador);
+            this.Controls.Add(this.txt_DatadeNascimentoAdicionarAdministrador);
+            this.Controls.Add(this.lbl_DatadeNascimentoAdicionarAdministrador);
+            this.Controls.Add(this.txt_NomeCompletoAdicionarAdministrado);
+            this.Controls.Add(this.lbl_NomeCompletoAdicionarAdministrador);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(491, 489);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(491, 489);
+            this.Name = "NovoAdministrador";
+            this.Text = "Adicionar Administrador";
+            this.Load += new System.EventHandler(this.NovoAdministrador_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.nud_0AdicionarAdministrador)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_1AdicionarAdministrador)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label lbl_NomeCompletoAdicionarAdministrador;
+        private System.Windows.Forms.TextBox txt_NomeCompletoAdicionarAdministrado;
+        private System.Windows.Forms.Label lbl_DatadeNascimentoAdicionarAdministrador;
+        private System.Windows.Forms.TextBox txt_DatadeNascimentoAdicionarAdministrador;
+        private System.Windows.Forms.Label lbl_CEPAdicionarAdministrador;
+        private System.Windows.Forms.TextBox txt_CEPAdicionarAdministrador;
+        private System.Windows.Forms.Label lbl_TelefoneAdicionarAdministrador;
+        private System.Windows.Forms.TextBox txt_TelefoneAdicionarAdministrador;
+        private System.Windows.Forms.Label lbl_GeneroAdicionarAdministrador;
+        private System.Windows.Forms.ComboBox cbb_GeneroAdicionarAdministrador;
+        private System.Windows.Forms.Label lbl_NISAdicionarAdministrador;
+        private System.Windows.Forms.TextBox txt_NISAdicionarAdministrador;
+        private System.Windows.Forms.TextBox txt_CPFAdicionarAdministrador;
+        private System.Windows.Forms.Label lbl_CPFAdicionarAdministrador;
+        private System.Windows.Forms.Label lbl_RGdicionarAdministrador;
+        private System.Windows.Forms.TextBox txt_RGAdicionarAdministrador;
+        private System.Windows.Forms.TextBox txt_DatadeMatriculaAdicionarAdministrador;
+        private System.Windows.Forms.Label lbl_DatadeMatriculaAdicionarAdministrador;
+        private System.Windows.Forms.Label lbl_EnderecoAdicionarAdministrador;
+        private System.Windows.Forms.TextBox txt_RuaAdicionarAdministrador;
+        private System.Windows.Forms.TextBox txt_BairroAdicionarAdministrador;
+        private System.Windows.Forms.Label lbl_BairroAdicionarAdministrador;
+        private System.Windows.Forms.ComboBox cbb_CidadeAdicionarAdministrador;
+        private System.Windows.Forms.Label lbl_CidadeAdicionarAdministrador;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txt_emailAdicionarAdministrador;
+        private System.Windows.Forms.Label lbl_emailAdicionarAdministrador;
+        private System.Windows.Forms.Label lbl_NomedeUsuarioAdicionarCatador;
+        private System.Windows.Forms.Label lbl_SenhaAdicionarAdministrador;
+        private System.Windows.Forms.Label lbl_ConfirmarsenhaAdicionarAdministrador;
+        private System.Windows.Forms.Button btn_AdicionarAdministradorAdicionarAdministrador;
+        private System.Windows.Forms.Button btn_CancelarAdicionarAdministrador;
+        private System.Windows.Forms.CheckBox chb_MostrarSenhaAdicionarAdministrador;
+        private System.Windows.Forms.NumericUpDown nud_0AdicionarAdministrador;
+        private System.Windows.Forms.NumericUpDown nud_1AdicionarAdministrador;
+        private System.Windows.Forms.ComboBox cbb_NiveldeAcessoAdicionarAdministrador;
+        public System.Windows.Forms.TextBox txt_NomedeUsuarioAdicionarAdministrador;
+        public System.Windows.Forms.TextBox txt_SenhaAdicionarAdministrador;
+        public System.Windows.Forms.TextBox txt_ConfirmarsenhaAdicionarAdministrador;
+        public System.Windows.Forms.Label lbl_Unidade;
+        public System.Windows.Forms.Label lbl_Usuario;
+        public System.Windows.Forms.Label lbl_NomedoServidor;
+    }
+}
+
 using Org.BouncyCastle.Crypto.Tls;
 using System;
 using System.Collections.Generic;
