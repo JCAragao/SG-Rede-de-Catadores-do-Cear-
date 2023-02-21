@@ -76,7 +76,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             this.button1.TabIndex = 4;
             this.button1.Text = "Adicionar";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.AdicionarFilho_Click);
             // 
             // cbb_GeneroFilhoCadastro
             // 
@@ -162,7 +162,6 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CadastroFilho";
             this.Load += new System.EventHandler(this.CadastroFilho_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CadastroFilho_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,16 +200,34 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
         {
             InitializeComponent();
         }
-
-
-        private void button2_Click(object sender, EventArgs e)
+        private void CadastroFilho_Load(object sender, EventArgs e)
         {
-            CadastroFilho FilhoCadastro = new CadastroFilho();
-            FilhoCadastro.Show();
+
+
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+         //Fechar formulário
+        private void button3_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
+
+      
+        //Somente números e '/' são aceitos.
+        private void txt_DatadeNascimentoFilhoCadastro_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsNumber(e.KeyChar)) && !char.IsControl(e.KeyChar) && e.KeyChar != '/')
+            {
+                e.Handled = true;
+
+            }
+        }
+
+        //Adicionar novo filho.
+        private void AdicionarFilho_Click(object sender, EventArgs e)
+        {
+
             string format = "dd/MM/yyyy";
             string DatadeNascimento = txt_DatadeNascimentoFilhoCadastro.Text;
             DateTime dateTime;
@@ -252,39 +269,6 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             {
                 MessageBox.Show("Digite um formato válido de data de nascimento. Ex: 07/02/1998");
                 return;
-            }
-
-        }
-
-        private void CadastroFilho_Load(object sender, EventArgs e)
-        {
-
-
-        }
-
-        public void cbb_MaePaiCadastrarFilho_SelectedIndexChanged(object sender, EventArgs e)
-        {
-         
-            
-            
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void CadastroFilho_KeyDown(object sender, KeyEventArgs e)
-        {
-
-        }
-
-        private void txt_DatadeNascimentoFilhoCadastro_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if ((!char.IsNumber(e.KeyChar)) && !char.IsControl(e.KeyChar) && e.KeyChar != '/')
-            {
-                e.Handled = true;
-
             }
         }
     }
