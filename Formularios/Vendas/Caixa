@@ -117,7 +117,6 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             this.txt_ValorRecebido.TabIndex = 4;
             this.txt_ValorRecebido.TabStop = false;
             this.txt_ValorRecebido.Text = "0,00";
-            this.txt_ValorRecebido.TabStopChanged += new System.EventHandler(this.txt_ValorRecebido_TabStopChanged);
             this.txt_ValorRecebido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_ValorRecebido_KeyPress);
             // 
             // txt_Troco
@@ -175,7 +174,6 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             this.txt_CNPJ.Name = "txt_CNPJ";
             this.txt_CNPJ.Size = new System.Drawing.Size(84, 20);
             this.txt_CNPJ.TabIndex = 1;
-            this.txt_CNPJ.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_CNPJ_KeyDown);
             this.txt_CNPJ.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_CNPJ_KeyPress);
             // 
             // txt_NomeFantasia
@@ -295,7 +293,6 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             this.dgv_CaixaTemporario.Size = new System.Drawing.Size(443, 198);
             this.dgv_CaixaTemporario.TabIndex = 21;
             this.dgv_CaixaTemporario.TabStop = false;
-            this.dgv_CaixaTemporario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CaixaTemporario_CellContentClick);
             // 
             // caixaTemporarioBindingSource
             // 
@@ -526,11 +523,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             InitializeComponent();
         }
 
-        private void txt_CNPJ_KeyDown(object sender, KeyEventArgs e)
-        {
-
-        }
-
+        //Somente números são aceitos. Consulta de CNPJ.
         private void txt_CNPJ_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -572,6 +565,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 
         }
 
+        //Somente números são aceitos. Consulta de código do produto.
         private void txt_CodigodoProduto_KeyPress(object sender, KeyPressEventArgs e)
         {
 
@@ -626,6 +620,8 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 
         }
 
+        //Somente números e ',' são aceitos.
+        //Inserção de dados na tabela caixa temporário e atuaização do Data Grid View.
         private void txt_Massa_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((!char.IsNumber(e.KeyChar)) && !char.IsControl(e.KeyChar) && e.KeyChar != '.' && e.KeyChar != ',')
@@ -700,11 +696,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
         }
 
-        private void txt_ValorRecebido_TabStopChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        //Cálculo do troco caso o pagamento seja em espécie
         private void txt_ValorRecebido_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((!char.IsNumber(e.KeyChar)) && !char.IsControl(e.KeyChar) && Convert.ToInt32(e.KeyChar) == 13)
@@ -735,15 +727,10 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 
         private void Caixa_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'sGRRC1DataSetALFA.CaixaTemporario'. Você pode movê-la ou removê-la conforme necessário.
 
         }
 
-        private void dgv_CaixaTemporario_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
+        //Inserção de valores na tabela de vendas, geração de recibo, e limpeza da tabela caixa temporário.
         private void btn_FinalizarCompra_Click(object sender, EventArgs e)
         {
             if (txt_NomeFantasia.Text != "")
@@ -883,10 +870,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 
                                                     Conectar.Close();
 
-                                                    //ColumnText ct = new ColumnText(escritorPDF.DirectContent);
-                                                    //ct.SetSimpleColumn(new iTextSharp.text.Rectangle(0, 500, 523, 0));
-                                                    //ct.AddElement(new Paragraph("Eu" + AdministradorNome + "Acuso recebimento de " + total + " de " + txt_NomeFantasia.Text + ")"));
-                                                    //ct.Go();
+                                                    
 
                                                     PdfPTable tabela1 = new PdfPTable(3);
                                                     tabela1.WidthPercentage = 50;
@@ -1019,6 +1003,8 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 
         }      
 
+
+        //Eventos da combobox Forma de Pagamento.
         private void cbb_FormadePagamento_SelectedIndexChanged(object sender, EventArgs e)
         {
             if(cbb_FormadePagamento.SelectedIndex == 4)
@@ -1035,6 +1021,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
         }
 
+        //Exclusão de item.
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -1063,6 +1050,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
         }
 
+        //Fechar o formulário e limpar o caixa temporário.
         private void button3_Click(object sender, EventArgs e)
         {
             string Nomedoservidor = lbl_NomedoServidor.Text;
