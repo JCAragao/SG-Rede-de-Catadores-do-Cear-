@@ -15,29 +15,26 @@ using iTextSharp.text;
 
 namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
 {
-
+    //Classe onde ocorrem as operações com o banco de dados principais ou mais frequentes
 
     class ConexaoBancodeDados
     {
         private static SqlConnection Conexao;
 
-       
+       //Abertura da conexão com o banco de dados
         private static SqlConnection ConexaoBanco(string Nomedoservidor)
         {
            
                 string nomedoservidor = Nomedoservidor;
-
-           
+  
                 Conexao = new SqlConnection("Data Source=DESKTOP-" + nomedoservidor + "\\SQLEXPRESS;Initial Catalog=SGRRC1;Integrated Security=True");
                 Conexao.Open();
                 return Conexao;
            
         }
-          
 
-
-
-    public static DataTable dql(string sql, string Nomedoservidor)//Data Query Language for Select
+        //Classe de consulta data query language
+       public static DataTable dql(string sql, string Nomedoservidor)//Data Query Language for Select
         {
 
             SqlDataAdapter da = null;
@@ -63,73 +60,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
         }
 
-        public static DataTable ObterTodosUsuarios(Administradorclasse A)
-        {
-            string Nomedoservidor = A.Nomedoservidor;
-            SqlDataAdapter da = null;
-            DataTable dt = new DataTable();
-
-            try
-            {
-                using (var cmd = ConexaoBanco(Nomedoservidor).CreateCommand())
-                {
-                    cmd.CommandText = "SELECT*FROM ADMINISTRADORES";
-                    da = new SqlDataAdapter(cmd.CommandText, ConexaoBanco(Nomedoservidor));
-                    da.Fill(dt);
-                    ConexaoBanco(Nomedoservidor).Close();
-                    return dt;
-
-                }
-
-            }
-            catch (Exception ex)
-            {
-                ConexaoBanco(Nomedoservidor).Close();
-                throw ex;
-
-            }
-
-
-        }
-
-        public static void dml(string NomedoServidor, string q, string msgOK = null, string msgERRO = null)// Data Manipulation language for Insert, Delete, and Update
-        {
-            string nomedoservidor = NomedoServidor;
-            SqlDataAdapter da = null;
-            DataTable dt = new DataTable();
-
-            try
-            {
-
-                var vcon = ConexaoBanco(nomedoservidor);
-                var cmd = vcon.CreateCommand();
-                cmd.CommandText = q;
-                da = new SqlDataAdapter(cmd.CommandText, vcon);
-                cmd.ExecuteNonQuery();
-                vcon.Close();
-                if (msgOK != null)
-                {
-                    MessageBox.Show(msgOK);
-
-                }
-
-            }
-
-            catch (Exception ex)
-            {
-
-                if (msgERRO != null)
-                {
-                    MessageBox.Show(msgERRO + "\n" + ex.Message);
-
-                }
-                throw ex;
-
-            }
-
-        }
-
-
+        //Classe de obtenção dos usuários para o formulário de administrador
 
 
         public static DataTable consulta(string sql, string Nomedoservidor)
@@ -159,6 +90,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
         }
 
+        //Verificar se já existe catador com o mesmo nome na associação.
         public static bool existenomecatador(CadastroCatadorClasse CCC)
         {
             bool res;
@@ -167,7 +99,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             string Nomedoservidor = CCC.Nomedoservidor;
 
             var cmd = ConexaoBanco(Nomedoservidor).CreateCommand();
-            cmd.CommandText = "select [Catador] from CATADORES where [Catador] ='" + CCC.NomeCompletoCatador + "'";
+            cmd.CommandText = "select [Catador] from CATADORES where [Funcao] = 'CATADOR' AND [Catador] = '" + CCC.NomeCompletoCatador + "'";
             da = new SqlDataAdapter(cmd.CommandText, ConexaoBanco(Nomedoservidor));
             da.Fill(dt);
 
@@ -185,7 +117,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             return res;
         }
 
-
+        //Cadastro de novo associado
         public static void NewCatador(CadastroCatadorClasse CCC)
         {
             if (existenomecatador(CCC))
@@ -247,7 +179,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 
         }
 
-
+        //Adição de nova venda
         public static void NovaVenda(VendasClasse VC)
         {
 
@@ -284,6 +216,7 @@ ValordaCompra, TipodePagamento, DataHora, Usuario, Unidade, ValorRecebido, Data,
             }
         }
 
+        //Cadastro de novo filho
         public static void NovoFilho(CadastroFilhoClasse CFC)
         {
             string NomedoServidor = CFC.Nomedoservidor;
@@ -328,6 +261,7 @@ ValordaCompra, TipodePagamento, DataHora, Usuario, Unidade, ValorRecebido, Data,
 
         }
 
+        //Edição de coleta
         public static void ColetaEditar(EditarColetaClasse ECC)
         {
             string NomedoServidor = ECC.NomedoServidor;
@@ -362,6 +296,7 @@ ValordaCompra, TipodePagamento, DataHora, Usuario, Unidade, ValorRecebido, Data,
 
         }
 
+        //Edição de Associado
         public static void CatadorEdite(EditarCatadorClasse Ecc)
         {
             string NomedoServidor = Ecc.NomedoServidor;
@@ -400,6 +335,7 @@ ValordaCompra, TipodePagamento, DataHora, Usuario, Unidade, ValorRecebido, Data,
 
         }
 
+        //Edição de Usina de Reciclagem
         public static void ClienteEditar(ClienteEditadoClasse CEC)
         {
             string NomedoServidor = CEC.NomedoServidor;
@@ -436,6 +372,7 @@ ValordaCompra, TipodePagamento, DataHora, Usuario, Unidade, ValorRecebido, Data,
 
         }
 
+        //Edição de Associação
         public static void AssociacaoEditar(AssociacaoEditarClasse AEC)
         {
             string NomedoServidor = AEC.NomedoServidor;
@@ -470,7 +407,7 @@ ValordaCompra, TipodePagamento, DataHora, Usuario, Unidade, ValorRecebido, Data,
 
         }
 
-
+        //Edição de Administrador
         public static void AdministradorEdite(EditarAdministradorClasse EAC)
         {
             string NomedoServidor = EAC.NomedoServidor;
@@ -504,7 +441,7 @@ ValordaCompra, TipodePagamento, DataHora, Usuario, Unidade, ValorRecebido, Data,
                 GestaoAdministradores gestao = new GestaoAdministradores();
                 if (gestao.btn_PesquisarPorAssociacaoGestao.Visible == true)
                 {
-                    string Associacao = (gestao.cbb_Administradorestao.Text);
+                    string Associacao = (gestao.cbb_AssociacaoGestao.Text);
 
                     string vqueryCatador = @"SELECT [ID_doAdministrador], [txt_NomeAdministrador], 
 [txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS],
@@ -516,7 +453,7 @@ ValordaCompra, TipodePagamento, DataHora, Usuario, Unidade, ValorRecebido, Data,
 
                 if (Globais.nivel == 1)
                 {
-                    string Administrador = gestao.cbb_Administradorestao.Text;
+                    string Administrador = gestao.cbb_AssociacaoGestao.Text;
                     string vqueryCatador = @"SELECT [ID_doAdministrador], [txt_NomeAdministrador], 
 [txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS], 
 [txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade], 
@@ -545,7 +482,7 @@ ValordaCompra, TipodePagamento, DataHora, Usuario, Unidade, ValorRecebido, Data,
                 if (gestao.btn_porAssociacaoeMatricula.Visible == true)
                 {
 
-                    string Associacao = gestao.cbb_Administradorestao.Text;
+                    string Associacao = gestao.cbb_AssociacaoGestao.Text;
                     string Matricula = gestao.txt_MatriculaAdministradorGestao.Text;
 
 
@@ -572,6 +509,7 @@ ValordaCompra, TipodePagamento, DataHora, Usuario, Unidade, ValorRecebido, Data,
 
         }
 
+        //Adição de tipo de material
         public static void AdicionarMaterial(TabeladePrecosAdicionar TPA)
         {
             string NomedoServidor = TPA.NomedoServidor;
@@ -595,6 +533,7 @@ ValordaCompra, TipodePagamento, DataHora, Usuario, Unidade, ValorRecebido, Data,
 
         }
 
+        //Adição dos dados na tabela caixa temporário
         public static void CaixaTemporario(CaixaTemporarioClasse CTC)
         {
             string NomedoServidor = CTC.NomedoServidor;
@@ -618,6 +557,8 @@ ValordaCompra, TipodePagamento, DataHora, Usuario, Unidade, ValorRecebido, Data,
             }
 
         }
+
+        //Edição de preço
         public static void EditarPreco(TabeladePrecosClasse TPC)
         {
             string NomedoServidor = TPC.NomedoServidor;
@@ -641,6 +582,7 @@ ValordaCompra, TipodePagamento, DataHora, Usuario, Unidade, ValorRecebido, Data,
 
         }
 
+        //Adição de coleta
         public static void ColetaNew(AdicionarColetaClasse ACC)
         {
             string NomedoServidor = ACC.NomedoServidor;
@@ -671,7 +613,7 @@ ValordaCompra, TipodePagamento, DataHora, Usuario, Unidade, ValorRecebido, Data,
 
         }
 
-
+        //Cadastro de associação
         public static void NewAssociacao(AdicionarAssociacaoClasse AAC)
         {
             string NomedoServidor = AAC.NomedoServidor;
@@ -695,6 +637,7 @@ ValordaCompra, TipodePagamento, DataHora, Usuario, Unidade, ValorRecebido, Data,
 
         }
 
+        //Edição de filho
         public static void SalvarAlteracoesFilho(SalvarAlteracoesFilhoCatadorEditar SAFCE)
         {
             string NomedoServidor = SAFCE.NomedoServidor;
@@ -719,110 +662,8 @@ ValordaCompra, TipodePagamento, DataHora, Usuario, Unidade, ValorRecebido, Data,
                 return;
             }
         }
-        public static DataTable ObterUsuariosIdNome(Administradorclasse A)
-        {
-            string Nomedoservidor = A.Nomedoservidor;
-            SqlDataAdapter da = null;
-            DataTable dt = new DataTable();
-            try
-            {
-                var vcon = ConexaoBanco(Nomedoservidor);
-                var cmd = vcon.CreateCommand();
-                cmd.CommandText = "Select ID_Coletor as 'ID Usuário'";
-                da = new SqlDataAdapter(cmd.CommandText, vcon);
-                da.Fill(dt);
-                vcon.Close();
-                return dt;
-            }
 
-            catch (Exception ex)
-            {
-                throw ex;
-
-            }
-        }
-
-        public static DataTable ObterTodosUsuarios2(Administradorclasse A)
-        {
-            string Nomedoservidor = A.Nomedoservidor;
-            SqlDataAdapter da = null;
-            DataTable dt = new DataTable();
-            try
-            {
-
-                var vcon = ConexaoBanco(Nomedoservidor);
-                var cmd = vcon.CreateCommand();
-                cmd.CommandText = "select*from [SGRCC1.dbo]";
-                da = new SqlDataAdapter(cmd.CommandText, vcon);
-                da.Fill(dt);
-                vcon.Close();
-                return dt;
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-
-            }
-
-
-
-        }
-
-
-        public static DataTable ObterDadosUsuario(String id, Administradorclasse A)
-        {
-            SqlDataAdapter da = null;
-            DataTable dt = new DataTable();
-            string Nomedoservidor = A.Nomedoservidor;
-
-            try
-            {
-
-                var vcon = ConexaoBanco(Nomedoservidor);
-                var cmd = vcon.CreateCommand();
-                cmd.CommandText = "select*from [SGRCC1.dbo]";
-                da = new SqlDataAdapter(cmd.CommandText, vcon);
-                da.Fill(dt);
-                vcon.Close();
-                return dt;
-            }
-
-            catch (Exception ex)
-            {
-
-                throw ex;
-            }
-        }
-
-        public static bool existeadministrador(Administradorclasse AA)
-        {
-            string Nomedoservidor = AA.Nomedoservidor;
-            bool res2;
-
-            SqlDataAdapter da = null;
-            DataTable dt = new DataTable();
-
-            var cmd = ConexaoBanco(Nomedoservidor).CreateCommand();
-            cmd.CommandText = "select [txt_AdministradorLogin] from ADMINISTRADORES where [nud_Nivel] = 0";
-            da = new SqlDataAdapter(cmd.CommandText, ConexaoBanco(Nomedoservidor));
-            da.Fill(dt);
-
-            if (dt.Rows.Count > 0)
-            {
-                res2 = true;
-
-            }
-
-            else
-            {
-
-                res2 = false;
-            }
-            return res2;
-
-        }
-
+        //Verificar se já existe um administrador com o mesmo nome de usuário.
         public static bool existeusuario(Administradorclasse A)
         {
             bool res;
@@ -849,6 +690,7 @@ ValordaCompra, TipodePagamento, DataHora, Usuario, Unidade, ValorRecebido, Data,
             return res;
         }
 
+        //Adicionar novo administrador
         public static void NovoAdministrador(Administradorclasse A)
         {
             if (existeusuario(A))
@@ -894,6 +736,7 @@ ValordaCompra, TipodePagamento, DataHora, Usuario, Unidade, ValorRecebido, Data,
 
         }
 
+        //Adicionar nova usina de reciclagem
         public static void NewCliente(CadastrarClienteClasse CCCl)
         {
             string NomedoServidor = CCCl.NomedoServidor;
@@ -930,7 +773,6 @@ values (@NomeFantasia, @CNPJ, @RegimedeTributacao, @Razaosocial, @DatadeCadastro
             }
 
         }
-
 
     }
 
