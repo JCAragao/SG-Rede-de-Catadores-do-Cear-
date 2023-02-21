@@ -328,6 +328,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             InitializeComponent();
         }
 
+        //Fechar o formulário
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
