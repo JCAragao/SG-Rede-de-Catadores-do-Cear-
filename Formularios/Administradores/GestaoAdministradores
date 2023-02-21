@@ -1,158 +1,3 @@
-namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
-{
-    partial class GestaodeColetasFormulario
-    {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
-
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent()
-        {
-            this.components = new System.ComponentModel.Container();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.sistema_de_ColetaDataSet1 = new Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_.Sistema_de_ColetaDataSet1();
-            this.novaColetaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.nova_ColetaTableAdapter = new Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_.Sistema_de_ColetaDataSet1TableAdapters.Nova_ColetaTableAdapter();
-            this.dataDaColetaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.catadorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipoDeResiduoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipoDeMaterialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.massaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.reciclávelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sistema_de_ColetaDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.novaColetaBindingSource)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataDaColetaDataGridViewTextBoxColumn,
-            this.catadorDataGridViewTextBoxColumn,
-            this.tipoDeResiduoDataGridViewTextBoxColumn,
-            this.tipoDeMaterialDataGridViewTextBoxColumn,
-            this.massaDataGridViewTextBoxColumn,
-            this.cidadeDataGridViewTextBoxColumn,
-            this.reciclávelDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.novaColetaBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(28, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(743, 150);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // sistema_de_ColetaDataSet1
-            // 
-            this.sistema_de_ColetaDataSet1.DataSetName = "Sistema_de_ColetaDataSet1";
-            this.sistema_de_ColetaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // novaColetaBindingSource
-            // 
-            this.novaColetaBindingSource.DataMember = "Nova Coleta";
-            this.novaColetaBindingSource.DataSource = this.sistema_de_ColetaDataSet1;
-            // 
-            // nova_ColetaTableAdapter
-            // 
-            this.nova_ColetaTableAdapter.ClearBeforeFill = true;
-            // 
-            // dataDaColetaDataGridViewTextBoxColumn
-            // 
-            this.dataDaColetaDataGridViewTextBoxColumn.DataPropertyName = "Data da Coleta";
-            this.dataDaColetaDataGridViewTextBoxColumn.HeaderText = "Data da Coleta";
-            this.dataDaColetaDataGridViewTextBoxColumn.Name = "dataDaColetaDataGridViewTextBoxColumn";
-            // 
-            // catadorDataGridViewTextBoxColumn
-            // 
-            this.catadorDataGridViewTextBoxColumn.DataPropertyName = "Catador";
-            this.catadorDataGridViewTextBoxColumn.HeaderText = "Catador";
-            this.catadorDataGridViewTextBoxColumn.Name = "catadorDataGridViewTextBoxColumn";
-            // 
-            // tipoDeResiduoDataGridViewTextBoxColumn
-            // 
-            this.tipoDeResiduoDataGridViewTextBoxColumn.DataPropertyName = "Tipo de Residuo";
-            this.tipoDeResiduoDataGridViewTextBoxColumn.HeaderText = "Tipo de Residuo";
-            this.tipoDeResiduoDataGridViewTextBoxColumn.Name = "tipoDeResiduoDataGridViewTextBoxColumn";
-            // 
-            // tipoDeMaterialDataGridViewTextBoxColumn
-            // 
-            this.tipoDeMaterialDataGridViewTextBoxColumn.DataPropertyName = "Tipo de Material";
-            this.tipoDeMaterialDataGridViewTextBoxColumn.HeaderText = "Tipo de Material";
-            this.tipoDeMaterialDataGridViewTextBoxColumn.Name = "tipoDeMaterialDataGridViewTextBoxColumn";
-            // 
-            // massaDataGridViewTextBoxColumn
-            // 
-            this.massaDataGridViewTextBoxColumn.DataPropertyName = "Massa";
-            this.massaDataGridViewTextBoxColumn.HeaderText = "Massa";
-            this.massaDataGridViewTextBoxColumn.Name = "massaDataGridViewTextBoxColumn";
-            // 
-            // cidadeDataGridViewTextBoxColumn
-            // 
-            this.cidadeDataGridViewTextBoxColumn.DataPropertyName = "Cidade";
-            this.cidadeDataGridViewTextBoxColumn.HeaderText = "Cidade";
-            this.cidadeDataGridViewTextBoxColumn.Name = "cidadeDataGridViewTextBoxColumn";
-            // 
-            // reciclávelDataGridViewTextBoxColumn
-            // 
-            this.reciclávelDataGridViewTextBoxColumn.DataPropertyName = "Reciclável";
-            this.reciclávelDataGridViewTextBoxColumn.HeaderText = "Reciclável";
-            this.reciclávelDataGridViewTextBoxColumn.Name = "reciclávelDataGridViewTextBoxColumn";
-            // 
-            // GestaodeColetasFormulario
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
-            this.Name = "GestaodeColetasFormulario";
-            this.Text = "GestaodeColetasFormulario";
-            this.Load += new System.EventHandler(this.GestaodeColetasFormulario_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sistema_de_ColetaDataSet1)).EndInit();
-         
-            this.ResumeLayout(false);
-
-        }
-
-        #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private Sistema_de_ColetaDataSet1 sistema_de_ColetaDataSet1;
-        private System.Windows.Forms.BindingSource novaColetaBindingSource;
-        private Sistema_de_ColetaDataSet1TableAdapters.Nova_ColetaTableAdapter nova_ColetaTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataDaColetaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn catadorDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tipoDeResiduoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tipoDeMaterialDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn massaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cidadeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn reciclávelDataGridViewTextBoxColumn;
-    }
-}
-
 using iTextSharp.text.pdf;
 using iTextSharp.text;
 using Org.BouncyCastle.Asn1.X509;
@@ -170,7 +15,7 @@ using System.Data.SqlTypes;
 
 namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste_
 {
-    
+
     public partial class GestaoAdministradores : Form
     {
         public GestaoAdministradores()
@@ -178,25 +23,17 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             InitializeComponent();
         }
 
+        //Carregamento dos nomes das Associações
         private void GestaoAdministradores_Load(object sender, EventArgs e)
         {
             string NomedoServidor = lbl_NomedoServidor.Text;
-
-            // TODO: esta linha de código carrega dados na tabela 'sGRRC1DataSetALFA.ADMINISTRADORES'. Você pode movê-la ou removê-la conforme necessário.
-            txt_MatriculaAdministradorGestao.ReadOnly = false;
-            txt_MatriculaAdministradorGestao.BackColor = Color.White;
-            btn_PesquisarporMatriculaAdministradorGestao.Visible = false;
-            btn_porAssociacaoeMatricula.Visible = true;
-            btn_porAssociacaoeMatricula.Visible = true;
-            btn_PesquisarPorAssociacaoGestao.Enabled = false;
-            btn_PesquisarPorAssociacaoGestao.Visible = false;
 
             if (Globais.nivel == 0)
             {
                 string vqueryAdministrador = @"select [Nome Fantasia] from [ASSOCIACAO] order by [Nome Fantasia] ASC";
 
-                cbb_Administradorestao.DataSource = ConexaoBancodeDados.dql(vqueryAdministrador, NomedoServidor);
-                cbb_Administradorestao.DisplayMember = "Nome Fantasia";
+                cbb_AssociacaoGestao.DataSource = ConexaoBancodeDados.dql(vqueryAdministrador, NomedoServidor);
+                cbb_AssociacaoGestao.DisplayMember = "Nome Fantasia";
 
             }
 
@@ -205,14 +42,13 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             {
                 string vqueryAdministrador = @"select [Nome Fantasia] from [ASSOCIACAO] order by [Nome Fantasia] ASC";
 
-                cbb_Administradorestao.DataSource = ConexaoBancodeDados.dql(vqueryAdministrador, NomedoServidor);
-                cbb_Administradorestao.DisplayMember = "Nome Fantasia";
-
+                cbb_AssociacaoGestao.DataSource = ConexaoBancodeDados.dql(vqueryAdministrador, NomedoServidor);
+                cbb_AssociacaoGestao.DisplayMember = "Nome Fantasia";
             }
 
         }
 
-
+        //Recarregamento do nome da associação.
         private void cbb_Administradorestao_MouseUp(object sender, MouseEventArgs e)
         {
             string NomedoServidor = lbl_NomedoServidor.Text;
@@ -220,8 +56,8 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             {
                 string vqueryAdministrador = @"select [Nome Fantasia] from [ASSOCIACAO] order by [Nome Fantasia] ASC";
 
-                cbb_Administradorestao.DataSource = ConexaoBancodeDados.dql(vqueryAdministrador, NomedoServidor);
-                cbb_Administradorestao.DisplayMember = "Nome Fantasia";
+                cbb_AssociacaoGestao.DataSource = ConexaoBancodeDados.dql(vqueryAdministrador, NomedoServidor);
+                cbb_AssociacaoGestao.DisplayMember = "Nome Fantasia";
 
             }
 
@@ -230,134 +66,90 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             {
                 string vqueryAdministrador = @"select [Nome Fantasia] from [ASSOCIACAO] order by [Nome Fantasia] ASC";
 
-                cbb_Administradorestao.DataSource = ConexaoBancodeDados.dql(vqueryAdministrador, NomedoServidor);
-                cbb_Administradorestao.DisplayMember = "Nome Fantasia";
+                cbb_AssociacaoGestao.DataSource = ConexaoBancodeDados.dql(vqueryAdministrador, NomedoServidor);
+                cbb_AssociacaoGestao.DisplayMember = "Nome Fantasia";
 
             }
 
 
         }
 
-        private void txt_DigitedaColetaCatadorGestao_KeyPress(object sender, KeyPressEventArgs e)
+        //Somente números são permitidos
+        private void txt_MatriculaAdministradorGestao_KeyPress(object sender, KeyPressEventArgs e)
         {
+            if ((!char.IsNumber(e.KeyChar)) && !char.IsControl(e.KeyChar))
             {
-                if ((!char.IsNumber(e.KeyChar)) && !char.IsControl(e.KeyChar))
-                {
-                    e.Handled = true;
-                }
+                e.Handled = true;
             }
         }
 
-        private void rdb_PorCatadorColetasGestao_CheckedChanged(object sender, EventArgs e)
-        {
 
-
-
-        }
-
-        private void rdb_PorAdministradorGestao_CheckedChanged(object sender, EventArgs e)
-        {
-
-            btn_PesquisarPorAssociacaoGestao.Visible = true;
-            btn_PesquisarPorAssociacaoGestao.Enabled = true;
-            btn_PesquisarporMatriculaAdministradorGestao.Visible = false;
-            btn_porAssociacaoeMatricula.Visible = false;
-            txt_MatriculaAdministradorGestao.ReadOnly = true;
-            txt_MatriculaAdministradorGestao.BackColor = Color.LightGray;
-            cbb_Administradorestao.Enabled = true;
-
-        }
-
-        private void rdb_porData_ColetasGestao_CheckedChanged(object sender, EventArgs e)
+        //Eventos da marcação do radiobutton porMatricula
+        private void rdb_porMatricula_CheckedChanged(object sender, EventArgs e)
         {
             txt_MatriculaAdministradorGestao.ReadOnly = false;
             txt_MatriculaAdministradorGestao.BackColor = Color.White;
             btn_PesquisarporMatriculaAdministradorGestao.Visible = true;
             btn_PesquisarPorAssociacaoGestao.Visible = false;
             btn_porAssociacaoeMatricula.Visible = false;
-            cbb_Administradorestao.Enabled = false;
+            cbb_AssociacaoGestao.Enabled = false;
         }
 
-        private void btn_PesquisarAdministradoreMatriculaGestao_Click(object sender, EventArgs e)
+        //Eventos ao marcar o radiobutton porAssociacao
+        private void rdb_porAssociacao_CheckedChanged(object sender, EventArgs e)
         {
-            string NomedoServidor = lbl_NomedoServidor.Text;
-            {
-
-                if (cbb_Administradorestao.SelectedIndex == -1 || txt_MatriculaAdministradorGestao.Text == "")
-                {
-                    MessageBox.Show("Escolha um administrador da lista e digite um número de matrícula.");
-                    return;
-
-                }
-                else
-                {
-                    if (Globais.nivel == 0)
-                    {
-                        string Matricula = txt_MatriculaAdministradorGestao.Text;
-
-                        Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
-                        string Administrador = cryptography.Encriptar(cbb_Administradorestao.Text);
-                      
-                        string vqueryColetas = @"SELECT [ID_doAdministrador], [txt_NomeAdministrador],[txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS], [txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade], [txt_Bairro], [txt_CEP], [nud_Nivel], [Administrador], [Unidade], [Usuario] FROM [ADMINISTRADORES] WHERE [txt_NomeAdministrador] ='" + Administrador + "' AND [ID_doAdministrador] ='" + Matricula +"'ORDER BY txt_NomeAdministrador ASC ;";
-                        dgv_AdministradorGestao.DataSource = ConexaoBancodeDados.dql(vqueryColetas, NomedoServidor);
-                    }
-
-                    if (Globais.nivel == 1)
-                    {
-
-                        string Matricula = txt_MatriculaAdministradorGestao.Text;
-                        string Administrador = cbb_Administradorestao.Text;
-                        string vqueryColetas = @"SELECT [ID_doAdministrador], [txt_NomeAdministrador], [txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS], [txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade], [txt_Bairro], [txt_CEP], [nud_Nivel], [Administrador], [Unidade] FROM [ADMINISTRADORES] WHERE [txt_NomeAdministrador] ='" + Administrador + "' AND [ID_doAdministrador] ='" + Matricula + "' AND [Nud_Nivel] = 2 ORDER BY txt_NomeAdministrador ASC ;";
-                        dgv_AdministradorGestao.DataSource = ConexaoBancodeDados.dql(vqueryColetas, NomedoServidor);
-
-                    }
-
-                }
-            }
+            txt_MatriculaAdministradorGestao.ReadOnly = false;
+            txt_MatriculaAdministradorGestao.BackColor = Color.LightGray;
+            btn_PesquisarporMatriculaAdministradorGestao.Visible = false;
+            btn_porAssociacaoeMatricula.Visible = false;
+            btn_porAssociacaoeMatricula.Visible = false;
+            btn_PesquisarPorAssociacaoGestao.Enabled = true;
+            btn_PesquisarPorAssociacaoGestao.Visible = true;
+            cbb_AssociacaoGestao.Visible = true;
+            cbb_AssociacaoGestao.Enabled = true;
         }
 
-        private void btn_MostrarTodosAdministrador_Click(object sender, EventArgs e)
+        //Eventos de busca por Associação e Matrícula.
+
+        private void btn_porAssociacaoeMatricula_Click(object sender, EventArgs e)
         {
             string NomedoServidor = lbl_NomedoServidor.Text;
-            if (txt_MatriculaAdministradorGestao.Text != "" && cbb_Administradorestao.SelectedIndex != -1)
+            if (txt_MatriculaAdministradorGestao.Text != "" && cbb_AssociacaoGestao.SelectedIndex != -1)
             {
-
 
                 if (Globais.nivel == 0)
                 {
-                    string Associacao = cbb_Administradorestao.Text;
+                    string Associacao = cbb_AssociacaoGestao.Text;
                     string Matricula = txt_MatriculaAdministradorGestao.Text;
 
 
-                    string vqueryCatador = @"SELECT[ID_doAdministrador], [txt_NomeAdministrador],
-[txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS],
-[txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade],
-[txt_Bairro], [txt_CEP], [nud_Nivel], [Unidade], [Usuario] FROM[ADMINISTRADORES] WHERE
-[Unidade] = '" + Associacao + "' AND ID_doAdministrador = '" + Matricula + "' ORDER BY txt_NomeAdministrador ASC";
+                    string vqueryCatador = @"SELECT [ID_doAdministrador], [txt_NomeAdministrador], [txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS], [txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade], [txt_Bairro], [txt_CEP], [nud_Nivel], [Unidade], [Usuario] FROM [ADMINISTRADORES] WHERE [Unidade] = '" + Associacao + "' AND ID_doAdministrador = '" + Matricula + "' ORDER BY txt_NomeAdministrador ASC";
                     dgv_AdministradorGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
                 }
 
                 if (Globais.nivel == 1)
                 {
-                    string vqueryCatador = @"SELECT [ID_doAdministrador], [txt_NomeAdministrador], [txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS], [txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade], [txt_Bairro], [txt_CEP], [nud_Nivel], [Administrador], [Unidade] FROM [ADMINISTRADORES] WHERE [nud_Nivel] = 2 ORDER BY txt_NomeAdministrador ASC";
+                    string Associacao = cbb_AssociacaoGestao.Text;
+                    string Matricula = txt_MatriculaAdministradorGestao.Text;
+
+                    string vqueryCatador = @"SELECT [ID_doAdministrador], [txt_NomeAdministrador], [txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS], [txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade], [txt_Bairro], [txt_CEP], [nud_Nivel], [Administrador], [Unidade] FROM [ADMINISTRADORES] WHERE [nud_Nivel] = 2 AND [Unidade] = '" + Associacao + "' AND ID_doAdministrador = '" + Matricula + "' ORDER BY txt_NomeAdministrador ASC";
                     dgv_AdministradorGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
                 }
             }
+
             else
             {
                 MessageBox.Show("Digite uma matrícula e escolha uma associação.");
                 return;
 
             }
-
-
         }
-       
 
-        private void btn_PesquisarPorAdministradorGestao_Click(object sender, EventArgs e)
+        //Eventos de busca por Associação
+        private void btn_PesquisarPorAssociacaoGestao_Click(object sender, EventArgs e)
         {
             string NomedoServidor = lbl_NomedoServidor.Text;
-            if (cbb_Administradorestao.SelectedIndex == -1)
+            if (cbb_AssociacaoGestao.SelectedIndex == -1)
             {
                 MessageBox.Show("Escolha uma associação da lista.");
                 return;
@@ -368,32 +160,25 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 
                 if (Globais.nivel == 0)
                 {
-                    string Associacao = (cbb_Administradorestao.Text);
-                    
-                    string vqueryCatador = @"SELECT [ID_doAdministrador], [txt_NomeAdministrador], 
-[txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS],
-[txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade],
-[txt_Bairro], [txt_CEP], [nud_Nivel], [Unidade], [Usuario] FROM [ADMINISTRADORES] WHERE
-[Unidade] ='"+Associacao+"'ORDER BY txt_NomeAdministrador ASC";
+                    string Associacao = (cbb_AssociacaoGestao.Text);
+
+                    string vqueryCatador = @"SELECT [ID_doAdministrador], [txt_NomeAdministrador],  [txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS], [txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade], [txt_Bairro], [txt_CEP], [nud_Nivel], [Unidade], [Usuario] FROM [ADMINISTRADORES] WHERE [Unidade] ='" + Associacao + "'ORDER BY txt_NomeAdministrador ASC";
                     dgv_AdministradorGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
                 }
 
                 if (Globais.nivel == 1)
                 {
-                    string Administrador = cbb_Administradorestao.Text;
-                    string vqueryCatador = @"SELECT [ID_doAdministrador], [txt_NomeAdministrador], 
-[txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS], 
-[txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade], 
-[txt_Bairro], [txt_CEP], [nud_Nivel], [Administrador], [Unidade] FROM [ADMINISTRADORES] WHERE 
-[txt_NomeAdministrador] ='" + Administrador + "' AND [nud_Nivel] = 2 ORDER BY txt_NomeAdministrador ASC";
+                    string Administrador = cbb_AssociacaoGestao.Text;
+                    string vqueryCatador = @"SELECT [ID_doAdministrador], [txt_NomeAdministrador], [txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS],  [txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade],  [txt_Bairro], [txt_CEP], [nud_Nivel], [Administrador], [Unidade] FROM [ADMINISTRADORES] WHERE  [txt_NomeAdministrador] ='" + Administrador + "' AND [nud_Nivel] = 2 ORDER BY txt_NomeAdministrador ASC";
                     dgv_AdministradorGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
+
 
                 }
             }
         }
 
-
-        private void btn_PesquisarporMatriculaAdministradorGestao_Click(object sender, EventArgs e)
+            //Eventos de busca por Matrícula.
+            private void btn_PesquisarporMatriculaAdministradorGestao_Click(object sender, EventArgs e)
         {
             string NomedoServidor = lbl_NomedoServidor.Text;
             if (txt_MatriculaAdministradorGestao.Text == "")
@@ -407,11 +192,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
                 if (Globais.nivel == 0)
                 {
                     string Matricula = txt_MatriculaAdministradorGestao.Text;
-                    string vqueryCatador = @"SELECT[ID_doAdministrador], [txt_NomeAdministrador],
-[txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS],
-[txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade],
-[txt_Bairro], [txt_CEP], [nud_Nivel], [Unidade], [Usuario] FROM[ADMINISTRADORES] WHERE
-[ID_doAdministrador] = '"+Matricula+"'ORDER BY txt_NomeAdministrador ASC";
+                    string vqueryCatador = @"SELECT[ID_doAdministrador], [txt_NomeAdministrador], [txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS], [txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade], [txt_Bairro], [txt_CEP], [nud_Nivel], [Unidade], [Usuario] FROM[ADMINISTRADORES] WHERE [ID_doAdministrador] = '" + Matricula + "'ORDER BY txt_NomeAdministrador ASC";
                     dgv_AdministradorGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
                 }
 
@@ -426,19 +207,8 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
         }
 
-        private void rdb_MostrarTodos_CheckedChanged(object sender, EventArgs e)
-        {
-            txt_MatriculaAdministradorGestao.ReadOnly = false;
-            txt_MatriculaAdministradorGestao.BackColor = Color.LightGray;
-            btn_PesquisarporMatriculaAdministradorGestao.Visible = false;
-            btn_porAssociacaoeMatricula.Visible = false;
-            btn_porAssociacaoeMatricula.Visible = false;
-            btn_PesquisarPorAssociacaoGestao.Enabled = true;
-            btn_PesquisarPorAssociacaoGestao.Visible = true;
-            cbb_Administradorestao.Visible = true;
-            cbb_Administradorestao.Enabled = true;
-        }
 
+        //Eventos de exclusão de administrador.
         private void btn_ExcluirEditarColetasGestao_Click(object sender, EventArgs e)
         {
             string NomedoServidor = lbl_NomedoServidor.Text;
@@ -455,18 +225,20 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 
                 if (Aviso == DialogResult.Yes)
                 {
+
+                    //Exclusão do administrador
                     string IDdoAdministrador = this.dgv_AdministradorGestao.CurrentRow.Cells[0].Value.ToString();
                     string PaiMaeAdministrador = this.dgv_AdministradorGestao.CurrentRow.Cells[1].Value.ToString();
                     string ExclusaoAdministrador = @"DELETE FROM ADMINISTRADORES WHERE [ID_doAdministrador] = '" + IDdoAdministrador + "'";
                     string ExclusaoFilhosAdministrador = @"DELETE FROM FILHOS WHERE [Pai/Mae]='" + PaiMaeAdministrador + "';";
                     ConexaoBancodeDados.dql(ExclusaoAdministrador, NomedoServidor);
-                    ConexaoBancodeDados.dql(ExclusaoFilhosAdministrador,NomedoServidor);
+                    ConexaoBancodeDados.dql(ExclusaoFilhosAdministrador, NomedoServidor);
                     MessageBox.Show("Administrador(a) excluído(a) com sucesso!");
 
-                    if(btn_PesquisarPorAssociacaoGestao.Visible == true)
+                    if (btn_PesquisarPorAssociacaoGestao.Visible == true)
                     {
 
-                        if (cbb_Administradorestao.SelectedIndex == -1)
+                        if (cbb_AssociacaoGestao.SelectedIndex == -1)
                         {
                             MessageBox.Show("Escolha uma associação da lista.");
                             return;
@@ -474,10 +246,11 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
                         }
                         else
                         {
+                            //Atualização do Data Grid View após alteração
 
                             if (Globais.nivel == 0)
                             {
-                                string Associacao = (cbb_Administradorestao.Text);
+                                string Associacao = (cbb_AssociacaoGestao.Text);
 
                                 string vqueryCatador = @"SELECT [ID_doAdministrador], [txt_NomeAdministrador], 
 [txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS],
@@ -489,7 +262,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 
                             if (Globais.nivel == 1)
                             {
-                                string Administrador = cbb_Administradorestao.Text;
+                                string Administrador = cbb_AssociacaoGestao.Text;
                                 string vqueryCatador = @"SELECT [ID_doAdministrador], [txt_NomeAdministrador], 
 [txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS], 
 [txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade], 
@@ -502,7 +275,8 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 
                     }
 
-                    if(btn_PesquisarporMatriculaAdministradorGestao.Visible == true)
+                    //Atualização do Data Grid View após exclusão
+                    if (btn_PesquisarporMatriculaAdministradorGestao.Visible == true)
                     {
                         if (txt_MatriculaAdministradorGestao.Text == "")
                         {
@@ -530,17 +304,19 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
                                 string vqueryCatador = @"SELECT [ID_doAdministrador], [txt_NomeAdministrador], [txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS], [txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade], [txt_Bairro], [txt_CEP], [nud_Nivel], [Administrador], [Unidade] FROM [ADMINISTRADORES] WHERE [ID_doAdministrador] ='" + Matricula + "' AND [nud_Nivel] = 2 ORDER BY txt_NomeAdministrador ASC";
                                 dgv_AdministradorGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
 
-                            
+
                             }
                         }
 
                     }
 
-                    if(btn_porAssociacaoeMatricula.Visible == true)
+                    //Atualização do Data Grid View após alteração
+
+                    if (btn_porAssociacaoeMatricula.Visible == true)
                     {
                         if (Globais.nivel == 0)
                         {
-                            string Associacao = cbb_Administradorestao.Text;
+                            string Associacao = cbb_AssociacaoGestao.Text;
                             string Matricula = txt_MatriculaAdministradorGestao.Text;
 
 
@@ -567,8 +343,10 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
         }
 
+        //Chamada do formulário de edição de administrador e transferência de dados.
         private void btn_EditarAdministradorGestao_Click(object sender, EventArgs e)
         {
+            btn_EditarAdministradorGestao.Enabled = false;
             string NomedoServidor = lbl_NomedoServidor.Text;
             if (dgv_AdministradorGestao.Rows.Count == 0)
             {
@@ -579,7 +357,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
             else
             {
-
+                
                 Criptografia cryptography = new Criptografia(System.Configuration.ConfigurationManager.AppSettings[""]);
                 string BairroCrip = cryptography.Decriptar(this.dgv_AdministradorGestao.CurrentRow.Cells[13].Value.ToString());
                 string CEPCrip = cryptography.Decriptar(this.dgv_AdministradorGestao.CurrentRow.Cells[15].Value.ToString());
@@ -619,6 +397,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
         }
 
+        //Eventos de impressão. Utiliza o ITextSharp.
         private void btn_ImprimirColetasGestao_Click(object sender, EventArgs e)
         {
 
@@ -629,18 +408,23 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 
             }
 
-            if(btn_PesquisarporMatriculaAdministradorGestao.Visible == true)
-            
+            if (btn_PesquisarporMatriculaAdministradorGestao.Visible == true)
+
             {
-                string nomeAdministrador = cbb_Administradorestao.Text;
+
+                string nomeAdministrador = cbb_AssociacaoGestao.Text;
+                //Localiza o diretório de criação
                 string nomeArquivo = Globais.caminhoImpressao + @"\INFORMACOESADM" + nomeAdministrador + ".pdf";
+                //Cria o arquivo
                 FileStream arquivoPDF = new FileStream(nomeArquivo, FileMode.Create);
 
+                //Formatação do documento
                 Document doc = new Document(PageSize.A4.Rotate(), 50f, 50f, 0f, 0f);
                 doc.SetPageSize(doc.PageSize);
                 PdfWriter escritorPDF = PdfWriter.GetInstance(doc, arquivoPDF);
                 escritorPDF.PageEvent = new ImprimirInfoClassecs();
 
+                //Localização e inserção da logo padrão da Associação de catadores.
                 iTextSharp.text.Image Logotipo = iTextSharp.text.Image.GetInstance(Globais.caminho + @"\RededeCatadoresdoCeará.png");
                 Logotipo.ScaleToFit(140f, 120f);
                 Logotipo.SetAbsolutePosition(100f, 480f);
@@ -648,6 +432,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
                 doc.Open();
                 string dados = "";
 
+                //Cabeçalho local
                 Paragraph paragrafo = new Paragraph(dados, new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 14, (int)System.Drawing.FontStyle.Bold));
                 paragrafo.Alignment = Element.ALIGN_CENTER;
                 paragrafo.Add("Rede dos Catadores de RSR do Estado do Ceará");
@@ -658,7 +443,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
                 paragrafo3.Alignment = Element.ALIGN_CENTER;
                 paragrafo3.Add(this.dgv_AdministradorGestao.CurrentRow.Cells[1].Value.ToString());
 
-
+                //Tabela de informações
                 PdfPTable tabela1 = new PdfPTable(8);
                 tabela1.HorizontalAlignment = Element.ALIGN_TOP;
                 tabela1.SpacingBefore = 50;
@@ -720,6 +505,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 
                 }
 
+                //Adição dos dados no documento.
                 doc.Add(Logotipo);
                 doc.Add(paragrafo);
                 doc.Add(paragrafo2);
@@ -730,11 +516,11 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
 
 
-
+            
             if (btn_PesquisarPorAssociacaoGestao.Visible == true)
 
             {
-                string nomeAdministrador = cbb_Administradorestao.Text;
+                string nomeAdministrador = cbb_AssociacaoGestao.Text;
                 string nomeArquivo = Globais.caminhoImpressao + @"\INFORMACOESADM" + nomeAdministrador + ".pdf";
                 FileStream arquivoPDF = new FileStream(nomeArquivo, FileMode.Create);
 
@@ -834,7 +620,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             if (btn_porAssociacaoeMatricula.Visible == true)
 
             {
-                string nomeAdministrador = cbb_Administradorestao.Text;
+                string nomeAdministrador = cbb_AssociacaoGestao.Text;
                 string nomeArquivo = Globais.caminhoImpressao + @"\INFORMACOESADM" + nomeAdministrador + ".pdf";
                 FileStream arquivoPDF = new FileStream(nomeArquivo, FileMode.Create);
 
@@ -878,7 +664,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
                 string associacao = this.dgv_AdministradorGestao.CurrentRow.Cells[17].Value.ToString();
                 string matricula = this.dgv_AdministradorGestao.CurrentRow.Cells[0].Value.ToString();
                 string NomedoServidor = lbl_NomedoServidor.Text;
-                string vqueryCatadorImpressao = @"SELECT [txt_NomeAdministrador], [txt_DatadeNascimento], [txt_DatadeMatricula],  [cbb_Genero],  [txt_Telefone], [txt_RG], [txt_CPF], [txt_NIS] FROM [ADMINISTRADORES] WHERE [Unidade] ='" + associacao + "'  AND [ID_Administrador] = '" +matricula+ "' ORDER BY txt_NomeAdministrador ASC";
+                string vqueryCatadorImpressao = @"SELECT [txt_NomeAdministrador], [txt_DatadeNascimento], [txt_DatadeMatricula],  [cbb_Genero],  [txt_Telefone], [txt_RG], [txt_CPF], [txt_NIS] FROM [ADMINISTRADORES] WHERE [Unidade] ='" + associacao + "'  AND [ID_Administrador] = '" + matricula + "' ORDER BY txt_NomeAdministrador ASC";
 
                 DataTable dtCatadorImpressao = ConexaoBancodeDados.dql(vqueryCatadorImpressao, NomedoServidor);
                 for (int i = 0; i < dtCatadorImpressao.Rows.Count; i++)
@@ -913,7 +699,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
                 string associacao2 = this.dgv_AdministradorGestao.CurrentRow.Cells[17].Value.ToString();
                 string matricula2 = this.dgv_AdministradorGestao.CurrentRow.Cells[0].Value.ToString();
 
-                string vqueryCatadorImpressao2 = @"SELECT [txt_[e-mail]]], [cbb_Cidade], [txt_Bairro], [txt_Endereco], [txt_CEP] FROM ADMINISTRADORES WHERE [Unidade] ='" + associacao2 + "' AND [ID_Administrador] = '"+matricula2+"' ORDER BY txt_NomeAdministrador ASC ;";
+                string vqueryCatadorImpressao2 = @"SELECT [txt_[e-mail]]], [cbb_Cidade], [txt_Bairro], [txt_Endereco], [txt_CEP] FROM ADMINISTRADORES WHERE [Unidade] ='" + associacao2 + "' AND [ID_Administrador] = '" + matricula2 + "' ORDER BY txt_NomeAdministrador ASC ;";
 
                 DataTable dtCatadorImpressao2 = ConexaoBancodeDados.dql(vqueryCatadorImpressao2, NomedoServidor);
                 for (int i2 = 0; i2 < dtCatadorImpressao2.Rows.Count; i2++)
@@ -937,131 +723,20 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 
         }
 
-        private void cbb_Administradorestao_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            string NomedoServidor = lbl_NomedoServidor.Text;
-            if (btn_PesquisarPorAssociacaoGestao.Visible == true)
-            {
-
-                {
-
-                    if (cbb_Administradorestao.SelectedIndex == -1)
-                    {
-                        MessageBox.Show("Escolha uma associação da lista.");
-                        return;
-
-                    }
-                    else
-                    {
-
-                        if (Globais.nivel == 0)
-                        {
-                            string Associacao = (cbb_Administradorestao.Text);
-
-                            string vqueryCatador = @"SELECT [ID_doAdministrador], [txt_NomeAdministrador], 
-[txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS],
-[txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade],
-[txt_Bairro], [txt_CEP], [nud_Nivel], [Unidade], [Usuario] FROM [ADMINISTRADORES] WHERE
-[Unidade] ='" + Associacao + "'ORDER BY txt_NomeAdministrador ASC";
-                            dgv_AdministradorGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
-                        }
-
-                        if (Globais.nivel == 1)
-                        {
-                            string Administrador = cbb_Administradorestao.Text;
-                            string vqueryCatador = @"SELECT [ID_doAdministrador], [txt_NomeAdministrador], 
-[txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS], 
-[txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade], 
-[txt_Bairro], [txt_CEP], [nud_Nivel], [Administrador], [Unidade] FROM [ADMINISTRADORES] WHERE 
-[txt_NomeAdministrador] ='" + Administrador + "' AND [nud_Nivel] = 2 ORDER BY txt_NomeAdministrador ASC";
-                            dgv_AdministradorGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
-
-                        }
-                    }
-
-                }
-
-                if (btn_PesquisarporMatriculaAdministradorGestao.Visible == true)
-                {
-                    if (txt_MatriculaAdministradorGestao.Text == "")
-                    {
-                        MessageBox.Show("Digite um número de matrícula.");
-                        return;
-
-                    }
-                    else
-                    {
-                        if (Globais.nivel == 0)
-                        {
-                            string Matricula = txt_MatriculaAdministradorGestao.Text;
-                            string vqueryCatador = @"SELECT[ID_doAdministrador], [txt_NomeAdministrador],
-[txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS],
-[txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade],
-[txt_Bairro], [txt_CEP], [nud_Nivel], [Unidade], [Usuario] FROM[ADMINISTRADORES] WHERE
-[ID_doAdministrador] = '" + Matricula + "'ORDER BY txt_NomeAdministrador ASC";
-                            dgv_AdministradorGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
-                        }
-
-                        if (Globais.nivel == 1)
-                        {
-
-                            string Matricula = txt_MatriculaAdministradorGestao.Text;
-                            string vqueryCatador = @"SELECT [ID_doAdministrador], [txt_NomeAdministrador], [txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS], [txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade], [txt_Bairro], [txt_CEP], [nud_Nivel], [Administrador], [Unidade] FROM [ADMINISTRADORES] WHERE [ID_doAdministrador] ='" + Matricula + "' AND [nud_Nivel] = 2 ORDER BY txt_NomeAdministrador ASC";
-                            dgv_AdministradorGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
-
-
-                        }
-                    }
-
-                }
-
-                if (btn_porAssociacaoeMatricula.Visible == true)
-                {
-                    if (Globais.nivel == 0)
-                    {
-                        string Associacao = cbb_Administradorestao.Text;
-                        string Matricula = txt_MatriculaAdministradorGestao.Text;
-
-
-                        string vqueryCatador = @"SELECT[ID_doAdministrador], [txt_NomeAdministrador],
-[txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS],
-[txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade],
-[txt_Bairro], [txt_CEP], [nud_Nivel], [Unidade], [Usuario] FROM[ADMINISTRADORES] WHERE
-[Unidade] = '" + Associacao + "' AND ID_doAdministrador = '" + Matricula + "' ORDER BY txt_NomeAdministrador ASC";
-                        dgv_AdministradorGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
-                    }
-
-                    if (Globais.nivel == 1)
-                    {
-                        string vqueryCatador = @"SELECT [ID_doAdministrador], [txt_NomeAdministrador], [txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS], [txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade], [txt_Bairro], [txt_CEP], [nud_Nivel], [Administrador], [Unidade] FROM [ADMINISTRADORES] WHERE [nud_Nivel] = 2 ORDER BY txt_NomeAdministrador ASC";
-                        dgv_AdministradorGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
-                    }
-
-                
-            }
-        
-
-        }
-        }
-
+        //Atualizar os dados expostos no Data Grid View após alteração no banco de dados.
         private void dgv_AdministradorGestao_MouseEnter(object sender, EventArgs e)
         {
+            btn_EditarAdministradorGestao.Enabled = true;
+
             string NomedoServidor = lbl_NomedoServidor.Text;
             if (dgv_AdministradorGestao.RowCount != 0)
-            { 
-            if (btn_PesquisarPorAssociacaoGestao.Visible == true)
             {
-
-           
+                if (btn_PesquisarPorAssociacaoGestao.Visible == true)
+                {
 
                     if (Globais.nivel == 0)
                     {
-                        string Associacao = (cbb_Administradorestao.Text);
+                        string Associacao = (cbb_AssociacaoGestao.Text);
 
                         string vqueryCatador = @"SELECT [ID_doAdministrador], [txt_NomeAdministrador], 
 [txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS],
@@ -1073,7 +748,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 
                     if (Globais.nivel == 1)
                     {
-                        string Administrador = cbb_Administradorestao.Text;
+                        string Administrador = cbb_AssociacaoGestao.Text;
                         string vqueryCatador = @"SELECT [ID_doAdministrador], [txt_NomeAdministrador], 
 [txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS], 
 [txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade], 
@@ -1082,9 +757,9 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
                         dgv_AdministradorGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
 
                     }
-                
 
-            }
+
+                }
 
                 if (btn_PesquisarporMatriculaAdministradorGestao.Visible == true)
                 {
@@ -1113,36 +788,28 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
                 }
             }
 
-                if (btn_porAssociacaoeMatricula.Visible == true && txt_MatriculaAdministradorGestao.Text != "")
+            if (btn_porAssociacaoeMatricula.Visible == true && txt_MatriculaAdministradorGestao.Text != "")
+            {
+                if (Globais.nivel == 0)
                 {
-                    if (Globais.nivel == 0)
-                    {
-                        string Associacao = cbb_Administradorestao.Text;
-                        string Matricula = txt_MatriculaAdministradorGestao.Text;
+                    string Associacao = cbb_AssociacaoGestao.Text;
+                    string Matricula = txt_MatriculaAdministradorGestao.Text;
 
 
-                        string vqueryCatador = @"SELECT[ID_doAdministrador], [txt_NomeAdministrador],
-[txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS],
-[txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade],
-[txt_Bairro], [txt_CEP], [nud_Nivel], [Unidade], [Usuario] FROM[ADMINISTRADORES] WHERE
-[Unidade] = '" + Associacao + "' AND ID_doAdministrador = '" + Matricula + "' ORDER BY txt_NomeAdministrador ASC";
-                        dgv_AdministradorGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
-                    }
-
-                    if (Globais.nivel == 1)
-                    {
-                        string vqueryCatador = @"SELECT [ID_doAdministrador], [txt_NomeAdministrador], [txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS], [txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade], [txt_Bairro], [txt_CEP], [nud_Nivel], [Administrador], [Unidade] FROM [ADMINISTRADORES] WHERE [nud_Nivel] = 2 ORDER BY txt_NomeAdministrador ASC";
-                        dgv_AdministradorGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
-                    }
+                    string vqueryCatador = @"SELECT[ID_doAdministrador], [txt_NomeAdministrador], [txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS], [txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade], [txt_Bairro], [txt_CEP], [nud_Nivel], [Unidade], [Usuario] FROM[ADMINISTRADORES] WHERE [Unidade] = '" + Associacao + "' AND ID_doAdministrador = '" + Matricula + "' ORDER BY txt_NomeAdministrador ASC";
+                    dgv_AdministradorGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
                 }
-            
+
+                if (Globais.nivel == 1)
+                {
+                    string vqueryCatador = @"SELECT [ID_doAdministrador], [txt_NomeAdministrador], [txt_AdministradorLogin], [txt_SenhaLogin], [txt_DatadeNascimento], [txt_RG], [txt_CPF], [txt_NIS], [txt_DatadeMatricula], [cbb_Genero], [txt_Telefone], [txt_[e-mail]]], [txt_Endereco], [cbb_Cidade], [txt_Bairro], [txt_CEP], [nud_Nivel], [Administrador], [Unidade] FROM [ADMINISTRADORES] WHERE [nud_Nivel] = 2 ORDER BY txt_NomeAdministrador ASC";
+                    dgv_AdministradorGestao.DataSource = ConexaoBancodeDados.dql(vqueryCatador, NomedoServidor);
+                }
+            }
+
         }
 
-        private void GestaoAdministradores_MouseEnter(object sender, EventArgs e)
-        {
-           
-        }
-
+        //Fechar o formulário de gestão
         private void btn_CancelarEditarColetasGestao_Click(object sender, EventArgs e)
         {
             this.Close();
