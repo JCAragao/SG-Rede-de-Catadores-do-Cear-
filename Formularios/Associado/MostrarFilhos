@@ -202,7 +202,6 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             // 
             this.fILHOSBindingSource3.DataMember = "FILHOS";
             this.fILHOSBindingSource3.DataSource = this.sGRRC1DataSet;
-            this.fILHOSBindingSource3.CurrentChanged += new System.EventHandler(this.fILHOSBindingSource3_CurrentChanged);
             // 
             // cbb_PaiMaeMostrarFilhos
             // 
@@ -311,24 +310,22 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             InitializeComponent();
         }
 
+        // Botão de Adicionar Filho somente se o associado não tiver.
         private void MostrarFilhos_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'sGRRC1DataSet.FILHOS'. Você pode movê-la ou removê-la conforme necessário.
             if (this.dgv_MostrarFilhos.RowCount == 0)
             {
-
                 btn_AdicionarFilhoMostrarFilhos.Visible = true;
                 btn_ExcluirMostrarFilhos.Visible = false;
                 btn_EditarMostrarFilhos.Visible = false;
-
-              
-
             }
 
         }
 
+        //Carregamento do formulário de edição de filho e transferência de dados.
         private void btn_EditarMostrarFilhos_Click(object sender, EventArgs e)
         {
+            btn_EditarMostrarFilhos.Enabled = false;
             FilhoCatadorEditar EditarCatadorFilho = new FilhoCatadorEditar();
             string vqueryCatador = @"select [Catador] from CATADORES order by Catador ASC";
 
@@ -348,22 +345,16 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             EditarCatadorFilho.Show();
         }
 
+        //Carregamento do formulário de adição de novos filhos e transferência de dados.
         private void btn_AdicionarFilhoMostrarFilhos_Click(object sender, EventArgs e)
         {
             CadastroFilho filho = new CadastroFilho();
-
-        
-
             filho.txt_MaePaiCadastroFilho.Text = label1.Text;
             filho.lbl_NomedoServidor.Text = lbl_NomedoServidor.Text;
             filho.Show();
         }
-
-        private void fILHOSBindingSource3_CurrentChanged(object sender, EventArgs e)
-        {
-
-        }
-
+    
+        //Exclusão de filho e atualização do Data Grid View
         private void btn_ExcluirMostrarFilhos_Click(object sender, EventArgs e)
         {
             if (dgv_MostrarFilhos.Rows.Count == 0)
@@ -396,13 +387,16 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
         }
 
+        //Fechar formulário
         private void btn_CancelarMostrarFilhos_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        //Atualização do Data Grid View após alteração de dados.
         private void dgv_MostrarFilhos_MouseEnter(object sender, EventArgs e)
         {
+            btn_EditarMostrarFilhos.Enabled = true;
             string NomedoServidor = lbl_NomedoServidor.Text;
             string vqueryFilho = @"SELECT [Pai/Mae], [Data de Nascimento], [Gênero], [ID_Filho] FROM FILHOS WHERE [Pai/Mae] ='" + label1.Text + "' ;";
             dgv_MostrarFilhos.DataSource = ConexaoBancodeDados.dql(vqueryFilho, NomedoServidor);
