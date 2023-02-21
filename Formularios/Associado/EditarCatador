@@ -290,7 +290,6 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             this.cbb_CidadeEditarCatador.Name = "cbb_CidadeEditarCatador";
             this.cbb_CidadeEditarCatador.Size = new System.Drawing.Size(161, 21);
             this.cbb_CidadeEditarCatador.TabIndex = 61;
-            this.cbb_CidadeEditarCatador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cbb_CidadeEditarCatador_KeyPress);
             // 
             // lbl_Cidade
             // 
@@ -436,9 +435,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             this.txt_Funcao.Name = "txt_Funcao";
             this.txt_Funcao.Size = new System.Drawing.Size(96, 20);
             this.txt_Funcao.TabIndex = 138;
-            this.txt_Funcao.Click += new System.EventHandler(this.txt_Funcao_Click);
-            this.txt_Funcao.DoubleClick += new System.EventHandler(this.txt_Funcao_DoubleClick);
-            // 
+             // 
             // lbl_NomedoServidor
             // 
             this.lbl_NomedoServidor.AutoSize = true;
@@ -573,6 +570,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             InitializeComponent();
         }
 
+        //Salvar alterações 
         private void btn_SalvarAlteracoesEditarCatador_Click(object sender, EventArgs e)
         {
             string format = "dd/MM/yyyy";
@@ -769,10 +767,10 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 
             }
         }
-    
 
-
-         private void EditarCatador_Load(object sender, EventArgs e)
+        //Carregamento das cidades; Marcação da checkbox Auxílio Catador;
+        //Verificar se ocorreu alteração no banco de dados desde a inserção.   
+        private void EditarCatador_Load(object sender, EventArgs e)
          {
             string NomedoServidor = lbl_NomedoServidor.Text;
             string vqueryCidade = @"SELECT * FROM CIDADES ORDER BY ID_Cidade ASC ;";
@@ -819,12 +817,10 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
                 }
       
             }
-
             Conectar.Close();
-
-
         }
 
+        //Somente números e '/' são aceitos.
         private void txt_DatadeNascimentoEditarCatador_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((!char.IsNumber(e.KeyChar)) && !char.IsControl(e.KeyChar) && e.KeyChar != '/')
@@ -833,6 +829,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
         }
 
+        //Somente números, '(' e ')' são aceitos
         private void txt_TelefoneEditarCatador_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((!char.IsNumber(e.KeyChar)) && !char.IsControl(e.KeyChar) && e.KeyChar != '(' && e.KeyChar != ')' && e.KeyChar != '-')
@@ -841,6 +838,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
         }
 
+       //Somente números e '/' são aceitos.
         private void txt_DatadeMatriculaEditarCatador_KeyPress(object sender, KeyPressEventArgs e)
         {
 
@@ -851,15 +849,10 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 
         }
 
-        private void cbb_CidadeEditarCatador_KeyPress(object sender, KeyPressEventArgs e)
-        {
-           
-        }
-
+        
+        //Alteração no checkbox de Auxílio Catador
         private void chb_RecebeAuxílioCatadorCadastroCatador_CheckedChanged(object sender, EventArgs e)
         {
-
-
             if(chb_RecebeAuxílioCatadorCadastroCatador.Checked == false)
             {
 
@@ -870,15 +863,15 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
                 txt_RecebeAuxilioEditarCadastroCatador.Text = "Recebe";
 
             }
-
-
         }
 
+        //Fechar o formulário
         private void btn_CancelarCadastrarCatador_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        //Somente letras são aceitas
         private void txt_NomeCompletoEditarCatador_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((!char.IsLetter(e.KeyChar)) && !char.IsControl(e.KeyChar) && Convert.ToInt32(e.KeyChar) != 8 && Convert.ToInt32(e.KeyChar) != 32)
@@ -887,6 +880,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
         }
 
+        //Carregamento das funções.
         private void cbb_Funcao_Click(object sender, EventArgs e)
         {
             string NomedoServidor = lbl_NomedoServidor.Text;
@@ -895,26 +889,13 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             cbb_Funcao.DisplayMember = "Funcao";
         }
 
+        //Alterações da textbox de funções
         private void cbb_Funcao_SelectedIndexChanged(object sender, EventArgs e)
         {
             txt_Funcao.Text = cbb_Funcao.Text;
         }
 
-        private void txt_Funcao_DoubleClick(object sender, EventArgs e)
-        {
-            cbb_Funcao.Visible = true;
-            txt_Funcao.Visible = false;
-
-            txt_Funcao.Text = cbb_Funcao.Text;
-        }
-
-        private void txt_Funcao_Click(object sender, EventArgs e)
-        {
-            cbb_Funcao.Visible = true;
-            txt_Funcao.Visible = false;
-
-            txt_Funcao.Text = cbb_Funcao.Text;
-        }
+       
     }
 }
 
