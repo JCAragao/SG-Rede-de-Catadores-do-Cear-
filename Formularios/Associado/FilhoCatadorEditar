@@ -206,19 +206,19 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
 {
     public partial class FilhoCatadorEditar : Form
     {
+        //Evento de inicialização dos componentes.
         public FilhoCatadorEditar()
         {
             InitializeComponent();
         }
 
+        //Evento de carregamento do formulário
         private void FilhoCatadorEditar_Load(object sender, EventArgs e)
         {
-            {
-              
-
-            }
+           
         }
 
+        //Salvar alterações no banco de dados.
         private void btn_SalvarAlteracoesFilhoCatadorEditar_Click(object sender, EventArgs e)
         {
 
@@ -273,6 +273,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
         }
 
+        //Somente números e '/' são aceitos.
         private void txt_DatadeNascimentoFilhoEditar_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar !='/'))
@@ -281,6 +282,7 @@ namespace Sistema_de_Gerenciamento_da_Rede_de_Catadores_do_Ceará__Versão_Teste
             }
         }
 
+        //Fechar o formulário.
         private void btn_CancelarFilhoCatadorEditar_Click(object sender, EventArgs e)
         {
             this.Close();
